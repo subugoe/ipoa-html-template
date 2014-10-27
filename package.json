@@ -11,6 +11,7 @@
     "load-grunt-config": "~0.9.2",
     "load-grunt-tasks": "~0.3.0",
     "time-grunt": "~0.2.5",
-    "grunt-sass": "~0.16.0"
+    "grunt-sass": "~0.16.0",
+    "grunt-todo": "^0.4.0"
   }
 }
