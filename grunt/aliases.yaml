@@ -12,3 +12,6 @@
 
 'showTodo':
   - 'todo'
+
+'minimizeHtml':
+  - 'htmlmin'
