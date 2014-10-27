@@ -32,6 +32,11 @@ module.exports = {
     }]
   },
 
+  firaCss: {
+    src: 'bower_components/fira/fira.css',
+    dest: 'sass/fira.scss',
+  },
+
   headroomJquery: {
     src: 'bower_components/headroom.js/dist/jQuery.headroom.min.js',
     dest: 'js/vendor/headroom.jquery.js',

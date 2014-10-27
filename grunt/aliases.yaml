@@ -2,6 +2,7 @@
   - 'copy:picturefill'
   - 'copy:htmlinspector'
   - 'copy:fira'
+  - 'copy:firaCss'
   - 'copy:jquery'
   - 'copy:jqueryAdditionalFiles'
   - 'copy:fontawesomeCss'
