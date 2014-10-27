@@ -3,3 +3,4 @@ node_modules
 fonts
 fontawesome.scss
 js/vendor
+_site
