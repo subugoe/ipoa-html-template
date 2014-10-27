@@ -17,3 +17,6 @@
 
 'minimizeHtml':
   - 'htmlmin'
+
+'concatJs':
+  - 'concat'
