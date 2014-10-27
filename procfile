@@ -1,0 +1,2 @@
+jekyll: jekyll build --watch --trace
+grunt: grunt watch
