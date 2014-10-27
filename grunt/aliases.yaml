@@ -6,6 +6,8 @@
   - 'copy:jqueryAdditionalFiles'
   - 'copy:fontawesomeCss'
   - 'copy:fontawesomeFont'
+  - 'copy:headroom'
+  - 'copy:headroomJquery'
 
 'devWatch':
   - 'sass'
