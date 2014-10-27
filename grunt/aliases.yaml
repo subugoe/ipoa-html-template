@@ -9,3 +9,6 @@
 
 'devWatch':
   - 'sass'
+
+'showTodo':
+  - 'todo'
