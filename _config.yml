@@ -1,0 +1,9 @@
+name: ipoa-html-mockup
+exclude: [bower_components, bower.json, npm-debug.log, README.md, grunt, package.json, sass, node_modules, Gemfile, Gemfile.lock, procfile]
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
