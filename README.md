@@ -16,3 +16,9 @@ _every grunt task can be used with `-v` to get verbosed output_
 
 Within this repo it's best practice to lint Sass files. As a result you'll find `scss-lint` in the Gemfile and `.scss-lint.yml` at root.  
 Please set your editor to use the custom config and lint your sass files.
+
+## Guidelines?
+
+### Sass Formatting
+
+If (as in: you should stick to it) possible follow the excellent [CSS Guidelines](http://cssguidelin.es) by [@csswizardry](https://twitter.com/csswizardry).
