@@ -1,3 +1,80 @@
+/* 
+ * inuit CSS - https://github.com/inuitcss/
+ */
+
+// Settings
+$inuit-base-font-size: 16px;
+$inuit-namespace: 'ic-';
+@import '../bower_components/inuit-defaults/settings.defaults';
+@import '../bower_components/inuit-responsive-settings/settings.responsive';
+
+$breakpoints: (
+  'phone'												'screen and (max-width: 480px)',
+  'tablet'                      'screen and (min-width: 481px) and (max-width: 1023px)',
+  'tablet-portrait'             'screen and (min-width: 768px) and (max-width: 1023px)',
+  'notebook'                    'screen and (min-width: 1024px) and (max-width: 1200px)',
+  'desk'                        'screen and (min-width: 1201px)',
+  'huge'                        'screen and (min-width: 1401px)',
+  'smaller-than-tablet'         'screen and (max-width: 767px)',
+  'tablet-and-notebook'         'screen and (min-width: 481px) and (max-width: 1200px)',
+  'tablet-and-up'               'screen and (min-width: 768px)',
+  'notebook-and-up'             'screen and (min-width: 1024px)',
+  'desk-and-up'                 'screen and (min-width: 1201px)',
+  );
+
+// Tools
+@import '../bower_components/inuit-functions/tools.functions';
+@import '../bower_components/inuit-mixins/tools.mixins';
+@import '../bower_components/inuit-responsive-tools/tools.responsive';
+
+// Generic
+@import '../bower_components/inuit-normalize/generic.normalize';
+@import '../bower_components/inuit-box-sizing/generic.box-sizing';
+
+// Base
+@import '../bower_components/inuit-page/base.page';
+
+// Objects
+$inuit-enable-layout--center: true;
+$inuit-enable-layout--right: true;
+$inuit-enable-layout--flush: true;
+$inuit-enable-layout--middle: true;
+$inuit-enable-btn--pill: true;
+$inuit-enable-btn--small: true;
+$inuit-btn-background: none;
+$inuit-btn-border-color: #fff;
+$inuit-btn-radius: 7px;
+@import '../bower_components/inuit-layout/objects.layout';
+@import '../bower_components/inuit-tabs/objects.tabs';
+@import '../bower_components/inuit-buttons/objects.buttons';
+
+// Components
+@import '../bower_components/inuit-list-bare/objects.list-bare';
+@import '../bower_components/inuit-list-inline/objects.list-inline';
+
+// Trumps
+$inuit-use-fractions: false;
+@import '../bower_components/inuit-widths/trumps.widths';
+@import '../bower_components/inuit-widths-responsive/trumps.widths-responsive';
+$inuit-enable-paddings: true;
+$inuit-enable-paddings--tiny: true;
+$inuit-enable-paddings--small: true;
+$inuit-enable-paddings--large: true;
+$inuit-enable-paddings--huge: true;
+$inuit-enable-margins: true;
+$inuit-enable-margins--tiny: true;
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--none: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--huge: true;
+@import '../bower_components/inuit-spacing/trumps.spacing';
+
+// end - inuit CSS
+
+@import 'var';
+@import 'base';
 @import 'fira';
 @import 'fontawesome';
+@import 'extend';
+@import 'start';
 @import 'shame';
