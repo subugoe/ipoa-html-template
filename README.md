@@ -7,7 +7,8 @@ This repository holds the HTML/CSS/JS code that is used as a blueprint for the T
 _every grunt task can be used with `-v` to get verbosed output_
 
 * `grunt showTodo` lists Todo/Fix/Note comments from various files
-* `grunt initialize` initialize develop/deployment by copying files from bower_components
+* `grunt initialize` initialize development/deployment by copying files from bower_components and replacing css path definitions in scss files 
+* `grunt refresh` cleans the _site and css dirs and runs the sass compliation once. Use this before running `foreman start` to get a fresh start
 
 ## Linting
 

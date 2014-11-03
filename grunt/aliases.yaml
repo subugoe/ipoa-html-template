@@ -25,3 +25,7 @@
 
 'concatJs':
   - 'concat'
+
+'refresh':
+  - 'clean'
+  - 'sass'
