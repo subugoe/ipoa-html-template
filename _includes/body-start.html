@@ -2,7 +2,7 @@
 <!--
 NOTE : set lang via CMS related to the actual page language
 -->
-<html lang="de">
+<html lang="de" class="no-js">
 <head>
   <!--
   NOTE : have a look at HTML 5 Boilerplate for stuff that makes sense in the context of this project
@@ -11,6 +11,10 @@ NOTE : set lang via CMS related to the actual page language
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>{{page.title}} | {{site.name}}</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--
+  NOTE : js detection. Reference: http://www.paulirish.com/2009/avoiding-the-fouc-v3/
+  -->
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
 </head>
 <body class="{{page.title}}">
 
