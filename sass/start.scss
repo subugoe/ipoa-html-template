@@ -1,0 +1,90 @@
+.start {
+  background-color: $color-dummy--dark;
+  height: 100vh;
+  min-height: 100%;
+
+  .enter {
+    @extend %ic-layout;
+    background-color: $color-dummy--dark;
+  }
+
+    .enter__logo {
+      @extend .ic-layout__item;
+      @extend .ic-tablet-and-up-one-half;
+      @extend .ic-layout--center;
+      margin: 10vh 0 0;
+      @include media-query('tablet-and-up') {
+        text-align: right;
+      }
+    }
+
+    .enter__title {
+      @extend .ic-layout__item;
+      @extend .ic-tablet-and-up-one-half;
+      @extend .ic-layout--center;
+      @extend %text--very-bright;
+      @extend %text--large;
+      display: none;
+      @include media-query('tablet-and-up') {
+        display: inline-block;
+        text-align: left;
+        padding: 10vh 0 0 3vh;
+      }
+    }
+
+    .nav {
+      @extend %ic-layout__item;
+      @extend %ic-layout--center;
+      background-color: $color-dummy--dark;
+      padding: 2vh 0 0;
+    }
+
+      .nav__button {
+        @extend %ic-btn;
+        @extend %border--big;
+        @extend %text--large;
+        @extend %text--bold;
+        background-color: $color-dummy--bright;
+        color: $color-dummy--dark;
+        margin: 5px;
+        &:hover, 
+        &:active,
+        &:focus {
+          background-color: $color--brightest;
+          color: $color--darkest; 
+        }
+      }
+
+
+  .info {
+    @extend %ic-layout;
+    @extend %ic-layout--flush;
+    background-color: $color-dummy--dark;
+    width: 100vw;
+    padding: 5vh 0 0;
+  }
+
+    .info__linklist {
+      @extend %ic-layout--center;
+      @extend %ic-list-bare;
+      @extend %ic-list-inline;
+      @extend %text--very-bright;
+      @extend %text--small;
+    }
+
+    .info__linklistitem {
+      border-radius: $link-border-radius--default;
+      transition: all $transition-time--default ease;
+      &:hover { background-color: $color-dummy--bright; }
+      &:active { background-color: $color--brightest; }
+    }
+
+    .info__link {
+      padding: $link-padding--default;
+      color: $color-dummy--bright;
+      text-decoration: none;
+      &:hover { color: $color-dummy--dark; }
+      &:active { color: $color--darkest; }
+    }
+
+}
