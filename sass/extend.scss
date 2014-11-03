@@ -1,0 +1,11 @@
+%text--large { font-size: ($inuit-base-font-size / 16px) * $factor-text--large; }
+
+%text--small { font-size: ($inuit-base-font-size / 16px) * $factor-text--small; }
+
+%text--tiny { font-size: ($inuit-base-font-size / 16px) * $factor-text--tiny; }
+
+%text--bold { font-weight: bold; }
+
+%text--very-bright { color: $color-dummy--bright; }
+
+%border--big { border-width: $border-width--big; }
