@@ -9,3 +9,5 @@ linters:
     convention: 'BEM' # hyphenated_lowercase or 'BEM', or a regex pattern
   SelectorFormat:
     convention: 'BEM' # hyphenated_lowercase or 'BEM', or 'snake_case', or 'camel_case', or a regex pattern
+  Indentation:
+    enabled: false
