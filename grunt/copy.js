@@ -57,7 +57,7 @@ module.exports = {
       expand: true,
       cwd: 'bower_components/fontawesome/fonts/',
       src: ['*'],
-      dest: 'fonts/'
+      dest: 'fonts/fontawesome/'
     }]
   },
 

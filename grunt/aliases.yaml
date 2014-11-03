@@ -9,6 +9,10 @@
   - 'copy:fontawesomeFont'
   - 'copy:headroom'
   - 'copy:headroomJquery'
+  - 'replace:fontawesomePath'
+  - 'replace:firaEot'
+  - 'replace:firaWoff'
+  - 'replace:firaTff'
 
 'devWatch':
   - 'sass'
