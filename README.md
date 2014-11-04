@@ -17,6 +17,13 @@ _every grunt task can be used with `-v` to get verbosed output_
 Within this repo it's best practice to lint Sass files. As a result you'll find `scss-lint` in the Gemfile and `.scss-lint.yml` at root.  
 Please set your editor to use the custom config and lint your sass files.
 
+## Frameworks and Libraries
+
+### Inuit CSS
+
+The namespace for Inuit CSS classes is `ic-`. It's defined in `style.scss` like this `$inuit-namespace: 'ic-';`.  
+While linting Sass files you might encounter a PlaceholderinExtend error like with code like this: `.ic-layout__item {`. This can be ignored
+
 ## Guidelines and hints
 
 ### Sass Formatting
