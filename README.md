@@ -19,7 +19,7 @@ Please set your editor to use the custom config and lint your sass files.
 
 ## Frameworks and Libraries
 
-### Inuit CSS
+### [Inuit CSS](https://github.com/inuitcss)
 
 The namespace for Inuit CSS classes is `ic-`. It's defined in `style.scss` like this `$inuit-namespace: 'ic-';`.  
 While linting Sass files you might encounter a PlaceholderinExtend error like with code like this: `.ic-layout__item {`. This can be ignored
