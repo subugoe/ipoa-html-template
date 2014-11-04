@@ -9,6 +9,7 @@
   - 'copy:fontawesomeFont'
   - 'copy:headroom'
   - 'copy:headroomJquery'
+  - 'copy:html5shiv'
   - 'replace:fontawesomePath'
   - 'replace:firaEot'
   - 'replace:firaWoff'

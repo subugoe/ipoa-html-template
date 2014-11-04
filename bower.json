@@ -25,6 +25,7 @@
     "fira": "0.1.0",
     "headroom.js": "~0.7.0",
     "jquery": "~2.1.1",
-    "fontawesome": "~4.2.0"
+    "fontawesome": "~4.2.0",
+    "html5shiv": "~3.7.2"
   }
 }

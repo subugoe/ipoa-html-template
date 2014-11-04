@@ -19,6 +19,10 @@ Please set your editor to use the custom config and lint your sass files.
 
 ## Frameworks and Libraries
 
+### [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
+
+The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
+
 ### [Inuit CSS](https://github.com/inuitcss)
 
 The namespace for Inuit CSS classes is `ic-`. It's defined in `style.scss` like this `$inuit-namespace: 'ic-';`.  

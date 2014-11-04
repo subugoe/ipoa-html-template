@@ -61,4 +61,9 @@ module.exports = {
     }]
   },
 
+  html5shiv: {
+    src: 'bower_components/html5shiv/dist/html5shiv.js',
+    dest: 'js/vendor/html5shiv.js',
+  }
+
 };
