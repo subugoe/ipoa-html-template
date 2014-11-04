@@ -32,7 +32,7 @@
       }
     }
 
-    .nav {
+    main {
       @extend %ic-layout__item;
       @extend %ic-layout--center;
       background-color: $color-dummy--dark;
