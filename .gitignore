@@ -6,3 +6,4 @@ js/vendor
 _site
 css
 fira.scss
+.sass-cache
