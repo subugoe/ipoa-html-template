@@ -3,6 +3,53 @@
   height: 100vh;
   min-height: 100%;
 
+  .language {
+    @extend %ic-layout;
+    @extend .ic-layout--flush;
+  }
+
+    .language__button {
+      @extend .ic-layout__item;
+      @extend %text--small;
+      background-color: $color-dummy--bright;
+      color: $color-dummy--dark;
+      border: none;
+      text-align: center;
+      @include media-query('tablet-and-up') {
+        text-align: right;
+      }
+      &:hover, 
+      &:active,
+      &:focus {
+        background-color: $color--brightest;
+        color: $color--darkest; 
+      }
+    }
+
+    .language__list {
+      @extend %ic-layout__item;
+      @extend %ic-layout--center;
+      @extend %ic-list-bare;
+      @extend %ic-list-inline;
+      @extend %text--very-bright;
+      @extend %text--small;
+    }
+    
+    .language__listitem {
+      border-radius: $link-border-radius--default;
+      transition: all $transition-time--default ease;
+      &:hover { background-color: $color-dummy--bright; }
+      &:active { background-color: $color--brightest; }
+    }
+
+    .language__link {
+      padding: $link-padding--default;
+      color: $color-dummy--bright;
+      text-decoration: none;
+      &:hover { color: $color-dummy--dark; }
+      &:active { color: $color--darkest; }
+    }
+
   .enter {
     @extend %ic-layout;
     background-color: $color-dummy--dark;
@@ -42,21 +89,21 @@
       padding: 2vh 0 0;
     }
 
-      .nav__button {
-        @extend %ic-btn;
-        @extend %border--big;
-        @extend %text--large;
-        @extend %text--bold;
-        background-color: $color-dummy--bright;
-        color: $color-dummy--dark;
-        margin: 5px;
-        &:hover, 
-        &:active,
-        &:focus {
-          background-color: $color--brightest;
-          color: $color--darkest; 
-        }
+    .nav__button {
+      @extend %ic-btn;
+      @extend %border--big;
+      @extend %text--large;
+      @extend %text--bold;
+      background-color: $color-dummy--bright;
+      color: $color-dummy--dark;
+      margin: 5px;
+      &:hover, 
+      &:active,
+      &:focus {
+        background-color: $color--brightest;
+        color: $color--darkest; 
       }
+    }
 
 
   .info {
