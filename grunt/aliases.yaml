@@ -30,3 +30,5 @@
 'refresh':
   - 'clean'
   - 'sass'
+  - 'autoprefixer'
+  - 'copy:duplicateStyleCSStoStartCss'
