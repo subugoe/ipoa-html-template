@@ -21,14 +21,18 @@ Please set your editor to use the custom config and lint your sass files.
 
 ### [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
 
-The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
+_The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x._
 
 ### [Inuit CSS](https://github.com/inuitcss)
 
 The namespace for Inuit CSS classes is `ic-`. It's defined in `style.scss` like this `$inuit-namespace: 'ic-';`.  
-While linting Sass files you might encounter a PlaceholderinExtend error like with code like this: `.ic-layout__item {`. This can be ignored
+While linting Sass files you might encounter a PlaceholderinExtend error with code like this: `.ic-layout__item {`. This can be ignored safely.
 
-## Guidelines and hints
+### [Picturefill](http://scottjehl.github.io/picturefill/)
+
+_The picture element and associated features are W3C standard HTML features that allow web developers to deliver an appropriate image to every user depending on a variety of conditions like screen size, viewport size, screen resolution, and more. Picturefill is a JavaScript file (or a polyfill to be more specific) that enables support for the picture element and associated features in browsers that do not yet support them, so you can start using them today!_
+
+## Guidelines and Hints
 
 ### Sass Formatting
 
