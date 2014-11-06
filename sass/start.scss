@@ -12,13 +12,9 @@
       @extend .ic-layout__item;
       @extend .ic-tablet-and-up-one-half;
       @extend .ic-layout--center;
-      img {
-        max-width: 250px;
-      }
+      img { max-width: 250px; }
       margin: 10vh 0 0;
-      @include media-query('tablet-and-up') {
-        text-align: right;
-      }
+      @include media-query('tablet-and-up') { text-align: right; }
     }
 
     .enter__title {
