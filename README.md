@@ -34,6 +34,10 @@ _The picture element and associated features are W3C standard HTML features that
 
 ## Guidelines and Hints
 
+## Manual Sass Compiling
+
+`sass sass/style.scss css/style.css --sourcemap --trace`
+
 ### Sass Formatting
 
 If (as in: you should stick to it) possible follow the excellent [CSS Guidelines](http://cssguidelin.es) by [@csswizardry](https://twitter.com/csswizardry).
