@@ -1,16 +1,52 @@
-$color-dummy--dark:             #262626;
-$color-dummy--bright:           #cdcdcd;
+/**
+ *
+ */
 
-$color--darkest:                #000;
-$color--brightest:              #fff;
+$border-radius--default:          3px;
+$border-radius--large:            5px;
 
-$transition-time--default:      250ms;
+/**
+ * Colors
+ */
+$color-dummy--dark:               #262626;
+$color-dummy--bright:             #cdcdcd;
+$color-text-background--default:  #fff;
+$color--darkest:                  #262626;
+$color--brightest:                #fff;
+$color-ipoa-yellow:               #fc0;
+$color-ipoa-green:                #360;
 
-$link-border-radius--default:   3px;
-$link-padding--default:         5px;
+/**
+ * Transition
+ */
+$transition-time--default:        250ms;
+$transition-time--fast:           100ms;
 
-$factor-text--small:            .8em; 
-$factor-text--tiny:             .65em;
-$factor-text--large:            1.20em;
+/**
+ * Link
+ */
+$link-border-radius--default:     $border-radius--default;
+$link-padding--default:           5px;
+$link-padding--small:             3px;
 
-$border-width--big:             2px;
+/**
+ * Text Factor
+ */
+$factor-text--small:              .8em; 
+$factor-text--tiny:               .65em;
+$factor-text--large:              1.20em;
+
+/**
+ * Border
+ */
+$border-width--default:           1px;
+$border-width--big:               2px;
+
+/**
+ * Content Padding
+ */
+$content-padding--phone:          5px;
+$content-padding--tablet:         25px;
+$content-padding--notebook:       75px;
+$content-padding--desk:           150px;
+$content-padding--huge:           200px;
