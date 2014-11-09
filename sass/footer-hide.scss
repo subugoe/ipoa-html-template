@@ -1,0 +1,52 @@
+/**
+ *
+ */
+
+.footer-hide {
+  @extend %ic-layout;
+  position: relative;
+  z-index: 0;
+}
+
+  .footer-hide__helper {
+    position: relative;
+    z-index: 1;
+    background-color: $color-text-background--default;
+  }
+
+  .footer-hide__content {
+    @include responsive-content-padding();
+    @include media-query('notebook-and-up') {
+      position: fixed;
+      z-index: -1;
+      bottom: 0;
+    }
+  }
+
+    /**
+     * no js fallback
+     * don't hide the footer if there is no js available
+     */
+    .no-js .footer-hide__content {
+      @include media-query('notebook-and-up') {
+        position: relative;
+        z-index: 0;
+      }
+    }
+
+  .footer-hide__col {
+    @extend %ic-layout__item;
+    @extend .ic-tablet-one-half;
+    @extend .ic-notebook-and-up-one-quarter;
+  }
+
+  .footer-hide__tracking {
+    @extend %ic-layout__item;
+    @extend %text--tiny;
+    @include media-query('notebook-and-up') { text-align: right; }
+    a {
+      @extend %link--default;
+      @extend %nobr;
+      @extend %link-on-bright;
+    }
+  }

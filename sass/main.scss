@@ -1,0 +1,24 @@
+main {
+  @extend %ic-layout;
+  @include responsive-content-padding();
+  a {
+    @extend %link--default;
+    @extend %link-on-bright;
+  }
+  ul { @extend %ul--reset; }
+  > picture {
+    @extend .ic-layout__item;
+    img {  min-width: 100%; }
+  }
+}
+
+  .main-heading {
+    @extend .ic-layout__item;
+    @extend .ic-desk-and-up-three-twelfths;
+    @include media-query('desk-and-up') { text-align: right; }
+  }
+
+  .main-textblock {
+    @extend .ic-layout__item;
+    @extend .ic-desk-and-up-nine-twelfths;
+  }

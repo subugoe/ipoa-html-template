@@ -1,0 +1,41 @@
+.content nav {
+  @extend .ic-layout;
+  @extend .ic-mt;
+  @extend .ic-mb;
+  @include responsive-content-padding();
+  display: none;
+  @include media-query('phone') { @extend .ic-layout--flush; }
+}
+
+.no-js nav { display: block; }
+
+  .nav__button {
+    @extend %text--large;
+    border-radius: $border-radius--large;
+    background: transparent;
+    border: $border-width--default solid $color--brightest;
+    color: $color--brightest;
+  }
+
+  .content .nav__button { @extend .ic-p--; }
+
+  .nav__col {
+    @extend %ic-layout__item;
+    @extend .ic-tablet-one-half;
+    @extend .ic-notebook-and-up-one-quarter;
+    @extend .ic-pb-;
+    ul { @extend %ic-list-bare; }
+    a {
+      @extend %link-in-linklist;
+      color: $color--darkest;
+      &:hover {
+        color: $color--brightest;
+        background: $color-ipoa-green;
+      }
+      &:active,
+      &:focus {
+        color: $color--darkest;
+        background: $color-ipoa-yellow; 
+      }
+    }
+  }

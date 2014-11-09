@@ -1,0 +1,67 @@
+header {
+  @extend %ic-layout;
+  @extend .ic-layout--flush;
+  background-color: $color-dummy--dark;
+  @include responsive-content-padding();
+}
+
+.head-links {
+  @extend .ic-layout__item;
+  @extend .ic-tablet-and-up-one-half;
+  @extend .ic-mt-;
+  span { @extend %hidden-on-phone; }
+  ul {
+    @extend %ic-list-bare;
+    @extend %ic-list-inline;
+    display: inline;    
+  }
+  a {
+    @extend %link--default;
+    @extend %link-on-dark;
+  }
+}
+
+.head-language {
+  @extend .ic-layout__item;
+  @extend .ic-tablet-and-up-one-half;
+  @extend %text--very-bright;
+  @extend .ic-mt-;
+  @include media-query('tablet-and-up') { text-align: right; }
+  ul {
+    @extend %ic-list-bare;
+    @extend %ic-list-inline;
+    display: inline;
+  }
+  a {
+    @extend %link--default;
+    @extend %link-on-dark;
+  }
+  .active {
+    background-color: $color--brightest;
+    color: $color--darkest;
+  }
+}
+
+.head-logo { 
+  @extend .ic-layout__item;
+  img {
+    max-width: 250px;
+  }
+}
+
+.head-claim { @extend .ic-layout__item; }
+
+.head-menu-button { 
+  @extend .ic-layout__item;
+}
+
+  .no-js .nav__button {
+    display: none;
+  }
+
+.head-pagetitle {
+  @extend .ic-layout__item;
+  @extend %text--large;
+  @extend %text--very-bright;
+  @include media-query('desk-and-up') { @include push('25%'); }
+}
