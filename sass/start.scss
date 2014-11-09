@@ -79,9 +79,8 @@
     }
 
     .info__link {
-      padding: $link-padding--default;
+      @extend %link--default;
       color: $color-dummy--bright;
-      text-decoration: none;
       &:hover { color: $color-dummy--dark; }
       &:active { color: $color--darkest; }
     }
