@@ -1,3 +1,12 @@
+%hidden-on-phone {
+  @include media-query('phone') { display: none; }
+}
+
+%ul--reset {
+  margin: 0;
+  padding-left: 15px;
+}
+
 %text--large { font-size: ($inuit-base-font-size / 16px) * $factor-text--large; }
 
 %text--small { font-size: ($inuit-base-font-size / 16px) * $factor-text--small; }
@@ -9,3 +18,67 @@
 %text--very-bright { color: $color-dummy--bright; }
 
 %border--big { border-width: $border-width--big; }
+
+%nobr { white-space: nowrap; }
+
+%link--default {
+  border-radius: $link-border-radius--default;
+  padding: $link-padding--default;
+  text-decoration: none;
+  transition: all $transition-time--default ease;
+}
+
+%link-in-linklist {
+  transition: all $transition-time--default ease;
+  display: block;
+  border-radius: $link-border-radius--default;
+  text-decoration: none;
+  padding: $link-padding--small $link-padding--small $link-padding--small 15px;
+  &:before {
+    content: '\f105';
+    display: inline-block;
+    font-family: 'FontAwesome';
+    margin-left: -10px;
+    margin-right: 5px;
+  }
+}
+
+%link-on-bright {
+  color: $color--darkest;
+  background-color: lighten($color-ipoa-green, 60.3%);
+  &:hover,
+  &:focus {
+    background-color: $color-ipoa-green;
+    color: #fff;
+  }
+  &:active {
+    background-color: $color-ipoa-yellow;
+    color: $color--darkest;
+  }
+}
+
+%link-on-dark {
+  color: $color--brightest;
+  &:hover,
+  &:focus {
+    background-color: $color--brightest;
+    color: $color--darkest;
+  }
+  &:active {
+    background-color: $color-ipoa-yellow;
+    color: $color--darkest;
+  }
+}
+
+@mixin push($howmuch) {
+  position: relative;
+  transform: translateX(25%);
+}
+
+@mixin responsive-content-padding() {
+  padding: 0 $content-padding--phone;
+  @include media-query('tablet') { padding: 0 $content-padding--tablet; }
+  @include media-query('notebook') { padding: 0 $content-padding--notebook; }
+  @include media-query('desk') { padding: 0 $content-padding--desk; }
+  @include media-query('huge') { padding: 0 $content-padding--huge; }
+}
