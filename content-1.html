@@ -11,17 +11,18 @@ layout: default
         <li><a href="#" title=""><i class="fa fa-fw fa-lg fa-info"></i><span> Kontakt</span></a></li>
         <li><a href="#" title=""><i class="fa fa-fw fa-lg fa-sitemap"></i><span> Sitemap</span></a></li>
       </ul>
-    </div><!--
-    --><div class="head-language">
       <i class="fa fa-fw fa-globe fa-lg"></i>
-      <ul>
+      <ul class="language-links">
         <li><a href="#" title="">AT-DE</a></li>
         <li><a href="#" title="">AT-EN</a></li>
         <li><a href="#" title="">CH-DE</a></li>
         <li><a href="#" title="">CH-EN</a></li>
-        <li><a href="#" title="" class="active">DE-DE</a></li>
+        <!--
+        NOTE : use the "active" CSS class to indicate the selected language
+        -->
+        <li><a href="#" title="" class="language-link--active">DE-DE</a></li>
         <li><a href="#" title="">DE-EN</a></li>
-      </ul>
+      </ul>      
     </div><!--
     --><div class="head-logo">
       <picture>
@@ -31,14 +32,14 @@ layout: default
         <img src="img/logo_250.png" srcset="img/logo_250.png, img/logo_500.png 2x" alt="">
       </picture>
     </div><!--
-    --><div class="head-claim">
-      Der freie Zugang zu wissenschaftlicher Information
+    --><div class="head-claim js-responsive-claim-text-size">
+      Der freie Zugang zu <br><span class="nobr">wissenschaftlicher Information</span>
     </div><!--
     --><div class="head-menubutton">
       <button class="nav__button js-nav-toggle-button"><i class="fa fa-fw fa-lg fa-bars js-menu-button-icon"></i>Menu</button>
     </div><!--
     --><div class="head-pagetitle">
-      <h1>Allgemeine Informationen</h1>
+      <h1 class="heading">Allgemeine Informationen</h1>
     </div>
   </header>
 

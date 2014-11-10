@@ -3,18 +3,14 @@
   %#{$name} { @content }
 }
 
-.fa-twitter {
-  &:before { color: $color-twitter; }
-}
+.fa-twitter:before { color: $color-twitter; }
 
-.fa-facebook {
-  &:before { color: $color-facebook; }
-}
+.fa-facebook:before { color: $color-facebook; }
 
 @include class('nobr') { white-space: nowrap; }
 
 %hidden-on-phone {
-  @include media-query('phone') { display: none; }
+  @include media-query('smaller-than-tablet') { display: none; }
 }
 
 %ul--reset {
