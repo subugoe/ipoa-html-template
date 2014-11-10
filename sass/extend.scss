@@ -1,3 +1,10 @@
+@mixin class($name) {
+  .#{$name},
+  %#{$name} { @content }
+}
+
+@include class('nobr') { white-space: nowrap; }
+
 %hidden-on-phone {
   @include media-query('phone') { display: none; }
 }
@@ -18,8 +25,6 @@
 %text--very-bright { color: $color-dummy--bright; }
 
 %border--big { border-width: $border-width--big; }
-
-%nobr { white-space: nowrap; }
 
 %link--default {
   border-radius: $link-border-radius--default;
