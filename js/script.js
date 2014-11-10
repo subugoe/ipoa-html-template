@@ -2,7 +2,9 @@ $(document).ready(function () {
 
   // footerHide
   footerHideHeight = $('.footer-hide__content').height();
-  $('.footer-hide').css({"height": footerHideHeight + "px"});
+  $('.footer-hide').css(
+    {'height': footerHideHeight + 'px'}
+  );
 
   // nav
   nav = $('.js-nav');
