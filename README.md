@@ -17,7 +17,11 @@ _every grunt task can be used with `-v` to get verbosed output_
 Within this repo it's best practice to lint Sass files. As a result you'll find `scss-lint` in the Gemfile and `.scss-lint.yml` at root.  
 Please set your editor to use the custom config and lint your sass files.
 
-## Frameworks and Libraries
+## Frameworks, Libraries etc.
+
+### [FitText](http://fittextjs.com)
+
+_A jQuery plugin for inflating web type._
 
 ### [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
 

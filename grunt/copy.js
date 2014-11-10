@@ -69,6 +69,11 @@ module.exports = {
   duplicateStyleCSStoStartCss: {
     src: 'css/style.css',
     dest: 'css/start.css'
+  },
+
+  fittextJs: {
+    src: 'bower_components/FitText.js/jquery.fittext.js',
+    dest: 'js/vendor/fittext.js',
   }
 
 };

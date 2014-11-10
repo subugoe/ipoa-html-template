@@ -10,6 +10,7 @@
   - 'copy:headroom'
   - 'copy:headroomJquery'
   - 'copy:html5shiv'
+  - 'copy:fittextJs'
   - 'replace:fontawesomePath'
   - 'replace:firaEot'
   - 'replace:firaWoff'

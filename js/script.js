@@ -22,4 +22,9 @@ $(document).ready(function () {
     }
   });
 
+  // js-responsive-claim-text-size
+  $('.js-responsive-claim-text-size').fitText(
+    2, { maxFontSize: '40px'}
+  );
+
 });
