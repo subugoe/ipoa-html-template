@@ -1,24 +1,34 @@
-main {
+.main {
   @extend %ic-layout;
   @include responsive-content-padding();
-  a {
+}
+
+  .main-picture {
+    @extend .ic-layout__item;
+    @extend .ic-mt;
+  }
+
+    .main-picture__caption {
+      @extend %text--small;
+      @include media-query('desk-and-up') { text-align: right; }
+    }
+
+  .main-link {
     @extend %link--default;
     @extend %link-on-bright;
   }
-  ul { @extend %ul--reset; }
-  > picture {
-    @extend .ic-layout__item;
-    img {  min-width: 100%; }
-  }
-}
+
+  .main-list { @extend %ul--reset; }
 
   .main-heading {
     @extend .ic-layout__item;
     @extend .ic-desk-and-up-three-twelfths;
     @include media-query('desk-and-up') { text-align: right; }
+    line-height: round($inuit-base-line-height / 0.65);
   }
 
   .main-textblock {
     @extend .ic-layout__item;
     @extend .ic-desk-and-up-nine-twelfths;
   }
+

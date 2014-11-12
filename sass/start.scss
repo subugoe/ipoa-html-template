@@ -8,16 +8,16 @@
     background-color: $color-dummy--dark;
   }
 
-    .enter__logo {
+    .logo {
       @extend .ic-layout__item;
       @extend .ic-tablet-and-up-one-half;
       @extend .ic-layout--center;
-      img { max-width: 250px; }
+      .image { max-width: 250px; }
       margin: 10vh 0 0;
       @include media-query('tablet-and-up') { text-align: right; }
     }
 
-    .enter__title {
+    .title {
       @extend .ic-layout__item;
       @extend .ic-tablet-and-up-one-half;
       @extend .ic-layout--center;
@@ -31,7 +31,7 @@
       }
     }
 
-    main {
+    .main {
       @extend %ic-layout__item;
       @extend %ic-layout--center;
       background-color: $color-dummy--dark;

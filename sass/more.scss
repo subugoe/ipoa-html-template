@@ -8,17 +8,18 @@
     @extend .ic-notebook-and-up-one-quarter;
     @extend .ic-pt+;
     @extend .ic-pb+;
-    p {
-      a {
-        @extend %link--default;
-        @extend %link-on-bright;
-      }
-    }   
-    ul {
-      @extend %ic-list-bare;
-      a {
-        @extend %link-in-linklist;
-        @extend %link-on-bright;
-      }
-    }
+  }
+
+  .more__col__textblock-link {
+    @extend %link--default;
+    @extend %link-on-bright;
+  }
+
+  .more__col__list {
+    @extend %ic-list-bare;
+  }
+
+  .more__col__list-link {
+    @extend %link-in-linklist;
+    @extend %link-on-bright;
   }

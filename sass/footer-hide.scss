@@ -24,7 +24,7 @@
   }
 
     /**
-     * no js fallback
+     * no-js fallback
      * don't hide the footer if there is no js available
      */
     .no-js .footer-hide__content {
@@ -44,9 +44,10 @@
     @extend %ic-layout__item;
     @extend %text--tiny;
     @include media-query('notebook-and-up') { text-align: right; }
-    a {
-      @extend %link--default;
-      @extend %nobr;
-      @extend %link-on-bright;
-    }
+  }
+
+  .footer-hide__link {
+    @extend %link--default;
+    @extend %nobr;
+    @extend %link-on-bright;
   }

@@ -1,61 +1,105 @@
-header {
+.head {
   @extend %ic-layout;
   @extend .ic-layout--flush;
   background-color: $color-dummy--dark;
   @include responsive-content-padding();
 }
 
-.head-links {
-  @extend .ic-layout__item;
-  @extend %text--very-bright;
-  @extend .ic-mt-;
-  @include media-query('desk-and-up') { @include push('25%'); }
-  span { @extend %hidden-on-phone; }
-  ul {
-    @extend %ic-list-bare;
-    @extend %ic-list-inline;
-    display: inline;    
+  /**
+   *
+   * [1] NOTE : simulating "@extend .ic-mt+"
+   */
+  .head-links {
+    @extend .ic-layout__item;
+    @extend .ic-smaller-than-tablet-three-fifths;
+    @extend .ic-tablet-and-up-three-quarters;
+    @extend .ic-mt;
+    @extend .ic-layout--right;
+    @extend %text--very-bright;
+    @include media-query('tablet-and-up') {
+      text-align: left;
+      margin-top: double($inuit-base-spacing-unit) !important; // [1]
+    }
   }
-  .language-links { @extend %hidden-on-phone; }
-  a {
-    @extend %link--default;
-    @extend %link-on-dark;
+
+    /**
+     *
+     * [1] NOTE : simulating "@extend .ic-mt+"
+     */
+    .head-menubutton {
+      @extend .ic-layout__item;
+      @extend .ic-smaller-than-tablet-two-fifths;
+      @extend .ic-tablet-and-up-one-quarter;
+      @extend .ic-mt;
+      @extend .ic-pr;
+      @include media-query('tablet-and-up') {
+        text-align: right;
+        margin-top: double($inuit-base-spacing-unit) !important; // [1]
+        padding-right: double($inuit-base-spacing-unit) !important; // [2]
+      }
+      cursor: pointer;
+    }
+
+    .nav__button {
+      @extend .ic-p;
+      text-decoration: none;
+    }
+
+    .head-links__link {
+      @extend %link--default;
+      @extend %link-on-dark;
+    }
+
+    .language-link {
+      @extend %link--default;
+      @extend %link-on-dark;
+    }
+
+    .language-link--active {
+      background-color: $color--brightest;
+      color: $color--darkest;
+    }
+
+    .head-links__list {
+      @extend %ic-list-bare;
+      @extend %ic-list-inline;
+      display: inline;    
+    }
+
+  /**
+   *
+   * [1] NOTE : simulating "@extend .ic-pr"
+   */
+  .head-logo { 
+    @extend .ic-layout__item;
+    @extend .ic-tablet-and-up-one-quarter;
+    @extend .ic-mt\+;
+    text-align: center;
+    .image { width: 250px; }
+    @include media-query('tablet-and-up') {
+      .image { width: 100%; }
+      padding-right: double($inuit-base-spacing-unit) !important; // [1]
+    }
   }
-  .language-link--active {
-    background-color: $color--brightest;
-    color: $color--darkest;
+
+  .head-claim {
+    @extend .ic-layout__item;
+    @extend .ic-tablet-and-up-three-quarters;
+    @extend .ic-mt\+\+;
+    @extend %text--very-bright;
+    @extend %text--huge;
+    letter-spacing: $letter-spacing--large;
+    display: none;
+    @include media-query('tablet-and-up') { display: inline-block; }
   }
-}
 
-.head-logo { 
-  @extend .ic-layout__item;
-  @extend .ic-tablet-and-up-one-quarter;
-  @extend .ic-mt;
-  text-align: center;
-  picture { max-width: 100%; }
-  @include media-query('tablet-and-up') { @extend .ic-pr; }
-}
-
-.head-claim {
-  @extend .ic-layout__item;
-  @extend .ic-tablet-and-up-three-quarters;
-  @extend .ic-mt\+;
-  @extend %text--very-bright;
-  @extend %text--huge;
-  display: none;
-  @include media-query('tablet-and-up') { display: inline-block; }
-}
-
-.head-menu-button {  @extend .ic-layout__item; }
-
-  .no-js .nav__button { display: none; }
-
-.head-pagetitle {
-  @extend .ic-layout__item;
-  @extend %text--large;
-  @extend %text--very-bright;
-  text-align: center;
-  @include media-query('tablet-and-up') { text-align: left; }
-  @include media-query('desk-and-up') { @include push('25%'); }
-  .heading { font-weight: normal; }
-}
+  .head-pagetitle {
+    @extend .ic-layout__item;
+    @extend %text--large;
+    @extend %text--very-bright;
+    text-align: center;
+    letter-spacing: $letter-spacing--larger;
+    @include media-query('tablet-and-up') { text-align: left; }
+    @include media-query('desk-and-up') { @include pushOneQuarter(); }
+    .heading { font-weight: normal; }
+  }

@@ -27,6 +27,7 @@
     "jquery": "~2.1.1",
     "fontawesome": "~4.2.0",
     "html5shiv": "~3.7.2",
-    "FitText.js": "~1.2.0"
+    "FitText.js": "~1.2.0",
+    "inuit-headings": "~0.2.2"
   }
 }

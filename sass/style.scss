@@ -4,6 +4,7 @@
 
 // Settings
 $inuit-base-font-size: 16px;
+$inuit-base-line-height: 24px;
 $inuit-namespace: 'ic-';
 @import '../bower_components/inuit-defaults/settings.defaults';
 @import '../bower_components/inuit-responsive-settings/settings.responsive';
@@ -15,6 +16,7 @@ $breakpoints: (
   'notebook'                    'screen and (min-width: 1024px) and (max-width: 1200px)',
   'desk'                        'screen and (min-width: 1201px)',
   'huge'                        'screen and (min-width: 1401px)',
+  'ridiculous'                  'screen and (min-width: 1601px)',
   'smaller-than-tablet'         'screen and (max-width: 767px)',
   'tablet-and-notebook'         'screen and (min-width: 481px) and (max-width: 1200px)',
   'tablet-and-up'               'screen and (min-width: 768px)',
@@ -32,7 +34,13 @@ $breakpoints: (
 @import '../bower_components/inuit-box-sizing/generic.box-sizing';
 
 // Base
+$inuit-heading-size-1: 32px;
+$inuit-heading-size-2: 25px;
+$inuit-heading-size-3: 24px;
+$inuit-heading-size-3: 20px;
 @import '../bower_components/inuit-page/base.page';
+@import '../bower_components/inuit-headings/base.headings';
+
 
 // Objects
 $inuit-enable-layout--center: true;
@@ -44,6 +52,7 @@ $inuit-enable-btn--small: true;
 $inuit-btn-background: none;
 $inuit-btn-border-color: #fff;
 $inuit-btn-radius: 7px;
+$inuit-base-spacing-unit: 20px;
 @import '../bower_components/inuit-layout/objects.layout';
 @import '../bower_components/inuit-tabs/objects.tabs';
 @import '../bower_components/inuit-buttons/objects.buttons';
@@ -73,7 +82,7 @@ $inuit-enable-margins--huge: true;
 
 @import 'var';
 @import 'base';
-@import 'fira';
+// @import 'fira';
 @import 'fontawesome';
 @import 'extend';
 @import 'start';
