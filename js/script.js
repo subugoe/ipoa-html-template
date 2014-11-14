@@ -9,6 +9,15 @@ $(document).ready(function () {
   /**
    *
    */
+  jsHeadLanguageIndicator = $('.js-head-language-indicator');
+  jsHeadLanguageIndicator.click(function() {
+    jsHeadLanguageIndicator.hide();
+    $('.js-head-language-links').show();
+  });
+
+  /**
+   *
+   */
   nav = $('.js-nav');
   navToggleButton = $('.js-nav-toggle-button');
   navToggleButtonIcon = $('.js-menu-button-icon');

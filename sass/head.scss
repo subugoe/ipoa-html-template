@@ -50,21 +50,68 @@
       @extend %link-on-dark;
     }
 
-    .language-link {
-      @extend %link--default;
-      @extend %link-on-dark;
-    }
-
-    .language-link--active {
-      background-color: $color--brightest;
-      color: $color--darkest;
-    }
-
     .head-links__list {
       @extend %ic-list-bare;
       @extend %ic-list-inline;
       display: inline;    
     }
+
+    /**
+     * the block that contains the various links to choose a different language
+     * hidden by default
+     * visible if ___ clicked
+     */
+    .head-language-links {
+      @extend .ic-layout__item;
+      @extend %text--very-bright;
+      @extend .ic-pt;
+      text-align: right;
+      display: none;
+      @include media-query('tablet-and-up') {
+        text-align: left;
+        @include pushOneQuarter();
+      }
+    }
+
+      .no-js .head-language-links {
+        display: block;
+      }
+
+    .head-language-links-icon { padding-left: 8px; }
+
+    /**
+     * The UL that contains the various links to choose a different language
+     */
+    .head-language-links__list {
+      @extend %ic-list-bare;
+      @extend %ic-list-inline;
+      display: inline;
+    }
+
+    /**
+     * A link to choose a different language
+     */
+    .head-language-links__link {
+      @extend %link--default;
+      @extend %link-on-dark;
+    }
+
+      /**
+       * Modifier to indicate a active language (link)
+       */
+      .head-language-link__link--active {
+        background-color: $color--brightest;
+        color: $color--darkest;
+      }
+
+    .head-language-indicator {
+      @extend %link--default;
+      @extend %link-on-dark;
+    }
+
+      .no-js .head-language-indicator {
+        display: none;
+      }
 
   /**
    *

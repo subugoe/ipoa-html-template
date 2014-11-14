@@ -13,16 +13,20 @@ layout: default
         <li><a href="#" title="" class="head-links__link"><i class="fa fa-fw fa-lg fa-home"></i><span class="hidden-on-phone"> Startseite</span></a></li>
         <li><a href="#" title="" class="head-links__link"><i class="fa fa-fw fa-lg fa-info"></i><span class="hidden-on-phone"> Kontakt</span></a></li>
         <li><a href="#" title="" class="head-links__link"><i class="fa fa-fw fa-lg fa-sitemap"></i><span class="hidden-on-phone"> Sitemap</span></a></li>
+        <li><a href="#search" title="" class="head-links__link"><i class="fa fa-fw fa-lg fa-search"></i><span class="hidden-on-phone"> Suche</span></a></li>
       </ul>
-      <a href="#" class="language-link"><i class="fa fa-fw fa-globe fa-lg"></i> DE-DE</a>
-      <!-- <ul class="head-links__list  language-links  hidden-on-phone">
-        <li><a href="#" title="" class="head-links__link">AT-DE</a></li>
-        <li><a href="#" title="" class="head-links__link">AT-EN</a></li>
-        <li><a href="#" title="" class="head-links__link">CH-DE</a></li>
-        <li><a href="#" title="" class="head-links__link">CH-EN</a></li>
-        <li><a href="#" title="" class="head-links__link  language-link--active">DE-DE</a></li>
-        <li><a href="#" title="" class="head-links__link">DE-EN</a></li>
-      </ul> -->
+      <a href="#" class="head-language-indicator js-head-language-indicator" title="Click this to see a list of available languages"><i class="fa fa-fw fa-globe fa-lg"></i> DE-DE</a>
+    </div><!--
+    --><div class="head-language-links js-head-language-links">
+      <i class="fa fa-fw fa-lg fa-globe head-language-links-icon"></i>
+      <ul class="head-language-links__list">
+        <li><a href="#" title="" class="head-language-links__link">AT-DE</a></li>
+        <li><a href="#" title="" class="head-language-links__link">AT-EN</a></li>
+        <li><a href="#" title="" class="head-language-links__link">CH-DE</a></li>
+        <li><a href="#" title="" class="head-language-links__link">CH-EN</a></li>
+        <li><a href="#" title="" class="head-language-links__link  head-language-link__link--active">DE-DE</a></li>
+        <li><a href="#" title="" class="head-language-links__link">DE-EN</a></li>
+      </ul>
     </div><!--
     --><div class="head-logo">
       <picture class="picture">
@@ -175,7 +179,7 @@ layout: default
     </div>
   </div>
 
-  <div class="search">
+  <div class="search" id="search">
     <h2 class="search-heading"><i class="fa fa-fw fa-search"></i> Suche</h2><!--
     --><div class="search-content"><!--
       --><form action="" class="search-form">
