@@ -22,21 +22,6 @@ module.exports = {
     dest: 'js/vendor/jquery.min.map',
   },
 
-  // copy Fira font from bower_components to jekyll source folder
-  fira: {
-    files: [{
-      expand: true,
-      cwd: 'bower_components/fira/',
-      src: ['eot/*', 'otf/*', 'ttf/*', 'woff/*'],
-      dest: 'fonts/fira/'
-    }]
-  },
-
-  firaCss: {
-    src: 'bower_components/fira/fira.css',
-    dest: 'sass/fira.scss',
-  },
-
   headroomJquery: {
     src: 'bower_components/headroom.js/dist/jQuery.headroom.min.js',
     dest: 'js/vendor/headroom.jquery.js',

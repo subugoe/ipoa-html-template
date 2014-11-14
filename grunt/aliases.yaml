@@ -1,8 +1,6 @@
 'initialize':
   - 'copy:picturefill'
   - 'copy:htmlinspector'
-  - 'copy:fira'
-  - 'copy:firaCss'
   - 'copy:jquery'
   - 'copy:jqueryAdditionalFiles'
   - 'copy:fontawesomeCss'
@@ -12,9 +10,6 @@
   - 'copy:html5shiv'
   - 'copy:fittextJs'
   - 'replace:fontawesomePath'
-  - 'replace:firaEot'
-  - 'replace:firaWoff'
-  - 'replace:firaTff'
 
 'devWatch':
   - 'sass'
