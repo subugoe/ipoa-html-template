@@ -1,6 +1,7 @@
 .main {
   @extend %ic-layout;
   @include responsive-content-padding();
+  @extend .ic-pt;
 }
 
   .main-picture {
@@ -10,6 +11,7 @@
 
     .main-picture__caption {
       @extend %text--small;
+      @extend %picture;
       @include media-query('desk-and-up') { text-align: right; }
     }
 
@@ -23,6 +25,7 @@
   .main-heading {
     @extend .ic-layout__item;
     @extend .ic-desk-and-up-three-twelfths;
+    @extend %heading;
     @include media-query('desk-and-up') { text-align: right; }
     line-height: round($inuit-base-line-height / 0.65);
   }
@@ -30,5 +33,6 @@
   .main-textblock {
     @extend .ic-layout__item;
     @extend .ic-desk-and-up-nine-twelfths;
+    @extend %paragraph;
   }
 

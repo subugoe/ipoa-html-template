@@ -80,6 +80,8 @@ $inuit-enable-margins--huge: true;
 
 // end - inuit CSS
 
+$search-theme-dark: true;
+
 @import 'var';
 @import 'base';
 @import 'fontawesome';
@@ -89,5 +91,6 @@ $inuit-enable-margins--huge: true;
 @import 'nav';
 @import 'main';
 @import 'more';
+@import 'search';
 @import 'footer-hide';
 @import 'shame';

@@ -3,11 +3,19 @@
   %#{$name} { @content }
 }
 
-@include class('nobr') { white-space: nowrap; }
-
 @include class('hidden-on-phone') {
   @include media-query('smaller-than-tablet') { display: none !important; }
 }
+
+@include class('nobr') { white-space: nowrap; }
+
+@include class('m--default') { margin: 0 0 round($inuit-base-line-height / 2); }
+
+@include class('picture') { @extend %m--default; }
+
+@include class('form') { @extend %m--default; }
+
+@include class('paragraph') { @extend %m--default; }
 
 @mixin pushOneQuarter() {
   position: relative;
@@ -21,6 +29,8 @@
   @include media-query('desk') { padding: 0 $content-padding--desk; }
   @include media-query('huge') { padding: 0 $content-padding--huge; }
 }
+
+%heading { margin: 0; }
 
 .fa-twitter:before { color: $color-twitter; }
 
