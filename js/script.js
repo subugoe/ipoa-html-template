@@ -1,12 +1,14 @@
 $(document).ready(function () {
 
-  // footerHide
+  /**
+   * footerHide
+   */
   footerHideHeight = $('.footer-hide__content').height();
-  $('.footer-hide').css(
-    {'height': footerHideHeight + 'px'}
-  );
+  $('.footer-hide').css({ 'height': footerHideHeight + 'px' });
 
-  // nav
+  /**
+   *
+   */
   nav = $('.js-nav');
   navToggleButton = $('.js-nav-toggle-button');
   navToggleButtonIcon = $('.js-menu-button-icon');
@@ -24,9 +26,9 @@ $(document).ready(function () {
     }
   });
 
-  // js-responsive-claim-text-size
-  $('.js-responsive-claim-text-size').fitText(
-    2, { maxFontSize: '40px'}
-  );
+  /**
+   * JS to make the font-size of the claim shown in the header larger
+   */
+  $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
 
 });
