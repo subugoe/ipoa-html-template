@@ -1,14 +1,14 @@
 /**
- *
+ * TODO : add documentation
  */
 .main {
   @extend %ic-layout;
-  @include responsive-content-padding();
   @extend .ic-pt;
+  @include responsive-content-padding();
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .main__picture {
   @extend %ic-layout__item;
@@ -17,7 +17,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .main__caption {
   @extend %text--small;
@@ -26,7 +26,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .main__link {
   @extend %link--default;
@@ -34,12 +34,12 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .main__list { @extend %ul--reset; }
 
 /**
- *
+ * TODO : add documentation
  */
 .main__heading {
   @extend %ic-layout__item;
@@ -50,7 +50,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .main__textblock {
   @extend %ic-layout__item;

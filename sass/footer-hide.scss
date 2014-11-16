@@ -1,5 +1,5 @@
 /**
- *
+ * TODO : add documentation
  */
 .footer-hide {
   @extend %ic-layout;
@@ -8,7 +8,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .footer-hide__helper {
   position: relative;
@@ -17,7 +17,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .footer-hide__content {
   @include responsive-content-padding();
@@ -29,6 +29,8 @@
 }
 
   /**
+   * TODO : add documentation
+   * 
    * no-js fallback
    * don't hide the footer if there is no js available
    */
@@ -40,7 +42,7 @@
   }
 
 /**
- *
+ * TODO : add documentation
  */
 .footer-hide__column {
   @extend %ic-layout__item;
@@ -49,7 +51,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .footer-hide__tracking {
   @extend %ic-layout__item;
@@ -58,7 +60,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .footer-hide__link {
   @extend %link--default;

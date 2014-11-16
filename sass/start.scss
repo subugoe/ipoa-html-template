@@ -1,23 +1,23 @@
 /**
- *
+ * TODO : add documentation
  */
 .start {
-  background-color: $color-dummy--dark;
+  background-color: $color--darkest;
   height: 100vh;
   min-height: 100%;
 
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__header {
   @extend %ic-layout;
-  background-color: $color-dummy--dark;
+  background-color: $color--darkest;
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__logo {
   @extend %ic-layout__item;
@@ -29,7 +29,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__title {
   @extend %ic-layout__item;
@@ -46,30 +46,30 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__main {
   @extend %ic-layout__item;
   @extend %ic-layout--center;
-  background-color: $color-dummy--dark;
+  background-color: $color--darkest;
   padding: 2vh 0 0;
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__navigation { @extend %ic-layout--center; }
 
 /**
- *
+ * TODO : add documentation
  */
-.start__navigation-button {
+.start__button {
   @extend %ic-btn;
   @extend %border--big;
   @extend %text--large;
   @extend %text--bold;
-  background-color: $color-dummy--bright;
-  color: $color-dummy--dark;
+  background-color: $color--brightest;
+  color: $color--darkest;
   margin: 5px;
   &:hover, 
   &:active,
@@ -80,7 +80,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__footer {
   @extend %ic-layout;
@@ -88,16 +88,16 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__footer-content {
-  background-color: $color-dummy--dark;
+  background-color: $color--darkest;
   width: 100vw;
   padding: 5vh 0 0;
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__list {
   @extend %ic-layout--center;
@@ -106,7 +106,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .start__link {
   @extend %link--default;

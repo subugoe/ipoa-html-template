@@ -18,21 +18,21 @@ $(document).ready(function () {
   /**
    *
    */
-  nav = $('.js-nav');
-  navToggleButton = $('.js-nav-toggle-button');
-  navToggleButtonIcon = $('.js-menu-button-icon');
-  $(navToggleButton).click(function() {
+  menu = $('.js-menu');
+  menuToggleButton = $('.js-menu-toggle-button');
+  menuToggleButtonIcon = $('.js-menu-button-icon');
+  $(menuToggleButton).click(function() {
     event.preventDefault();
-    if (navToggleButton.hasClass('js-active')) {
-      $(navToggleButton).removeClass('js-active');
-      $(navToggleButtonIcon).removeClass('fa-times');
-      $(navToggleButtonIcon).addClass('fa-bars');
-      $(nav).slideUp();
+    if (menuToggleButton.hasClass('js-active')) {
+      $(menuToggleButton).removeClass('js-active');
+      $(menuToggleButtonIcon).removeClass('fa-times');
+      $(menuToggleButtonIcon).addClass('fa-bars');
+      $(menu).slideUp();
     } else {
-      $(navToggleButton).addClass('js-active');
-      $(navToggleButtonIcon).removeClass('fa-bars');
-      $(navToggleButtonIcon).addClass('fa-times');
-      $(nav).slideDown();
+      $(menuToggleButton).addClass('js-active');
+      $(menuToggleButtonIcon).removeClass('fa-bars');
+      $(menuToggleButtonIcon).addClass('fa-times');
+      $(menu).slideDown();
     }
   });
 

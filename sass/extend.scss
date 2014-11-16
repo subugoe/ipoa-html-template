@@ -1,27 +1,54 @@
+/**
+ * TODO : add documentation
+ */
 @mixin class($name) {
   .#{$name},
   %#{$name} { @content }
 }
 
+/**
+ * TODO : add documentation
+ */
 @include class('hidden-on-phone') {
   @include media-query('smaller-than-tablet') { display: none !important; }
 }
 
+/**
+ * TODO : add documentation
+ */
 @include class('nobr') { white-space: nowrap; }
 
+/**
+ * TODO : add documentation
+ */
 @include class('m--default') { margin: 0 0 round($inuit-base-line-height / 2); }
 
+/**
+ * TODO : add documentation
+ */
 @include class('picture') { @extend %m--default; }
 
+/**
+ * TODO : add documentation
+ */
 @include class('form') { @extend %m--default; }
 
+/**
+ * TODO : add documentation
+ */
 @include class('paragraph') { @extend %m--default; }
 
+/**
+ * TODO : add documentation
+ */
 @mixin pushOneQuarter() {
   position: relative;
   transform: translateX(25%);
 }
 
+/**
+ * TODO : add documentation
+ */
 @mixin responsive-content-padding() {
   padding: 0 $content-padding--phone;
   @include media-query('tablet') { padding: 0 $content-padding--tablet; }
@@ -30,31 +57,67 @@
   @include media-query('huge') { padding: 0 $content-padding--huge; }
 }
 
+/**
+ * TODO : add documentation
+ */
 %heading { margin: 0; }
 
+/**
+ * TODO : add documentation
+ */
 .fa-twitter:before { color: $color-twitter; }
 
+/**
+ * TODO : add documentation
+ */
 .fa-facebook:before { color: $color-facebook; }
 
+/**
+ * TODO : add documentation
+ */
 %ul--reset {
   margin: 0;
   padding-left: 15px;
 }
 
+/**
+ * TODO : add documentation
+ */
 %text--huge { font-size: ($inuit-base-font-size / 16px) * $factor-text--huge; }
 
+/**
+ * TODO : add documentation
+ */
 %text--large { font-size: ($inuit-base-font-size / 16px) * $factor-text--large; }
 
+/**
+ * TODO : add documentation
+ */
 %text--small { font-size: ($inuit-base-font-size / 16px) * $factor-text--small; }
 
+/**
+ * TODO : add documentation
+ */
 %text--tiny { font-size: ($inuit-base-font-size / 16px) * $factor-text--tiny; }
 
+/**
+ * TODO : add documentation
+ */
 %text--bold { font-weight: bold; }
 
+/**
+ * TODO : add documentation
+ */
 %text--very-bright { color: $color--brightest; }
 
+/**
+ * TODO : add documentation
+ */
 %border--big { border-width: $border-width--big; }
 
+/**
+ * TODO : add documentation
+ */
 %link--default {
   border-radius: $link-border-radius--default;
   padding: $link-padding--default;
@@ -62,6 +125,9 @@
   transition: all $transition-time--default ease;
 }
 
+/**
+ * TODO : add documentation
+ */
 %link-in-linklist {
   transition: all $transition-time--default ease;
   display: block;
@@ -78,15 +144,21 @@
   }
 }
 
+/**
+ * TODO : add documentation
+ */
 %link-in-linklist--dense { margin: 0; }
 
+/**
+ * TODO : add documentation
+ */
 %link-on-bright {
   color: $color--darkest;
   background-color: lighten($color-ipoa-green, 60.3%);
   &:hover,
   &:focus {
     background-color: $color-ipoa-green;
-    color: #fff;
+    color: $color--brightest;
   }
   &:active {
     background-color: $color-ipoa-yellow;
@@ -94,6 +166,9 @@
   }
 }
 
+/**
+ * TODO : add documentation
+ */
 %link-on-dark {
   color: $color--brightest;
   &:hover,

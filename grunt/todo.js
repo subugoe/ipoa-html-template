@@ -2,7 +2,8 @@ module.exports = {
   todo: {
     options: {},
     src: [
-      '_site/*'
+      '_site/*',
+      'sass/*'
     ]
   }
 };

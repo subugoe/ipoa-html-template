@@ -1,7 +1,7 @@
 /**
- *
+ * TODO : add documentation
  */
-.content .navigation {
+.menu {
   @extend %ic-layout;
   @extend .ic-mt;
   @extend .ic-mb;
@@ -10,62 +10,76 @@
 }
 
   /**
-   *
+   * TODO : add documentation
+   * 
+   * JS Fallback
+   * always show the menu if user has no JS.
    */
-  .no-js .navigation { display: block; }
+  .no-js .menu { display: block; }
 
 /**
- *
+  * TODO : add documentation
  */
-.nav__button {
+.menu__button {
+  @extend .ic-p-;
   border-radius: $border-radius--large;
   background: transparent;
   border: $border-width--default solid $color--brightest;
   color: $color--brightest;
+  text-decoration: none;
+  &:hover {
+    background-color: $color--brightest;
+    color: $color--darkest;
+  }
+  &:active {
+    background-color: $color-ipoa-yellow;
+    color: $color-ipoa-green;
+    border-color: $color-ipoa-green;
+  }
 }
 
 /**
- *
- */  
-.content .nav__button { @extend .ic-p-; }
+ * TODO : add documentation
+ */
+.menu__column {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-one-half;
+  @extend .ic-notebook-and-up-one-quarter;
+  @extend .ic-pb-;
+}
+
+/**
+ * TODO : add documentation
+ */
+.menu__list { @extend %ic-list-bare; }
+
+/**
+ * TODO : add documentation
+ * 
+ * define how links in the menu appear
+ */
+.menu__link {
+  @extend %link-in-linklist;
+  @extend %link-in-linklist--dense;
+  color: $color--darkest;
+  &:hover {
+    color: $color--brightest;
+    background: $color-ipoa-green;
+  }
+  &:active,
+  &:focus {
+    color: $color--darkest;
+    background: $color-ipoa-yellow; 
+  }
+}
 
   /**
-   *
+   * TODO : add documentation
+   * 
+   * define how a menu link looks like if the page the link would lead to is 
+   * the current page
    */
-  .navigation__column {
-    @extend %ic-layout__item;
-    @extend .ic-tablet-one-half;
-    @extend .ic-notebook-and-up-one-quarter;
-    @extend .ic-pb-;
+  .menu__link--active {
+    color: $color--darkest;
+    background: $color-ipoa-yellow; 
   }
-
-    /**
-     *
-     */
-    .navigation__list { @extend %ic-list-bare; }
-
-      /**
-       *
-       */
-      .navigation__link {
-        @extend %link-in-linklist;
-        @extend %link-in-linklist--dense;
-        color: $color--darkest;
-        &:hover {
-          color: $color--brightest;
-          background: $color-ipoa-green;
-        }
-        &:active,
-        &:focus {
-          color: $color--darkest;
-          background: $color-ipoa-yellow; 
-        }
-      }
-
-        /**
-         *
-         */
-        .navigation__link--active {
-          color: $color--darkest;
-          background: $color-ipoa-yellow; 
-        }

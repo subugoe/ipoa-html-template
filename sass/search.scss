@@ -1,5 +1,5 @@
 /**
- *
+ * TODO : add documentation
  */
 .search {
   @extend %ic-layout;
@@ -9,7 +9,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .search__heading {
   @extend %ic-layout__item;
@@ -21,7 +21,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .search__content {
   @extend %ic-layout__item;
@@ -30,7 +30,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .search__form {
   @extend %form;
@@ -39,7 +39,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .search__field {
   @extend %m--default;
@@ -52,7 +52,7 @@
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .search__input {
   width: 100%;
@@ -68,7 +68,10 @@
 }
 
 /**
- * [1] Note : NOTE : simulating "@extend .ic-pl"
+ * TODO : add documentation
+ * 
+ * [1,3,5] simulating "@extend .ic-pl"
+ * [2,4] FIXME : dirty number
  */
 .search__submit {
   @extend %m--default;
@@ -78,19 +81,19 @@
     width: 50%;
     padding-left: $inuit-base-spacing-unit !important; // [1]
   }
-  @include media-query('tablet-portrait') { width: 27%; }
+  @include media-query('tablet-portrait') { width: 27%; } // [2]
   @include media-query('notebook') {
     width: 50%;
-    padding-left: $inuit-base-spacing-unit !important; // [1]
+    padding-left: $inuit-base-spacing-unit !important; // [3]
   }
   @include media-query('desk') {
-    width: 34.25%;
-    padding-left: $inuit-base-spacing-unit !important; // [1]
+    width: 34.25%; // [4]
+    padding-left: $inuit-base-spacing-unit !important; // [5]
   }
 }
 
 /**
- *
+ * TODO : add documentation
  */
 .search__button {
   width: 100%;
