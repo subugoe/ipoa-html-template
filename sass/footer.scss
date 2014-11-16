@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+// .footer { }
+
+.footer__content {
+  @extend %ic-layout;
+  @include responsive-content-padding();
+}
+
+/**
+ * TODO : add documentation
+ */
+.footer__column {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-one-half;
+  @extend .ic-notebook-and-up-one-quarter;
+}
+
+/**
+ * TODO : add documentation
+ */
+.footer__tracking {
+  @extend %ic-layout__item;
+  @extend %text--tiny;
+  @include media-query('notebook-and-up') { text-align: right; }
+}
+
+/**
+ * TODO : add documentation
+ */
+.footer__list { @extend %ic-list-bare; }
+
+/**
+ * TODO : add documentation
+ */
+.footer__link {
+  @extend %link--default;
+  @extend %link-on-bright;
+}
+
+  /**
+   * TODO : add documentation
+   */
+  .footer__link--in-list { @extend %link-in-linklist; }
+
+  /**
+   * TODO : add documentation
+   */
+  .footer__link--in-textblock { @extend %link--default; }

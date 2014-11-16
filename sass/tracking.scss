@@ -1,0 +1,25 @@
+/**
+ * TODO : add documentation
+ */
+.tracking {
+  @extend %ic-layout;
+  @include responsive-content-padding();
+}
+
+/**
+ * TODO : add documentation
+ */
+.tracking__content {
+  @extend %ic-layout__item;
+  @extend %text--tiny;
+  @include media-query('notebook-and-up') { text-align: right; }
+}
+
+/**
+ * TODO : add documentation
+ */
+.tracking__link {
+  @extend %link--default;
+  @extend %link-on-bright;
+  @extend %nobr;
+}

@@ -3,9 +3,10 @@
  */
 .menu {
   @extend %ic-layout;
-  @extend .ic-mt;
-  @extend .ic-mb;
+  @extend .ic-pt;
+  @extend .ic-pb;
   display: none;
+  // background-color: lighten($color-ipoa-yellow, 40%);
   @include responsive-content-padding();
 }
 

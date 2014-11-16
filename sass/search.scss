@@ -1,11 +1,12 @@
 /**
  * TODO : add documentation
  */
-.search {
+.search { @if $search-theme-dark { background-color: $color--darkest; } }
+
+.search__content {
   @extend %ic-layout;
   @extend .ic-pt;
   @include responsive-content-padding();
-  @if $search-theme-dark { background-color: $color--darkest; }
 }
 
 /**
@@ -23,7 +24,7 @@
 /**
  * TODO : add documentation
  */
-.search__content {
+.search__enter {
   @extend %ic-layout__item;
   @extend .ic-desk-and-up-three-quarters;
   @if $search-theme-dark { color: $color--brightest; }

@@ -1,0 +1,44 @@
+/**
+ * TODO : add documentation
+ */
+.last {
+  @extend %ic-layout;
+  @extend .ic-pt;
+  @extend .ic-pb;
+  @extend %text--very-bright;
+  @include responsive-content-padding();
+  background-color: $color--darkest;
+}
+
+/**
+ * TODO : add documentation
+ */
+.last__block1 {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-and-up-one-half;
+}
+
+/**
+ * TODO : add documentation
+ */
+.last__block2 {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-and-up-one-half;
+  @include media-query('tablet-and-up') { text-align: right; }
+}
+
+/**
+ * TODO : add documentation
+ */
+.last__list {
+  @extend %ic-list-bare;
+  @extend %ic-list-inline;
+}
+
+/**
+ * TODO : add documentation
+ */
+.last__link {
+  @extend %link--default;
+  @extend %link-on-dark;
+}

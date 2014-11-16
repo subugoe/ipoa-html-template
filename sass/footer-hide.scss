@@ -2,7 +2,6 @@
  * TODO : add documentation
  */
 .footer-hide {
-  @extend %ic-layout;
   position: relative;
   z-index: 0;
 }
@@ -20,7 +19,6 @@
  * TODO : add documentation
  */
 .footer-hide__content {
-  @include responsive-content-padding();
   @include media-query('notebook-and-up') {
     position: fixed;
     z-index: -1;
@@ -40,50 +38,3 @@
       z-index: 0;
     }
   }
-
-/**
- * TODO : add documentation
- */
-.footer-hide__column {
-  @extend %ic-layout__item;
-  @extend .ic-tablet-one-half;
-  @extend .ic-notebook-and-up-one-quarter;
-}
-
-/**
- * TODO : add documentation
- */
-.footer-hide__tracking {
-  @extend %ic-layout__item;
-  @extend %text--tiny;
-  @include media-query('notebook-and-up') { text-align: right; }
-}
-
-/**
- * TODO : add documentation
- */
-.footer-hide__link {
-  @extend %link--default;
-  @extend %link-on-bright;
-  @extend %nobr;
-}
-
-/**
- * TODO : add documentation
- */
-.footer__list { @extend %ic-list-bare; }
-
-/**
- * TODO : add documentation
- */
-.footer__link { @extend %link-on-bright; }
-
-  /**
-   * TODO : add documentation
-   */
-  .footer__link--in-list { @extend %link-in-linklist; }
-
-  /**
-   * TODO : add documentation
-   */
-  .footer__link--in-textblock { @extend %link--default; }
