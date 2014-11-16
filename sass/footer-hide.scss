@@ -67,3 +67,23 @@
   @extend %link-on-bright;
   @extend %nobr;
 }
+
+/**
+ * TODO : add documentation
+ */
+.footer__list { @extend %ic-list-bare; }
+
+/**
+ * TODO : add documentation
+ */
+.footer__link { @extend %link-on-bright; }
+
+  /**
+   * TODO : add documentation
+   */
+  .footer__link--in-list { @extend %link-in-linklist; }
+
+  /**
+   * TODO : add documentation
+   */
+  .footer__link--in-textblock { @extend %link--default; }
