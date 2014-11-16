@@ -9,7 +9,7 @@
    *
    * [1] NOTE : simulating "@extend .ic-mt+"
    */
-  .head-links {
+  .head__links {
     @extend .ic-layout__item;
     @extend .ic-smaller-than-tablet-three-fifths;
     @extend .ic-tablet-and-up-three-quarters;
@@ -26,7 +26,7 @@
      *
      * [1] NOTE : simulating "@extend .ic-mt+"
      */
-    .head-menubutton {
+    .head__menubutton {
       @extend .ic-layout__item;
       @extend .ic-smaller-than-tablet-two-fifths;
       @extend .ic-tablet-and-up-one-quarter;
@@ -45,12 +45,12 @@
       text-decoration: none;
     }
 
-    .head-links__link {
+    .head_links__link {
       @extend %link--default;
       @extend %link-on-dark;
     }
 
-    .head-links__list {
+    .head_links__list {
       @extend %ic-list-bare;
       @extend %ic-list-inline;
       display: inline;    
@@ -61,7 +61,7 @@
      * hidden by default
      * visible if ___ clicked
      */
-    .head-language-links {
+    .head_language__links {
       @extend .ic-layout__item;
       @extend %text--very-bright;
       @extend .ic-pt;
@@ -73,16 +73,18 @@
       }
     }
 
-      .no-js .head-language-links {
-        display: block;
-      }
+      .no-js .head_language__links { display: block; }
 
-    .head-language-links-icon { padding-left: 8px; }
+    /**
+     * align language icon with those above
+     * FIX : dirty numbers
+     */
+    .head_language_links__icon { padding-left: 8px; }
 
     /**
      * The UL that contains the various links to choose a different language
      */
-    .head-language-links__list {
+    .head_language_links__list {
       @extend %ic-list-bare;
       @extend %ic-list-inline;
       display: inline;
@@ -91,7 +93,7 @@
     /**
      * A link to choose a different language
      */
-    .head-language-links__link {
+    .head_language_links__link {
       @extend %link--default;
       @extend %link-on-dark;
     }
@@ -99,25 +101,23 @@
       /**
        * Modifier to indicate a active language (link)
        */
-      .head-language-link__link--active {
+      .head_language-link__link--active {
         background-color: $color--brightest;
         color: $color--darkest;
       }
 
-    .head-language-indicator {
+    .head_language__indicator {
       @extend %link--default;
       @extend %link-on-dark;
     }
 
-      .no-js .head-language-indicator {
-        display: none;
-      }
+      .no-js .head_language__indicator { display: none; }
 
   /**
    *
    * [1] NOTE : simulating "@extend .ic-pr"
    */
-  .head-logo { 
+  .head__logo { 
     @extend .ic-layout__item;
     @extend .ic-tablet-and-up-one-quarter;
     @extend .ic-mt\+;
@@ -129,7 +129,7 @@
     }
   }
 
-  .head-claim {
+  .head__claim {
     @extend .ic-layout__item;
     @extend .ic-tablet-and-up-three-quarters;
     @extend .ic-mt\+\+;
@@ -140,7 +140,7 @@
     @include media-query('tablet-and-up') { display: inline-block; }
   }
 
-  .head-pagetitle {
+  .head__pagetitle {
     @extend .ic-layout__item;
     @extend %text--large;
     @extend %text--very-bright;

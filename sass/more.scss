@@ -2,7 +2,7 @@
   @extend %ic-layout;
   @include responsive-content-padding();
 }
-  .more__col {
+  .more__column {
     @extend %ic-layout__item;
     @extend .ic-tablet-one-half;
     @extend .ic-notebook-and-up-one-quarter;
@@ -10,16 +10,16 @@
     @extend .ic-pb+;
   }
 
-  .more__col__textblock-link {
-    @extend %link--default;
-    @extend %link-on-bright;
-  }
+    .more_column__list {
+      @extend %ic-list-bare;
+    }
 
-  .more__col__list {
-    @extend %ic-list-bare;
-  }
+      .more_column_list__link {
+        @extend %link-in-linklist;
+        @extend %link-on-bright;
+      }
 
-  .more__col__list-link {
-    @extend %link-in-linklist;
-    @extend %link-on-bright;
-  }
+    .more__col__textblock-link {
+      @extend %link--default;
+      @extend %link-on-bright;
+    }

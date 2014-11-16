@@ -4,33 +4,34 @@
   @extend .ic-pt;
 }
 
-  .main-picture {
+  .main__picture {
     @extend .ic-layout__item;
     @extend .ic-mt;
+    @extend %picture;
   }
 
-    .main-picture__caption {
+    .main_picture__caption {
       @extend %text--small;
       @extend %picture;
       @include media-query('desk-and-up') { text-align: right; }
     }
 
-  .main-link {
+  .main__link {
     @extend %link--default;
     @extend %link-on-bright;
   }
 
-  .main-list { @extend %ul--reset; }
+  .main__list { @extend %ul--reset; }
 
-  .main-heading {
+  .main__heading {
     @extend .ic-layout__item;
     @extend .ic-desk-and-up-three-twelfths;
     @extend %heading;
     @include media-query('desk-and-up') { text-align: right; }
-    line-height: round($inuit-base-line-height / 0.65);
+    line-height: round($inuit-base-line-height / .65);
   }
 
-  .main-textblock {
+  .main__textblock {
     @extend .ic-layout__item;
     @extend .ic-desk-and-up-nine-twelfths;
     @extend %paragraph;

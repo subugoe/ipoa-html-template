@@ -17,16 +17,16 @@
 
   .content .nav__button { @extend .ic-p-; }
 
-  .nav__col {
+  .navigation__column {
     @extend %ic-layout__item;
     @extend .ic-tablet-one-half;
     @extend .ic-notebook-and-up-one-quarter;
     @extend .ic-pb-;
   }
 
-    .nav__col__list { @extend %ic-list-bare; }
+    .navigation_column__list { @extend %ic-list-bare; }
 
-      .nav__col__list-link {
+      .navigation_column_list__link {
         @extend %link-in-linklist;
         @extend %link-in-linklist--dense;
         color: $color--darkest;
@@ -41,7 +41,7 @@
         }
       }
 
-      .nav__col__list-link--active {
-        color: $color--darkest;
-        background: $color-ipoa-yellow; 
-      }
+        .navigation_column_list__link--active {
+          color: $color--darkest;
+          background: $color-ipoa-yellow; 
+        }
