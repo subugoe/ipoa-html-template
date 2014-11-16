@@ -1,25 +1,38 @@
+/**
+ *
+ */
 .more {
   @extend %ic-layout;
   @include responsive-content-padding();
 }
-  .more__column {
-    @extend %ic-layout__item;
-    @extend .ic-tablet-one-half;
-    @extend .ic-notebook-and-up-one-quarter;
-    @extend .ic-pt+;
-    @extend .ic-pb+;
-  }
 
-    .more_column__list {
-      @extend %ic-list-bare;
-    }
+/**
+ *
+ */
+.more__column {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-one-half;
+  @extend .ic-notebook-and-up-one-quarter;
+  @extend .ic-pt+;
+  @extend .ic-pb+;
+}
 
-      .more_column_list__link {
-        @extend %link-in-linklist;
-        @extend %link-on-bright;
-      }
+/**
+ *
+ */
+.more__list { @extend %ic-list-bare; }
 
-    .more__col__textblock-link {
-      @extend %link--default;
-      @extend %link-on-bright;
-    }
+/**
+ *
+ */
+.more__link { @extend %link-on-bright; }
+
+  /**
+   *
+   */
+  .more__link--in-list { @extend %link-in-linklist; }
+
+  /**
+   *
+   */
+  .more__link--in-textblock { @extend %link--default; }

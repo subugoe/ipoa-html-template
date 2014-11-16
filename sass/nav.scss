@@ -1,3 +1,6 @@
+/**
+ *
+ */
 .content .navigation {
   @extend %ic-layout;
   @extend .ic-mt;
@@ -6,17 +9,29 @@
   @include responsive-content-padding();
 }
 
+  /**
+   *
+   */
   .no-js .navigation { display: block; }
 
-  .nav__button {
-    border-radius: $border-radius--large;
-    background: transparent;
-    border: $border-width--default solid $color--brightest;
-    color: $color--brightest;
-  }
+/**
+ *
+ */
+.nav__button {
+  border-radius: $border-radius--large;
+  background: transparent;
+  border: $border-width--default solid $color--brightest;
+  color: $color--brightest;
+}
 
-  .content .nav__button { @extend .ic-p-; }
+/**
+ *
+ */  
+.content .nav__button { @extend .ic-p-; }
 
+  /**
+   *
+   */
   .navigation__column {
     @extend %ic-layout__item;
     @extend .ic-tablet-one-half;
@@ -24,9 +39,15 @@
     @extend .ic-pb-;
   }
 
-    .navigation_column__list { @extend %ic-list-bare; }
+    /**
+     *
+     */
+    .navigation__list { @extend %ic-list-bare; }
 
-      .navigation_column_list__link {
+      /**
+       *
+       */
+      .navigation__link {
         @extend %link-in-linklist;
         @extend %link-in-linklist--dense;
         color: $color--darkest;
@@ -41,7 +62,10 @@
         }
       }
 
-        .navigation_column_list__link--active {
+        /**
+         *
+         */
+        .navigation__link--active {
           color: $color--darkest;
           background: $color-ipoa-yellow; 
         }

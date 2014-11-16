@@ -22,6 +22,7 @@ $(document).ready(function () {
   navToggleButton = $('.js-nav-toggle-button');
   navToggleButtonIcon = $('.js-menu-button-icon');
   $(navToggleButton).click(function() {
+    event.preventDefault();
     if (navToggleButton.hasClass('js-active')) {
       $(navToggleButton).removeClass('js-active');
       $(navToggleButtonIcon).removeClass('fa-times');

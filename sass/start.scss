@@ -1,3 +1,6 @@
+/**
+ *
+ */
 .start {
   background-color: $color-dummy--dark;
   height: 100vh;
@@ -5,93 +8,107 @@
 
 }
 
-  .start__header {
-    @extend %ic-layout;
-    background-color: $color-dummy--dark;
+/**
+ *
+ */
+.start__header {
+  @extend %ic-layout;
+  background-color: $color-dummy--dark;
+}
+
+/**
+ *
+ */
+.start__logo {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-and-up-one-half;
+  @extend .ic-layout--center;
+  .image { max-width: 250px; }
+  margin: 10vh 0 0;
+  @include media-query('tablet-and-up') { text-align: right; }
+}
+
+/**
+ *
+ */
+.start__title {
+  @extend %ic-layout__item;
+  @extend .ic-tablet-and-up-one-half;
+  @extend .ic-layout--center;
+  @extend %text--very-bright;
+  @extend %text--large;
+  display: none;
+  @include media-query('tablet-and-up') {
+    display: inline-block;
+    text-align: left;
+    padding: 10vh 0 0 3vh;
   }
+}
 
-    .start_header__logo {
-      @extend .ic-layout__item;
-      @extend .ic-tablet-and-up-one-half;
-      @extend .ic-layout--center;
-      .image { max-width: 250px; }
-      margin: 10vh 0 0;
-      @include media-query('tablet-and-up') { text-align: right; }
-    }
+/**
+ *
+ */
+.start__main {
+  @extend %ic-layout__item;
+  @extend %ic-layout--center;
+  background-color: $color-dummy--dark;
+  padding: 2vh 0 0;
+}
 
-    .start_header__title {
-      @extend .ic-layout__item;
-      @extend .ic-tablet-and-up-one-half;
-      @extend .ic-layout--center;
-      @extend %text--very-bright;
-      @extend %text--large;
-      display: none;
-      @include media-query('tablet-and-up') {
-        display: inline-block;
-        text-align: left;
-        padding: 10vh 0 0 3vh;
-      }
-    }
+/**
+ *
+ */
+.start__navigation { @extend %ic-layout--center; }
 
-  .start__main {
-    @extend %ic-layout__item;
-    @extend %ic-layout--center;
-    background-color: $color-dummy--dark;
-    padding: 2vh 0 0;
+/**
+ *
+ */
+.start__navigation-button {
+  @extend %ic-btn;
+  @extend %border--big;
+  @extend %text--large;
+  @extend %text--bold;
+  background-color: $color-dummy--bright;
+  color: $color-dummy--dark;
+  margin: 5px;
+  &:hover, 
+  &:active,
+  &:focus {
+    background-color: $color--brightest;
+    color: $color--darkest; 
   }
+}
 
-    .start_main__navigation {
-      @extend %ic-layout--center;
-    }
+/**
+ *
+ */
+.start__footer {
+  @extend %ic-layout;
+  @extend %ic-layout--flush;
+}
 
-      .start_main_navigation__button {
-        @extend %ic-btn;
-        @extend %border--big;
-        @extend %text--large;
-        @extend %text--bold;
-        background-color: $color-dummy--bright;
-        color: $color-dummy--dark;
-        margin: 5px;
-        &:hover, 
-        &:active,
-        &:focus {
-          background-color: $color--brightest;
-          color: $color--darkest; 
-        }
-      }
+/**
+ *
+ */
+.start__footer-content {
+  background-color: $color-dummy--dark;
+  width: 100vw;
+  padding: 5vh 0 0;
+}
 
+/**
+ *
+ */
+.start__list {
+  @extend %ic-layout--center;
+  @extend %ic-list-bare;
+  @extend %ic-list-inline;
+}
 
-  .start__footer {
-    @extend %ic-layout;
-    @extend %ic-layout--flush;
-  }
-
-    .start_footer__content {
-      background-color: $color-dummy--dark;
-      width: 100vw;
-      padding: 5vh 0 0;
-    }
-
-      .start_footer_content__linklist {
-        @extend %ic-layout--center;
-        @extend %ic-list-bare;
-        @extend %ic-list-inline;
-        @extend %text--very-bright;
-        @extend %text--small;
-      }
-
-        .start_footer_content_linklist__item {
-          border-radius: $link-border-radius--default;
-          transition: all $transition-time--default ease;
-          &:hover { background-color: $color-dummy--bright; }
-          &:active { background-color: $color--brightest; }
-        }
-
-        .start_footer_content_linklist__link {
-          @extend %link--default;
-          color: $color-dummy--bright;
-          &:hover { color: $color-dummy--dark; }
-          &:active { color: $color--darkest; }
-        }
-
-
+/**
+ *
+ */
+.start__link {
+  @extend %link--default;
+  @extend %link-on-dark;
+}

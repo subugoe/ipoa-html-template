@@ -1,39 +1,59 @@
+/**
+ *
+ */
 .main {
   @extend %ic-layout;
   @include responsive-content-padding();
   @extend .ic-pt;
 }
 
-  .main__picture {
-    @extend .ic-layout__item;
-    @extend .ic-mt;
-    @extend %picture;
-  }
+/**
+ *
+ */
+.main__picture {
+  @extend %ic-layout__item;
+  @extend .ic-mt;
+  @extend %picture;
+}
 
-    .main_picture__caption {
-      @extend %text--small;
-      @extend %picture;
-      @include media-query('desk-and-up') { text-align: right; }
-    }
+/**
+ *
+ */
+.main__caption {
+  @extend %text--small;
+  @extend %picture;
+  @include media-query('desk-and-up') { text-align: right; }
+}
 
-  .main__link {
-    @extend %link--default;
-    @extend %link-on-bright;
-  }
+/**
+ *
+ */
+.main__link {
+  @extend %link--default;
+  @extend %link-on-bright;
+}
 
-  .main__list { @extend %ul--reset; }
+/**
+ *
+ */
+.main__list { @extend %ul--reset; }
 
-  .main__heading {
-    @extend .ic-layout__item;
-    @extend .ic-desk-and-up-three-twelfths;
-    @extend %heading;
-    @include media-query('desk-and-up') { text-align: right; }
-    line-height: round($inuit-base-line-height / .65);
-  }
+/**
+ *
+ */
+.main__heading {
+  @extend %ic-layout__item;
+  @extend .ic-desk-and-up-three-twelfths;
+  @extend %heading;
+  @include media-query('desk-and-up') { text-align: right; }
+  line-height: round($inuit-base-line-height / .65);
+}
 
-  .main__textblock {
-    @extend .ic-layout__item;
-    @extend .ic-desk-and-up-nine-twelfths;
-    @extend %paragraph;
-  }
-
+/**
+ *
+ */
+.main__textblock {
+  @extend %ic-layout__item;
+  @extend .ic-desk-and-up-nine-twelfths;
+  @extend %paragraph;
+}

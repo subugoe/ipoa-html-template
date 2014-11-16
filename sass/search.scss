@@ -1,3 +1,6 @@
+/**
+ *
+ */
 .search {
   @extend %ic-layout;
   @extend .ic-pt;
@@ -5,85 +8,103 @@
   @if $search-theme-dark { background-color: $color--darkest; }
 }
 
-  .search__heading {
-    @extend .ic-layout__item;
-    @extend .ic-desk-and-up-one-quarter;
-    @extend %heading;
-    @include media-query('desk-and-up') { text-align: right; }
-    line-height: round($inuit-base-line-height / .65);
-    @if $search-theme-dark { color: $color--brightest; }
+/**
+ *
+ */
+.search__heading {
+  @extend %ic-layout__item;
+  @extend .ic-desk-and-up-one-quarter;
+  @extend %heading;
+  @include media-query('desk-and-up') { text-align: right; }
+  line-height: round($inuit-base-line-height / .65);
+  @if $search-theme-dark { color: $color--brightest; }
+}
+
+/**
+ *
+ */
+.search__content {
+  @extend %ic-layout__item;
+  @extend .ic-desk-and-up-three-quarters;
+  @if $search-theme-dark { color: $color--brightest; }
+}
+
+/**
+ *
+ */
+.search__form {
+  @extend %form;
+  display: inline;
+  width: 100%;
+}
+
+/**
+ *
+ */
+.search__field {
+  @extend %m--default;
+  display: inline-block;
+  width: 100%;
+  @include media-query('tablet') {            width: 48%; }
+  @include media-query('tablet-portrait') {   width: 73%; }
+  @include media-query('notebook') {          width: 50%; }
+  @include media-query('desk') {              width: 65.75%; }
+}
+
+/**
+ *
+ */
+.search__input {
+  width: 100%;
+  padding: round($inuit-base-spacing-unit / 2);
+  border-radius: $link-border-radius--default;
+  background: none;
+  border: $border-width--default solid $color--darkest;
+  @if $search-theme-dark {
+    background-color: $color--brightest;
+    border-color: $color--brightest;
+    color: $color--darkest;
   }
+}
 
-  .search__content {
-    @extend .ic-layout__item;
-    @extend .ic-desk-and-up-three-quarters;
-    @if $search-theme-dark { color: $color--brightest; }
+/**
+ * [1] Note : NOTE : simulating "@extend .ic-pl"
+ */
+.search__submit {
+  @extend %m--default;
+  display: inline-block;
+  width: 100%;
+  @include media-query('tablet') {
+    width: 50%;
+    padding-left: $inuit-base-spacing-unit !important; // [1]
   }
-
-  .search__form {
-    @extend %form;
-    display: inline;
-    width: 100%;
+  @include media-query('tablet-portrait') { width: 27%; }
+  @include media-query('notebook') {
+    width: 50%;
+    padding-left: $inuit-base-spacing-unit !important; // [1]
   }
+  @include media-query('desk') {
+    width: 34.25%;
+    padding-left: $inuit-base-spacing-unit !important; // [1]
+  }
+}
 
-    .search_form__field {
-      @extend %m--default;
-      display: inline-block;
-      width: 100%;
-      @include media-query('tablet') {            width: 48%; }
-      @include media-query('tablet-portrait') {   width: 73%; }
-      @include media-query('notebook') {          width: 50%; }
-      @include media-query('desk') {              width: 65.75%; }
-    }
-
-      .search_form_field__input {
-        width: 100%;
-        padding: round($inuit-base-spacing-unit / 2);
-        border-radius: $link-border-radius--default;
-        background: none;
-        border: $border-width--default solid $color--darkest;
-        @if $search-theme-dark {
-          background-color: $color--brightest;
-          border-color: $color--brightest;
-          color: $color--darkest;
-        }
-      }
-
-    /**
-     * [1] Note : NOTE : simulating "@extend .ic-pl"
-     */
-    .search_form__submit {
-      @extend %m--default;
-      display: inline-block;
-      width: 100%;
-      @include media-query('tablet') {
-        width: 50%;
-        padding-left: $inuit-base-spacing-unit !important; // [1]
-      }
-      @include media-query('tablet-portrait') { width: 27%; }
-      @include media-query('notebook') {
-        width: 50%;
-        padding-left: $inuit-base-spacing-unit !important; // [1]
-      }
-      @include media-query('desk') {
-        width: 34.25%;
-        padding-left: $inuit-base-spacing-unit !important; // [1]
-      }
-    }
-
-      .search_form_submit__button {
-        width: 100%;
-        padding: round($inuit-base-spacing-unit / 2);
-        border-radius: $link-border-radius--default;
-        background-color: $color-ipoa-green;
-        font-weight: bold;
-        color: $color--brightest;
-        letter-spacing: $letter-spacing--large;
-        border: $border-width--default solid $color-ipoa-green;
-        @if $search-theme-dark { border-color: $color--brightest; }
-        &:hover {
-          background-color: $color-ipoa-yellow;
-          color: $color--darkest;
-          border: $border-width--default solid $color-ipoa-yellow;
-        }
-      }
+/**
+ *
+ */
+.search__button {
+  width: 100%;
+  padding: round($inuit-base-spacing-unit / 2);
+  border-radius: $link-border-radius--default;
+  background-color: $color-ipoa-green;
+  font-weight: bold;
+  color: $color--brightest;
+  letter-spacing: $letter-spacing--large;
+  border: $border-width--default solid $color-ipoa-green;
+  @if $search-theme-dark { border-color: $color--brightest; }
+  &:hover {
+    background-color: $color-ipoa-yellow;
+    color: $color--darkest;
+    border: $border-width--default solid $color-ipoa-yellow;
+  }
+}
