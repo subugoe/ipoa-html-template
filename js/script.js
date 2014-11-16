@@ -1,6 +1,11 @@
+/**
+ * TODO : add documentation
+ */
 $(document).ready(function () {
 
   /**
+   * TODO : add documentation
+   * 
    * footerHide
    */
   footerHideHeight = $('.footer-hide__content').height();
@@ -16,7 +21,7 @@ $(document).ready(function () {
   });
 
   /**
-   *
+   * TODO : add documentation
    */
   menu = $('.js-menu');
   menuToggleButton = $('.js-menu-toggle-button');
@@ -37,6 +42,7 @@ $(document).ready(function () {
   });
 
   /**
+   * TODO : add documentation
    * JS to make the font-size of the claim shown in the header larger
    */
   $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
