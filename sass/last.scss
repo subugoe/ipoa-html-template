@@ -3,9 +3,10 @@
  */
 .last {
   @extend %ic-layout;
-  @extend .ic-pt;
-  @extend .ic-pb;
+  @extend .ic-pt-;
+  @extend .ic-pb-;
   @extend %text--very-bright;
+  @extend %text--tiny;
   @include responsive-content-padding();
   background-color: $color--darkest;
 }

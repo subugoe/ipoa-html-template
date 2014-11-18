@@ -4,7 +4,7 @@
 .head {
   @extend %ic-layout;
   @extend .ic-layout--flush;
-  background-color: $color--darkest;
+  background-color: rgba(37, 37, 37, .85);
   @include responsive-content-padding();
 }
 
@@ -32,6 +32,7 @@
 .head__link {
   @extend %link--default;
   @extend %link-on-dark;
+  @extend %nobr;
 }
 
   /**
@@ -156,3 +157,34 @@
   @include media-query('tablet-and-up') { text-align: left; }
   @include media-query('desk-and-up') { @include pushOneQuarter(); } // [1]
 }
+
+/**
+ * TODO : add documentation
+ */
+.js-head--unpinned {
+  .head__links { @extend .ic-mt; }
+  .head__menubutton { @extend .ic-mt; }
+  .head__logo { 
+    @extend .ic-mt\+;
+    @include media-query('tablet-and-up') { text-align: right; }
+  }    
+  .image {
+    width: 25%;
+    @include media-query(tablet-and-up) { width: 50%; }
+  }
+  .head__claim { 
+    @extend .ic-mt\+;
+    font-size: 22px !important;
+  }
+  .heading--alpha { margin: quarter($inuit-base-line-height) !important; }
+}
+
+/**
+ * TODO : add documentation
+ */
+.headroom { position: fixed; }
+
+/**
+ * TODO : add documentation
+ */
+.no-js .headroom { position: relative; }

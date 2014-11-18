@@ -60,7 +60,15 @@
 /**
  * TODO : add documentation
  */
-%heading { margin: 0; }
+@include class('heading') { margin: 0; }
+@include class('heading--alpha') { 
+  @extend %heading;
+  margin: $inuit-base-line-height 0;
+}
+@include class('heading--gamma') {
+  @extend %heading;
+  margin: ($inuit-base-line-height / 2) 0;
+}
 
 /**
  * TODO : add documentation

@@ -4,7 +4,7 @@ layout: default
 ---
 <div class="footer-hide__helper" id="top">
 
-  <header class="head">
+  <header class="head js-head headroom">
     <div class="head__menubutton">
       <a class="menu__button js-menu-toggle-button" href="#menu"><i class="fa fa-fw fa-lg fa-bars js-menu-button-icon"></i>Menu</a>
     </div><!--
@@ -40,9 +40,11 @@ layout: default
       Der freie Zugang zu<br><span class="nobr">wissenschaftlicher Information</span>
     </div><!--
     --><div class="head__pagetitle">
-      <h1 class="heading">Allgemeine Informationen</h1>
+      <h1 class="heading heading--alpha">Allgemeine Informationen</h1>
     </div>
   </header>
+
+<div class="headroom__helper">
 
   <!-- Nav -->
   <nav class="menu js-menu" role="navigation" id="menu">
@@ -161,11 +163,11 @@ layout: default
 
   <div class="more">
     <div class="more__column">
-      <h3>Allgemeines</h3>
+      <h3 class="heading--gamma">Allgemeines</h3>
       <p class="paragraph">Lorem ipsum, <a href="#" title="" class="more__link more__link--in-textblock">consectetur adipiscing</a> elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.</p>
     </div><!--
     --><div class="more__column">
-      <h3>Allgemeines</h3>
+      <h3 class="heading--gamma">Allgemeines</h3>
       <p class="paragraph">Lorem ipsum dolor sit amut.</p>
       <ul class="more__list">
         <li><a href="#" title="" class="more__link more__link--in-list">Gründe und Vorbehalten</a></li>
@@ -176,7 +178,7 @@ layout: default
       <p class="paragraph">Lorem ipsum dolor sit amut.</p>
     </div><!--
     --><div class="more__column">
-      <h3>News</h3>
+      <h3 class="heading--gamma">News</h3>
       <ul class="more__list">
         <li><a href="#" title="" class="more__link more__link--in-list">MWK Baden-Württemberg veröffentlicht Konzeptpapier zu E-Science<br>03.09.2014</a></li>
         <li><a href="#" title="" class="more__link more__link--in-list">Berliner Abgeordnetenhaus beschließt Anschub einer Open-Access-Strategie<br>12.08.2014</a></li>
@@ -186,7 +188,7 @@ layout: default
       </ul>
     </div><!--
     --><div class="more__column">
-      <h3>Connect!</h3>
+      <h3 class="heading--gamma">Connect!</h3>
       <p class="paragraph">Open Access in sozialen Netzwerken</p>
       <p class="paragraph"><i class="fa fa-fw fa-lg fa-twitter"></i><a href="#" title="Informationsplattform Open Access auf Twitter" class="more__link more__link--in-textblock">Twitter</a>, <i class="fa fa-fw fa-lg fa-facebook"></i><a href="#" title="Informationsplattform Open Access auf Facebook" class="more__link more__link--in-textblock">Facebook</a></p>
     </div>
@@ -208,19 +210,23 @@ layout: default
     </div>
   </div>
 
-</div>
+
+</div><!-- END: headroom__helper -->
+
+</div><!-- END: footer-hide__helper -->
 
 <div class="footer-hide">
+
   <div class="footer-hide__content">
 
     <div class="footer">
       <div class="footer__content">
         <div class="footer__column">
-          <h3>Lorem ipsum dolor sit amut.</h3>
+          <h3 class="heading--gamma">Lorem ipsum dolor sit amut.</h3>
           {% include 1-dummy-p.html %}
         </div><!--
         --><div class="footer__column">
-          <h3>Projektpartner</h3>
+          <h3 class="heading--gamma">Projektpartner</h3>
           <ul class="footer__list">
             <li><a href="#" title="" class="footer__link footer__link--in-list">Freie Universität Berlin</a></li>
             <li><a href="#" title="" class="footer__link footer__link--in-list">Universität Bielefeld</a></li>
@@ -229,17 +235,15 @@ layout: default
           </ul>
         </div><!--
         --><div class="footer__column">
-          <h3>Lorem ipsum dolor sit amut.</h3>
+          <h3 class="heading--gamma">Lorem ipsum dolor sit amut.</h3>
           <p>Yes! You're not comfortable with your sexuality? Oh, I'm very comfortable with my sexuality, I just don't want to be slapped in the face with their sexuality. Lorem <a href="" title="" class="footer__link footer__link--in-textblock">ipsum</a> dolor sit amut. I'm an idiot and I dont care about anyone but myself. P.S. No dogs! You can come down here any time and I'll be waiting for you! [slams down phone] That told her!</p>
         </div><!--
         --><div class="footer__column">
-          <h3>Lorem ipsum dolor sit amut.</h3>
+          <h3 class="heading--gamma">Lorem ipsum dolor sit amut.</h3>
           {% include 1-dummy-p.html %}
         </div>
       </div>
     </div>
-
-    
 
     <div class="tracking">
       <div class="tracking__content">
@@ -247,6 +251,6 @@ layout: default
       </div>
     </div>
 
-  </div>
+  </div><!-- footer-hide__content -->
 
-</div>
+</div><!-- END footer-hide -->
