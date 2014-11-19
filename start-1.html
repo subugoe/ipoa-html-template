@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+NOTE : set lang via CMS related to the actual page language
+-->
+<html lang="de" class="no-js">
+<head>
+  <!--
+  NOTE : have a look at HTML 5 Boilerplate for stuff that makes sense in the context of this project
+  -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Start-1 | ipoa-html-mockup</title>
+  <link rel="stylesheet" type="text/css" href="css/start.css" />
+  <!--
+  NOTE : js detection. Reference: http://www.paulirish.com/2009/avoiding-the-fouc-v3/
+  -->
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  <script src="js/vendor/picturefill.js" async></script>
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body class="body Start-1">
+
+<!-- start page -->
+
+<div class="start">
+
+  <header class="start__header" role="banner">
+  	<div class="start__logo">
+      <picture class="">
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="img/logo_250.png, img/logo_500.png 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img src="img/logo_250.png" srcset="img/logo_250.png, img/logo_500.png 2x" alt="" class="image">
+      </picture>
+  	</div><!--
+  	--><div class="start__title">
+  		<h1>Open Access</h1>
+  		Der freie Zugang zu<br>wissenschaftlicher Information
+  	</div>
+  </header><!--
+  --><main role="start__main" class="main">
+    <nav class="start__navigation">
+      <!--
+      NOTE : Set the actual accesskeys to the first character of the button name
+      -->
+      <button class="start__button" tabindex="1" accesskey="a" role="link" autofocus>Allgemeine Informationen</button>
+      <button class="start__button" tabindex="2" accesskey="w" role="link">Wissenswertes für...</button>
+  	  <button class="start__button" tabindex="3" accesskey="o" role="link">OA in verschiedenen Fächern</button>
+    </nav>
+  </main>
+  <footer role="contentinfo" class="start__footer">
+    <div class="start__footer-content">
+    	<ul class="start__list">
+    		<li><a href="#" title="Über uns" class="start__link"><i class="fa fa-fw fa-lg fa-smile-o"></i> Über uns</a></li>
+    		<li><a href="#" title="Kontakt" class="start__link"><i class="fa fa-fw fa-lg fa-info"></i> Kontakt</a></li>
+        <li><a href="#" title="Impressum" class="start__link"><i class="fa fa-fw fa-lg fa-legal"></i> Impressum</a></li>
+    	</ul>
+    </div>
+  </footer>
+
+</div>
+
+<!-- end page -->
+
+<!-- JS includes -->
+
+</body>
+</html>
