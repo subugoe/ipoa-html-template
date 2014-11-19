@@ -59,6 +59,15 @@ module.exports = {
   fittextJs: {
     src: 'bower_components/FitText.js/jquery.fittext.js',
     dest: 'js/vendor/fittext.js',
+  },
+
+  ghpages: {
+    files: [{
+      expand: true,
+      cwd: '_site/',
+      src: ['**'],
+      dest: '../ipoa-html-template-gh-pages/'
+    }],
   }
 
 };

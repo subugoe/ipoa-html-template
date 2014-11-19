@@ -28,3 +28,10 @@
   - 'sass'
   - 'autoprefixer'
   - 'copy:duplicateStyleCSStoStartCss'
+
+'deploy':
+  - 'copy:ghpages'
+  - 'uncss:start'
+  - 'uncss:style'
+  - 'cssmin:start'
+  - 'cssmin:style'

@@ -1,6 +1,6 @@
 {
   "name": "ipoa-html-mockup",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "private": true,
   "dependencies": {
     "grunt": "~0.4.1",
