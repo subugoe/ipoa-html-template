@@ -7,14 +7,21 @@
 }
 
 /**
- * TODO : add documentation
+ * hidden-on-phone
+ * what it does: hides stuff from phones
+ * how to use it: either as @extend in Sass or in HTML to 
  */
 @include class('hidden-on-phone') {
   @include media-query('smaller-than-tablet') { display: none !important; }
 }
 
 /**
- * TODO : add documentation
+ * nobr
+ * 
+ * what it does: prevents the browser to add a break / new line if there is not 
+ * enough space to dislay things like long words
+ * 
+ * how to use it: either as @extend in Sass or in HTML to 
  */
 @include class('nobr') { white-space: nowrap; }
 
@@ -63,7 +70,10 @@
 @include class('heading') { margin: 0; }
 @include class('heading--alpha') { 
   @extend %heading;
-  margin: $inuit-base-line-height 0;
+  margin: ($inuit-base-line-height / 2) 0;
+  @include media-query('tablet-and-up') {
+    margin: $inuit-base-line-height 0;
+  }
 }
 @include class('heading--gamma') {
   @extend %heading;

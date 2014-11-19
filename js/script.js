@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * let's start jQuery stuff
  */
 $(document).ready(function () {
 
@@ -55,10 +55,14 @@ $(document).ready(function () {
 
   /**
    * TODO : add documentation
+   * 
    * JS to make the font-size of the claim shown in the header larger
    */
   headHeight = $('.js-head').height();
-  $('.headroom__helper').css({"padding-top": headHeight + "px"});
+  windowWidth = $(window).width();
+  if (windowWidth > 767) {
+    $('.headroom__helper').css({"padding-top": headHeight + "px"});
+  }
   $('.js-head').headroom({
     offset : headHeight,
     classes : {
@@ -71,7 +75,6 @@ $(document).ready(function () {
   });
 
   /**
-   * TODO : add documentation
    * JS to make the font-size of the claim shown in the header larger
    */
   $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );

@@ -118,11 +118,15 @@
 .head__logo { 
   @extend %ic-layout__item;
   @extend .ic-tablet-and-up-one-quarter;
-  @extend .ic-mt\+;
+  @extend .ic-mt;
   text-align: center;
-  .image { width: 250px; }
+  .image { width: 150px; }
   @include media-query('tablet-and-up') {
-    .image { width: 100%; }
+    .image {
+      width: 250px;
+      width: 100%;
+    }
+    @extend .ic-mt\+;
     padding-right: double($inuit-base-spacing-unit) !important; // [1]
   }
 }
@@ -161,6 +165,9 @@
 /**
  * TODO : add documentation
  */
+ @include media-query('tablet-and-up') {
+
+ 
 .js-head--unpinned {
   .head__links { @extend .ic-mt; }
   .head__menubutton { @extend .ic-mt; }
@@ -178,11 +185,14 @@
   }
   .heading--alpha { margin: quarter($inuit-base-line-height) !important; }
 }
+}
 
 /**
  * TODO : add documentation
  */
-.headroom { position: fixed; }
+.headroom {
+  @include media-query('tablet-and-up') { position: fixed; }
+}
 
 /**
  * TODO : add documentation
