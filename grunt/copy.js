@@ -32,20 +32,6 @@ module.exports = {
     dest: 'js/vendor/headroom.js',
   },
 
-  fontawesomeCss: {
-    src: 'bower_components/fontawesome/css/font-awesome.css',
-    dest: 'sass/fontawesome.scss',
-  },
-
-  fontawesomeFont: {
-    files: [{
-      expand: true,
-      cwd: 'bower_components/fontawesome/fonts/',
-      src: ['*'],
-      dest: 'fonts/fontawesome/'
-    }]
-  },
-
   html5shiv: {
     src: 'bower_components/html5shiv/dist/html5shiv.js',
     dest: 'js/vendor/html5shiv.js',

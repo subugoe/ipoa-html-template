@@ -6,19 +6,19 @@ layout: default
 
   <header class="head js-head headroom">
     <div class="head__menubutton">
-      <a class="menu__button js-menu-toggle-button" href="#menu"><i class="fa fa-fw fa-lg fa-bars js-menu-button-icon"></i>Menu</a>
+      <a class="menu__button js-menu-toggle-button" href="#menu">{% include icon-bars.html %} Menu</a>
     </div><!--
     --><div class="head__links">
       <ul class="head__list">
-        <li><a href="#" title="" class="head__link"><i class="fa fa-fw fa-lg fa-home"></i><span class="hidden-on-phone"> Startseite</span></a></li>
-        <li><a href="#" title="" class="head__link"><i class="fa fa-fw fa-lg fa-info"></i><span class="hidden-on-phone"> Kontakt</span></a></li>
-        <li><a href="#" title="" class="head__link"><i class="fa fa-fw fa-lg fa-sitemap"></i><span class="hidden-on-phone"> Sitemap</span></a></li>
-        <li><a href="#search" title="" class="head__link head__language-indicator"><i class="fa fa-fw fa-lg fa-search"></i><span class="hidden-on-phone"> Suche</span></a></li>
+        <li><a href="#" title="" class="head__link">{% include icon-home.html %}<span class="hidden-on-phone"> Startseite</span></a></li>
+        <li><a href="#" title="" class="head__link">{% include icon-info.html %}<span class="hidden-on-phone"> Kontakt</span></a></li>
+        <li><a href="#" title="" class="head__link">{% include icon-sitemap.html %}<span class="hidden-on-phone"> Sitemap</span></a></li>
+        <li><a href="#search" title="" class="head__link head__language-indicator">{% include icon-search.html %}<span class="hidden-on-phone"> Suche</span></a></li>
       </ul>
-      <a href="#" class="head__link js-head-language-indicator" title="Click this to see a list of available languages"><i class="fa fa-fw fa-globe fa-lg"></i> DE-DE</a>
+      <a href="#" class="head__link js-head-language-indicator" title="Click this to see a list of available languages">{% include icon-globe.html %} DE-DE</a>
     </div><!--
     --><div class="head__language-links js-head-language-links">
-      <i class="fa fa-fw fa-lg fa-globe language-icon--push-right-in-header"></i>
+      {% include icon-globe.html %}
       <ul class="head__list">
         <li><a href="#" title="" class="head__link">AT-DE</a></li>
         <li><a href="#" title="" class="head__link">AT-EN</a></li>
@@ -247,9 +247,10 @@ layout: default
 
     <div class="tracking">
       <div class="tracking__content">
-        <p>Diese Webseite erfasst anonymisierte Daten zur Nutzung. Sie können dies für die Dauer ihres Besuchs unterbinden, indem sie folgenden Link klicken: <a href="#" class="tracking__link"><i class="fa fa-fw fa-toggle-on"></i> Nutzungserfassung ausschalten (Opt-Out)</a></p>
+        <p>Diese Webseite erfasst anonymisierte Daten zur Nutzung. Sie können dies für die Dauer ihres Besuchs unterbinden, indem sie folgenden Link klicken: <a href="#" class="tracking__link"></i> Nutzungserfassung ausschalten (Opt-Out)</a></p>
       </div>
     </div>
+
 
   </div><!-- footer-hide__content -->
 

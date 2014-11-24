@@ -111,4 +111,5 @@
 .start__link {
   @extend %link--default;
   @extend %link-on-dark;
+  @extend %link--with-icon-on-dark;
 }

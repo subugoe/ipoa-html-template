@@ -33,6 +33,7 @@
   @extend %link--default;
   @extend %link-on-dark;
   @extend %nobr;
+  @extend %link--with-icon-on-dark;
 }
 
   /**
@@ -69,6 +70,10 @@
     margin-top: double($inuit-base-spacing-unit) !important; // [1]
     padding-right: double($inuit-base-spacing-unit) !important; // [2]
   }
+  g { fill: $color--brightest; }
+  &:hover {
+    g { fill: $color--darkest; }
+  }
 }
 
 /**
@@ -88,6 +93,7 @@
     text-align: left;
     @include pushOneQuarter();
   }
+  g { fill: $color--brightest; }
 }
 
   /**

@@ -41,14 +41,10 @@ $(document).ready(function () {
     if (menuToggleButton.hasClass('js-active')) {
       $('html,body').animate({'scrollTop' : 0},500);
       $(menuToggleButton).removeClass('js-active');
-      $(menuToggleButtonIcon).removeClass('fa-times');
-      $(menuToggleButtonIcon).addClass('fa-bars');
       $(menu).slideUp();
     } else {
       $('html,body').animate({'scrollTop' : 0},500);
       $(menuToggleButton).addClass('js-active');
-      $(menuToggleButtonIcon).removeClass('fa-bars');
-      $(menuToggleButtonIcon).addClass('fa-times');
       $(menu).slideDown();
     }
   });

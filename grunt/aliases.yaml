@@ -3,13 +3,10 @@
   - 'copy:htmlinspector'
   - 'copy:jquery'
   - 'copy:jqueryAdditionalFiles'
-  - 'copy:fontawesomeCss'
-  - 'copy:fontawesomeFont'
   - 'copy:headroom'
   - 'copy:headroomJquery'
   - 'copy:html5shiv'
   - 'copy:fittextJs'
-  - 'replace:fontawesomePath'
 
 'devWatch':
   - 'sass'
