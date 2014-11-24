@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * let's start jQuery stuff
  */
 $(document).ready(function () {
 
@@ -41,24 +41,24 @@ $(document).ready(function () {
     if (menuToggleButton.hasClass('js-active')) {
       $('html,body').animate({'scrollTop' : 0},500);
       $(menuToggleButton).removeClass('js-active');
-      $(menuToggleButtonIcon).removeClass('fa-times');
-      $(menuToggleButtonIcon).addClass('fa-bars');
       $(menu).slideUp();
     } else {
       $('html,body').animate({'scrollTop' : 0},500);
       $(menuToggleButton).addClass('js-active');
-      $(menuToggleButtonIcon).removeClass('fa-bars');
-      $(menuToggleButtonIcon).addClass('fa-times');
       $(menu).slideDown();
     }
   });
 
   /**
    * TODO : add documentation
+   * 
    * JS to make the font-size of the claim shown in the header larger
    */
   headHeight = $('.js-head').height();
-  $('.headroom__helper').css({"padding-top": headHeight + "px"});
+  windowWidth = $(window).width();
+  if (windowWidth > 767) {
+    $('.headroom__helper').css({"padding-top": headHeight + "px"});
+  }
   $('.js-head').headroom({
     offset : headHeight,
     classes : {
@@ -71,7 +71,6 @@ $(document).ready(function () {
   });
 
   /**
-   * TODO : add documentation
    * JS to make the font-size of the claim shown in the header larger
    */
   $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
