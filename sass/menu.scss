@@ -44,8 +44,6 @@
  */
 .menu__column {
   @extend %ic-layout__item;
-  @extend .ic-tablet-one-half;
-  @extend .ic-notebook-and-up-one-quarter;
   @extend .ic-pb-;
 }
 
@@ -84,3 +82,27 @@
     color: $color--darkest;
     background: $color-ipoa-yellow; 
   }
+
+
+/**
+ *
+ */
+.alt-menu {
+  @extend .ic-layout__item;
+  z-index: 99;
+  @extend .ic-pt;
+  @extend .ic-pb;
+  @include responsive-content-padding();
+}
+
+/**
+ *
+ */
+.alt-menu--off-canvas {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  padding: 0;
+  transform: translateX(-100%);
+}
