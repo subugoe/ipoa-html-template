@@ -193,6 +193,7 @@
   &:focus {
     background-color: $color--brightest;
     color: $color--darkest;
+    border: 1px solid $color--darkest;
   }
   &:active {
     background-color: $color-ipoa-yellow;
@@ -203,7 +204,8 @@
 %link--with-icon-on-dark {
   g { fill: $color--brightest; }
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     g { fill: $color--darkest; }
   }
 }

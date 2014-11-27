@@ -74,7 +74,7 @@
   &:hover, 
   &:active,
   &:focus {
-    background-color: $color--brightest;
+    background-color: darken($color--brightest, 15%);
     color: $color--darkest; 
   }
 }
