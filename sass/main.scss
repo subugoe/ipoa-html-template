@@ -56,4 +56,5 @@
   @extend %ic-layout__item;
   @extend .ic-desk-and-up-nine-twelfths;
   @extend %paragraph;
+  p { @extend %m--default; }
 }
