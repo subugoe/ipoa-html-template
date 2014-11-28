@@ -3,6 +3,8 @@
  */
 $(document).ready(function () {
 
+  windowWidth = $(window).width();
+
   /**
    * TODO : add documentation
    */
@@ -49,13 +51,125 @@ $(document).ready(function () {
     }
   });
 
+
+  /**
+   *
+   */
+  altMenu = $('.alt-menu');
+  altMenuToggleButton = $('.js-alt-menu-toggle-button');
+
+  /*
+   * full viewport overlay when <768px width
+   */
+  if (windowWidth <= 767) {
+
+    $('.alt-menu').css({'display': 'none'})
+
+    // when menu button receives click the menu will overlay everything an show
+    // an scrollable menu. Exit the menu by clicking a menu item.
+    $(altMenuToggleButton).click(function() {
+
+      // $('.alt-menu').css({'display': 'block'})
+      
+      $('.alt-menu').css({'display': 'block'})
+
+      $('.footer-hide__helper').css({
+        'margin-left': '100%',
+        'position': 'fixed'
+      })
+      $('.footer-hide').css({
+        'margin-left': '100%',
+        'position': 'fixed'
+      })
+
+    });
+
+  /*
+   * off canvas when >=768px
+   */
+  } else {
+
+    // put the menu off canvas to the left
+    $('.alt-menu').addClass('alt-menu--off-canvas');
+
+    // removes the no js option of columns side by side
+    $('.menu__column').removeClass('ic-tablet-one-half');
+    $('.menu__column').removeClass('ic-notebook-and-up-one-quarter');
+
+    $('.menu__column').css({'padding-right': '24px',});
+
+    $(altMenuToggleButton).click(function() {
+
+      /*
+       *  what to do when menu button gets clicked and menu is already visible
+       */
+      if (altMenuToggleButton.hasClass('js-alt-menu-toggle-button--active')) {
+
+        // remove the '--active' modifier from the menu button
+        altMenuToggleButton.removeClass('js-alt-menu-toggle-button--active');
+
+        // move the menu off canvas
+        $('.alt-menu').css({
+          'transform': 'translateX(-100%)',
+          'transition': '0.25s ease-in-out',
+        });        
+
+        // restablish content stuff to be used as normal again
+        $('.footer-hide__helper').css({
+          'transform': 'translateX(0%)',
+          'transition': '0.25s ease-in-out',
+          'position': 'relative',
+        });
+        $('.footer-hide').css({
+          'transform': 'translateX(0%)',
+          'transition': '0.25s ease-in-out',
+        })
+
+      /*
+       * what to do when menu button gets clicked and menu is not yet visible
+       */
+      } else {
+
+        // add '--active' modifier to the menu button
+        altMenuToggleButton.addClass('js-alt-menu-toggle-button--active');
+
+        // move the menu from off canvas into viewport
+        $('.alt-menu').css({
+          'transform': 'translateX(0%)',
+          'transition': '0.25s ease-in-out',
+        });
+
+        // make the menu content fill the whole left side (top to bottom) and 
+        // let its content scroll
+        $('.alt-menu__content').css({
+          'overflow': 'scroll',
+          'height': '100%',
+        });
+
+        // move the regular content to the right (partly off canvas) and
+        // prevent scrolling
+        $('.footer-hide__helper').css({
+          'transform': 'translateX(30%)',
+          'transition': '0.25s ease-in-out',
+          'position': 'fixed',
+        });
+        $('.footer-hide').css({
+          'transform': 'translateX(30%)',
+          'transition': '0.25s ease-in-out',
+        })
+
+      }
+
+    });
+  };
+
+
   /**
    * TODO : add documentation
    * 
    * JS to make the font-size of the claim shown in the header larger
    */
   headHeight = $('.js-head').height();
-  windowWidth = $(window).width();
   if (windowWidth > 767) {
     $('.headroom__helper').css({"padding-top": headHeight + "px"});
   }
