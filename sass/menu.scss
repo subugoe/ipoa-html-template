@@ -6,13 +6,10 @@
   @extend .ic-pt;
   @extend .ic-pb;
   display: none;
-  // background-color: lighten($color-ipoa-yellow, 40%);
   @include responsive-content-padding();
 }
 
   /**
-   * TODO : add documentation
-   * 
    * JS Fallback
    * always show the menu if user has no JS.
    */
@@ -40,7 +37,8 @@
 }
 
 /**
- * TODO : add documentation
+ * formats every menu section to appear and behave like a column e. g. have many
+ * menu sections side by side in various breakpoint viewports
  */
 .menu__column {
   @extend %ic-layout__item;
@@ -48,13 +46,11 @@
 }
 
 /**
- * TODO : add documentation
+ * formats menu__list to be a list without list-style-type
  */
 .menu__list { @extend %ic-list-bare; }
 
 /**
- * TODO : add documentation
- * 
  * define how links in the menu appear
  */
 .menu__link {
@@ -73,10 +69,8 @@
 }
 
   /**
-   * TODO : add documentation
-   * 
-   * define how a menu link looks like if the page the link would lead to is 
-   * the current page
+   * modifier that defines how a menu link looks like if the page the link would
+   * lead to is the current page
    */
   .menu__link--active {
     color: $color--darkest;
@@ -96,7 +90,7 @@
 }
 
 /**
- *
+ * a modifier that moves the alt-menu off canvas
  */
 .alt-menu--off-canvas {
   position: fixed;
