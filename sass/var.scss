@@ -50,6 +50,12 @@ $border-width--default:           1px;
 $border-width--big:               2px;
 
 /**
+ *
+ */
+$table-cell-padding:              5px;
+$table-uneven-background-color:   lighten($color--darkest, 80%);
+
+/**
  * Content Padding
  */
 $content-padding--phone:          5px;

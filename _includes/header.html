@@ -1,0 +1,39 @@
+<header class="head js-head headroom">
+    <div class="head__menubutton">
+      <a class="menu__button js-menu-toggle-button js-alt-menu-toggle-button" href="#menu">{% include icon-bars.html %} Menu</a>
+    </div><!--
+    --><div class="head__links">
+      <ul class="head__list">
+        <li><a href="#" title="" class="head__link">{% include icon-home.html %}<span class="hidden-on-phone"> Startseite</span></a></li>
+        <li><a href="#" title="" class="head__link">{% include icon-info.html %}<span class="hidden-on-phone"> Kontakt</span></a></li>
+        <li><a href="#" title="" class="head__link">{% include icon-sitemap.html %}<span class="hidden-on-phone"> Sitemap</span></a></li>
+        <li><a href="#search" title="" class="head__link head__language-indicator">{% include icon-search.html %}<span class="hidden-on-phone"> Suche</span></a></li>
+      </ul>
+      <a href="#" class="head__link js-head-language-indicator" title="Click this to see a list of available languages">{% include icon-globe.html %} DE-DE</a>
+    </div><!--
+    --><div class="head__language-links js-head-language-links">
+      {% include icon-globe.html %}
+      <ul class="head__list">
+        <li><a href="#" title="" class="head__link">AT-DE</a></li>
+        <li><a href="#" title="" class="head__link">AT-EN</a></li>
+        <li><a href="#" title="" class="head__link">CH-DE</a></li>
+        <li><a href="#" title="" class="head__link">CH-EN</a></li>
+        <li><a href="#" title="" class="head__link  head__link--active">DE-DE</a></li>
+        <li><a href="#" title="" class="head__link">DE-EN</a></li>
+      </ul>
+    </div><!--
+    --><div class="head__logo">
+      <picture class="picture">
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="img/logo_250.png, img/logo_500.png 2x">
+        <!--[if IE 9]></video><![endif]-->
+        <img src="img/logo_250.png" srcset="img/logo_250.png, img/logo_500.png 2x" alt="Informationsplattform Open Access" class="image">
+      </picture>
+    </div><!--
+    --><div class="head__claim js-responsive-claim-text-size">
+      Der freie Zugang zu<br><span class="nobr">wissenschaftlicher Information</span>
+    </div><!--
+    --><div class="head__pagetitle">
+      <h1 class="heading heading--alpha">Allgemeine Informationen</h1>
+    </div>
+  </header>

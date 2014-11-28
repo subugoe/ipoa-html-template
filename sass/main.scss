@@ -7,6 +7,7 @@
   @include responsive-content-padding();
 }
 
+
 /**
  * TODO : add documentation
  */
@@ -15,6 +16,7 @@
   @extend .ic-mt;
   @extend %picture;
 }
+
 
 /**
  * TODO : add documentation
@@ -25,6 +27,7 @@
   @include media-query('desk-and-up') { text-align: right; }
 }
 
+
 /**
  * TODO : add documentation
  */
@@ -33,10 +36,6 @@
   @extend %link-on-bright;
 }
 
-/**
- * TODO : add documentation
- */
-.main__list { @extend %ul--reset; }
 
 /**
  * TODO : add documentation
@@ -49,6 +48,7 @@
   line-height: round($inuit-base-line-height / .65);
 }
 
+
 /**
  * TODO : add documentation
  */
@@ -57,4 +57,23 @@
   @extend .ic-desk-and-up-nine-twelfths;
   @extend %paragraph;
   p { @extend %m--default; }
+  ul { @extend %ul--reset; }
+}
+
+/**
+ * TODO : add documentation
+ */
+.main__table {
+  @extend %ic-layout__item;
+  @extend .ic-desk-and-up-nine-twelfths;
+  @extend %paragraph;
+  @extend %m--default;
+  table { width: 100%; }
+  caption {
+    text-align: left;
+    @extend %m--default;
+  }
+  thead { border-bottom: 1px solid $color--darkest; }
+  td { padding: $table-cell-padding; }
+  .uneven { background-color: $table-uneven-background-color }
 }
