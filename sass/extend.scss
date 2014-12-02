@@ -138,6 +138,7 @@
  */
 %link--default {
   border-radius: $link-border-radius--default;
+  border: 1px solid transparent;
   padding: $link-padding--default;
   text-decoration: none;
   transition: all $transition-time--default ease;
@@ -151,21 +152,19 @@
   display: block;
   border-radius: $link-border-radius--default;
   text-decoration: none;
-  padding: $link-padding--small $link-padding--small $link-padding--small 15px;
-  margin: 0 0 5px;
+  padding: $link-padding--small;
+  margin: 0 0 .3em .7em;
   &:before {
-    content: '\f105';
+    content: '';
     display: inline-block;
-    font-family: 'FontAwesome';
-    margin-left: -10px;
-    margin-right: 5px;
+    height: 1em;
+    width: 1em;
+    background-image:url('../img/angle-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px;
   }
 }
-
-/**
- * TODO : add documentation
- */
-%link-in-linklist--dense { margin: 0; }
 
 /**
  * TODO : add documentation
@@ -202,10 +201,10 @@
 }
 
 %link--with-icon-on-dark {
-  g { fill: $color--brightest; }
+  .fa-icon { @extend .fa-icon-on-dark; }
   &:hover,
   &:active,
   &:focus {
-    g { fill: $color--darkest; }
+    .fa-icon { @extend .fa-icon-on-bright; }
   }
 }

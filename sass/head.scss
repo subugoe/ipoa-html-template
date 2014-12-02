@@ -64,15 +64,16 @@
   @extend .ic-tablet-and-up-one-quarter;
   @extend .ic-mt;
   @extend %ic-pr;
+  @extend .fa-icon-on-dark;
   cursor: pointer;
   @include media-query('tablet-and-up') {
     text-align: right;
     margin-top: double($inuit-base-spacing-unit) !important; // [1]
     padding-right: double($inuit-base-spacing-unit) !important; // [2]
   }
-  g { fill: $color--brightest; }
+  svg { fill: $color--brightest; }
   &:hover {
-    g { fill: $color--darkest; }
+    svg { fill: $color--darkest; }
   }
 }
 

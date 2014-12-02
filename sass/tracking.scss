@@ -22,4 +22,10 @@
   @extend %link--default;
   @extend %link-on-bright;
   @extend %nobr;
+  &:hover {
+    svg {
+      color: $color--brightest;
+      fill: currentColor;
+    }
+  }
 }
