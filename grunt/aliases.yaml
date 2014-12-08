@@ -29,6 +29,5 @@
 'deploy':
   - 'copy:ghpages'
   - 'uncss:start'
-  - 'uncss:style'
   - 'cssmin:start'
   - 'cssmin:style'
