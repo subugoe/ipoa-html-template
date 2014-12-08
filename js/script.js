@@ -35,21 +35,22 @@ $(document).ready(function () {
   /**
    * TODO : add documentation
    */
-  menu = $('.js-menu');
-  menuToggleButton = $('.js-menu-toggle-button');
-  menuToggleButtonIcon = $('.js-menu-button-icon');
-  $(menuToggleButton).click(function() {
-    event.preventDefault();
-    if (menuToggleButton.hasClass('js-active')) {
-      $('html,body').animate({'scrollTop' : 0},500);
-      $(menuToggleButton).removeClass('js-active');
-      $(menu).slideUp();
-    } else {
-      $('html,body').animate({'scrollTop' : 0},500);
-      $(menuToggleButton).addClass('js-active');
-      $(menu).slideDown();
-    }
-  });
+  // menu = $('.js-menu');
+  // menuToggleButton = $('.js-menu-toggle-button');
+  // menuToggleButtonIcon = $('.js-menu-button-icon');
+  // $(menuToggleButton).click(function(event) {
+  //   if (menuToggleButton.hasClass('js-active')) {
+  //     $('html,body').animate({'scrollTop' : 0},500);
+  //     $(menuToggleButton).removeClass('js-active');
+  //     $(menu).slideUp();
+  //   } else {
+  //     $('html,body').animate({'scrollTop' : 0},500);
+  //     $(menuToggleButton).addClass('js-active');
+  //     $(menu).slideDown();
+  //   }
+  //   event.preventDefault();
+  // });
+
 
 
   /**
@@ -111,17 +112,23 @@ $(document).ready(function () {
         // move the menu off canvas
         $('.alt-menu').css({
           'transform': 'translateX(-100%)',
+          '-webkit-transform': 'translateX(-100%)',
+          '-ms-transform': 'translateX(-100%)',
           'transition': '0.25s ease-in-out',
         });        
 
         // restablish content stuff to be used as normal again
         $('.footer-hide__helper').css({
           'transform': 'translateX(0%)',
+          '-webkit-transform': 'translateX(0%)',
+          '-ms-transform': 'translateX(0%)',
           'transition': '0.25s ease-in-out',
           'position': 'relative',
         });
         $('.footer-hide').css({
           'transform': 'translateX(0%)',
+          '-webkit-transform': 'translateX(0%)',
+          '-ms-transform': 'translateX(0%)',
           'transition': '0.25s ease-in-out',
         })
 
@@ -136,6 +143,8 @@ $(document).ready(function () {
         // move the menu from off canvas into viewport
         $('.alt-menu').css({
           'transform': 'translateX(0%)',
+          '-webkit-transform': 'translateX(0%)',
+          '-ms-transform': 'translateX(0%)',
           'transition': '0.25s ease-in-out',
         });
 
@@ -150,11 +159,15 @@ $(document).ready(function () {
         // prevent scrolling
         $('.footer-hide__helper').css({
           'transform': 'translateX(30%)',
+          '-webkit-transform': 'translateX(30%)',
+          '-ms-transform': 'translateX(30%)',
           'transition': '0.25s ease-in-out',
           'position': 'fixed',
         });
         $('.footer-hide').css({
           'transform': 'translateX(30%)',
+          '-webkit-transform': 'translateX(30%)',
+          '-ms-transform': 'translateX(30%)',
           'transition': '0.25s ease-in-out',
         })
 
