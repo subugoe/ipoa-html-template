@@ -35,22 +35,21 @@ $(document).ready(function () {
   /**
    * TODO : add documentation
    */
-  // menu = $('.js-menu');
-  // menuToggleButton = $('.js-menu-toggle-button');
-  // menuToggleButtonIcon = $('.js-menu-button-icon');
-  // $(menuToggleButton).click(function(event) {
-  //   if (menuToggleButton.hasClass('js-active')) {
-  //     $('html,body').animate({'scrollTop' : 0},500);
-  //     $(menuToggleButton).removeClass('js-active');
-  //     $(menu).slideUp();
-  //   } else {
-  //     $('html,body').animate({'scrollTop' : 0},500);
-  //     $(menuToggleButton).addClass('js-active');
-  //     $(menu).slideDown();
-  //   }
-  //   event.preventDefault();
-  // });
-
+  menu = $('.js-menu');
+  menuToggleButton = $('.js-menu-toggle-button');
+  menuToggleButtonIcon = $('.js-menu-button-icon');
+  $(menuToggleButton).click(function(event) {
+    if (menuToggleButton.hasClass('js-active')) {
+      $('html,body').animate({'scrollTop' : 0},500);
+      $(menuToggleButton).removeClass('js-active');
+      $(menu).slideUp();
+    } else {
+      $('html,body').animate({'scrollTop' : 0},500);
+      $(menuToggleButton).addClass('js-active');
+      $(menu).slideDown();
+    }
+    event.preventDefault();
+  });
 
 
   /**
