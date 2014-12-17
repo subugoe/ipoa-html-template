@@ -2,19 +2,16 @@
  * TODO : add documentation
  */
 .start {
-  background-color: $color--darkest;
+  background: url("../img/bg-1.jpg") no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
   min-height: 100%;
-
 }
 
 /**
  * TODO : add documentation
  */
-.start__header {
-  @extend %ic-layout;
-  background-color: $color--darkest;
-}
+.start__header { @extend %ic-layout; }
 
 /**
  * TODO : add documentation
@@ -35,7 +32,7 @@
   @extend %ic-layout__item;
   @extend .ic-tablet-and-up-one-half;
   @extend .ic-layout--center;
-  @extend %text--very-bright;
+  @extend %text--very-dark;
   @extend %text--large;
   display: none;
   @include media-query('tablet-and-up') {
@@ -51,7 +48,6 @@
 .start__main {
   @extend %ic-layout__item;
   @extend %ic-layout--center;
-  background-color: $color--darkest;
   padding: 2vh 0 0;
 }
 
@@ -91,7 +87,6 @@
  * TODO : add documentation
  */
 .start__footer-content {
-  background-color: $color--darkest;
   width: 100vw;
   padding: 5vh 0 0;
 }
@@ -108,8 +103,4 @@
 /**
  * TODO : add documentation
  */
-.start__link {
-  @extend %link--default;
-  @extend %link-on-dark;
-  @extend %link--with-icon-on-dark;
-}
+.start__link { @extend %link--default; }
