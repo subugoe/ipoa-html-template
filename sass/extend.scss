@@ -38,6 +38,14 @@
 /**
  * TODO : add documentation
  */
+@include class('caption') {
+  @extend %m--default;
+  @extend %text--small;
+}
+
+/**
+ * TODO : add documentation
+ */
 @include class('form') { @extend %m--default; }
 
 /**

@@ -22,8 +22,7 @@
  * TODO : add documentation
  */
 .main__caption {
-  @extend %text--small;
-  @extend %picture;
+  @extend %caption;
   @include media-query('desk-and-up') { text-align: right; }
 }
 
@@ -76,4 +75,17 @@
   thead { border-bottom: 1px solid $color--darkest; }
   td { padding: $table-cell-padding; }
   .uneven { background-color: $table-uneven-background-color }
+}
+
+.main__gallery {
+  @extend %paragraph;
+  @extend %m--default;
+  .picture {
+    @extend %ic-layout__item;
+    @extend .ic-tablet-one-half;
+    @extend .ic-notebook-one-half;
+    @extend .ic-desk-one-half;
+    @extend .ic-huge-one-third;
+    @extend %picture;
+  }
 }
