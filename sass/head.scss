@@ -19,10 +19,7 @@
   @extend .ic-tablet-and-up-three-quarters;
   @extend .ic-mt;
   @extend .ic-layout--right;
-  @include media-query('tablet-and-up') {
-    text-align: left;
-    margin-top: double($inuit-base-spacing-unit) !important; // [1]
-  }
+  @include media-query('tablet-and-up') { text-align: left; }
 }
 
 /**
@@ -67,7 +64,6 @@
   cursor: pointer;
   @include media-query('tablet-and-up') {
     text-align: right;
-    margin-top: double($inuit-base-spacing-unit) !important; // [1]
     padding-right: double($inuit-base-spacing-unit) !important; // [2]
   }
   svg { fill: $color--darkest; }
