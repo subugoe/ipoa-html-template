@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   /**
    * TODO : add documentation
-   * 
+   *
    * footerHide
    */
   footerHideHeight = $('.footer-hide__content').height();
@@ -70,7 +70,7 @@ $(document).ready(function () {
     $(altMenuToggleButton).click(function() {
 
       // $('.alt-menu').css({'display': 'block'})
-      
+
       $('.alt-menu').css({'display': 'block'})
 
       $('.footer-hide__helper').css({
@@ -114,7 +114,7 @@ $(document).ready(function () {
           '-webkit-transform': 'translateX(-100%)',
           '-ms-transform': 'translateX(-100%)',
           'transition': '0.25s ease-in-out',
-        });        
+        });
 
         // restablish content stuff to be used as normal again
         $('.footer-hide__helper').css({
@@ -147,7 +147,7 @@ $(document).ready(function () {
           'transition': '0.25s ease-in-out',
         });
 
-        // make the menu content fill the whole left side (top to bottom) and 
+        // make the menu content fill the whole left side (top to bottom) and
         // let its content scroll
         $('.alt-menu__content').css({
           'overflow': 'scroll',
@@ -178,7 +178,7 @@ $(document).ready(function () {
 
   /**
    * TODO : add documentation
-   * 
+   *
    * JS to make the font-size of the claim shown in the header larger
    */
   headHeight = $('.js-head').height();
