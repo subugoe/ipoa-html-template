@@ -22,12 +22,12 @@
   @extend .ic-p-;
   border-radius: $border-radius--large;
   background: transparent;
-  border: $border-width--default solid $color--brightest;
-  color: $color--brightest;
+  border: $border-width--default solid $color--darkest;
+  color: $color--darkest;
   text-decoration: none;
   &:hover {
-    background-color: $color--brightest;
-    color: $color--darkest;
+    background-color: $color--darkest;
+    color: $color--brightest;
   }
   &:active {
     background-color: $color-ipoa-yellow;

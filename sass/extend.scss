@@ -195,6 +195,14 @@
 /**
  * TODO : add documentation
  */
+%headlink-on-bright {
+  @extend %link-on-bright;
+  background-color: #FFF;
+}
+
+/**
+ * TODO : add documentation
+ */
 %link-on-dark {
   color: $color--brightest;
   &:hover,
@@ -209,11 +217,26 @@
   }
 }
 
+/**
+ * TODO : add documentation
+ */
 %link--with-icon-on-dark {
   .fa-icon { @extend .fa-icon-on-dark; }
   &:hover,
   &:active,
   &:focus {
     .fa-icon { @extend .fa-icon-on-bright; }
+  }
+}
+
+/**
+ * TODO : add documentation
+ */
+%link--with-icon-on-bright {
+  .fa-icon { @extend .fa-icon-on-bright; }
+  &:hover,
+  &:active,
+  &:focus {
+    .fa-icon { @extend .fa-icon-on-dark; }
   }
 }

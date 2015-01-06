@@ -19,7 +19,6 @@
   @extend .ic-tablet-and-up-three-quarters;
   @extend .ic-mt;
   @extend .ic-layout--right;
-  @extend %text--very-bright;
   @include media-query('tablet-and-up') {
     text-align: left;
     margin-top: double($inuit-base-spacing-unit) !important; // [1]
@@ -31,17 +30,17 @@
  */
 .head__link {
   @extend %link--default;
-  @extend %link-on-dark;
+  @extend %headlink-on-bright;
   @extend %nobr;
-  @extend %link--with-icon-on-dark;
+  @extend %link--with-icon-on-bright;
 }
 
   /**
    * TODO : add documentation
    */
   .head__link--active {
-    background-color: $color--brightest;
-    color: $color--darkest;
+    background-color: $color--darkest;
+    color: $color--brightest;
   }
 
 /**
@@ -64,16 +63,16 @@
   @extend .ic-tablet-and-up-one-quarter;
   @extend .ic-mt;
   @extend %ic-pr;
-  @extend .fa-icon-on-dark;
+  @extend .fa-icon-on-bright;
   cursor: pointer;
   @include media-query('tablet-and-up') {
     text-align: right;
     margin-top: double($inuit-base-spacing-unit) !important; // [1]
     padding-right: double($inuit-base-spacing-unit) !important; // [2]
   }
-  svg { fill: $color--brightest; }
+  svg { fill: $color--darkest; }
   &:hover {
-    svg { fill: $color--darkest; }
+    svg { fill: $color--brightest; }
   }
 }
 
@@ -86,7 +85,7 @@
  */
 .head__language-links {
   @extend %ic-layout__item;
-  @extend %text--very-bright;
+  @extend %text--very-dark;
   @extend .ic-pt;
   text-align: right;
   display: none;
@@ -147,7 +146,7 @@
   @extend %ic-layout__item;
   @extend .ic-tablet-and-up-three-quarters;
   @extend .ic-mt\+\+;
-  @extend %text--very-bright;
+  @extend %text--very-dark;
   @extend %text--huge;
   letter-spacing: $letter-spacing--large;
   display: none; // [1]
@@ -162,7 +161,7 @@
 .head__pagetitle {
   @extend %ic-layout__item;
   @extend %text--large;
-  @extend %text--very-bright;
+  @extend %text--very-dark;
   text-align: center;
   letter-spacing: $letter-spacing--larger;
   @include media-query('tablet-and-up') { text-align: left; }
