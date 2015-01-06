@@ -10,7 +10,7 @@
 
 /**
  * TODO : add documentation
- * 
+ *
  * [1] simulating "@extend .ic-mt+"
  */
 .head__links {
@@ -55,7 +55,7 @@
 
 /**
  * TODO : add documentation
- * 
+ *
  * [1] simulating "@extend .ic-mt+"
  */
 .head__menubutton {
@@ -79,7 +79,7 @@
 
 /**
  * TODO : add documentation
- * 
+ *
  * the block that contains the various links to choose a different language
  * hidden by default
  * visible if ___ clicked
@@ -119,10 +119,10 @@
 
 /**
  * TODO : add documentation
- * 
+ *
  * [1] simulating "@extend .ic-pr"
  */
-.head__logo { 
+.head__logo {
   @extend %ic-layout__item;
   @extend .ic-tablet-and-up-one-quarter;
   @extend .ic-mt;
@@ -140,7 +140,7 @@
 
 /**
  * TODO : add documentation
- * 
+ *
  * [1,2] show claim only if enough screen estate is available
  */
 .head__claim {
@@ -156,7 +156,7 @@
 
 /**
  * TODO : add documentation
- * 
+ *
  * [1] align page title with content
  */
 .head__pagetitle {
@@ -174,19 +174,19 @@
  */
  @include media-query('tablet-and-up') {
 
- 
+
 .js-head--unpinned {
   .head__links { @extend .ic-mt; }
   .head__menubutton { @extend .ic-mt; }
-  .head__logo { 
+  .head__logo {
     @extend .ic-mt\+;
     @include media-query('tablet-and-up') { text-align: right; }
-  }    
+  }
   .image {
     width: 25%;
     @include media-query(tablet-and-up) { width: 50%; }
   }
-  .head__claim { 
+  .head__claim {
     @extend .ic-mt\+;
     font-size: 22px !important;
   }

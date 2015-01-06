@@ -9,7 +9,7 @@
 /**
  * hidden-on-phone
  * what it does: hides stuff from phones
- * how to use it: either as @extend in Sass or in HTML to 
+ * how to use it: either as @extend in Sass or in HTML to
  */
 @include class('hidden-on-phone') {
   @include media-query('smaller-than-tablet') { display: none !important; }
@@ -17,11 +17,11 @@
 
 /**
  * nobr
- * 
- * what it does: prevents the browser to add a break / new line if there is not 
+ *
+ * what it does: prevents the browser to add a break / new line if there is not
  * enough space to dislay things like long words
- * 
- * how to use it: either as @extend in Sass or in HTML to 
+ *
+ * how to use it: either as @extend in Sass or in HTML to
  */
 @include class('nobr') { white-space: nowrap; }
 
