@@ -86,12 +86,10 @@
   @extend %ic-layout__item;
   @extend %text--very-dark;
   @extend .ic-pt;
+  padding-left: 0;
   text-align: right;
   display: none;
-  @include media-query('tablet-and-up') {
-    text-align: left;
-    @include pushOneQuarter();
-  }
+  @include media-query('tablet-and-up') { text-align: left; }
   g { fill: $color--brightest; }
 }
 
