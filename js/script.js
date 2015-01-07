@@ -177,6 +177,12 @@ $(document).ready(function () {
 
 
   /**
+   * JS to make the font-size of the claim shown in the header larger
+   */
+  $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
+
+
+  /**
    * TODO : add documentation
    *
    * JS to make the font-size of the claim shown in the header larger
@@ -195,10 +201,5 @@ $(document).ready(function () {
       notTop : "js-head--not-top"
     }
   });
-
-  /**
-   * JS to make the font-size of the claim shown in the header larger
-   */
-  $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
 
 });
