@@ -50,6 +50,11 @@
  */
 .menu__list { @extend %ic-list-bare; }
 
+.menu__list--indented {
+  @extend .menu__list;
+  margin-left: $inuit-base-spacing-unit;
+}
+
 /**
  * define how links in the menu appear
  */
@@ -77,6 +82,10 @@
     background: $color-ipoa-yellow;
   }
 
+  .menu__link--parent {
+    color: $color--darkest;
+    background: lighten($color-ipoa-yellow, $link-lighten-color-factor);
+  }
 
 /**
  *
