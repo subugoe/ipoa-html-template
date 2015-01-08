@@ -85,6 +85,7 @@
   .menu__link--parent {
     color: $color--darkest;
     background: lighten($color-ipoa-yellow, $link-lighten-color-factor);
+    &:before { background-image:url('../img/angle-down.svg'); }
   }
 
 /**
