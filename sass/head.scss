@@ -60,7 +60,7 @@
   @extend .ic-smaller-than-tablet-two-fifths;
   @extend .ic-tablet-and-up-one-quarter;
   @extend .ic-mt;
-  @extend %ic-pr;
+  @extend .ic-pr;
   @extend .fa-icon-on-bright;
   @include media-query('tablet-and-up') {
     text-align: right;
@@ -126,8 +126,8 @@
   .image { width: 150px; }
   @include media-query('tablet-and-up') {
     .image {
-      width: 250px;
       width: 100%;
+      max-width: 250px;
     }
     @extend .ic-mt\+;
     padding-right: double($inuit-base-spacing-unit) !important; // [1]
@@ -137,17 +137,25 @@
 /**
  * TODO : add documentation
  *
+ * only visible in tablet-and-up
  * [1,2] show claim only if enough screen estate is available
  */
 .head__claim {
-  @extend %ic-layout__item;
-  @extend .ic-tablet-and-up-three-quarters;
-  @extend .ic-mt\+\+;
-  @extend %text--very-dark;
-  @extend %text--huge;
-  letter-spacing: $letter-spacing--large;
   display: none; // [1]
-  @include media-query('tablet-and-up') { display: inline-block; } // [2]
+  @include media-query('tablet-and-up') { // [2]
+    display: inline-block;
+    @extend %ic-layout__item;
+    @extend .ic-tablet-and-up-three-quarters;
+    @extend .ic-mt\+;
+    @include media-query('notebook') {
+      margin-top: ($inuit-base-spacing-unit * 4) !important;
+      transform: translateY(-10%);
+    }
+    @include media-query('desk-and-up') { @extend .ic-mt\+\+; }
+    @extend %text--very-dark;
+    @extend %text--huge;
+    letter-spacing: $letter-spacing--large;
+  }
 }
 
 /**
@@ -168,33 +176,44 @@
 /**
  * TODO : add documentation
  */
- @include media-query('tablet-and-up') {
-
-
 .js-head--unpinned {
-  .head__links { @extend .ic-mt; }
-  .head__menubutton { @extend .ic-mt; }
-  .head__logo {
-    @extend .ic-mt\+;
-    @include media-query('tablet-and-up') { text-align: right; }
+  @include media-query('desk-and-up') {
+    .head__menubutton { @extend .ic-mt--; }
+    .head__links { @extend .ic-mt--; }
+    .head__logo {
+      @extend .ic-mt+;
+      @include media-query('tablet-and-up') { text-align: right; }
+    }
+    .image {
+      @include media-query(tablet-and-up) { width: 75%; }
+    }
+    .head__claim {
+      @extend .ic-mt;
+      transform: translateY(-15%);
+    }
+    .heading--alpha {
+      margin-bottom: quarter($inuit-base-line-height) !important;
+      margin: 0;
+    }
   }
-  .image {
-    width: 25%;
-    @include media-query(tablet-and-up) { width: 50%; }
+  @include media-query('notebook') {
+    .head__logo { text-align: right; }
+    .image { width: 75%; }
+    .head__claim {
+      @extend .ic-mt\+;
+      // transform: translateY(10%);
+    }
+    .heading {
+      margin: 0;
+    }
   }
-  .head__claim {
-    @extend .ic-mt\+;
-    font-size: 22px !important;
-  }
-  .heading--alpha { margin: quarter($inuit-base-line-height) !important; }
-}
 }
 
 /**
  * TODO : add documentation
  */
 .headroom {
-  @include media-query('tablet-and-up') { position: fixed; }
+  @include media-query('notebook-and-up') { position: fixed; }
 }
 
 /**

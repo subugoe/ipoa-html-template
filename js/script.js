@@ -179,16 +179,14 @@ $(document).ready(function () {
   /**
    * JS to make the font-size of the claim shown in the header larger
    */
-  $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
+  // $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
 
 
   /**
    * TODO : add documentation
-   *
-   * JS to make the font-size of the claim shown in the header larger
    */
   headHeight = $('.js-head').height();
-  if (windowWidth > 767) {
+  if (windowWidth > 1024) {
     $('.headroom__helper').css({"padding-top": headHeight + "px"});
   }
   $('.js-head').headroom({
