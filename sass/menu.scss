@@ -19,7 +19,7 @@
   * TODO : add documentation
  */
 .menu__button {
-  @extend .ic-p-;
+  padding: 5px;
   border-radius: $border-radius--large;
   background: transparent;
   border: $border-width--default solid $color--darkest;

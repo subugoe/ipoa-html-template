@@ -16,9 +16,9 @@
  */
 .head__links {
   @extend %ic-layout__item;
-  @extend .ic-smaller-than-tablet-three-fifths;
+  @extend .ic-smaller-than-tablet-two-thirds;
   @extend .ic-tablet-and-up-three-quarters;
-  @extend .ic-mt;
+  @extend .ic-mt--;
   @extend .ic-layout--right;
   @include media-query('tablet-and-up') { text-align: left; }
 }
@@ -57,10 +57,9 @@
  */
 .head__menubutton {
   @extend %ic-layout__item;
-  @extend .ic-smaller-than-tablet-two-fifths;
+  @extend .ic-smaller-than-tablet-one-third;
   @extend .ic-tablet-and-up-one-quarter;
-  @extend .ic-mt;
-  @extend .ic-pr;
+  @extend .ic-mt--;
   @extend .fa-icon-on-bright;
   @include media-query('tablet-and-up') {
     text-align: right;
@@ -129,7 +128,6 @@
       width: 100%;
       max-width: 250px;
     }
-    @extend .ic-mt\+;
     padding-right: double($inuit-base-spacing-unit) !important; // [1]
   }
 }
@@ -151,7 +149,6 @@
       margin-top: ($inuit-base-spacing-unit * 4) !important;
       transform: translateY(-10%);
     }
-    @include media-query('desk-and-up') { @extend .ic-mt\+\+; }
     @extend %text--very-dark;
     @extend %text--huge;
     letter-spacing: $letter-spacing--large;
@@ -199,10 +196,7 @@
   @include media-query('notebook') {
     .head__logo { text-align: right; }
     .image { width: 75%; }
-    .head__claim {
-      @extend .ic-mt\+;
-      // transform: translateY(10%);
-    }
+    .head__claim { @extend .ic-mt\+; }
     .heading {
       margin: 0;
     }
