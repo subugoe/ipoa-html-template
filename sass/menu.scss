@@ -22,7 +22,7 @@
   padding: 5px;
   border-radius: $border-radius--large;
   background: transparent;
-  border: $border-width--default solid $color--darkest;
+  border: 1px solid transparent;
   color: $color--darkest;
   text-decoration: none;
   &:hover {
