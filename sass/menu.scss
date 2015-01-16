@@ -43,6 +43,7 @@
 .menu__column {
   @extend %ic-layout__item;
   @extend .ic-pb-;
+  @include media-query('smaller-than-tablet') { padding-left: 5px; }
 }
 
 /**

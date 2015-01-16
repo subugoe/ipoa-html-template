@@ -63,24 +63,23 @@ $(document).ready(function () {
    */
   if (windowWidth <= 767) {
 
-    $('.alt-menu').css({'display': 'none'})
+    // $('.alt-menu').css({'display': 'none'})
+    $(altMenu).css({'display': 'none'})
 
     // when menu button receives click the menu will overlay everything an show
     // an scrollable menu. Exit the menu by clicking a menu item.
     $(altMenuToggleButton).click(function() {
 
-      // $('.alt-menu').css({'display': 'block'})
-
-      $('.alt-menu').css({'display': 'block'})
+      $(altMenu).css({'display': 'block'});
 
       $('.footer-hide__helper').css({
         'margin-left': '100%',
         'position': 'fixed'
-      })
+      });
       $('.footer-hide').css({
         'margin-left': '100%',
         'position': 'fixed'
-      })
+      });
 
     });
 
