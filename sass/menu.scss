@@ -82,11 +82,6 @@
     background: $color-ipoa-yellow;
   }
 
-  .menu__link--is-parent {
-    color: $color--darkest;
-    background: lighten($color-ipoa-yellow, $link-lighten-color-factor);
-  }
-
   .menu__link--has-children {
     &:before { background-image:url('../img/angle-double-right.svg'); }
   }
