@@ -67,11 +67,11 @@
   background-color: $color--brightest;
   color: $color--darkest;
   margin: 5px;
-  &:hover, 
+  &:hover,
   &:active,
   &:focus {
     background-color: darken($color--brightest, 15%);
-    color: $color--darkest; 
+    color: $color--darkest;
   }
 }
 
