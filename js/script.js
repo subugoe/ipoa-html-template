@@ -175,29 +175,4 @@ $(document).ready(function () {
     });
   };
 
-
-  /**
-   * JS to make the font-size of the claim shown in the header larger
-   */
-  // $('.js-responsive-claim-text-size').fitText( 2, { maxFontSize: '40px'} );
-
-
-  /**
-   * TODO : add documentation
-   */
-  headHeight = $('.js-head').height();
-  if (windowWidth > 1024) {
-    $('.headroom__helper').css({"padding-top": headHeight + "px"});
-  }
-  $('.js-head').headroom({
-    offset : headHeight,
-    classes : {
-      initial : "js-head",
-      pinned : "js-head--pinned",
-      unpinned : "js-head--unpinned",
-      top : "js-head--top",
-      notTop : "js-head--not-top"
-    }
-  });
-
 });

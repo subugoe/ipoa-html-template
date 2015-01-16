@@ -175,44 +175,12 @@
 /**
  * TODO : add documentation
  */
-.js-head--unpinned {
-  @include media-query('desk-and-up') {
-    .head__menubutton { @extend .ic-mt--; }
-    .head__links { @extend .ic-mt--; }
-    .head__logo {
-      @extend .ic-mt+;
-      @include media-query('tablet-and-up') { text-align: right; }
-    }
-    .image {
-      @include media-query(tablet-and-up) { width: 75%; }
-    }
-    .head__claim {
-      @extend .ic-mt;
-      transform: translateY(-15%);
-    }
-    .heading--alpha {
-      margin-bottom: quarter($inuit-base-line-height) !important;
-      margin: 0;
-    }
-  }
-  @include media-query('notebook') {
-    .head__logo { text-align: right; }
-    .image { width: 75%; }
-    .head__claim { @extend .ic-mt\+; }
-    .heading {
-      margin: 0;
-    }
+.head-nav {
+  @extend %ic-layout;
+  @extend .ic-layout--flush;
+  @include responsive-content-padding();
+  @include media-query('tablet-and-up') {
+    background: url('../img/bg-h-1.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
 }
-
-/**
- * TODO : add documentation
- */
-.headroom {
-  @include media-query('notebook-and-up') { position: fixed; }
-}
-
-/**
- * TODO : add documentation
- */
-.no-js .headroom { position: relative; }
