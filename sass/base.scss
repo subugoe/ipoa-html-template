@@ -46,3 +46,15 @@ blockquote {
     margin-right: -8px;
   }
 }
+
+sub,
+sup {
+  &:before{
+    content: "";
+    margin-left: 2px;
+  }
+  &:after {
+    content: "";
+    margin-right: 2px;
+  }
+}
