@@ -5,6 +5,7 @@
   @extend %ic-layout;
   @extend .ic-layout--flush;
   @include responsive-content-padding();
+  padding-top: 40px;
   @include media-query('tablet-and-up') { // [2]
     background: url('../img/bg-h-1.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -178,9 +179,30 @@
 .head-nav {
   @extend %ic-layout;
   @extend .ic-layout--flush;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 50px;
   @include responsive-content-padding();
-  @include media-query('tablet-and-up') {
-    background: url('../img/bg-h-1.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-timing-function: cubic-bezier( .215, .610, .355, 1 );
+  transition-timing-function: cubic-bezier( .215, .610, .355, 1 );
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
 }
+
+  .head-nav--hidden {
+    -webkit-transform: translateY( -100% );
+    -ms-transform: translateY( -100% );
+    transform: translateY( -100% );
+    background-color: white;
+    border-bottom: 1px solid lighten(#333, 50%);
+  }
+
+  .head-nav--narrow {
+    background-color: white;
+    border-bottom: 1px solid lighten(#333, 50%);
+  }

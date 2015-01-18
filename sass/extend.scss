@@ -65,11 +65,24 @@
  * TODO : add documentation
  */
 @mixin responsive-content-padding() {
-  padding: 0 $content-padding--phone;
-  @include media-query('tablet') { padding: 0 $content-padding--tablet; }
-  @include media-query('notebook') { padding: 0 $content-padding--notebook; }
-  @include media-query('desk') { padding: 0 $content-padding--desk; }
-  @include media-query('huge') { padding: 0 $content-padding--huge; }
+  padding-left: $content-padding--phone;
+  padding-right: $content-padding--phone;
+  @include media-query('tablet') {
+    padding-left: $content-padding--tablet;
+    padding-right: $content-padding--tablet;
+  }
+  @include media-query('notebook') {
+    padding-left: $content-padding--notebook;
+    padding-right: $content-padding--notebook;
+  }
+  @include media-query('desk') {
+    padding-left: $content-padding--desk;
+    padding-right: $content-padding--desk;
+  }
+  @include media-query('huge') {
+    padding-left: $content-padding--huge;
+    padding-right: $content-padding--huge;
+  }
 }
 
 /**
