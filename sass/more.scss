@@ -8,6 +8,8 @@
 
 /**
  * TODO : add documentation
+ *
+ * [1] style links in lists if mouse hovers over parent .more__column
  */
 .more__column {
   @extend %ic-layout__item;
@@ -15,12 +17,20 @@
   @extend .ic-notebook-and-up-one-quarter;
   @extend .ic-pt+;
   @extend .ic-pb+;
+  &:hover {
+    .more__list a { @extend %link-on-bright; } // [1]
+  }
 }
 
 /**
  * TODO : add documentation
+ *
+ * [1] style links in lists if mouse hovers over parent .more__column
  */
-.more__list { @extend %ic-list-bare; }
+.more__list {
+  @extend %ic-list-bare;
+  a:focus { @extend %link-on-bright; }  // [1]
+}
 
 /**
  * TODO : add documentation

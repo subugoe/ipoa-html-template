@@ -193,7 +193,7 @@
  */
 %link-on-bright {
   color: $color--darkest;
-  background-color: lighten($link-color--default, $link-lighten-color-factor);
+  background-color: lighten($link-background-color--default, $link-lighten-color-factor);
   &:hover,
   &:focus {
     background-color: $color-ipoa-green;

@@ -1,8 +1,6 @@
 /**
- * 
+ *
  */
-// .footer { }
-
 .footer__content {
   @extend %ic-layout;
   @include responsive-content-padding();
@@ -15,6 +13,9 @@
   @extend %ic-layout__item;
   @extend .ic-tablet-one-half;
   @extend .ic-notebook-and-up-one-quarter;
+  &:hover {
+    .footer__list a { @extend %link-on-bright; } // [1]
+  }
 }
 
 /**
@@ -28,16 +29,18 @@
 
 /**
  * TODO : add documentation
+ *
+ * [1] style links in lists if mouse hovers over parent .footer__column
  */
-.footer__list { @extend %ic-list-bare; }
+.footer__list {
+  @extend %ic-list-bare;
+  a:focus { @extend %link-on-bright; }  // [1]
+}
 
 /**
  * TODO : add documentation
  */
-.footer__link {
-  @extend %link--default;
-  @extend %link-on-bright;
-}
+.footer__link { @extend %link--default; }
 
   /**
    * TODO : add documentation
