@@ -40,7 +40,10 @@
 /**
  * TODO : add documentation
  */
-.footer__link { @extend %link--default; }
+.footer__link {
+  @extend %link--default;
+  @extend %link-on-bright;
+}
 
   /**
    * TODO : add documentation
