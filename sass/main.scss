@@ -7,7 +7,6 @@
   @include responsive-content-padding();
 }
 
-
 /**
  * TODO : add documentation
  */
@@ -35,7 +34,6 @@
   @extend %link-on-bright;
 }
 
-
 /**
  * TODO : add documentation
  */
@@ -47,6 +45,24 @@
   line-height: round($inuit-base-line-height / .65);
 }
 
+/**
+ * TODO : add documentation
+ */
+.main__linklist {
+  @extend %ic-list-bare;
+  @extend %m--default;
+  &:hover {
+    a { @extend %link-on-bright; }
+  }
+  padding-left: 22px;
+}
+
+/**
+ * TODO : add documentation
+ */
+.main__link--in-list {
+  @extend %link-in-linklist;
+}
 
 /**
  * TODO : add documentation
@@ -56,7 +72,7 @@
   @extend .ic-desk-and-up-nine-twelfths;
   @extend %paragraph;
   p { @extend %m--default; }
-  ul { @extend %ul--reset; }
+  ul { @extent %ul--reset; }
 }
 
 /**
