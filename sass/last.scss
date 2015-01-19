@@ -3,12 +3,12 @@
  */
 .last {
   @extend %ic-layout;
-  @extend .ic-pt-;
-  @extend .ic-pb-;
+  @extend .ic-pt;
+  @extend .ic-pb;
   @extend %text--very-bright;
-  @extend %text--tiny;
+  @extend %text--small;
   @include responsive-content-padding();
-  background-color: $color--darkest;
+  border-bottom: 1px solid lighten($color--darkest, 50%);
 }
 
 /**
@@ -41,5 +41,5 @@
  */
 .last__link {
   @extend %link--default;
-  @extend %link-on-dark;
+  @extend %link-on-bright;
 }
