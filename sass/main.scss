@@ -62,6 +62,10 @@
  */
 .main__link--in-list {
   @extend %link-in-linklist;
+  &:focus {
+    background-color: $color-ipoa-green;
+    color: $color--brightest;
+  }
 }
 
 /**
