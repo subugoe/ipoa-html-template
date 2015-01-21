@@ -63,12 +63,12 @@
   @extend %link-in-linklist;
   @extend %link-in-linklist--dense;
   color: $color--darkest;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color--brightest;
     background: $color-ipoa-green;
   }
-  &:active,
-  &:focus {
+  &:active {
     color: $color--darkest;
     background: $color-ipoa-yellow;
   }
