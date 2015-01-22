@@ -88,7 +88,10 @@
 /**
  * TODO : add documentation
  */
-@include class('heading') { margin: 0; }
+@include class('heading') {
+  margin: 0;
+  margin: $inuit-base-line-height 0 ($inuit-base-line-height / 2) 0;
+}
 @include class('heading--alpha') {
   @extend %heading;
   margin: ($inuit-base-line-height / 2) 0;

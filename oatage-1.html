@@ -1,0 +1,245 @@
+---
+title: Open Acces Tage 2014
+layout: default
+---
+
+<div class="footer-hide__helper" id="top">
+
+  {% include header.html %}
+
+  <div class="headroom__helper">
+
+    <main role="main" class="main">
+
+
+      <!-- {{ site.data.oatage }} -->
+      {% for day in site.data.oatage %}<!--
+        --><h2 class="main__heading">{{ day.name }}</h2><!--
+        --><div class="main__textblock">
+        {% if day.text %}
+          <p>{{day.text}}</p>
+        {% endif %}
+        {% for session in day.session %}
+          <h3 class="heading">{{ session.name }}</h3>
+          <p>
+            {{ session.time }}{% if session.room %}, {{ session.room }}{% endif %}
+          </p>
+          {% if session.text %}
+          <p>{{ session.text }}</p>
+          {% endif %}
+          <!-- {{ session.video }} -->
+          <!-- {{session.presentation}} -->
+          {% if session.presentation %}
+            {% for presentation in session.presentation %}
+              <h4 class="heading"><a href="" class="main__link">{{ presentation.name }}</a></h4>
+              {% if presentation.text %}
+                {{ presentation.text }}
+              {% endif %}
+              {% if presentation.presenter %}
+                <p>
+                {% for presenter in presentation.presenter %}
+                  <a href="" class="main__link">{{ presenter.name }}</a>
+                  {% if presenter.org %}
+                    ({{ presenter.org }})
+                  {% endif %}
+                {% endfor %}
+                </p>
+              {% endif %}
+
+
+              {% if presentation.slide or presentation.video or presentation.poster %}
+                <p>Materialien:
+                {% for poster in presentation.poster %}
+                  <a href="" class="main__link">{{ poster.name }}</a>
+                {% endfor %}
+                {% for slide in presentation.slide %}
+                  <a href="" class="main__link">{{ slide.name }}</a>
+                {% endfor %}
+                {% for video in presentation.video %}
+                  <a href="" class="main__link">{{ video.name }}</a>
+                {% endfor %}
+                </p>
+              {% endif %}
+
+
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        </div><!--
+      -->{% endfor %}<!--
+
+
+      --><h2 class="main__heading">Teilnehmer/Innen</h2><!--
+      --><div class="main__table">
+        <table>
+          <caption>Folgende Personen sind Teilnehmer/innen der Open-Access-Tage 2015.</caption>
+          <thead>
+            <tr>
+              <th>Vorname</th>
+              <th>Nachname</th>
+              <th>Nummer</th>
+              <th>E-Mail</th>
+              <th>Institution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>2890</td>
+              <td><a href="#" title="" class="main__link">john@example.com</a></td>
+              <td>Niedersächsische Staats- und Universitätsbibliothek Göttingen</td>
+            </tr>
+            <tr class="uneven">
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>419033</td>
+              <td><a href="#"  class="main__link">jane@example.com</a></td>
+              <td>SUB Hamburg</td>
+            </tr>
+            <tr>
+              <td>Björn</td>
+              <td>Fischer</td>
+              <td>1103877</td>
+              <td><a href="#" class="main__link">fischer@example.com</a></td>
+              <td></td>
+            </tr>
+            <tr class="uneven">
+              <td>Klara</td>
+              <td>Bauer</td>
+              <td>992648</td>
+              <td><a href="#" class="main__link">klara@example.com</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Benjamin</td>
+              <td>Baumer</td>
+              <td>776293</td>
+              <td><a href="#" class="main__link">bauer@example.com</a></td>
+              <td></td>
+            </tr>
+            <tr class="uneven">
+              <td>Klaus</td>
+              <td>Fenturi</td>
+              <td>23497</td>
+              <td><a href="#" class="main__link">fenturi@example.com</a></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!--
+
+      --><h2 class="main__heading">Lots of Pictures</h2><!--
+      --><div class="main__gallery"><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+      --></div><!--
+
+      --><h2 class="main__heading">Vertragszusätze</h2><!--
+      --><div class="main__textblock">
+        <p>Alternativ zu Streichungen fügen Autorinnen und Autoren dem Verlagsvertrag einen Zusatz bei, um sich so das einfache Nutzungsrecht für die Onlinenutzung auf einem Non-Profit-Dokumentenserver vorzubehalten. Dieser Zusatz muss vom Verlag gegengezeichnet werden, um Rechtsgültigkeit zu erlangen.</p>
+        <p>Der bekannteste und wohl auch anerkannteste Vertragszusatz ist das SPARC Author's Addendum. Es wurde durch die Scholarly Publishing and Academic Resources Coalition (SPARC) entwickelt, einem Zusammenschluss von Bibliotheken in den USA mit dem Ziel, die Entwicklung neuer Kommunikationsmodelle anzuregen, welche die Verbreitung von wissenschaftlicher Literatur steigern und den finanziellen Druck auf Bibliotheken reduzieren. Das Addendum besteht aus zwei Teilen: dem eigentlichen Vertragsanhang und einer Benutzungsanweisung. Mittels der Copyright Addendum Engine von Science Commons und SPARC können Autorinnen und Autoren je nach Wunsch ein Addendum in den Varianten Access-Reuse, Delayed Access und Immediate Access automatisch erstellen. Access-Reuse bedeutet, die Autorin/der Autor behält ausreichende Rechte</p>
+        <ul class="main__list">
+          <li>Lorem ipsum dolor sit amut.</li>
+          <li>Ipsum sit amut dolor.</li>
+          <li>Sit dolor amut lorem.</li>
+        </ul>
+        <p>Um den Artikel neben der Veröffentlichung in einem Verlag unter eine nichtkommerzielle Creative-Commons- oder eine vergleichbare Lizenz zu stellen. Bei dem Delayed-Access-Modell kann die Autorin/der Autor die Autorenversion sofort online bereit stellen, die Verlagsversion jedoch erst nach Ablauf von sechs Monaten. Immediate Access erlaubt dagegen, sofort bei Erscheinen sowohl die Verlagsversion als auch die Autorenversion online bereit zu stellen.</p>
+        <ul class="main__linklist">
+          <li><a href="" title="" class="main__link--in-list">Lorem ipsum dolor sit amut.</a></li>
+          <li><a href="" title="" class="main__link--in-list">Ipsum sit amut dolor.</a></li>
+          <li><a href="" title="" class="main__link--in-list">Sit dolor amut lorem.</a></li>
+        </ul>
+        <p>Repositorien sind an Universitäten oder Forschungseinrichtungen betriebene Dokumentenserver, auf denen wissenschaftliche Materialien archiviert und weltweit entgeltfrei zugänglich gemacht werden. Unterschieden werden institutionelle und disziplinäre Repositorien. Als institutionelle Repositorien werden Dokumentenserver bezeichnet, die von Institutionen (meist Universitätsbibliotheken oder Forschungsorganisationen) betrieben werden und ihren Mitgliedern die digitale Publikation oder Archivierung ermöglichen. Disziplinäre Repositorien hingegen sind institutionsübergreifend und stehen Wissenschaftlerinnen und Wissenschaftlern thematisch gebündelt, z.B. für eine Fachdisziplin, zur Publikation und Archivierung ihrer Arbeiten zur Verfügung (z.B. PsyDok als disziplinären Volltextserver in der [deutschsprachigen] Psychologie, Social Science Open Access Repository [SSOAR] für die Sozialwissenschaften oder arXiv für Publikationen aus Astronomie, Physik, Mathematik, Informatik und Biologie). Wie der Zugriff für Nutzende ist auch die Bereitstellung der wissenschaftlichen Publikation für Autorinnen und Autoren auf institutionellen oder disziplinären Repositorien in der Regel entgeltfrei.</p>
+        <p>Weitere Beispiele für Vertragszusätze</p>
+        <ul>
+          <li>Forschungszentrum Jülich: Copyright: Autorenverträge günstiger gestalten</li>
+          <li>MIT-Libraries: Managing your Copyright</li>
+        </ul>
+        <h3>Beispiele für ergänzende Textpassagen</h3>
+        <blockquote>Der Verlag stimmt zu, dass der Autor das nichtexklusive Recht behält, eine digitale Kopie des Dokumentes vor/während/nach der Publikation durch den Verlag zeitlich unbeschränkt auf einen öffentlich zugänglichen akademischen Non-Profit-Server zu legen. 2. Der Autor verpflichtet sich, das Originaldokument auf dem akademischen Non-Profit-Server zu zitieren.</blockquote>
+        <p>oder</p>
+        <blockquote>Der Verlag stimmt zu, dass der Autor das nichtexklusive Recht behält, eine digitale Kopie des Dokumentes vor/während/nach der Publikation durch den Verlag zeitlich unbeschränkt auf einen öffentlich zugänglichen akademischen Non-Profit-Server zu legen. 2. Der Autor verpflichtet sich, das Originaldokument auf dem akademischen Non-Profit-Server zu zitieren.</blockquote>
+        <p>Auf Englisch<p>
+        <blockquote>I hereby declare that I do not wish to assign the exclusive copyright to (Name des Verlages) but reserve the right to publish the article in full on an open access platform.</blockquote>
+      </div>
+
+    </main>
+
+    {% include search.html %}
+
+    {% include more.html %}
+
+    {% include last.html%}
+
+
+  </div><!-- END: headroom__helper -->
+
+</div><!-- END: footer-hide__helper -->
+
+{% include footer-hide.html %}
+
+{% include nav.html %}
