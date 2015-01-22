@@ -151,7 +151,7 @@ $(document).ready(function () {
         // let its content scroll
         $('.alt-menu__content').css({
           'overflow': 'scroll',
-          'height': '100%',
+          'height': '100%'
         });
 
         // move the regular content to the right (partly off canvas) and
