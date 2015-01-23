@@ -1,6 +1,3 @@
-/**
- * let's start jQuery stuff
- */
 $(document).ready(function () {
 
   windowWidth = $(window).width();
