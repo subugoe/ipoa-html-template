@@ -192,6 +192,8 @@
   transition-property: transform;
 }
 
+  .no-js .head-nav { position: relative; }
+
   .head-nav--hidden {
     -webkit-transform: translateY( -100% );
     -ms-transform: translateY( -100% );
