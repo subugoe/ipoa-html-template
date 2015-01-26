@@ -15,6 +15,17 @@
   background-color: $color-text-background--default;
 }
 
+  .footer-hide__helper--shifted {
+    transform: translateX(30%);
+    -webkit-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    transition: .25s ease-in-out;
+    position: fixed;
+    @include media-query('phone') {
+      display: none;
+    }
+  }
+
 /**
  * TODO : add documentation
  */
@@ -28,7 +39,7 @@
 
   /**
    * TODO : add documentation
-   * 
+   *
    * no-js fallback
    * don't hide the footer if there is no js available
    */

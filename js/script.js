@@ -70,6 +70,8 @@ jQuery(document).ready(function () {
 
       jQuery(altMenu).css({'display': 'block'});
 
+      jQuery('.head-nav').hide();
+
       jQuery('.footer-hide__helper').css({
         'margin-left': '100%',
         'position': 'fixed'
@@ -114,13 +116,7 @@ jQuery(document).ready(function () {
         });
 
         // restablish content stuff to be used as normal again
-        jQuery('.footer-hide__helper').css({
-          'transform': 'translateX(0%)',
-          '-webkit-transform': 'translateX(0%)',
-          '-ms-transform': 'translateX(0%)',
-          'transition': '0.25s ease-in-out',
-          'position': 'relative',
-        })
+        jQuery('.footer-hide__helper').removeClass('footer-hide__helper--shifted');
 
       /*
        * what to do when menu button gets clicked and menu is not yet visible
@@ -147,13 +143,7 @@ jQuery(document).ready(function () {
 
         // move the regular content to the right (partly off canvas) and
         // prevent scrolling
-        jQuery('.footer-hide__helper').css({
-          'transform': 'translateX(30%)',
-          '-webkit-transform': 'translateX(30%)',
-          '-ms-transform': 'translateX(30%)',
-          'transition': '0.25s ease-in-out',
-          'position': 'fixed',
-        })
+        jQuery('.footer-hide__helper').addClass('footer-hide__helper--shifted');
 
       }
 
