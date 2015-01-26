@@ -1,7 +1,4 @@
-/**
- * let's start jQuery stuff
- */
-$(document).ready(function () {
+jQuery(document).ready(function () {
 
   windowWidth = $(window).width();
 
@@ -9,8 +6,8 @@ $(document).ready(function () {
    * TODO : add documentation
    */
   function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    var aTag = jQuery("a[name='"+ aid +"']");
+    jQuery('html,body').animate({scrollTop: aTag.offset().top},'slow');
   }
 
   /**
@@ -18,36 +15,36 @@ $(document).ready(function () {
    *
    * footerHide
    */
-  footerHideHeight = $('.footer-hide__content').height();
-  $('.footer-hide').css({ 'height': footerHideHeight + 'px' });
+  footerHideHeight = jQuery('.footer-hide__content').height();
+  jQuery('.footer-hide').css({ 'height': footerHideHeight + 'px' });
 
   /**
    * TODO : add documentation
    */
-  jsHeadLanguageIndicator = $('.js-head-language-indicator');
+  jsHeadLanguageIndicator = jQuery('.js-head-language-indicator');
   jsHeadLanguageIndicator.click(function() {
     jsHeadLanguageIndicator.hide();
-    $('.js-head-language-links').show();
-    $('.head').css({'padding-top': '94px'});
-    headHeight = $('.js-head').height();
-    $('.headroom__helper').css({"padding-top": headHeight + "px"});
+    jQuery('.js-head-language-links').show();
+    jQuery('.head').css({'padding-top': '94px'});
+    headHeight = jQuery('.js-head').height();
+    jQuery('.headroom__helper').css({"padding-top": headHeight + "px"});
   });
 
   /**
    * TODO : add documentation
    */
-  menu = $('.js-menu');
-  menuToggleButton = $('.js-menu-toggle-button');
-  menuToggleButtonIcon = $('.js-menu-button-icon');
-  $(menuToggleButton).click(function(event) {
+  menu = jQuery('.js-menu');
+  menuToggleButton = jQuery('.js-menu-toggle-button');
+  menuToggleButtonIcon = jQuery('.js-menu-button-icon');
+  jQuery(menuToggleButton).click(function(event) {
     if (menuToggleButton.hasClass('js-active')) {
-      $('html,body').animate({'scrollTop' : 0},500);
-      $(menuToggleButton).removeClass('js-active');
-      $(menu).slideUp();
+      jQuery('html,body').animate({'scrollTop' : 0},500);
+      jQuery(menuToggleButton).removeClass('js-active');
+      jQuery(menu).slideUp();
     } else {
-      $('html,body').animate({'scrollTop' : 0},500);
-      $(menuToggleButton).addClass('js-active');
-      $(menu).slideDown();
+      jQuery('html,body').animate({'scrollTop' : 0},500);
+      jQuery(menuToggleButton).addClass('js-active');
+      jQuery(menu).slideDown();
     }
     event.preventDefault();
   });
@@ -56,8 +53,8 @@ $(document).ready(function () {
   /**
    *
    */
-  altMenu = $('.alt-menu');
-  altMenuToggleButton = $('.js-alt-menu-toggle-button');
+  altMenu = jQuery('.alt-menu');
+  altMenuToggleButton = jQuery('.js-alt-menu-toggle-button');
 
   /*
    * full viewport overlay when <768px width
@@ -65,19 +62,21 @@ $(document).ready(function () {
   if (windowWidth <= 767) {
 
     // $('.alt-menu').css({'display': 'none'})
-    $(altMenu).css({'display': 'none'})
+    jQuery(altMenu).css({'display': 'none'})
 
     // when menu button receives click the menu will overlay everything an show
     // an scrollable menu. Exit the menu by clicking a menu item.
-    $(altMenuToggleButton).click(function() {
+    jQuery(altMenuToggleButton).click(function() {
 
-      $(altMenu).css({'display': 'block'});
+      jQuery(altMenu).css({'display': 'block'});
 
-      $('.footer-hide__helper').css({
+      jQuery('.head-nav').hide();
+
+      jQuery('.footer-hide__helper').css({
         'margin-left': '100%',
         'position': 'fixed'
       });
-      $('.footer-hide').css({
+      jQuery('.footer-hide').css({
         'margin-left': '100%',
         'position': 'fixed'
       });
@@ -90,15 +89,15 @@ $(document).ready(function () {
   } else {
 
     // put the menu off canvas to the left
-    $('.alt-menu').addClass('alt-menu--off-canvas');
+    jQuery('.alt-menu').addClass('alt-menu--off-canvas');
 
     // removes the no js option of columns side by side
-    $('.menu__column').removeClass('ic-tablet-one-half');
-    $('.menu__column').removeClass('ic-notebook-and-up-one-quarter');
+    jQuery('.menu__column').removeClass('ic-tablet-one-half');
+    jQuery('.menu__column').removeClass('ic-notebook-and-up-one-quarter');
 
-    $('.menu__column').css({'padding-right': '24px',});
+    jQuery('.menu__column').css({'padding-right': '24px',});
 
-    $(altMenuToggleButton).click(function() {
+    jQuery(altMenuToggleButton).click(function() {
 
       /*
        *  what to do when menu button gets clicked and menu is already visible
@@ -109,7 +108,7 @@ $(document).ready(function () {
         altMenuToggleButton.removeClass('js-alt-menu-toggle-button--active');
 
         // move the menu off canvas
-        $('.alt-menu').css({
+        jQuery('.alt-menu').css({
           'transform': 'translateX(-100%)',
           '-webkit-transform': 'translateX(-100%)',
           '-ms-transform': 'translateX(-100%)',
@@ -117,19 +116,7 @@ $(document).ready(function () {
         });
 
         // restablish content stuff to be used as normal again
-        $('.footer-hide__helper').css({
-          'transform': 'translateX(0%)',
-          '-webkit-transform': 'translateX(0%)',
-          '-ms-transform': 'translateX(0%)',
-          'transition': '0.25s ease-in-out',
-          'position': 'relative',
-        });
-        $('.footer-hide').css({
-          'transform': 'translateX(0%)',
-          '-webkit-transform': 'translateX(0%)',
-          '-ms-transform': 'translateX(0%)',
-          'transition': '0.25s ease-in-out',
-        })
+        jQuery('.footer-hide__helper').removeClass('footer-hide__helper--shifted');
 
       /*
        * what to do when menu button gets clicked and menu is not yet visible
@@ -140,7 +127,7 @@ $(document).ready(function () {
         altMenuToggleButton.addClass('js-alt-menu-toggle-button--active');
 
         // move the menu from off canvas into viewport
-        $('.alt-menu').css({
+        jQuery('.alt-menu').css({
           'transform': 'translateX(0%)',
           '-webkit-transform': 'translateX(0%)',
           '-ms-transform': 'translateX(0%)',
@@ -149,26 +136,14 @@ $(document).ready(function () {
 
         // make the menu content fill the whole left side (top to bottom) and
         // let its content scroll
-        $('.alt-menu__content').css({
+        jQuery('.alt-menu__content').css({
           'overflow': 'scroll',
           'height': '100%'
         });
 
         // move the regular content to the right (partly off canvas) and
         // prevent scrolling
-        $('.footer-hide__helper').css({
-          'transform': 'translateX(30%)',
-          '-webkit-transform': 'translateX(30%)',
-          '-ms-transform': 'translateX(30%)',
-          'transition': '0.25s ease-in-out',
-          'position': 'fixed',
-        });
-        $('.footer-hide').css({
-          'transform': 'translateX(30%)',
-          '-webkit-transform': 'translateX(30%)',
-          '-ms-transform': 'translateX(30%)',
-          'transition': '0.25s ease-in-out',
-        })
+        jQuery('.footer-hide__helper').addClass('footer-hide__helper--shifted');
 
       }
 
@@ -213,9 +188,9 @@ $(document).ready(function () {
       };
 
     $window.on('scroll', throttle( throttleTimeout, function() {
-      $('.js-head-language-links').hide();
-      $('.head').css({'padding-top': '54px'});
-      $('.js-head-language-indicator').show();
+      jQuery('.js-head-language-links').hide();
+      jQuery('.head').css({'padding-top': '54px'});
+      jQuery('.js-head-language-indicator').show();
       dHeight = $document.height();
       wHeight = $window.height();
       wScrollCurrent = $window.scrollTop();
