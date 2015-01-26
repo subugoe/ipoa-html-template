@@ -22,16 +22,6 @@ module.exports = {
     dest: 'js/vendor/jquery.min.map',
   },
 
-  headroomJquery: {
-    src: 'bower_components/headroom.js/dist/jQuery.headroom.min.js',
-    dest: 'js/vendor/headroom.jquery.js',
-  },
-
-  headroom: {
-    src: 'bower_components/headroom.js/dist/headroom.min.js',
-    dest: 'js/vendor/headroom.js',
-  },
-
   html5shiv: {
     src: 'bower_components/html5shiv/dist/html5shiv.js',
     dest: 'js/vendor/html5shiv.js',
@@ -40,11 +30,6 @@ module.exports = {
   duplicateStyleCSStoStartCss: {
     src: 'css/style.css',
     dest: 'css/start.css'
-  },
-
-  fittextJs: {
-    src: 'bower_components/FitText.js/jquery.fittext.js',
-    dest: 'js/vendor/fittext.js',
   },
 
   ghpages: {

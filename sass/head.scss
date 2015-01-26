@@ -192,15 +192,9 @@
   transition-property: transform;
 }
 
-  .head-nav--hidden {
-    -webkit-transform: translateY( -100% );
-    -ms-transform: translateY( -100% );
-    transform: translateY( -100% );
-    background-color: white;
-    border-bottom: 1px solid lighten(#333, 50%);
-  }
+  .no-js .head-nav { position: relative; }
 
-  .head-nav--narrow {
+  .head-nav--hidden {
     background-color: white;
     border-bottom: 1px solid lighten(#333, 50%);
   }

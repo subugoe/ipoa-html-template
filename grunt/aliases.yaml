@@ -3,10 +3,7 @@
   - 'copy:htmlinspector'
   - 'copy:jquery'
   - 'copy:jqueryAdditionalFiles'
-  - 'copy:headroom'
-  - 'copy:headroomJquery'
   - 'copy:html5shiv'
-  - 'copy:fittextJs'
 
 'devWatch':
   - 'sass'
