@@ -117,6 +117,7 @@ jQuery(document).ready(function () {
 
         // restablish content stuff to be used as normal again
         jQuery('.footer-hide__helper').removeClass('footer-hide__helper--shifted');
+        jQuery('.footer-hide').show();
 
       /*
        * what to do when menu button gets clicked and menu is not yet visible
@@ -144,6 +145,7 @@ jQuery(document).ready(function () {
         // move the regular content to the right (partly off canvas) and
         // prevent scrolling
         jQuery('.footer-hide__helper').addClass('footer-hide__helper--shifted');
+        jQuery('.footer-hide').hide();
 
       }
 
