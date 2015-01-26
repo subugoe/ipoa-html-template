@@ -120,12 +120,6 @@ jQuery(document).ready(function () {
           '-ms-transform': 'translateX(0%)',
           'transition': '0.25s ease-in-out',
           'position': 'relative',
-        });
-        jQuery('.footer-hide').css({
-          'transform': 'translateX(0%)',
-          '-webkit-transform': 'translateX(0%)',
-          '-ms-transform': 'translateX(0%)',
-          'transition': '0.25s ease-in-out',
         })
 
       /*
@@ -159,12 +153,6 @@ jQuery(document).ready(function () {
           '-ms-transform': 'translateX(30%)',
           'transition': '0.25s ease-in-out',
           'position': 'fixed',
-        });
-        jQuery('.footer-hide').css({
-          'transform': 'translateX(30%)',
-          '-webkit-transform': 'translateX(30%)',
-          '-ms-transform': 'translateX(30%)',
-          'transition': '0.25s ease-in-out',
         })
 
       }
