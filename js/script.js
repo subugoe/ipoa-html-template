@@ -60,6 +60,12 @@ jQuery(document).ready(function () {
   jQuery('.alt-menu .menu__list--indented').hide();
 
   /**
+   * find all ULs with active link and parents (in that menu__column) and open them
+   */
+  jQuery('.alt-menu .menu__list--indented .menu__link--active').parentsUntil('.menu__column').show();
+  // console.log(jQuery('.alt-menu .menu__list--indented .menu__link--active').parentsUntil('.menu__column'));
+
+  /**
    *
    */
   jQuery('.alt-menu').find('.menu__link--has-children').click(function(event) {
