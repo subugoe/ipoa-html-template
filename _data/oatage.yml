@@ -1,5 +1,5 @@
 - name: "Tag 1 Montag 8.9.14"
-  text: '<a href="" class="main__link">Registrierung</a>, <a href="" class="main__link">Eröffnung der Tagung</a>, <a href="" class="main__link">Keynote</a>, <a href="" class="main__link">One Minute Madness | Postersession</a>, <a href="" class="main__link">Mittagspause</a>, <a href="" class="main__link">Plenumsvorträge zu Hot Topics</a>, <a href="" class="main__link">Kaffeepause</a>, Sessions: <a href="" class="main__link">I.1</a> / <a href="" class="main__link">I.2</a> / <a href="" class="main__link">I.3</a>, <a href="" class="main__link">Pause</a>, <a href="" class="main__link">Konferenzdinner</a></p><p>Alle Veranstaltungen finden in der FH Köln statt.'
+  text: 'Alle Veranstaltungen finden in der FH Köln statt.'
   session:
   - name: Registrierung
     room: Foyer

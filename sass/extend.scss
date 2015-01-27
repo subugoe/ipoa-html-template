@@ -256,3 +256,4 @@
     .fa-icon { @extend .fa-icon-on-dark; }
   }
 }
+.no-js .on-demand__link { display: none; }
