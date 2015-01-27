@@ -50,6 +50,44 @@ jQuery(document).ready(function () {
   });
 
 
+
+
+  /**
+   * hide all submenulists
+   * for no-js fallback cases they are open by default, so we have to explicitly
+   * close them
+   */
+  jQuery('.alt-menu .menu__list--indented').hide();
+
+  /**
+   *
+   */
+  jQuery('.alt-menu').find('.menu__link--has-children').click(function(event) {
+
+    // open link if child ULs are open already
+    if (jQuery(this).hasClass('menu__link--open')) {
+
+      // console.log('open link');
+      // we could to fancy stuff if a link is clicked to follow the href
+
+    // open UL
+    } else {
+
+      // prevent following the link, because we want to open the UL
+      event.preventDefault();
+
+      // add CSS class "menu__link--open" to clicked link
+      jQuery(this).addClass('menu__link--open');
+
+      // open child
+      jQuery(this).next('.menu__list--indented').show();
+
+    }
+
+  });
+
+
+
   /**
    *
    */
