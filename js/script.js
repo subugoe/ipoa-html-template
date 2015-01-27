@@ -92,6 +92,13 @@ jQuery(document).ready(function () {
   });
 
 
+  jQuery('.on-demand__content').hide();
+  jQuery('.on-demand__link').click(function(event){
+    jQuery('.on-demand__link').hide();
+    jQuery('.on-demand__content').show();
+    event.preventDefault();
+  });
+
 
   /**
    *

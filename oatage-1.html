@@ -25,7 +25,10 @@ layout: default
             {{ session.time }}{% if session.room %}, {{ session.room }}{% endif %}
           </p>
           {% if session.text %}
-          <p>{{ session.text }}</p>
+            <p>{{ session.text }}</p>
+          {% endif %}
+          {% if session.textlong %}
+            <p><a href="#on-demand__link" class="main__link on-demand__link">Weitere Informationen</a><div class="on-demand__content">{{ session.textlong }}</div></p>
           {% endif %}
           <!-- {{ session.video }} -->
           <!-- {{session.presentation}} -->
@@ -47,7 +50,7 @@ layout: default
               {% endif %}
 
 
-              {% if presentation.slide or presentation.video or presentation.poster %}
+              {% if presentation.slide or presentation.video or presentation.poster or presentation.abstract %}
                 <p>Materialien:
                 {% for poster in presentation.poster %}
                   <a href="" class="main__link">{{ poster.name }}</a>
@@ -58,9 +61,14 @@ layout: default
                 {% for video in presentation.video %}
                   <a href="" class="main__link">{{ video.name }}</a>
                 {% endfor %}
+                {% if presentation.abstract %}
+                  <a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>
+                {% endif %}
                 </p>
+                {% if presentation.abstract %}
+                  <div class="on-demand__content"><p><strong>Abstract:</strong> {{ presentation.abstract }}</p></div>
+                {% endif %}
               {% endif %}
-
 
             {% endfor %}
           {% endif %}
