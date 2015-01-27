@@ -63,7 +63,6 @@ jQuery(document).ready(function () {
    * find all ULs with active link and parents (in that menu__column) and open them
    */
   jQuery('.alt-menu .menu__list--indented .menu__link--active').parentsUntil('.menu__column').show();
-  // console.log(jQuery('.alt-menu .menu__list--indented .menu__link--active').parentsUntil('.menu__column'));
 
   /**
    *
@@ -105,7 +104,6 @@ jQuery(document).ready(function () {
    */
   if (windowWidth <= 767) {
 
-    // $('.alt-menu').css({'display': 'none'})
     jQuery(altMenu).css({'display': 'none'})
 
     // when menu button receives click the menu will overlay everything an show
