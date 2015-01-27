@@ -50,6 +50,49 @@ jQuery(document).ready(function () {
   });
 
 
+
+
+  /**
+   * hide all submenulists
+   * for no-js fallback cases they are open by default, so we have to explicitly
+   * close them
+   */
+  jQuery('.alt-menu .menu__list--indented').hide();
+
+  /**
+   * find all ULs with active link and parents (in that menu__column) and open them
+   */
+  jQuery('.alt-menu .menu__list--indented .menu__link--active').parentsUntil('.menu__column').show();
+
+  /**
+   *
+   */
+  jQuery('.alt-menu').find('.menu__link--has-children').click(function(event) {
+
+    // open link if child ULs are open already
+    if (jQuery(this).hasClass('menu__link--open')) {
+
+      // console.log('open link');
+      // we could to fancy stuff if a link is clicked to follow the href
+
+    // open UL
+    } else {
+
+      // prevent following the link, because we want to open the UL
+      event.preventDefault();
+
+      // add CSS class "menu__link--open" to clicked link
+      jQuery(this).addClass('menu__link--open');
+
+      // open child
+      jQuery(this).next('.menu__list--indented').show();
+
+    }
+
+  });
+
+
+
   /**
    *
    */
@@ -61,7 +104,6 @@ jQuery(document).ready(function () {
    */
   if (windowWidth <= 767) {
 
-    // $('.alt-menu').css({'display': 'none'})
     jQuery(altMenu).css({'display': 'none'})
 
     // when menu button receives click the menu will overlay everything an show
@@ -117,6 +159,7 @@ jQuery(document).ready(function () {
 
         // restablish content stuff to be used as normal again
         jQuery('.footer-hide__helper').removeClass('footer-hide__helper--shifted');
+        jQuery('.footer-hide').show();
 
       /*
        * what to do when menu button gets clicked and menu is not yet visible
@@ -144,6 +187,7 @@ jQuery(document).ready(function () {
         // move the regular content to the right (partly off canvas) and
         // prevent scrolling
         jQuery('.footer-hide__helper').addClass('footer-hide__helper--shifted');
+        jQuery('.footer-hide').hide();
 
       }
 
