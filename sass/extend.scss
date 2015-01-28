@@ -161,17 +161,20 @@
   border-radius: $link-border-radius--default;
   border: 1px solid transparent;
   padding: $link-padding--default;
+  padding: 2px 3px 0px 3px;
   text-decoration: none;
   color: $color--darkest;
   transition: all $transition-time--default ease;
 }
+
+%link--underline-on-bright { border-bottom: 1px dotted $color-ipoa-green; }
 
 /**
  * TODO : add documentation
  */
 %link-in-linklist {
   transition: all $transition-time--default ease;
-  display: block;
+  // display: block;
   border-radius: $link-border-radius--default;
   text-decoration: none;
   padding: $link-padding--small;
@@ -188,12 +191,14 @@
   }
 }
 
+%link--block { display: block; }
+
 /**
  * TODO : add documentation
  */
 %link-on-bright {
   color: $color--darkest;
-  background-color: lighten($link-background-color--default, $link-lighten-color-factor);
+  // background-color: lighten($link-background-color--default, $link-lighten-color-factor);
   &:hover,
   &:focus {
     background-color: $color-ipoa-green;
@@ -253,3 +258,5 @@
     .fa-icon { @extend .fa-icon-on-dark; }
   }
 }
+
+.no-js .on-demand__link { display: none; }

@@ -42,4 +42,7 @@
 .last__link {
   @extend %link--default;
   @extend %link-on-bright;
+  background-color: #eeeeee;
+  // @extend %link--underline-on-bright;
+  padding: 3px 5px;
 }

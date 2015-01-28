@@ -48,7 +48,12 @@
   /**
    * TODO : add documentation
    */
-  .footer__link--in-list { @extend %link-in-linklist; }
+  .footer__link--in-list {
+    @extend %link-in-linklist;
+    @extend %link--block;
+    padding: 3px 5px;
+    background-color: #eeeeee;
+  }
 
   /**
    * TODO : add documentation

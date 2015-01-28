@@ -64,7 +64,10 @@
 .menu__link {
   @extend %link-in-linklist;
   @extend %link-in-linklist--dense;
+  @extend %link--block;
+  padding: 3px 5px;
   color: $color--darkest;
+  &:before { margin-left: -17px; }
   &:hover,
   &:focus {
     color: $color--brightest;

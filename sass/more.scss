@@ -40,7 +40,12 @@
   /**
    * TODO : add documentation
    */
-  .more__link--in-list { @extend %link-in-linklist; }
+  .more__link--in-list {
+    @extend %link-in-linklist;
+    @extend %link--block;
+    padding: 3px 5px;
+    background-color: #eeeeee;
+  }
 
   /**
    * TODO : add documentation
