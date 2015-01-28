@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<!--
+NOTE : set lang via CMS related to the actual page language
+-->
+<html lang="de" class="no-js">
+<head>
+  <!--
+  NOTE : have a look at HTML 5 Boilerplate for stuff that makes sense in the context of this project
+  -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Open Acces Tage 2014 | ipoa-html-mockup</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--
+  NOTE : js detection. Reference: http://www.paulirish.com/2009/avoiding-the-fouc-v3/
+  -->
+  <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  <script src="js/vendor/picturefill.js" async></script>
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body class="body content">
+
+<svg xmlns="http://www.w3.org/2000/svg" display="none" version="1.1"><defs><symbol id="icon-search" viewBox="0 0 951 1024"><title>search</title><path class="path1" d="M658.29 475.43q0-105.71-75.14-180.86t-180.86-75.14-180.86 75.14-75.14 180.86 75.14 180.86 180.86 75.14 180.86-75.14 75.14-180.86zM950.86 950.86q0 29.71-21.71 51.43t-51.43 21.71q-30.86 0-51.43-21.71l-196-195.43q-102.29 70.86-228 70.86-81.71 0-156.29-31.71t-128.57-85.71-85.71-128.57-31.71-156.29 31.71-156.29 85.71-128.57 128.57-85.71 156.29-31.71 156.29 31.71 128.57 85.71 85.71 128.57 31.71 156.29q0 125.71-70.86 228l196 196q21.14 21.14 21.14 51.43z"/></symbol><symbol id="icon-home" viewBox="0 0 951 1024"><title>home</title><path class="path1" d="M804.57 566.86v274.29q0 14.86-10.86 25.71t-25.71 10.86h-219.43v-219.43h-146.29v219.43h-219.43q-14.86 0-25.71-10.86t-10.86-25.71v-274.29q0-0.57 0.29-1.71t0.29-1.71l328.57-270.86 328.57 270.86q0.57 1.14 0.57 3.43zM932 527.43l-35.43 42.29q-4.57 5.14-12 6.29h-1.71q-7.43 0-12-4l-395.43-329.71-395.43 329.71q-6.86 4.57-13.71 4-7.43-1.14-12-6.29l-35.43-42.29q-4.57-5.71-4-13.43t6.29-12.29l410.86-342.29q18.29-14.86 43.43-14.86t43.43 14.86l139.43 116.57v-111.43q0-8 5.14-13.14t13.14-5.14h109.71q8 0 13.14 5.14t5.14 13.14v233.14l125.14 104q5.71 4.57 6.29 12.29t-4 13.43z"/></symbol><symbol id="icon-twitter" viewBox="0 0 951 1024"><title>twitter</title><path class="path1" d="M925.71 233.14q-38.29 56-92.57 95.43 0.57 8 0.57 24 0 74.29-21.71 148.29t-66 142-105.43 120.29-147.43 83.43-184.57 31.14q-154.86 0-283.43-82.86 20 2.29 44.57 2.29 128.57 0 229.14-78.86-60-1.14-107.43-36.86t-65.14-91.14q18.86 2.86 34.86 2.86 24.57 0 48.57-6.29-64-13.14-106-63.71t-42-117.43v-2.29q38.86 21.71 83.43 23.43-37.71-25.14-60-65.71t-22.29-88q0-50.29 25.14-93.14 69.14 85.14 168.29 136.29t212.29 56.86q-4.57-21.71-4.57-42.29 0-76.57 54-130.57t130.57-54q80 0 134.86 58.29 62.29-12 117.14-44.57-21.14 65.71-81.14 101.71 53.14-5.71 106.29-28.57z"/></symbol><symbol id="icon-facebook" viewBox="0 0 585 1024"><title>facebook</title><path class="path1" d="M548 6.86v150.86h-89.71q-49.14 0-66.29 20.57t-17.14 61.71v108h167.43l-22.29 169.14h-145.14v433.71h-174.86v-433.71h-145.71v-169.14h145.71v-124.57q0-106.29 59.43-164.86t158.29-58.57q84 0 130.29 6.86z"/></symbol><symbol id="icon-globe" viewBox="0 0 1024 1024"><title>globe</title><path class="path1" d="M438.86 73.14q119.43 0 220.29 58.86t159.71 159.71 58.86 220.29-58.86 220.29-159.71 159.71-220.29 58.86-220.29-58.86-159.71-159.71-58.86-220.29 58.86-220.29 159.71-159.71 220.29-58.86zM595.43 370.86q-1.14 0.57-5.43 5.43t-7.71 5.43q1.14 0 2.57-2.86t2.86-6.29 2-4q3.43-4 12.57-8.57 8-3.43 29.71-6.86 19.43-4.57 29.14 6.29-1.14-1.14 5.43-7.43t8.29-6.86q1.71-1.14 8.57-2.57t8.57-4.29l1.14-12.57q-6.86 0.57-10-4t-3.71-12q0 1.14-3.43 4.57 0-4-2.57-4.57t-6.57 0.57-5.14 0.57q-5.71-1.71-8.57-4.29t-4.57-9.43-2.29-8.57q-1.14-2.86-5.43-6t-5.43-6q-0.57-1.14-1.43-3.14t-1.71-3.71-2.29-3.14-3.14-1.43-4 2.86-4.29 5.71-2.57 2.86q-1.71-1.14-3.43-0.86t-2.57 0.57-2.57 1.71-2.86 2q-1.71 1.14-4.86 1.71t-4.86 1.14q8.57-2.86-0.57-6.29-5.71-2.29-9.14-1.71 5.14-2.29 4.29-6.86t-4.86-8h2.86q-0.57-2.29-4.86-4.86t-10-4.86-7.43-3.43q-4.57-2.86-19.43-5.43t-18.86-0.29q-2.86 3.43-2.57 6t2.29 8 2 7.14q0.57 3.43-3.14 7.43t-3.71 6.86q0 4 8 8.86t5.71 12.29q-1.71 4.57-9.14 9.14t-9.14 6.86q-2.86 4.57-0.86 10.57t6 9.43q1.14 1.14 0.86 2.29t-2 2.57-3.14 2.29-3.71 2l-1.71 1.14q-6.29 2.86-11.71-3.43t-7.71-14.86q-4-14.29-9.14-17.14-13.14-4.57-16.57 0.57-2.86-7.43-23.43-14.86-14.29-5.14-33.14-2.29 3.43-0.57 0-8.57-4-8.57-10.86-6.86 1.71-3.43 2.29-10t0.57-7.71q1.71-7.43 6.86-13.14 0.57-0.57 4-4.86t5.43-7.71 0.29-3.43q20 2.29 28.57-6.29 2.86-2.86 6.57-9.71t6-9.71q5.14-3.43 8-3.14t8.29 3.14 8.29 2.86q8 0.57 8.86-6.29t-4.29-11.43q6.86 0.57 1.71-9.71-2.86-4-4.57-5.14-6.86-2.29-15.43 2.86-4.57 2.29 1.14 4.57-0.57-0.57-5.43 6t-9.43 10-9.14-2.86q-0.57-0.57-3.14-7.71t-5.43-7.71q-4.57 0-9.14 8.57 1.71-4.57-6.29-8.57t-13.71-4.57q10.86-6.86-4.57-15.43-4-2.29-11.71-2.86t-11.14 2.29q-2.86 4-3.14 6.57t2.86 4.57 6 3.14 6.57 2.29 4.86 1.71q8 5.71 4.57 8-1.14 0.57-4.86 2t-6.57 2.57-3.43 2.29q-1.71 2.29 0 8t-1.14 8q-2.86-2.86-5.14-10t-4-9.43q4 5.14-14.29 3.43l-5.71-0.57q-2.29 0-9.14 1.14t-11.71 0.57-7.71-4.57q-2.29-4.57 0-11.43 0.57-2.29 2.29-1.14-2.29-1.71-6.29-5.43t-5.71-4.86q-26.29 8.57-53.71 23.43 3.43 0.57 6.86-0.57 2.86-1.14 7.43-3.71t5.71-3.14q19.43-8 24-4l2.86-2.86q8 9.14 11.43 14.29-4-2.29-17.14-0.57-11.43 3.43-12.57 6.86 4 6.86 2.86 10.29-2.29-1.71-6.57-5.71t-8.29-6.29-8.57-2.86q-9.14 0-12.57 0.57-83.43 45.71-134.29 126.86 4 4 6.86 4.57 2.29 0.57 2.86 5.14t1.43 6.29 6.57-1.71q5.14 4.57 1.71 10.86 0.57-0.57 25.14 15.43 10.86 9.71 12 12 1.71 6.29-5.71 10.29-0.57-1.14-5.14-5.14t-5.14-2.29q-1.71 2.86 0.29 10.57t6 7.14q-4 0-5.43 9.14t-1.43 20.29-0.57 13.43l1.14 0.57q-1.71 6.86 3.14 19.71t12.29 11.14q-7.43 1.71 11.43 24.57 3.43 4.57 4.57 5.14 1.71 1.14 6.86 4.29t8.57 5.71 5.71 6q2.29 2.86 5.71 12.86t8 13.43q-1.14 3.43 5.43 11.43t6 13.14q-0.57 0-1.43 0.57t-1.43 0.57q1.71 4 8.86 8t8.86 7.43q0.57 1.71 1.14 5.71t1.71 6.29 4.57 1.14q1.14-11.43-13.71-35.43-8.57-14.29-9.71-16.57-1.71-2.86-3.14-8.86t-2.57-8.29q1.14 0 3.43 0.86t4.86 2 4.29 2.29 1.14 1.71q-1.71 4 1.14 10t6.86 10.57 9.71 10.86 6.86 7.43q3.43 3.43 8 11.14t0 7.71q5.14 0 11.43 5.71t9.71 11.43q2.86 4.57 4.57 14.86t2.86 13.71q1.14 4 4.86 7.71t7.14 5.43l9.14 4.57t7.43 4q2.86 1.14 10.57 6t12.29 6.57q5.71 2.29 9.14 2.29t8.29-1.43 7.71-2q8.57-1.14 16.57 8.57t12 12q20.57 10.86 31.43 6.29-1.14 0.57 0.29 4.29t4.57 8.86 5.14 8.29 3.14 4.86q2.86 3.43 10.29 8.57t10.29 8.57q3.43-2.29 4-5.14-1.71 4.57 4 11.43t10.29 5.71q8-1.71 8-18.29-17.71 8.57-28-10.29 0-0.57-1.43-3.14t-2.29-4.86-1.43-4.86 0-4.29 2.86-1.71q5.14 0 5.71-2t-1.14-7.14-2.29-7.43q-0.57-4.57-6.29-11.43t-6.86-8.57q-2.86 5.14-9.14 4.57t-9.14-5.14q0 0.57-0.86 3.14t-0.86 3.71q-7.43 0-8.57-0.57 0.57-1.71 1.43-10t2-12.86q0.57-2.29 3.14-6.86t4.29-8.29 2.29-7.14-2.57-5.43-10-1.43q-10.86 0.57-14.86 11.43-0.57 1.71-1.71 6t-2.86 6.57-5.14 4q-4 1.71-13.71 1.14t-13.71-2.86q-7.43-4.57-12.86-16.57t-5.43-21.14q0-5.71 1.43-15.14t1.71-14.29-3.14-14q1.71-1.14 5.14-5.43t5.71-6q1.14-0.57 2.57-0.86t2.57 0 2.29-0.86 1.71-3.43q-0.57-0.57-2.29-1.71-1.71-1.71-2.29-1.71 4 1.71 16.29-0.86t15.71 0.86q8.57 6.29 12.57-1.14 0-0.57-1.43-5.43t-0.29-7.71q2.86 15.43 16.57 5.14 1.71 1.71 8.86 2.86t10 2.86q1.71 1.14 4 3.14t3.14 2.57 2.86-0.29 4.86-3.71q5.71 8 6.86 13.71 6.29 22.86 10.86 25.14 4 1.71 6.29 1.14t2.57-5.43 0-8-0.86-7.14l-0.57-4.57v-10.29l-0.57-4.57q-8.57-1.71-10.57-6.86t0.86-10.57 8.57-10.57q0.57-0.57 4.57-2t8.86-3.71 7.14-4.57q12-10.86 8.57-20 4 0 6.29-5.14-0.57 0-2.86-1.71t-4.29-2.86-2.57-1.14q5.14-2.86 1.14-9.14 2.86-1.71 4.29-6.29t4.29-5.71q5.14 6.86 12 1.14 4-4.57 0.57-9.14 2.86-4 11.71-6t10.57-5.43q4 1.14 4.57-1.14t0.57-6.86 1.71-6.86q2.29-2.86 8.57-5.14t7.43-2.86l9.71-6.29q1.71-2.29 0-2.29 10.29 1.14 17.71-6.29 5.71-6.29-3.43-11.43 1.71-3.43-1.71-5.43t-8.57-3.14q1.71-0.57 6.57-0.29t6-0.86q8.57-5.71-4-9.14-9.71-2.86-24.57 6.86zM502.29 872q117.71-20.57 200.57-108-1.71-1.71-7.14-2.57t-7.14-2q-10.29-4-13.71-4.57 0.57-4-1.43-7.43t-4.57-5.14-7.14-4.57-6.29-4q-1.14-1.14-4-3.43t-4-3.14-4.29-2.57-4.86-1.14-5.71 0.57l-1.71 0.57q-1.71 0.57-3.14 1.43t-3.14 1.71-2.29 1.71 0 1.43q-12-9.71-20.57-12.57-2.86-0.57-6.29-3.14t-6-4-5.71-0.86-6.57 4q-2.86 2.86-3.43 8.57t-1.14 7.43q-4-2.86 0-10t1.14-10.57q-1.71-3.43-6-2.57t-6.86 2.57-6.57 4.86-5.14 3.71-4.86 3.14-4.86 4.29q-1.71 2.29-3.43 6.86t-2.86 6.29q-1.14-2.29-6.57-3.71t-5.43-3.14q1.14 5.71 2.29 20t2.86 21.71q4 17.71-6.86 27.43-15.43 14.29-16.57 22.86-2.29 12.57 6.86 14.86 0 4-4.57 11.71t-4 12.29q0 3.43 1.14 9.14z"/></symbol><symbol id="icon-bars" viewBox="0 0 1024 1024"><title>bars</title><path class="path1" d="M877.71 768v73.14q0 14.86-10.86 25.71t-25.71 10.86h-804.57q-14.86 0-25.71-10.86t-10.86-25.71v-73.14q0-14.86 10.86-25.71t25.71-10.86h804.57q14.86 0 25.71 10.86t10.86 25.71zM877.71 475.43v73.14q0 14.86-10.86 25.71t-25.71 10.86h-804.57q-14.86 0-25.71-10.86t-10.86-25.71v-73.14q0-14.86 10.86-25.71t25.71-10.86h804.57q14.86 0 25.71 10.86t10.86 25.71zM877.71 182.86v73.14q0 14.86-10.86 25.71t-25.71 10.86h-804.57q-14.86 0-25.71-10.86t-10.86-25.71v-73.14q0-14.86 10.86-25.71t25.71-10.86h804.57q14.86 0 25.71 10.86t10.86 25.71z"/></symbol><symbol id="icon-gavel" viewBox="0 0 1024 1024"><title>gavel</title><path class="path1" d="M1012 877.71q0 30.29-21.14 51.43l-61.14 61.71q-22.29 21.14-52 21.14-30.29 0-51.43-21.14l-207.43-208q-21.71-20.57-21.71-51.43 0-30.29 24.57-54.86l-146.29-146.29-72 72q-8 8-19.43 8t-19.43-8q1.14 1.14 7.14 6.86t7.14 7.43 5.71 6.57 5.71 7.71 3.43 7.71 3.14 9.43 0.86 10.29q0 21.71-16 38.86-1.71 1.71-9.43 10.29t-10.86 11.71-10.57 9.43-12.57 8.86-12.57 5.14-14.86 2.57q-22.86 0-38.86-16l-233.14-233.14q-16-16-16-38.86 0-7.43 2.57-14.86t5.14-12.57 8.86-12.57 9.43-10.57 11.71-10.86 10.29-9.43q17.14-16 38.86-16 5.71 0 10.29 0.86t9.43 3.14 7.71 3.43 7.71 5.71 6.57 5.71 7.43 7.14 6.86 7.14q-8-8-8-19.43t8-19.43l198.86-198.86q8-8 19.43-8t19.43 8q-1.14-1.14-7.14-6.86t-7.14-7.43-5.71-6.57-5.71-7.71-3.43-7.71-3.14-9.43-0.86-10.29q0-21.71 16-38.86 1.71-1.71 9.43-10.29t10.86-11.71 10.57-9.43 12.57-8.86 12.57-5.14 14.86-2.57q22.86 0 38.86 16l233.14 233.14q16 16 16 38.86 0 7.43-2.57 14.86t-5.14 12.57-8.86 12.57-9.43 10.57-11.71 10.86-10.29 9.43q-17.14 16-38.86 16-5.71 0-10.29-0.86t-9.43-3.14-7.71-3.43-7.71-5.71-6.57-5.71-7.43-7.14-6.86-7.14q8 8 8 19.43t-8 19.43l-72 72 146.29 146.29q24.57-24.57 54.86-24.57 29.71 0 52 21.14l207.43 207.43q21.14 22.29 21.14 52z"/></symbol><symbol id="icon-comments-o" viewBox="0 0 1024 1024"><title>comments-o</title><path class="path1" d="M402.29 219.43q-87.43 0-163.43 29.71t-120.86 80.57-44.86 109.14q0 46.86 30.29 90.29t85.14 75.43l55.43 32-20 48q19.43-11.43 35.43-22.29l25.14-17.71 30.29 5.71q44.57 8 87.43 8 87.43 0 163.43-29.71t120.86-80.57 44.86-109.14-44.86-109.14-120.86-80.57-163.43-29.71zM402.29 146.29q109.14 0 202 39.14t146.57 106.57 53.71 146.86-53.71 146.86-146.57 106.57-202 39.14q-49.14 0-100.57-9.14-70.86 50.29-158.86 73.14-20.57 5.14-49.14 9.14h-1.71q-6.29 0-11.71-4.57t-6.57-12q-0.57-1.71-0.57-3.71t0.29-3.71 1.14-3.43l1.43-2.86t2-3.14 2.29-2.86 2.57-2.86 2.29-2.57q2.86-3.43 13.14-14.29t14.86-16.86 12.86-16.57 14.29-22 11.71-25.14q-70.86-41.14-111.43-101.14t-40.57-128q0-79.43 53.71-146.86t146.57-106.57 202-39.14zM872 814.29q5.71 13.71 11.71 25.14t14.29 22 12.86 16.57 14.86 16.86 13.14 14.29q0.57 0.57 2.29 2.57t2.57 2.86 2.29 2.86 2 3.14l1.43 2.86t1.14 3.43 0.29 3.71-0.57 3.71q-1.71 8-7.43 12.57t-12.57 4q-28.57-4-49.14-9.14-88-22.86-158.86-73.14-51.43 9.14-100.57 9.14-154.86 0-269.71-75.43 33.14 2.29 50.29 2.29 92 0 176.57-25.71t150.86-73.71q71.43-52.57 109.71-121.14t38.29-145.14q0-44-13.14-86.86 73.71 40.57 116.57 101.71t42.86 131.43q0 68.57-40.57 128.29t-111.43 100.86z"/></symbol><symbol id="icon-sitemap" viewBox="0 0 1024 1024"><title>sitemap</title><path class="path1" d="M1024 713.14v182.86q0 22.86-16 38.86t-38.86 16h-182.86q-22.86 0-38.86-16t-16-38.86v-182.86q0-22.86 16-38.86t38.86-16h54.86v-109.71h-292.57v109.71h54.86q22.86 0 38.86 16t16 38.86v182.86q0 22.86-16 38.86t-38.86 16h-182.86q-22.86 0-38.86-16t-16-38.86v-182.86q0-22.86 16-38.86t38.86-16h54.86v-109.71h-292.57v109.71h54.86q22.86 0 38.86 16t16 38.86v182.86q0 22.86-16 38.86t-38.86 16h-182.86q-22.86 0-38.86-16t-16-38.86v-182.86q0-22.86 16-38.86t38.86-16h54.86v-109.71q0-29.71 21.71-51.43t51.43-21.71h292.57v-109.71h-54.86q-22.86 0-38.86-16t-16-38.86v-182.86q0-22.86 16-38.86t38.86-16h182.86q22.86 0 38.86 16t16 38.86v182.86q0 22.86-16 38.86t-38.86 16h-54.86v109.71h292.57q29.71 0 51.43 21.71t21.71 51.43v109.71h54.86q22.86 0 38.86 16t16 38.86z"/></symbol><symbol id="icon-angle-right" viewBox="0 0 366 1024"><title>angle-right</title><path class="path1" d="M340 548.57q0 7.43-5.71 13.14l-266.29 266.29q-5.71 5.71-13.14 5.71t-13.14-5.71l-28.57-28.57q-5.71-5.71-5.71-13.14t5.71-13.14l224.57-224.57-224.57-224.57q-5.71-5.71-5.71-13.14t5.71-13.14l28.57-28.57q5.71-5.71 13.14-5.71t13.14 5.71l266.29 266.29q5.71 5.71 5.71 13.14z"/></symbol><symbol id="icon-smile-o" viewBox="0 0 1024 1024"><title>smile-o</title><path class="path1" d="M648 614.29q-21.14 69.14-78.86 111.43t-130.29 42.29-130.29-42.29-78.86-111.43q-4.57-14.29 2.29-27.71t21.71-18q14.29-4.57 27.71 2.29t18 21.71q14.29 45.71 52.86 74t86.57 28.29 86.57-28.29 52.86-74q4.57-14.86 18.29-21.71t28-2.29 21.14 18 2.29 27.71zM365.71 365.71q0 30.29-21.43 51.71t-51.71 21.43-51.71-21.43-21.43-51.71 21.43-51.71 51.71-21.43 51.71 21.43 21.43 51.71zM658.29 365.71q0 30.29-21.43 51.71t-51.71 21.43-51.71-21.43-21.43-51.71 21.43-51.71 51.71-21.43 51.71 21.43 21.43 51.71zM804.57 512q0-74.29-29.14-142t-78-116.57-116.57-78-142-29.14-142 29.14-116.57 78-78 116.57-29.14 142 29.14 142 78 116.57 116.57 78 142 29.14 142-29.14 116.57-78 78-116.57 29.14-142zM877.71 512q0 119.43-58.86 220.29t-159.71 159.71-220.29 58.86-220.29-58.86-159.71-159.71-58.86-220.29 58.86-220.29 159.71-159.71 220.29-58.86 220.29 58.86 159.71 159.71 58.86 220.29z"/></symbol><symbol id="icon-info" viewBox="0 0 366 1024"><title>info</title><path class="path1" d="M365.71 768v73.14q0 14.86-10.86 25.71t-25.71 10.86h-292.57q-14.86 0-25.71-10.86t-10.86-25.71v-73.14q0-14.86 10.86-25.71t25.71-10.86h36.57v-219.43h-36.57q-14.86 0-25.71-10.86t-10.86-25.71v-73.14q0-14.86 10.86-25.71t25.71-10.86h219.43q14.86 0 25.71 10.86t10.86 25.71v329.14h36.57q14.86 0 25.71 10.86t10.86 25.71zM292.57 109.71v109.71q0 14.86-10.86 25.71t-25.71 10.86h-146.29q-14.86 0-25.71-10.86t-10.86-25.71v-109.71q0-14.86 10.86-25.71t25.71-10.86h146.29q14.86 0 25.71 10.86t10.86 25.71z"/></symbol><symbol id="icon-rss-square" viewBox="0 0 1024 1024"><title>rss-square</title><path class="path1" d="M292.57 731.43q0-30.29-21.43-51.71t-51.71-21.43-51.71 21.43-21.43 51.71 21.43 51.71 51.71 21.43 51.71-21.43 21.43-51.71zM493.14 785.14q-7.43-132.57-101.14-226.29t-226.29-101.14q-8-0.57-13.71 5.14t-5.71 13.14v73.14q0 7.43 4.86 12.57t12.29 5.71q88 6.29 150.86 69.14t69.14 150.86q0.57 7.43 5.71 12.29t12.57 4.86h73.14q7.43 0 13.14-5.71t5.14-13.71zM712.57 785.71q-2.86-88-32-170t-79.71-148.57-117.14-117.14-148.57-79.71-170-32q-8-0.57-13.14 5.14-5.71 5.71-5.71 13.14v73.14q0 7.43 5.14 12.57t12.57 5.71q116.57 4 216 63.71t159.14 159.14 63.71 216q0.57 7.43 5.71 12.57t12.57 5.14h73.14q7.43 0 13.14-5.71 6.29-5.14 5.14-13.14zM877.71 237.71v548.57q0 68-48.29 116.29t-116.29 48.29h-548.57q-68 0-116.29-48.29t-48.29-116.29v-548.57q0-68 48.29-116.29t116.29-48.29h548.57q68 0 116.29 48.29t48.29 116.29z"/></symbol><symbol id="icon-toggle-off" viewBox="0 0 1170 1024"><title>toggle-off</title><path class="path1" d="M658.29 512q0-59.43-23.14-113.43t-62.57-93.43-93.43-62.57-113.43-23.14-113.43 23.14-93.43 62.57-62.57 93.43-23.14 113.43 23.14 113.43 62.57 93.43 93.43 62.57 113.43 23.14 113.43-23.14 93.43-62.57 62.57-93.43 23.14-113.43zM1097.14 512q0-59.43-23.14-113.43t-62.57-93.43-93.43-62.57-113.43-23.14h-220.57q68 51.43 107.71 128t39.71 164.57-39.71 164.57-107.71 128h220.57q59.43 0 113.43-23.14t93.43-62.57 62.57-93.43 23.14-113.43zM1170.29 512q0 74.29-29.14 142t-78 116.57-116.57 78-142 29.14h-438.86q-74.29 0-142-29.14t-116.57-78-78-116.57-29.14-142 29.14-142 78-116.57 116.57-78 142-29.14h438.86q74.29 0 142 29.14t116.57 78 78 116.57 29.14 142z"/></symbol><symbol id="icon-toggle-on" viewBox="0 0 1170 1024"><title>toggle-on</title><path class="path1" d="M0 512q0-74.29 29.14-142t78-116.57 116.57-78 142-29.14h438.86q74.29 0 142 29.14t116.57 78 78 116.57 29.14 142-29.14 142-78 116.57-116.57 78-142 29.14h-438.86q-74.29 0-142-29.14t-116.57-78-78-116.57-29.14-142zM804.57 804.57q59.43 0 113.43-23.14t93.43-62.57 62.57-93.43 23.14-113.43-23.14-113.43-62.57-93.43-93.43-62.57-113.43-23.14-113.43 23.14-93.43 62.57-62.57 93.43-23.14 113.43 23.14 113.43 62.57 93.43 93.43 62.57 113.43 23.14z"/></symbol><symbol id="icon-bolt" viewBox="0 0 512 1024"><title>bolt</title><path class="path1" d="M505.71 323.43q10.29 11.43 4 25.14l-308.57 661.14q-7.43 14.29-24 14.29-2.29 0-8-1.14-9.71-2.86-14.57-10.86t-2.57-17.14l112.57-461.71-232 57.71q-2.29 0.57-6.86 0.57-10.29 0-17.71-6.29-10.29-8.57-7.43-22.29l114.86-471.43q2.29-8 9.14-13.14t16-5.14h187.43q10.86 0 18.29 7.14t7.43 16.86q0 4.57-2.86 10.29l-97.71 264.57 226.29-56q4.57-1.14 6.86-1.14 10.86 0 19.43 8.57z"/></symbol></defs></svg>
+
+<!-- start page -->
+
+<div class="footer-hide__helper" id="top">
+
+    <nav class="head-nav">
+    <div class="head__menubutton">
+      <a class="menu__button js-menu-toggle-button js-alt-menu-toggle-button" href="#menu">
+      <svg class="fa-icon fa-icon-bars fa-icon--s"><use xlink:href="#icon-bars"></use></svg> Menu</a>
+    </div><!--
+    --><div class="head__links">
+      <ul class="head__list">
+        <li>
+          <a href="#" title="" class="head__link">
+            <svg class="fa-icon fa-icon-home fa-icon--s"><use xlink:href="#icon-home"></use></svg><span class="hidden-on-phone"> Startseite</span>
+          </a>
+        </li><!--
+        --><li>
+          <a href="#" title="" class="head__link">
+            <svg class="fa-icon fa-icon-info fa-icon--s"><use xlink:href="#icon-info"></use></svg><span class="hidden-on-phone"> Kontakt</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="" class="head__link">
+            <svg class="fa-icon fa-icon-bolt fa-icon--s"><use xlink:href="#icon-bolt"></use></svg><span class="hidden-on-phone"> News</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="" class="head__link">
+            <svg class="fa-icon fa-icon-sitemap fa-icon--s"><use xlink:href="#icon-sitemap"></use></svg><span class="hidden-on-phone"> Sitemap</span>
+          </a>
+        </li>
+        <li>
+          <a href="#search" title="" class="head__link head__language-indicator">
+            <svg class="fa-icon fa-icon-search fa-icon--s"><use xlink:href="#icon-search"></use></svg><span class="hidden-on-phone"> Suche</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="head__link js-head-language-indicator" title="Click this to see a list of available languages">
+            <svg class="fa-icon fa-icon-globe fa-icon--s"><use xlink:href="#icon-globe"></use></svg><span class="hidden-on-phone"> DE-DE</span>
+          </a>
+        </li>
+      </ul>
+      <div class="head__language-links js-head-language-links">
+        <svg class="fa-icon fa-icon-globe fa-icon--s fa-icon-on-bright"><use xlink:href="#icon-globe"></use></svg>
+        <ul class="head__list">
+          <li><a href="#" title="" class="head__link">AT-DE</a></li>
+          <li><a href="#" title="" class="head__link">AT-EN</a></li>
+          <li><a href="#" title="" class="head__link">CH-DE</a></li>
+          <li><a href="#" title="" class="head__link">CH-EN</a></li>
+          <li><a href="#" title="" class="head__link  head__link--active">DE-DE</a></li>
+          <li><a href="#" title="" class="head__link">DE-EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><!--
+--><header class="head">
+  <div class="head__logo">
+    <img src="img/oa.svg" class="image">
+  </div><!--
+  --><div class="head__claim">
+    Der freie Zugang zu<br><span class="nobr">wissenschaftlicher Information</span>
+  </div><!--
+  --><div class="head__pagetitle">
+    <h1 class="heading heading--alpha">Allgemeine Informationen</h1>
+  </div>
+</header>
+
+  <div class="headroom__helper">
+
+    <main role="main" class="main">
+
+
+      <!-- {"name"=>"Tag 1 Montag 8.9.14", "text"=>"Alle Veranstaltungen finden in der FH Köln statt.", "session"=>[{"name"=>"Registrierung", "room"=>"Foyer", "time"=>"ab 09.00"}, {"name"=>"Eröffnung der Tagung", "room"=>"Raum 69", "time"=>"11.00-11.30", "video"=>"Video", "text"=>"Begrüßung und Moderation: <a href=\"\" class=\"main__link\">Ursula Arning</a> (ZB MED), <a href=\"\" class=\"main__link\">Agathe Gebert</a> (GESIS) und Achim Oßwald (FH Köln) im Namen der Organisatoren und des Programmkomitees"}, {"name"=>"Keynote", "time"=>"11.30-12.10", "presentation"=>[{"name"=>"Open Science – mehr als nur eine Frage der Kommunikation", "video"=>[{"name"=>"Video"}], "slide"=>[{"name"=>"Präsentation"}], "presenter"=>[{"name"=>"Wolfgang zu Castell", "org"=>"Helmholtz-Zentrum München"}], "abstract"=>"Der Begriff Open Science klingt für die Wissenschaft zunächst nach einem altbewährtem Rezept – also nichts Neues. Wissenschaft lebt schon seit jeher von Offenheit und Austausch. Dahinter stehen die Grundprinzipien von Verifizierbarkeit und Reproduzierbarkeit als Garanten der wissenschaftlichen Methodik.<br>Open Science klingt gleichzeitig aber auch nach Neuem: Wissenschaft 2.0 – gefördert und getrieben durch die Möglichkeiten moderner Kommunikations- und Informationstechnologien. Der freie und offene Zugang zu Wissen und Information, gepaart mit den Möglichkeiten der informationstechnischen Verarbeitung weltweit gespeicherten Wissens. Dies wiederum klingt nach Zukunft, nach ungeahnten Möglichkeiten und unglaublichem Fortschritt.<br>Der Vortrag soll sich diesem Spannungsfeld zwischen dem Festhalten an Altbewährten und der Faszination der neuen Möglichkeiten widmen. Im Mittelpunkt steht die Frage, ob wir mit unseren technischen Möglichkeiten nur die Verarbeitung und Verbreitung unseres Wissens verändern, oder auch das Wissen selbst und damit das, was wir unter Wissenschaft verstehen."}], "room"=>"Raum 69", "text"=>"Moderation: Achim Oßwald (FH Köln)"}, {"name"=>"One Minute Madness | Postersession", "time"=>"12.10-12.30", "presentation"=>[{"name"=>"POSUKO", "text"=>"POrtable SUchKOntexte zur Vernetzung von Bibliotheken, Verlagen und Wissenschaftlern", "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Martin Roos", "org"=>"UB Hagen"}], "abstract"=>"Im Rahmen des Open-Access-Journals eleed (e-learning and education) wird ein neuer kollaborativer Ansatz zur Literaturrecherche erprobt. Ausgehend von den Artikeln, ihren Metadaten und ihren Literaturreferenzen sollen das semantische Verständnis während der Recherche visualisiert, Suchkontexte expliziert und Suchinformationen für Bibliotheken und Verlage nutzbar gemacht werden. Suchkontexte von Nutzenden können offengelegt und über Anbietergrenzen hinweg zur Verbesserung der Suche genutzt werden.<br>Das sich so ergebende semantische Suchnetz soll durch offene Dienste über ein freies Austauschformat abgelegt und genutzt werden. Durch Suchaktivitäten wächst der Suchkontext an. Anbieter können ihn nicht nur zur Verbesserung von Suchergebnissen nutzen, sondern auch ihre Literatur-Metadaten anreichern.<br>Der kooperative Ansatz wird von der UB Hagen und dem Open-Access-Journal eleed in einem Forschungsprojekt erprobt. Wir laden Wissenschaftler ein, den Dienst zum Aufbau von Recherchenetzen zu nutzen."}, {"name"=>"Open Source for Open Access", "text"=>"Das Repository-Framework „MyCoRe“", "video"=>[{"name"=>"video"}], "presenter"=>[{"name"=>"Wiebke Oeltjen", "org"=>"Universität Hamburg"}]}, {"name"=>"2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland", "text"=>nil, "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster 1"}, {"name"=>"Poster 2"}], "presenter"=>[{"name"=>"Maxi Kindling", "org"=>"IBI Berlin"}]}, {"name"=>"OA-Publizieren in der Bibliothek", "text"=>"Das Konzept des ZB MED – Leibniz-Informationszentrums Lebenswissenschaften", "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Ursula Arning", "org"=>"ZB MED, Köln"}]}, {"name"=>"Open Access im Bundesinstitut für Berufsbildung (BIBB)", "text"=>"Status quo und Perspektiven", "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Bodo Rödel", "org"=>"BIBB Bonn"}, {"name"=>"Christian Woll", "org"=>"BIBB Bonn"}], "abstract"=>"Seit 2010 gibt es zum Thema Open Access im Bundesinstitut für Berufsbildung (BIBB) umfangreiche Arbeiten. Diese mündeten in der Verabschiedung einer Open-Access-Policy des BIBB und der Umsetzung des sogenannten „goldenen Weges“ für unterschiedliche Veröffentlichungsreihen. Beiträge aus der Fachzeitschrift des BIBB „Berufsbildung in Wissenschaft und Praxis (BWP)“ werden im Rahmen des „grünen Weges“ nach einem Jahr Open Access zur Verfügung gestellt.<br>Als logische Fortführung der Open-Access-Strategie des BIBB wird aktuell der Aufbau eines Repositories vorangetrieben. Im Rahmen eines sechsmonatigen Projektes wurden mit Blick auf den Bedarf in der Berufsbildungsforschung verschiedene Varianten eines Repositories - von einem institutionellen BIBB-Repository bis hin zu einem fachlichen und international ausgerichteten Repository - geprüft. Das Poster berichtet über die Open-Access-Aktivitäten des BIBB und über die Projektergebnisse."}, {"name"=>"Open Access Citation Effect bei BioMed Central", "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Stefan Busch", "org"=>"BioMed Central, Heidelberg"}]}, {"name"=>"SCOAP3-Start zum 1.1.2014", "text"=>"Golden Open Access in der Hochenergiephysik", "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Angelika Kutz", "org"=>"TIB, Hannover"}]}]}, {"name"=>"Mittagspause", "time"=>"12.30-13.20", "room"=>"Foyer"}, {"name"=>"Plenumsvorträge zu Hot Topics", "time"=>"13.20-15.00", "room"=>"Raum 69", "text"=>"Moderation: Ursula Arning (ZB MED)", "presentation"=>[{"name"=>"Open Access in der Digitalen Agenda der Bundesregierung", "slide"=>[{"name"=>"Präsentation"}], "presenter"=>[{"name"=>"Bettina Klingbei", "org"=>"Bundesministerium für Bildung und Forschung, Berlin"}]}, {"name"=>"Offene Wissenschaft im Forschungsrahmenprogramm Horizon 2020", "slide"=>[{"name"=>"Präsentation"}], "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Celina Ramjoué", "org"=>"European Commission, Brüssel"}]}, {"name"=>"Vom Grünen Weg zum Goldenen Weg", "text"=>"Open-Access-Transformationsstrategien aus der Perspektive der Universität Konstanz", "video"=>[{"name"=>"Video"}], "slide"=>[{"name"=>"Präsentation"}], "presenter"=>[{"name"=>"Petra Hätscher", "org"=>"Universität Konstanz"}]}, {"name"=>"Publikation und Zitierbarkeit wissenschaftlicher Software mit persistenten Identifikatoren", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Martin Fenner", "org"=>"PLoS, Hannover"}]}]}, {"name"=>"Kaffeepause", "room"=>"Foyer", "time"=>"15.00-15.30"}, {"name"=>"Sessions I.1", "time"=>"15:30 - 17:30", "room"=>"Raum 248", "text"=>"Open-Access-Modelle für Monographien und Sammelbände | Video Moderation: <a href=\"\" class=\"main__link\">Margo Bargheer</a> (SUB Göttingen) und <a href=\"\" class=\"main__link\">Isabella Meinecke</a> (SUB Hamburg)", "textlong"=>"Mit wenig medialem Aufhebens praktizieren Universitätsverlage und Forschungsreinrichtungen seit über zehn Jahren das, was erst seit etwa drei Jahren auch in weiteren Kreisen der Open-Access-Szene in der Diskussion angekommen ist: das Verlegen von Open-Access-Büchern. Denn offensichtlich lässt sich das Medium „Buch“ weniger leicht von der haptischen in die digitale Welt überführen als es die Zeitschriftentransformation nahelegt, sei es in der Akzeptanz, den Nutzungsgewohnheiten oder der Bedeutung in der Wissenschaftskommunikation.<br>Die Session beginnt mit einer Bilanz eines universitär getragenen Verlags, welche Herausforderungen das Verlegen von Open-Access-Büchern mit sich bringt, und ergänzt dies mit zwei praxisorientierten Ko-Referaten. Welche Potentiale die Zukunft bringen kann, zeigen zwei DFG-geförderte Projekte zu Open-Access-Büchern auf, die innovative Modelle der Inhaltsproduktion sowie der Medienproduktion umsetzen.", "presentation"=>[{"name"=>"10 Jahre Open-Access-Verlagsdienste für die Wissenschaft oder: Was Autoren wirklich wollen!", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Regine Tobias", "org"=>"KIT, Karlsruhe"}], "abstract"=>"Der Vortrag gibt einen Einblick in die Open-Access-Verlagsdienste am Karlsruher Institut für Technologie (KIT). Seit 10 Jahren unterstützt dort ein hauseigener Verlag erfolgreich die Publikationsaktivitäten der Forschenden und bietet weitgehende Services, die über das klassische Angebot des institutionellen Repositoriums der KIT-Bibliothek hinausgehen.<br>Der Vortrag zeigt die vielfältigen Ansprüche der Autoren an professionelle Verlagsdienste und ihre Umsetzung im KIT-Verlag vor dem Kontext aktueller Entwicklungen im Umfeld des wissenschaftlichen Publikationswesens.<br>Gleichzeitig werden diese Anforderungen den strategischen Überlegungen der KIT-Bibliothek gegenüber gestellt, die Konzept und Organisation des Eigenverlags bedingen – auch darin liegt das Geheimnis seines Erfolges…"}, {"name"=>"Open-Access-Publikationen für die Erwachsenenbildung", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Thomas Jung", "org"=>"DIE, Bonn"}], "abstract"=>"Seit drei Jahren werden vom Deutschen Institut für Erwachsenenbildung (DIE) Open-Access-Publikationen (Monographien unterschiedlichen Umfangs) angeboten, die in Kooperation mit privatwirtschaftlich agierenden Verlagen entstehen und veröffentlicht werden. Eine erste Evaluation dieser neuen Publikationsstrategie ist anhand von Verkaufszahlen, Downloadzahlen und Klickraten möglich. Auch sind mit Blick auf die zurückliegenden Jahren Justierungen in den Rahmenbedingungen (Geschäftsmodelle) zu beobachten und zu interpretieren."}, {"name"=>"Living Books geht online", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Richarda Böttcher", "org"=>"DGH, Berlin"}, {"name"=>"Wolfgang Müller", "org"=>"AWMF, Düsseldorf"}, {"name"=>"Ursula Arning", "org"=>"ZB MED, Köln"}]}, {"name"=>"Open-Access-Monographien in der Linguistik", "video"=>[{"name"=>"Video"}], "text"=>"Language Science Press", "presenter"=>[{"name"=>"Sebastian Nordhoff", "org"=>"Language Science Press, Berlin"}, {"name"=>"Debora Siller", "org"=>"Language Science Press, Berlin"}]}, {"name"=>"Open Access in Serie", "video"=>[{"name"=>"Video"}], "text"=>"Der Aufbau von Publikationsstrukturen für Monographien und Sammelbände an der Universität Heidelberg", "presenter"=>[{"name"=>"Martin Nissen", "org"=>"UB Heidelberg"}, {"name"=>"Andrea Hacker", "org"=>"UB Heidelberg"}]}]}, {"name"=>"Sessions I.2", "time"=>"15:30 - 17:30", "room"=>"Raum 284", "text"=>"Open Access und Subskription / Transformationsstrategien | Video Moderation: Christian Fuhrer (Universität Zürich)", "presentation"=>[{"name"=>"Ein Brückenschlag vom Subskriptionsmodell zu Open Access", "video"=>[{"name"=>"Video"}], "text"=>"Das Gold for Gold Projekt der Royal Society of Chemistry", "presenter"=>[{"name"=>"Sybille Geisenheyner", "org"=>"RSC Berlin"}, {"name"=>"Claudia Heidrich", "org"=>"RSC Berlin"}]}, {"name"=>"Wissenschaftliche Gesellschaften und ihre Zeitschriften - umwandeln oder neu starten?", "text"=>"Optionen und Beispiele aus der Praxis", "presenter"=>[{"name"=>"Stefan Busch", "org"=>"BioMed Central, Heidelberg"}]}, {"name"=>"Vom Ich zum Wir", "video"=>[{"name"=>"Video"}], "text"=>"Netzwerk-basiertes Publizieren und das ScienceOpen-Modell", "presenter"=>[{"name"=>"Alexander Grossmann", "org"=>"HTWK Leipzig"}, {"name"=>"Stephanie Dawson", "org"=>"ScienceOpen GmbH, Berlin"}]}, {"name"=>"Ist hochwertiges Publizieren in Open Access finanziell haltbar?", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Bernd Pulverer", "org"=>"EMBO, Heideberg"}]}, {"name"=>"ESAC - Efficiency and Standards for Article Charges", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Kai Karin Geschuhn", "org"=>"MPDL, München"}]}]}, {"name"=>"Pause", "room"=>"Foyer", "time"=>"17:30"}, {"name"=>"Konferenzdinner", "time"=>"19:00", "room"=>"Café Himmelsblick | UG", "text"=>"Im Anschluss an das Dinner gibt es eine humorvolle Zusammenfassung des Tages mit der Impro-Theatergruppe ‚Taubenhaucher’ FH Köln, Claudiusstraße 1, 50678 Köln Anmeldung erforderlich!"}]}{"name"=>"Tag 2 Dienstag 9.9.14", "text"=>"Alle Veranstaltungen finden in der FH Köln statt.", "session"=>[{"name"=>"Plenumsvortrag", "time"=>"09.00-09-45", "text"=>"Begrüßung und Moderation: Ursula Arning (ZB MED), Agathe Gebert (GESIS) und Achim Oßwald (FH Köln) im Namen der Organisatoren und des Programmkomitees", "presentation"=>[{"name"=>"2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Paul Vierkant", "org"=>"HU Berlin"}, {"name"=>"Maxi Kindling", "org"=>"IBI, Berlin"}]}]}]} -->
+      <!--
+        --><h2 class="main__heading">Tag 1 Montag 8.9.14</h2><!--
+        --><div class="main__textblock">
+        <p>Alle Veranstaltungen finden in der FH Köln statt.</p>
+        <p><a href="" class="main__link">Registrierung</a><a href="" class="main__link">Eröffnung der Tagung</a><a href="" class="main__link">Keynote</a><a href="" class="main__link">One Minute Madness | Postersession</a><a href="" class="main__link">Mittagspause</a><a href="" class="main__link">Plenumsvorträge zu Hot Topics</a><a href="" class="main__link">Kaffeepause</a><a href="" class="main__link">Sessions I.1</a><a href="" class="main__link">Sessions I.2</a><a href="" class="main__link">Pause</a><a href="" class="main__link">Konferenzdinner</a>
+        </p>
+
+        
+
+          <h3 class="heading">Registrierung</h3>
+          <p>ab 09.00, Foyer</p>
+          
+          
+
+          <!--  -->
+          <!--  -->
+
+          
+        
+
+          <h3 class="heading">Eröffnung der Tagung</h3>
+          <p>11.00-11.30, Raum 69</p>
+          <p>Begrüßung und Moderation: <a href="" class="main__link">Ursula Arning</a> (ZB MED), <a href="" class="main__link">Agathe Gebert</a> (GESIS) und Achim Oßwald (FH Köln) im Namen der Organisatoren und des Programmkomitees</p>
+          
+
+          <!-- Video -->
+          <!--  -->
+
+          
+        
+
+          <h3 class="heading">Keynote</h3>
+          <p>11.30-12.10, Raum 69</p>
+          <p>Moderation: Achim Oßwald (FH Köln)</p>
+          
+
+          <!--  -->
+          <!-- {"name"=>"Open Science – mehr als nur eine Frage der Kommunikation", "video"=>[{"name"=>"Video"}], "slide"=>[{"name"=>"Präsentation"}], "presenter"=>[{"name"=>"Wolfgang zu Castell", "org"=>"Helmholtz-Zentrum München"}], "abstract"=>"Der Begriff Open Science klingt für die Wissenschaft zunächst nach einem altbewährtem Rezept – also nichts Neues. Wissenschaft lebt schon seit jeher von Offenheit und Austausch. Dahinter stehen die Grundprinzipien von Verifizierbarkeit und Reproduzierbarkeit als Garanten der wissenschaftlichen Methodik.<br>Open Science klingt gleichzeitig aber auch nach Neuem: Wissenschaft 2.0 – gefördert und getrieben durch die Möglichkeiten moderner Kommunikations- und Informationstechnologien. Der freie und offene Zugang zu Wissen und Information, gepaart mit den Möglichkeiten der informationstechnischen Verarbeitung weltweit gespeicherten Wissens. Dies wiederum klingt nach Zukunft, nach ungeahnten Möglichkeiten und unglaublichem Fortschritt.<br>Der Vortrag soll sich diesem Spannungsfeld zwischen dem Festhalten an Altbewährten und der Faszination der neuen Möglichkeiten widmen. Im Mittelpunkt steht die Frage, ob wir mit unseren technischen Möglichkeiten nur die Verarbeitung und Verbreitung unseres Wissens verändern, oder auch das Wissen selbst und damit das, was wir unter Wissenschaft verstehen."} -->
+
+          
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open Science – mehr als nur eine Frage der Kommunikation</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Wolfgang zu Castell</a>
+                  (Helmholtz-Zentrum München)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                <a href="" class="main__link">Präsentation</a>
+                <a href="" class="main__link">Video</a>
+                <a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>
+                </p>
+                <blockquote class="on-demand__content">Der Begriff Open Science klingt für die Wissenschaft zunächst nach einem altbewährtem Rezept – also nichts Neues. Wissenschaft lebt schon seit jeher von Offenheit und Austausch. Dahinter stehen die Grundprinzipien von Verifizierbarkeit und Reproduzierbarkeit als Garanten der wissenschaftlichen Methodik.<br>Open Science klingt gleichzeitig aber auch nach Neuem: Wissenschaft 2.0 – gefördert und getrieben durch die Möglichkeiten moderner Kommunikations- und Informationstechnologien. Der freie und offene Zugang zu Wissen und Information, gepaart mit den Möglichkeiten der informationstechnischen Verarbeitung weltweit gespeicherten Wissens. Dies wiederum klingt nach Zukunft, nach ungeahnten Möglichkeiten und unglaublichem Fortschritt.<br>Der Vortrag soll sich diesem Spannungsfeld zwischen dem Festhalten an Altbewährten und der Faszination der neuen Möglichkeiten widmen. Im Mittelpunkt steht die Frage, ob wir mit unseren technischen Möglichkeiten nur die Verarbeitung und Verbreitung unseres Wissens verändern, oder auch das Wissen selbst und damit das, was wir unter Wissenschaft verstehen.</blockquote>
+              
+
+            
+          
+        
+
+          <h3 class="heading">One Minute Madness | Postersession</h3>
+          <p>12.10-12.30</p>
+          
+          
+
+          <!--  -->
+          <!-- {"name"=>"POSUKO", "text"=>"POrtable SUchKOntexte zur Vernetzung von Bibliotheken, Verlagen und Wissenschaftlern", "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Martin Roos", "org"=>"UB Hagen"}], "abstract"=>"Im Rahmen des Open-Access-Journals eleed (e-learning and education) wird ein neuer kollaborativer Ansatz zur Literaturrecherche erprobt. Ausgehend von den Artikeln, ihren Metadaten und ihren Literaturreferenzen sollen das semantische Verständnis während der Recherche visualisiert, Suchkontexte expliziert und Suchinformationen für Bibliotheken und Verlage nutzbar gemacht werden. Suchkontexte von Nutzenden können offengelegt und über Anbietergrenzen hinweg zur Verbesserung der Suche genutzt werden.<br>Das sich so ergebende semantische Suchnetz soll durch offene Dienste über ein freies Austauschformat abgelegt und genutzt werden. Durch Suchaktivitäten wächst der Suchkontext an. Anbieter können ihn nicht nur zur Verbesserung von Suchergebnissen nutzen, sondern auch ihre Literatur-Metadaten anreichern.<br>Der kooperative Ansatz wird von der UB Hagen und dem Open-Access-Journal eleed in einem Forschungsprojekt erprobt. Wir laden Wissenschaftler ein, den Dienst zum Aufbau von Recherchenetzen zu nutzen."}{"name"=>"Open Source for Open Access", "text"=>"Das Repository-Framework „MyCoRe“", "video"=>[{"name"=>"video"}], "presenter"=>[{"name"=>"Wiebke Oeltjen", "org"=>"Universität Hamburg"}]}{"name"=>"2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland", "text"=>nil, "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster 1"}, {"name"=>"Poster 2"}], "presenter"=>[{"name"=>"Maxi Kindling", "org"=>"IBI Berlin"}]}{"name"=>"OA-Publizieren in der Bibliothek", "text"=>"Das Konzept des ZB MED – Leibniz-Informationszentrums Lebenswissenschaften", "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Ursula Arning", "org"=>"ZB MED, Köln"}]}{"name"=>"Open Access im Bundesinstitut für Berufsbildung (BIBB)", "text"=>"Status quo und Perspektiven", "video"=>[{"name"=>"Video"}], "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Bodo Rödel", "org"=>"BIBB Bonn"}, {"name"=>"Christian Woll", "org"=>"BIBB Bonn"}], "abstract"=>"Seit 2010 gibt es zum Thema Open Access im Bundesinstitut für Berufsbildung (BIBB) umfangreiche Arbeiten. Diese mündeten in der Verabschiedung einer Open-Access-Policy des BIBB und der Umsetzung des sogenannten „goldenen Weges“ für unterschiedliche Veröffentlichungsreihen. Beiträge aus der Fachzeitschrift des BIBB „Berufsbildung in Wissenschaft und Praxis (BWP)“ werden im Rahmen des „grünen Weges“ nach einem Jahr Open Access zur Verfügung gestellt.<br>Als logische Fortführung der Open-Access-Strategie des BIBB wird aktuell der Aufbau eines Repositories vorangetrieben. Im Rahmen eines sechsmonatigen Projektes wurden mit Blick auf den Bedarf in der Berufsbildungsforschung verschiedene Varianten eines Repositories - von einem institutionellen BIBB-Repository bis hin zu einem fachlichen und international ausgerichteten Repository - geprüft. Das Poster berichtet über die Open-Access-Aktivitäten des BIBB und über die Projektergebnisse."}{"name"=>"Open Access Citation Effect bei BioMed Central", "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Stefan Busch", "org"=>"BioMed Central, Heidelberg"}]}{"name"=>"SCOAP3-Start zum 1.1.2014", "text"=>"Golden Open Access in der Hochenergiephysik", "poster"=>[{"name"=>"Poster"}], "presenter"=>[{"name"=>"Angelika Kutz", "org"=>"TIB, Hannover"}]} -->
+
+          
+            
+
+              <h4 class="heading"><a href="" class="main__link">POSUKO</a></h4>
+
+              <p>POrtable SUchKOntexte zur Vernetzung von Bibliotheken, Verlagen und Wissenschaftlern</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Martin Roos</a>
+                  (UB Hagen)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                <a href="" class="main__link">Poster</a>
+                
+                <a href="" class="main__link">Video</a>
+                <a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>
+                </p>
+                <blockquote class="on-demand__content">Im Rahmen des Open-Access-Journals eleed (e-learning and education) wird ein neuer kollaborativer Ansatz zur Literaturrecherche erprobt. Ausgehend von den Artikeln, ihren Metadaten und ihren Literaturreferenzen sollen das semantische Verständnis während der Recherche visualisiert, Suchkontexte expliziert und Suchinformationen für Bibliotheken und Verlage nutzbar gemacht werden. Suchkontexte von Nutzenden können offengelegt und über Anbietergrenzen hinweg zur Verbesserung der Suche genutzt werden.<br>Das sich so ergebende semantische Suchnetz soll durch offene Dienste über ein freies Austauschformat abgelegt und genutzt werden. Durch Suchaktivitäten wächst der Suchkontext an. Anbieter können ihn nicht nur zur Verbesserung von Suchergebnissen nutzen, sondern auch ihre Literatur-Metadaten anreichern.<br>Der kooperative Ansatz wird von der UB Hagen und dem Open-Access-Journal eleed in einem Forschungsprojekt erprobt. Wir laden Wissenschaftler ein, den Dienst zum Aufbau von Recherchenetzen zu nutzen.</blockquote>
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open Source for Open Access</a></h4>
+
+              <p>Das Repository-Framework „MyCoRe“</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Wiebke Oeltjen</a>
+                  (Universität Hamburg)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Maxi Kindling</a>
+                  (IBI Berlin)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                <a href="" class="main__link">Poster 1</a><a href="" class="main__link">Poster 2</a>
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">OA-Publizieren in der Bibliothek</a></h4>
+
+              <p>Das Konzept des ZB MED – Leibniz-Informationszentrums Lebenswissenschaften</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Ursula Arning</a>
+                  (ZB MED, Köln)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                <a href="" class="main__link">Poster</a>
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open Access im Bundesinstitut für Berufsbildung (BIBB)</a></h4>
+
+              <p>Status quo und Perspektiven</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Bodo Rödel</a>
+                  (BIBB Bonn)
+                
+                  <a href="" class="main__link">Christian Woll</a>
+                  (BIBB Bonn)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                <a href="" class="main__link">Poster</a>
+                
+                <a href="" class="main__link">Video</a>
+                <a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>
+                </p>
+                <blockquote class="on-demand__content">Seit 2010 gibt es zum Thema Open Access im Bundesinstitut für Berufsbildung (BIBB) umfangreiche Arbeiten. Diese mündeten in der Verabschiedung einer Open-Access-Policy des BIBB und der Umsetzung des sogenannten „goldenen Weges“ für unterschiedliche Veröffentlichungsreihen. Beiträge aus der Fachzeitschrift des BIBB „Berufsbildung in Wissenschaft und Praxis (BWP)“ werden im Rahmen des „grünen Weges“ nach einem Jahr Open Access zur Verfügung gestellt.<br>Als logische Fortführung der Open-Access-Strategie des BIBB wird aktuell der Aufbau eines Repositories vorangetrieben. Im Rahmen eines sechsmonatigen Projektes wurden mit Blick auf den Bedarf in der Berufsbildungsforschung verschiedene Varianten eines Repositories - von einem institutionellen BIBB-Repository bis hin zu einem fachlichen und international ausgerichteten Repository - geprüft. Das Poster berichtet über die Open-Access-Aktivitäten des BIBB und über die Projektergebnisse.</blockquote>
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open Access Citation Effect bei BioMed Central</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Stefan Busch</a>
+                  (BioMed Central, Heidelberg)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                <a href="" class="main__link">Poster</a>
+                
+                
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">SCOAP3-Start zum 1.1.2014</a></h4>
+
+              <p>Golden Open Access in der Hochenergiephysik</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Angelika Kutz</a>
+                  (TIB, Hannover)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                <a href="" class="main__link">Poster</a>
+                
+                
+                
+                </p>
+                
+              
+
+            
+          
+        
+
+          <h3 class="heading">Mittagspause</h3>
+          <p>12.30-13.20, Foyer</p>
+          
+          
+
+          <!--  -->
+          <!--  -->
+
+          
+        
+
+          <h3 class="heading">Plenumsvorträge zu Hot Topics</h3>
+          <p>13.20-15.00, Raum 69</p>
+          <p>Moderation: Ursula Arning (ZB MED)</p>
+          
+
+          <!--  -->
+          <!-- {"name"=>"Open Access in der Digitalen Agenda der Bundesregierung", "slide"=>[{"name"=>"Präsentation"}], "presenter"=>[{"name"=>"Bettina Klingbei", "org"=>"Bundesministerium für Bildung und Forschung, Berlin"}]}{"name"=>"Offene Wissenschaft im Forschungsrahmenprogramm Horizon 2020", "slide"=>[{"name"=>"Präsentation"}], "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Celina Ramjoué", "org"=>"European Commission, Brüssel"}]}{"name"=>"Vom Grünen Weg zum Goldenen Weg", "text"=>"Open-Access-Transformationsstrategien aus der Perspektive der Universität Konstanz", "video"=>[{"name"=>"Video"}], "slide"=>[{"name"=>"Präsentation"}], "presenter"=>[{"name"=>"Petra Hätscher", "org"=>"Universität Konstanz"}]}{"name"=>"Publikation und Zitierbarkeit wissenschaftlicher Software mit persistenten Identifikatoren", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Martin Fenner", "org"=>"PLoS, Hannover"}]} -->
+
+          
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open Access in der Digitalen Agenda der Bundesregierung</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Bettina Klingbei</a>
+                  (Bundesministerium für Bildung und Forschung, Berlin)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                <a href="" class="main__link">Präsentation</a>
+                
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Offene Wissenschaft im Forschungsrahmenprogramm Horizon 2020</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Celina Ramjoué</a>
+                  (European Commission, Brüssel)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                <a href="" class="main__link">Präsentation</a>
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Vom Grünen Weg zum Goldenen Weg</a></h4>
+
+              <p>Open-Access-Transformationsstrategien aus der Perspektive der Universität Konstanz</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Petra Hätscher</a>
+                  (Universität Konstanz)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                <a href="" class="main__link">Präsentation</a>
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Publikation und Zitierbarkeit wissenschaftlicher Software mit persistenten Identifikatoren</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Martin Fenner</a>
+                  (PLoS, Hannover)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+          
+        
+
+          <h3 class="heading">Kaffeepause</h3>
+          <p>15.00-15.30, Foyer</p>
+          
+          
+
+          <!--  -->
+          <!--  -->
+
+          
+        
+
+          <h3 class="heading">Sessions I.1</h3>
+          <p>15:30 - 17:30, Raum 248</p>
+          <p>Open-Access-Modelle für Monographien und Sammelbände | Video Moderation: <a href="" class="main__link">Margo Bargheer</a> (SUB Göttingen) und <a href="" class="main__link">Isabella Meinecke</a> (SUB Hamburg)</p>
+          
+            <p><a href="#on-demand__link" class="main__link on-demand__link">Weitere Informationen</a><div class="on-demand__content">Mit wenig medialem Aufhebens praktizieren Universitätsverlage und Forschungsreinrichtungen seit über zehn Jahren das, was erst seit etwa drei Jahren auch in weiteren Kreisen der Open-Access-Szene in der Diskussion angekommen ist: das Verlegen von Open-Access-Büchern. Denn offensichtlich lässt sich das Medium „Buch“ weniger leicht von der haptischen in die digitale Welt überführen als es die Zeitschriftentransformation nahelegt, sei es in der Akzeptanz, den Nutzungsgewohnheiten oder der Bedeutung in der Wissenschaftskommunikation.<br>Die Session beginnt mit einer Bilanz eines universitär getragenen Verlags, welche Herausforderungen das Verlegen von Open-Access-Büchern mit sich bringt, und ergänzt dies mit zwei praxisorientierten Ko-Referaten. Welche Potentiale die Zukunft bringen kann, zeigen zwei DFG-geförderte Projekte zu Open-Access-Büchern auf, die innovative Modelle der Inhaltsproduktion sowie der Medienproduktion umsetzen.</div></p>
+          
+
+          <!--  -->
+          <!-- {"name"=>"10 Jahre Open-Access-Verlagsdienste für die Wissenschaft oder: Was Autoren wirklich wollen!", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Regine Tobias", "org"=>"KIT, Karlsruhe"}], "abstract"=>"Der Vortrag gibt einen Einblick in die Open-Access-Verlagsdienste am Karlsruher Institut für Technologie (KIT). Seit 10 Jahren unterstützt dort ein hauseigener Verlag erfolgreich die Publikationsaktivitäten der Forschenden und bietet weitgehende Services, die über das klassische Angebot des institutionellen Repositoriums der KIT-Bibliothek hinausgehen.<br>Der Vortrag zeigt die vielfältigen Ansprüche der Autoren an professionelle Verlagsdienste und ihre Umsetzung im KIT-Verlag vor dem Kontext aktueller Entwicklungen im Umfeld des wissenschaftlichen Publikationswesens.<br>Gleichzeitig werden diese Anforderungen den strategischen Überlegungen der KIT-Bibliothek gegenüber gestellt, die Konzept und Organisation des Eigenverlags bedingen – auch darin liegt das Geheimnis seines Erfolges…"}{"name"=>"Open-Access-Publikationen für die Erwachsenenbildung", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Thomas Jung", "org"=>"DIE, Bonn"}], "abstract"=>"Seit drei Jahren werden vom Deutschen Institut für Erwachsenenbildung (DIE) Open-Access-Publikationen (Monographien unterschiedlichen Umfangs) angeboten, die in Kooperation mit privatwirtschaftlich agierenden Verlagen entstehen und veröffentlicht werden. Eine erste Evaluation dieser neuen Publikationsstrategie ist anhand von Verkaufszahlen, Downloadzahlen und Klickraten möglich. Auch sind mit Blick auf die zurückliegenden Jahren Justierungen in den Rahmenbedingungen (Geschäftsmodelle) zu beobachten und zu interpretieren."}{"name"=>"Living Books geht online", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Richarda Böttcher", "org"=>"DGH, Berlin"}, {"name"=>"Wolfgang Müller", "org"=>"AWMF, Düsseldorf"}, {"name"=>"Ursula Arning", "org"=>"ZB MED, Köln"}]}{"name"=>"Open-Access-Monographien in der Linguistik", "video"=>[{"name"=>"Video"}], "text"=>"Language Science Press", "presenter"=>[{"name"=>"Sebastian Nordhoff", "org"=>"Language Science Press, Berlin"}, {"name"=>"Debora Siller", "org"=>"Language Science Press, Berlin"}]}{"name"=>"Open Access in Serie", "video"=>[{"name"=>"Video"}], "text"=>"Der Aufbau von Publikationsstrukturen für Monographien und Sammelbände an der Universität Heidelberg", "presenter"=>[{"name"=>"Martin Nissen", "org"=>"UB Heidelberg"}, {"name"=>"Andrea Hacker", "org"=>"UB Heidelberg"}]} -->
+
+          
+            
+
+              <h4 class="heading"><a href="" class="main__link">10 Jahre Open-Access-Verlagsdienste für die Wissenschaft oder: Was Autoren wirklich wollen!</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Regine Tobias</a>
+                  (KIT, Karlsruhe)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                <a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>
+                </p>
+                <blockquote class="on-demand__content">Der Vortrag gibt einen Einblick in die Open-Access-Verlagsdienste am Karlsruher Institut für Technologie (KIT). Seit 10 Jahren unterstützt dort ein hauseigener Verlag erfolgreich die Publikationsaktivitäten der Forschenden und bietet weitgehende Services, die über das klassische Angebot des institutionellen Repositoriums der KIT-Bibliothek hinausgehen.<br>Der Vortrag zeigt die vielfältigen Ansprüche der Autoren an professionelle Verlagsdienste und ihre Umsetzung im KIT-Verlag vor dem Kontext aktueller Entwicklungen im Umfeld des wissenschaftlichen Publikationswesens.<br>Gleichzeitig werden diese Anforderungen den strategischen Überlegungen der KIT-Bibliothek gegenüber gestellt, die Konzept und Organisation des Eigenverlags bedingen – auch darin liegt das Geheimnis seines Erfolges…</blockquote>
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open-Access-Publikationen für die Erwachsenenbildung</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Thomas Jung</a>
+                  (DIE, Bonn)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                <a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>
+                </p>
+                <blockquote class="on-demand__content">Seit drei Jahren werden vom Deutschen Institut für Erwachsenenbildung (DIE) Open-Access-Publikationen (Monographien unterschiedlichen Umfangs) angeboten, die in Kooperation mit privatwirtschaftlich agierenden Verlagen entstehen und veröffentlicht werden. Eine erste Evaluation dieser neuen Publikationsstrategie ist anhand von Verkaufszahlen, Downloadzahlen und Klickraten möglich. Auch sind mit Blick auf die zurückliegenden Jahren Justierungen in den Rahmenbedingungen (Geschäftsmodelle) zu beobachten und zu interpretieren.</blockquote>
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Living Books geht online</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Richarda Böttcher</a>
+                  (DGH, Berlin)
+                
+                  <a href="" class="main__link">Wolfgang Müller</a>
+                  (AWMF, Düsseldorf)
+                
+                  <a href="" class="main__link">Ursula Arning</a>
+                  (ZB MED, Köln)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open-Access-Monographien in der Linguistik</a></h4>
+
+              <p>Language Science Press</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Sebastian Nordhoff</a>
+                  (Language Science Press, Berlin)
+                
+                  <a href="" class="main__link">Debora Siller</a>
+                  (Language Science Press, Berlin)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Open Access in Serie</a></h4>
+
+              <p>Der Aufbau von Publikationsstrukturen für Monographien und Sammelbände an der Universität Heidelberg</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Martin Nissen</a>
+                  (UB Heidelberg)
+                
+                  <a href="" class="main__link">Andrea Hacker</a>
+                  (UB Heidelberg)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+          
+        
+
+          <h3 class="heading">Sessions I.2</h3>
+          <p>15:30 - 17:30, Raum 284</p>
+          <p>Open Access und Subskription / Transformationsstrategien | Video Moderation: Christian Fuhrer (Universität Zürich)</p>
+          
+
+          <!--  -->
+          <!-- {"name"=>"Ein Brückenschlag vom Subskriptionsmodell zu Open Access", "video"=>[{"name"=>"Video"}], "text"=>"Das Gold for Gold Projekt der Royal Society of Chemistry", "presenter"=>[{"name"=>"Sybille Geisenheyner", "org"=>"RSC Berlin"}, {"name"=>"Claudia Heidrich", "org"=>"RSC Berlin"}]}{"name"=>"Wissenschaftliche Gesellschaften und ihre Zeitschriften - umwandeln oder neu starten?", "text"=>"Optionen und Beispiele aus der Praxis", "presenter"=>[{"name"=>"Stefan Busch", "org"=>"BioMed Central, Heidelberg"}]}{"name"=>"Vom Ich zum Wir", "video"=>[{"name"=>"Video"}], "text"=>"Netzwerk-basiertes Publizieren und das ScienceOpen-Modell", "presenter"=>[{"name"=>"Alexander Grossmann", "org"=>"HTWK Leipzig"}, {"name"=>"Stephanie Dawson", "org"=>"ScienceOpen GmbH, Berlin"}]}{"name"=>"Ist hochwertiges Publizieren in Open Access finanziell haltbar?", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Bernd Pulverer", "org"=>"EMBO, Heideberg"}]}{"name"=>"ESAC - Efficiency and Standards for Article Charges", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Kai Karin Geschuhn", "org"=>"MPDL, München"}]} -->
+
+          
+            
+
+              <h4 class="heading"><a href="" class="main__link">Ein Brückenschlag vom Subskriptionsmodell zu Open Access</a></h4>
+
+              <p>Das Gold for Gold Projekt der Royal Society of Chemistry</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Sybille Geisenheyner</a>
+                  (RSC Berlin)
+                
+                  <a href="" class="main__link">Claudia Heidrich</a>
+                  (RSC Berlin)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Wissenschaftliche Gesellschaften und ihre Zeitschriften - umwandeln oder neu starten?</a></h4>
+
+              <p>Optionen und Beispiele aus der Praxis</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Stefan Busch</a>
+                  (BioMed Central, Heidelberg)
+                
+                </p>
+              
+
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Vom Ich zum Wir</a></h4>
+
+              <p>Netzwerk-basiertes Publizieren und das ScienceOpen-Modell</p>
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Alexander Grossmann</a>
+                  (HTWK Leipzig)
+                
+                  <a href="" class="main__link">Stephanie Dawson</a>
+                  (ScienceOpen GmbH, Berlin)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">Ist hochwertiges Publizieren in Open Access finanziell haltbar?</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Bernd Pulverer</a>
+                  (EMBO, Heideberg)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+
+              <h4 class="heading"><a href="" class="main__link">ESAC - Efficiency and Standards for Article Charges</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Kai Karin Geschuhn</a>
+                  (MPDL, München)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+          
+        
+
+          <h3 class="heading">Pause</h3>
+          <p>17:30, Foyer</p>
+          
+          
+
+          <!--  -->
+          <!--  -->
+
+          
+        
+
+          <h3 class="heading">Konferenzdinner</h3>
+          <p>19:00, Café Himmelsblick | UG</p>
+          <p>Im Anschluss an das Dinner gibt es eine humorvolle Zusammenfassung des Tages mit der Impro-Theatergruppe ‚Taubenhaucher’ FH Köln, Claudiusstraße 1, 50678 Köln Anmeldung erforderlich!</p>
+          
+
+          <!--  -->
+          <!--  -->
+
+          
+        
+        </div><!--
+      --><!--
+        --><h2 class="main__heading">Tag 2 Dienstag 9.9.14</h2><!--
+        --><div class="main__textblock">
+        <p>Alle Veranstaltungen finden in der FH Köln statt.</p>
+        <p><a href="" class="main__link">Plenumsvortrag</a>
+        </p>
+
+        
+
+          <h3 class="heading">Plenumsvortrag</h3>
+          <p>09.00-09-45</p>
+          <p>Begrüßung und Moderation: Ursula Arning (ZB MED), Agathe Gebert (GESIS) und Achim Oßwald (FH Köln) im Namen der Organisatoren und des Programmkomitees</p>
+          
+
+          <!--  -->
+          <!-- {"name"=>"2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland", "video"=>[{"name"=>"Video"}], "presenter"=>[{"name"=>"Paul Vierkant", "org"=>"HU Berlin"}, {"name"=>"Maxi Kindling", "org"=>"IBI, Berlin"}]} -->
+
+          
+            
+
+              <h4 class="heading"><a href="" class="main__link">2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland</a></h4>
+
+              
+
+              
+                <p>
+                
+                  <a href="" class="main__link">Paul Vierkant</a>
+                  (HU Berlin)
+                
+                  <a href="" class="main__link">Maxi Kindling</a>
+                  (IBI, Berlin)
+                
+                </p>
+              
+
+              
+                <p>Materialien:
+                
+                
+                <a href="" class="main__link">Video</a>
+                
+                </p>
+                
+              
+
+            
+          
+        
+        </div><!--
+      --><!--
+
+
+      --><h2 class="main__heading">Teilnehmer/Innen</h2><!--
+      --><div class="main__table">
+        <table>
+          <caption>Folgende Personen sind Teilnehmer/innen der Open-Access-Tage 2015.</caption>
+          <thead>
+            <tr>
+              <th>Vorname</th>
+              <th>Nachname</th>
+              <th>Nummer</th>
+              <th>E-Mail</th>
+              <th>Institution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>2890</td>
+              <td><a href="#" title="" class="main__link">john@example.com</a></td>
+              <td>Niedersächsische Staats- und Universitätsbibliothek Göttingen</td>
+            </tr>
+            <tr class="uneven">
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>419033</td>
+              <td><a href="#"  class="main__link">jane@example.com</a></td>
+              <td>SUB Hamburg</td>
+            </tr>
+            <tr>
+              <td>Björn</td>
+              <td>Fischer</td>
+              <td>1103877</td>
+              <td><a href="#" class="main__link">fischer@example.com</a></td>
+              <td></td>
+            </tr>
+            <tr class="uneven">
+              <td>Klara</td>
+              <td>Bauer</td>
+              <td>992648</td>
+              <td><a href="#" class="main__link">klara@example.com</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Benjamin</td>
+              <td>Baumer</td>
+              <td>776293</td>
+              <td><a href="#" class="main__link">bauer@example.com</a></td>
+              <td></td>
+            </tr>
+            <tr class="uneven">
+              <td>Klaus</td>
+              <td>Fenturi</td>
+              <td>23497</td>
+              <td><a href="#" class="main__link">fenturi@example.com</a></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!--
+
+      --><h2 class="main__heading">Lots of Pictures</h2><!--
+      --><div class="main__gallery"><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+        --><picture class="picture">
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+          <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+          <source srcset="img/image-2--1024.jpg, img/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+          <source srcset="img/image-2--1200.jpg, img/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+          <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+          <!--[if IE 9]></video><![endif]-->
+          <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
+          <div class="caption">
+            This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+          </div>
+        </picture><!--
+      --></div><!--
+
+      --><h2 class="main__heading">Vertragszusätze</h2><!--
+      --><div class="main__textblock">
+        <p>Alternativ zu Streichungen fügen Autorinnen und Autoren dem Verlagsvertrag einen Zusatz bei, um sich so das einfache Nutzungsrecht für die Onlinenutzung auf einem Non-Profit-Dokumentenserver vorzubehalten. Dieser Zusatz muss vom Verlag gegengezeichnet werden, um Rechtsgültigkeit zu erlangen.</p>
+        <p>Der bekannteste und wohl auch anerkannteste Vertragszusatz ist das SPARC Author's Addendum. Es wurde durch die Scholarly Publishing and Academic Resources Coalition (SPARC) entwickelt, einem Zusammenschluss von Bibliotheken in den USA mit dem Ziel, die Entwicklung neuer Kommunikationsmodelle anzuregen, welche die Verbreitung von wissenschaftlicher Literatur steigern und den finanziellen Druck auf Bibliotheken reduzieren. Das Addendum besteht aus zwei Teilen: dem eigentlichen Vertragsanhang und einer Benutzungsanweisung. Mittels der Copyright Addendum Engine von Science Commons und SPARC können Autorinnen und Autoren je nach Wunsch ein Addendum in den Varianten Access-Reuse, Delayed Access und Immediate Access automatisch erstellen. Access-Reuse bedeutet, die Autorin/der Autor behält ausreichende Rechte</p>
+        <ul class="main__list">
+          <li>Lorem ipsum dolor sit amut.</li>
+          <li>Ipsum sit amut dolor.</li>
+          <li>Sit dolor amut lorem.</li>
+        </ul>
+        <p>Um den Artikel neben der Veröffentlichung in einem Verlag unter eine nichtkommerzielle Creative-Commons- oder eine vergleichbare Lizenz zu stellen. Bei dem Delayed-Access-Modell kann die Autorin/der Autor die Autorenversion sofort online bereit stellen, die Verlagsversion jedoch erst nach Ablauf von sechs Monaten. Immediate Access erlaubt dagegen, sofort bei Erscheinen sowohl die Verlagsversion als auch die Autorenversion online bereit zu stellen.</p>
+        <ul class="main__linklist">
+          <li><a href="" title="" class="main__link--in-list">Lorem ipsum dolor sit amut.</a></li>
+          <li><a href="" title="" class="main__link--in-list">Ipsum sit amut dolor.</a></li>
+          <li><a href="" title="" class="main__link--in-list">Sit dolor amut lorem.</a></li>
+        </ul>
+        <p>Repositorien sind an Universitäten oder Forschungseinrichtungen betriebene Dokumentenserver, auf denen wissenschaftliche Materialien archiviert und weltweit entgeltfrei zugänglich gemacht werden. Unterschieden werden institutionelle und disziplinäre Repositorien. Als institutionelle Repositorien werden Dokumentenserver bezeichnet, die von Institutionen (meist Universitätsbibliotheken oder Forschungsorganisationen) betrieben werden und ihren Mitgliedern die digitale Publikation oder Archivierung ermöglichen. Disziplinäre Repositorien hingegen sind institutionsübergreifend und stehen Wissenschaftlerinnen und Wissenschaftlern thematisch gebündelt, z.B. für eine Fachdisziplin, zur Publikation und Archivierung ihrer Arbeiten zur Verfügung (z.B. PsyDok als disziplinären Volltextserver in der [deutschsprachigen] Psychologie, Social Science Open Access Repository [SSOAR] für die Sozialwissenschaften oder arXiv für Publikationen aus Astronomie, Physik, Mathematik, Informatik und Biologie). Wie der Zugriff für Nutzende ist auch die Bereitstellung der wissenschaftlichen Publikation für Autorinnen und Autoren auf institutionellen oder disziplinären Repositorien in der Regel entgeltfrei.</p>
+        <p>Weitere Beispiele für Vertragszusätze</p>
+        <ul>
+          <li>Forschungszentrum Jülich: Copyright: Autorenverträge günstiger gestalten</li>
+          <li>MIT-Libraries: Managing your Copyright</li>
+        </ul>
+        <h3>Beispiele für ergänzende Textpassagen</h3>
+        <blockquote>Der Verlag stimmt zu, dass der Autor das nichtexklusive Recht behält, eine digitale Kopie des Dokumentes vor/während/nach der Publikation durch den Verlag zeitlich unbeschränkt auf einen öffentlich zugänglichen akademischen Non-Profit-Server zu legen. 2. Der Autor verpflichtet sich, das Originaldokument auf dem akademischen Non-Profit-Server zu zitieren.</blockquote>
+        <p>oder</p>
+        <blockquote>Der Verlag stimmt zu, dass der Autor das nichtexklusive Recht behält, eine digitale Kopie des Dokumentes vor/während/nach der Publikation durch den Verlag zeitlich unbeschränkt auf einen öffentlich zugänglichen akademischen Non-Profit-Server zu legen. 2. Der Autor verpflichtet sich, das Originaldokument auf dem akademischen Non-Profit-Server zu zitieren.</blockquote>
+        <p>Auf Englisch<p>
+        <blockquote>I hereby declare that I do not wish to assign the exclusive copyright to (Name des Verlages) but reserve the right to publish the article in full on an open access platform.</blockquote>
+      </div>
+
+    </main>
+
+    <div class="search" id="search">
+  <div class="search__content">
+    <h2 class="search__heading">
+    <svg class="fa-icon fa-icon-search fa-icon--default"><use xlink:href="#icon-search"></use></svg> Suche</h2><!--
+    --><div class="search__enter"><!--
+      --><form action="" class="search__form">
+        <div class="search__field"><input type="text" class="search__input"></div><!--
+        --><div class="search__submit"><input type="button" value="Suchen" class="search__button"></div>
+      </form><!--
+      --><p class="paragraph">Benutzen Sie die seitenweite Suche um weitere für Sie interessante Inhalte der Informationsplattform Open Access zu entdecken.</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class="more">
+  <div class="more__column">
+    <h3 class="heading--gamma">Allgemeines</h3>
+    <p class="paragraph">Lorem ipsum, <a href="#" title="" class="more__link more__link--in-textblock">consectetur adipiscing</a> elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.</p>
+  </div><!--
+  --><div class="more__column">
+    <h3 class="heading--gamma">Allgemeines</h3>
+    <p class="paragraph">Lorem ipsum dolor sit amut.</p>
+    <ul class="more__list">
+      <li><a href="#" title="" class="more__link--in-list">Gründe und Vorbehalten</a></li>
+      <li><a href="#" title="" class="more__link--in-list">Geschäftsmodelle</a></li>
+      <li><a href="#" title="" class="more__link--in-list">Rechtsfragen</a></li>
+      <li><a href="#" title="" class="more__link--in-list">FAQ</a></li>
+    </ul>
+    <p class="paragraph">Lorem ipsum dolor sit amut.</p>
+  </div><!--
+  --><div class="more__column">
+    <h3 class="heading--gamma">News</h3>
+    <ul class="more__list">
+      <li><a href="#" title="" class="more__link--in-list">MWK Baden-Württemberg veröffentlicht Konzeptpapier zu E-Science<br>03.09.2014</a></li>
+      <li><a href="#" title="" class="more__link--in-list">Berliner Abgeordnetenhaus beschließt Anschub einer Open-Access-Strategie<br>12.08.2014</a></li>
+      <li><a href="#" title="" class="more__link--in-list">Universität Konstanz bricht Lizenzverhandlungen mit Elsevier ab<br>03.04.2014</a></li>
+      <li><a href="#" title="" class="more__link--in-list">Open-Access-Tage 2014<br>25.02.2014</a></li>
+      <li><a href="#" title="" class="more__link--in-list">Petition "gegen die Diskriminierung der Hochschulwissenschaft im Urheberrecht"<br>017.01.2014</a></li>
+    </ul>
+  </div><!--
+  --><div class="more__column">
+    <h3 class="heading--gamma">Connect!</h3>
+    <p class="paragraph">Open Access in sozialen Netzwerken</p>
+    <p class="paragraph"><svg class="fa-icon fa-icon-twitter fa-icon--s"><use xlink:href="#icon-twitter"></use></svg><a href="#" title="Informationsplattform Open Access auf Twitter" class="more__link more__link--in-textblock">Twitter</a>, <svg class="fa-icon fa-icon-facebook fa-icon--s"><use xlink:href="#icon-facebook"></use></svg><a href="#" title="Informationsplattform Open Access auf Facebook" class="more__link more__link--in-textblock">Facebook</a></p>
+  </div>
+</div>
+
+    <div class="last">
+  <div class="last__block1">
+    <ul class="last__list">
+      <li><a href="#" title="" class="last__link"><i class="fa fa-fw fa-lg fa-home"></i> Startseite</a></li>
+      <li><a href="#" title="" class="last__link"><i class="fa fa-fw fa-lg fa-info"></i> Kontakt</a></li>
+      <li><a href="#" title="" class="last__link"><i class="fa fa-fw fa-lg fa-sitemap"></i> Sitemap</a></li>
+    </ul>
+  </div><!--
+  --><div class="last__block2">
+    <ul class="last__list">
+      <li><a href="#" title="" class="last__link"><i class="fa fa-fw fa-lg fa-comment-o"></i> Diese Inhalte kommentieren</a></li>
+      <li><a href="#top" title="" class="last__link"><i class="fa fa-fw fa-lg fa-arrow-up"></i> Zurück zum Seitenanfang</a></li>
+    </ul>
+  </div>
+</div>
+
+
+  </div><!-- END: headroom__helper -->
+
+</div><!-- END: footer-hide__helper -->
+
+<div class="footer-hide">
+
+  <div class="footer-hide__content">
+
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <h3 class="heading--gamma">Lorem ipsum dolor sit amut.</h3>
+          <p>You can come down here any time and I'll be waiting for you! [slams down phone] That told her! They just toss us away like yesterday's jam. It's like they're pally-wally with us when there's a problem with their printer, but once it's fixed... I mean, they have no respect for us up there! No respect whatsoever! We're all just drudgeons to them! Hello, IT.</p>
+        </div><!--
+        --><div class="footer__column">
+          <h3 class="heading--gamma">Projektpartner</h3>
+          <ul class="footer__list">
+            <li><a href="#" title="" class="footer__link--in-list">Freie Universität Berlin</a></li>
+            <li><a href="#" title="" class="footer__link--in-list">Universität Bielefeld</a></li>
+            <li><a href="#" title="" class="footer__link--in-list">Georg-August-Universität Göttingen</a></li>
+            <li><a href="#" title="" class="footer__link--in-list">Universität Konstanz</a></li>
+          </ul>
+        </div><!--
+        --><div class="footer__column">
+          <h3 class="heading--gamma">Lorem ipsum dolor sit amut.</h3>
+          <p>Yes! You're not comfortable with your sexuality? Oh, I'm very comfortable with my sexuality, I just don't want to be slapped in the face with their sexuality. Lorem <a href="" title="" class="footer__link footer__link--in-textblock">ipsum</a> dolor sit amut. I'm an idiot and I dont care about anyone but myself. P.S. No dogs! You can come down here any time and I'll be waiting for you! [slams down phone] That told her!</p>
+        </div><!--
+        --><div class="footer__column">
+          <h3 class="heading--gamma">Lorem ipsum dolor sit amut.</h3>
+          <p>You can come down here any time and I'll be waiting for you! [slams down phone] That told her! They just toss us away like yesterday's jam. It's like they're pally-wally with us when there's a problem with their printer, but once it's fixed... I mean, they have no respect for us up there! No respect whatsoever! We're all just drudgeons to them! Hello, IT.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tracking">
+      <div class="tracking__content">
+        <p>Diese Webseite erfasst anonymisierte Daten zur Nutzung. Sie können dies für die Dauer ihres Besuchs unterbinden, indem sie folgenden Link klicken: <a href="#" class="tracking__link"><svg class="fa-icon fa-icon-toggle-on fa-icon--xs"><use xlink:href="#icon-toggle-on"></use></svg> Nutzungserfassung ausschalten (Opt-Out)</a></p>
+      </div>
+    </div>
+
+
+  </div><!-- footer-hide__content -->
+
+</div><!-- END footer-hide -->
+
+<nav class="alt-menu js-alt-menu" id="menu">
+
+  <div class="alt-menu__content">
+
+    <div class="menu__column ic-tablet-one-half ic-notebook-and-up-one-quarter">
+      <ul class="menu__list">
+        <li><a href="#" title="" class="menu__link menu__link--has-children">Allgemeines</a>
+          <ul class="menu__list--indented">
+            <li><a href="#" title="" class="menu__link menu__link--has-children">Was bedeutet Open Access?</a>
+              <ul class="menu__list--indented">
+                <li><a href="#" title="" class="menu__link">Gründe für OA</a></li>
+                <li><a href="#" title="" class="menu__link">Ipsum Lorem</a></li>
+                <li><a href="#" title="" class="menu__link menu__link--has-children menu__link--active">Vorbehalte gegen OA</a>
+                  <ul class="menu__list--indented">
+                    <li><a href="#" title="" class="menu__link">Rational</a></li>
+                    <li><a href="#" title="" class="menu__link">Irrational</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" title="" class="menu__link">Lorem ipsum</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="" class="menu__link">Open-Access-Strategien</a></li>
+            <li><a href="#" title="" class="menu__link">Gründe für Open Access</a></li>
+            <li><a href="#" title="" class="menu__link">Open-Access-Zeitschriften</a></li>
+            <li><a href="#" title="" class="menu__link">Repositorien</a></li>
+            <li><a href="#" title="" class="menu__link">Open Access bei Büchern</a></li>
+            <li><a href="#" title="" class="menu__link">Open Access bei Forschungsdaten</a></li>
+            <li><a href="#" title="" class="menu__link">Geschäftsmodelle</a></li>
+            <li><a href="#" title="" class="menu__link">Rechtsfragen</a></li>
+            <li><a href="#" title="" class="menu__link">Geschichte des Open Access</a></li>
+            <li><a href="#" title="" class="menu__link">Inititiativen und Positionspapiere</a></li>
+            <li><a href="#" title="" class="menu__link">FAQ</a></li>
+          </ul>
+          <ul>
+        </li>
+      </ul>
+    </div><!--
+    --><div class="menu__column ic-tablet-one-half ic-notebook-and-up-one-quarter">
+      <ul class="menu__list">
+        <li><a href="#" title="" class="menu__link menu__link--has-children">OA in verschiedenen Fächern</a>
+          <ul class="menu__list menu__list--indented">
+            <li><a href="#" title="" class="menu__link">Biologie</a></li>
+            <li><a href="#" title="" class="menu__link menu__link--has-children">Chemie</a>
+            <ul class="menu__list menu__list--indented">
+              <li><a href="#" title="" class="menu__link">Allgemein</a></li>
+              <li><a href="#" title="" class="menu__link">In Deutschland</a></li>
+            </ul>
+            </li>
+            <li><a href="#" title="" class="menu__link">Erziehungs<wbr>wissenschaften</a></li>
+            <li><a href="#" title="" class="menu__link">Geowissenschaften</a></li>
+            <li><a href="#" title="" class="menu__link">Geschichts<wbr>wissenschaften</a></li>
+            <li><a href="#" title="" class="menu__link">Geschlechter<wbr>forschung</a></li>
+            <li><a href="#" title="" class="menu__link">Informatik</a></li>
+            <li><a href="#" title="" class="menu__link">Ingenieur<wbr>wissenschaften</a></li>
+            <li><a href="#" title="" class="menu__link">Mathematik</a></li>
+            <li><a href="#" title="" class="menu__link">Medizin</a></li>
+            <li><a href="#" title="" class="menu__link">Philosophie</a></li>
+            <li><a href="#" title="" class="menu__link">Rechtswissenschft</a></li>
+            <li><a href="#" title="" class="menu__link">Sozialwissenschaften</a></li>
+            <li><a href="#" title="" class="menu__link">Wirtschafts<wbr>wissenschaften</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--
+    --><div class="menu__column ic-tablet-one-half ic-notebook-and-up-one-quarter">
+      <ul class="menu__list">
+        <li><a href="#" title="" class="menu__link">Wissenswertes für</a></li>
+      </ul>
+    </div><!--
+    --><div class="menu__column ic-tablet-one-half ic-notebook-and-up-one-quarter">
+      <ul class="menu__list">
+        <li><a href="#" title="" class="menu__link menu__link--has-children">Community</a>
+          <ul class="menu__list menu__list--indented">
+            <li><a href="#" title="" class="menu__link">News</a></li>
+            <li><a href="#" title="" class="menu__link menu__link--has-children">Open-Access-Tage</a>
+              <ul class="menu__list menu__list--indented">
+                <li><a href="#" title="" class="menu__link menu__link--has-children">Open-Access-Tage 2015</a>
+                  <ul class="menu__list menu__list--indented">
+                    <li><a href="#" title="" class="menu__link menu__link--has-children">Programm</a>
+                      <ul class="menu__list menu__list--indented">
+                        <li><a href="#" title="" class="menu__link">Sessions</a></li>
+                        <li><a href="#" title="" class="menu__link">Abstracts</a></li>
+                        <li><a href="#" title="" class="menu__link">Referent/innen</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#" title="" class="menu__link">Teilnehmer/<wbr>Innen</a></li>
+                    <li><a href="#" title="" class="menu__link">Posterausstellung/<wbr>Messe</a></li>
+                    <li><a href="#" title="" class="menu__link">Kontakt</a></li>
+                    <li><a href="#" title="" class="menu__link">Veranstaltungsort</a></li>
+                    <li><a href="#" title="" class="menu__link">Dokumentation/<wbr>Fotos</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" title="" class="menu__link menu__link--has-children">Open-Access-Tage 2014</a></li>
+                <li><a href="#" title="" class="menu__link menu__link--has-children">Open-Access-Tage 2013</a></li>
+                <li><a href="#" title="" class="menu__link menu__link--has-children">Open-Access-Tage 2012</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="" class="menu__link">Open Access Week</a></li>
+            <li><a href="#" title="" class="menu__link">Mailingliste</a></li>
+            <li><a href="#" title="" class="menu__link">Open-Access-Projekte</a></li>
+            <li><a href="#" title="" class="menu__link menu__link--has-children">Links</a>
+              <ul class="menu__list--indented">
+                <li><a href="#" title="" class="menu__link">Blogs/<wbr>Foren/<wbr>Newsletter</a></li>
+                <li><a href="#" title="" class="menu__link">Mailinglisten</a></li>
+              </ul>
+            </li>
+            <li><a href="#" title="" class="menu__link">Kalender</a></li>
+            <li><a href="#" title="" class="menu__link">Internes Wiki</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- end page -->
+
+<!-- JS includes -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
