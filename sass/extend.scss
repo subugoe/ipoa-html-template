@@ -88,17 +88,29 @@
 /**
  * TODO : add documentation
  */
-@include class('heading') {
-  margin: 0;
-  margin: $inuit-base-line-height 0 ($inuit-base-line-height / 2) 0;
-}
+@include class('heading') { margin: 0; }
+
+/**
+ * TODO : add documentation
+ */
 @include class('heading--alpha') {
   @extend %heading;
   margin: ($inuit-base-line-height / 2) 0;
-  @include media-query('tablet-and-up') {
-    margin: $inuit-base-line-height 0;
-  }
+  @include media-query('tablet-and-up') { margin: $inuit-base-line-height 0; }
 }
+
+/**
+ * TODO : add documentation
+ */
+@include class('heading--beta') {
+  @extend %heading;
+  margin: $inuit-base-line-height 0 ($inuit-base-line-height / 2) 0;
+  @include media-query('desk-and-up') { margin: 0; }
+}
+
+/**
+ * TODO : add documentation
+ */
 @include class('heading--gamma') {
   @extend %heading;
   margin: ($inuit-base-line-height / 2) 0;

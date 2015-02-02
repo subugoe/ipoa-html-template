@@ -16,7 +16,6 @@
   @extend %picture;
 }
 
-
 /**
  * TODO : add documentation
  */
@@ -24,7 +23,6 @@
   @extend %caption;
   @include media-query('desk-and-up') { text-align: right; }
 }
-
 
 /**
  * TODO : add documentation
@@ -35,6 +33,19 @@
   @extend %link-on-bright;
 }
 
+  /**
+   * TODO : add documentation
+  */
+  .main__link--in-list {
+    @extend %link-in-linklist;
+    @extend %link--underline-on-bright;
+    &:before { margin-bottom: -2px; }
+    &:focus {
+      background-color: $color-ipoa-green;
+      color: $color--brightest;
+    }
+  }
+
 /**
  * TODO : add documentation
  */
@@ -42,6 +53,7 @@
   @extend %ic-layout__item;
   @extend .ic-desk-and-up-three-twelfths;
   @extend %heading;
+  @extend %heading--beta;
   @include media-query('desk-and-up') { text-align: right; }
   line-height: round($inuit-base-line-height / .65);
 }
@@ -55,21 +67,11 @@
   &:hover {
     a { @extend %link-on-bright; }
   }
-  padding-left: 22px;
+  padding-left: $inuit-base-line-height;
+  @include media-query('phone') { padding-left: $inuit-base-line-height / 2; }
 }
 
-/**
- * TODO : add documentation
- */
-.main__link--in-list {
-  @extend %link-in-linklist;
-  @extend %link--underline-on-bright;
-  &:before { margin-bottom: -2px; }
-  &:focus {
-    background-color: $color-ipoa-green;
-    color: $color--brightest;
-  }
-}
+  .main__linklist--reset { padding-left: 0; }
 
 /**
  * TODO : add documentation
