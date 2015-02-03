@@ -195,6 +195,8 @@ jQuery(document).ready(function () {
         jQuery('.footer-hide__helper').addClass('footer-hide__helper--shifted');
         jQuery('.footer-hide').hide();
 
+        jQuery('.alt-menu a:first').focus();
+
       }
 
     });
