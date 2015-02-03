@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
   /**
    * TODO : add documentation
    */
-  function scrollToAnchor(aid){
+  function scrollToAnchor(aid) {
     var aTag = jQuery("a[name='"+ aid +"']");
     jQuery('html,body').animate({scrollTop: aTag.offset().top},'slow');
   }
@@ -23,11 +23,9 @@ jQuery(document).ready(function () {
    */
   jsHeadLanguageIndicator = jQuery('.js-head-language-indicator');
   jsHeadLanguageIndicator.click(function() {
-    jsHeadLanguageIndicator.hide();
-    jQuery('.js-head-language-links').show();
     jQuery('.head').css({'padding-top': '94px'});
-    headHeight = jQuery('.js-head').height();
-    jQuery('.headroom__helper').css({"padding-top": headHeight + "px"});
+    jQuery('.js-head-language-links').show();
+    jsHeadLanguageIndicator.hide();
   });
 
   /**
@@ -72,7 +70,6 @@ jQuery(document).ready(function () {
     // open link if child ULs are open already
     if (jQuery(this).hasClass('menu__link--open')) {
 
-      // console.log('open link');
       // we could to fancy stuff if a link is clicked to follow the href
 
     // open UL
@@ -175,16 +172,6 @@ jQuery(document).ready(function () {
        */
       } else {
 
-        // $('.overlay').css({
-        //   'background-color': 'grey',
-        //   'position': 'absolute',
-        //   'bottom': 0,
-        //   'height': '100%',
-        //   'width': '100%',
-        //   'z-index': '999',
-        //   'opacity': '.5'
-        // });
-
         // add '--active' modifier to the menu button
         altMenuToggleButton.addClass('js-alt-menu-toggle-button--active');
 
@@ -195,9 +182,6 @@ jQuery(document).ready(function () {
           '-ms-transform': 'translateX(0%)',
           'transition': '0.25s ease-in-out',
         });
-
-
-
 
         // make the menu content fill the whole left side (top to bottom) and
         // let its content scroll
@@ -211,80 +195,39 @@ jQuery(document).ready(function () {
         jQuery('.footer-hide__helper').addClass('footer-hide__helper--shifted');
         jQuery('.footer-hide').hide();
 
+        jQuery('.alt-menu a:first').focus();
+
       }
 
     });
   };
 
-  /*
-   *
-   */
-  (function($, window, document, undefined) {
-    'use strict';
-
-    var elSelector = '.head-nav',
-        elClassHidden = 'head-nav--hidden',
-        elClassNarrow = 'head-nav--narrow',
-        elNarrowOffset = 50,
-        throttleTimeout = 250,
-        $element = $(elSelector);
-
-    if(!$element.length) return true;
-
-    var $window = $(window),
-        wHeight = 0,
-        wScrollCurrent = 0,
-        wScrollBefore = 0,
-        wScrollDiff = 0,
-        $document = $(document),
-        dHeight = 0,
-
-      throttle = function( delay, fn ) {
-        var last, deferTimer;
-        return function() {
-          var context = this, args = arguments, now = +new Date;
-          if(last && now < last + delay) {
-            clearTimeout(deferTimer);
-            deferTimer = setTimeout( function(){ last = now; fn.apply( context, args ); }, delay );
-          } else {
-            last = now;
-            fn.apply(context, args);
-          }
-        };
-      };
-
-    $window.on('scroll', throttle( throttleTimeout, function() {
-      jQuery('.js-head-language-links').hide();
-      jQuery('.head').css({'padding-top': '54px'});
-      jQuery('.js-head-language-indicator').show();
-      dHeight = $document.height();
-      wHeight = $window.height();
-      wScrollCurrent = $window.scrollTop();
-      wScrollDiff = wScrollBefore - wScrollCurrent;
-
-      // toggles "narrow" classname
-      $element.toggleClass(elClassNarrow, wScrollCurrent > elNarrowOffset);
-
-      // scrolled to the very top; element sticks to the top
-      if(wScrollCurrent <= 0) {
-        $element.removeClass(elClassHidden);
-      // scrolled up; element slides in
-      } else if(wScrollDiff > 0 && $element.hasClass(elClassHidden)) {
-        $element.removeClass(elClassHidden);
-      // scrolled down
-      } else if(wScrollDiff < 0) {
-        // scrolled to the very bottom; element slides in
-        if(wScrollCurrent + wHeight >= dHeight && $element.hasClass(elClassHidden)) {
-          $element.removeClass( elClassHidden );
-        // scrolled down; element slides out
-        } else {
-          $element.addClass(elClassHidden);
-        }
+  $(function(){
+    var lastScrollTop = 0, delta = 5;
+    $(window).scroll(function(event){
+      var st = $(this).scrollTop();
+      if(Math.abs(lastScrollTop - st) <= delta) {
+        return;
       }
-
-      wScrollBefore = wScrollCurrent;
-    }));
-
-  })( jQuery, window, document );
+      // downscroll code
+      if (st > lastScrollTop){
+        console.log('scroll down');
+        jQuery('.js-head-language-links').hide();
+        jQuery('.js-head-language-indicator').show();
+        jQuery('.head-nav').addClass('head-nav--narrow');
+        jQuery('.head').removeAttr('style');
+      }
+      // upscroll code
+      // else {
+      //   console.log('scroll up');
+      //   console.log($('.head')[0].scrollHeight);
+      //   console.log($(this).scrollTop());
+      // }
+      if ($(this).scrollTop() < 10) {
+        jQuery('.head-nav').removeClass('head-nav--narrow');
+      }
+      lastScrollTop = st;
+    });
+  });
 
 });
