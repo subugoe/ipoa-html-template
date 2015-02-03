@@ -1,7 +1,17 @@
-// /**
-//  * .search
-//  */
-// .search { @if $search-theme-dark { background-color: $color--darkest; } }
+/**
+ * .search
+ * 1. pseudo space above the search box to avoid scrolling via anchor behind
+ *    the fixed head menu bar
+ */
+.search {
+  &:before { // 1.
+    display: block;
+    content: "";
+    height: 50px;
+    margin: -50px 0 0;
+  }
+}
+
 
 /**
  * .search__content
