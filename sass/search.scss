@@ -2,6 +2,7 @@
  * .search
  * 1. pseudo space above the search box to avoid scrolling via anchor behind
  *    the fixed head menu bar
+ *    http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B
  */
 .search {
   &:before { // 1.
