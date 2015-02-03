@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .start
  */
 .start {
   background: url("../img/bg-1.jpg") no-repeat center center fixed;
@@ -9,12 +9,12 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__header
  */
 .start__header { @extend %ic-layout; }
 
 /**
- * TODO : add documentation
+ * .start__logo
  */
 .start__logo {
   @extend %ic-layout__item;
@@ -26,13 +26,12 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__title
  */
 .start__title {
   @extend %ic-layout__item;
   @extend .ic-tablet-and-up-one-half;
   @extend .ic-layout--center;
-  @extend %text--very-dark;
   @extend %text--large;
   display: none;
   @include media-query('tablet-and-up') {
@@ -43,7 +42,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__main
  */
 .start__main {
   @extend %ic-layout__item;
@@ -52,12 +51,12 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__navigation
  */
 .start__navigation { @extend %ic-layout--center; }
 
 /**
- * TODO : add documentation
+ * .start__button
  */
 .start__button {
   @extend %ic-btn;
@@ -76,7 +75,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__footer
  */
 .start__footer {
   @extend %ic-layout;
@@ -84,7 +83,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__footer-content
  */
 .start__footer-content {
   width: 100vw;
@@ -92,7 +91,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__list
  */
 .start__list {
   @extend %ic-layout--center;
@@ -101,6 +100,6 @@
 }
 
 /**
- * TODO : add documentation
+ * .start__link
  */
 .start__link { @extend %link--default; }

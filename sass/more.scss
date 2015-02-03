@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .more
  */
 .more {
   @extend %ic-layout;
@@ -7,9 +7,7 @@
 }
 
 /**
- * TODO : add documentation
- *
- * [1] style links in lists if mouse hovers over parent .more__column
+ * .more__column
  */
 .more__column {
   @extend %ic-layout__item;
@@ -17,37 +15,32 @@
   @extend .ic-notebook-and-up-one-quarter;
   @extend .ic-pt+;
   @extend .ic-pb+;
-  &:hover {
-    .more__list a { @extend %link-on-bright; } // [1]
-  }
 }
 
 /**
- * TODO : add documentation
- *
- * [1] style links in lists if mouse hovers over parent .more__column
+ * .more__list
  */
-.more__list {
-  @extend %ic-list-bare;
-  a:focus { @extend %link-on-bright; }  // [1]
-}
+.more__list { @extend %ic-list-bare; }
 
 /**
- * TODO : add documentation
+ * .more__link
  */
-.more__link { @extend %link-on-bright; }
+.more__link {
+  @extend %link--default;
+  @extend %link--on-bright;
+  @extend %link--underline;
+  @extend %link--underline-on-bright;
+}
 
   /**
-   * TODO : add documentation
+   * .more__link--in-list
+   * 1. move the chevron a tad lower
    */
   .more__link--in-list {
-    @extend %link-in-linklist;
+    @extend %link--default;
+    @extend %link--in-linklist;
     @extend %link--block;
-    padding: 3px 5px;
-    background-color: #eeeeee;
+    @extend %link--block-on-bright;
+    &:hover, &:focus { @extend %link--on-bright; }
+    &:before { margin-bottom: $shift-chevron-before-content; } // 1.
   }
-
-  /**
-   * TODO : add documentation
-   */
-  .more__link--in-textblock { @extend %link--default; }

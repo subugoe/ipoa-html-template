@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .last
  */
 .last {
   @extend %ic-layout;
@@ -12,7 +12,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .last__block1
  */
 .last__block1 {
   @extend %ic-layout__item;
@@ -20,7 +20,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .last__block2
  */
 .last__block2 {
   @extend %ic-layout__item;
@@ -29,7 +29,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .last__list
  */
 .last__list {
   @extend %ic-list-bare;
@@ -37,12 +37,10 @@
 }
 
 /**
- * TODO : add documentation
+ * .last__link
  */
 .last__link {
   @extend %link--default;
-  @extend %link-on-bright;
-  background-color: #eeeeee;
-  // @extend %link--underline-on-bright;
-  padding: 3px 5px;
+  @extend %link__button-on-bright;
+  &:hover, &:focus { @extend %link--on-bright; }
 }

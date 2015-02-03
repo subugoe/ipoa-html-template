@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * class($name)
  */
 @mixin class($name) {
   .#{$name},
@@ -7,36 +7,31 @@
 }
 
 /**
- * hidden-on-phone
- * what it does: hides stuff from phones
- * how to use it: either as @extend in Sass or in HTML to
+ * class('hidden-on-phone')
  */
 @include class('hidden-on-phone') {
   @include media-query('smaller-than-tablet') { display: none !important; }
 }
 
 /**
- * nobr
- *
+ * class('nobr')
  * what it does: prevents the browser to add a break / new line if there is not
  * enough space to dislay things like long words
- *
- * how to use it: either as @extend in Sass or in HTML to
  */
 @include class('nobr') { white-space: nowrap; }
 
 /**
- * TODO : add documentation
+ * class('m--default')
  */
 @include class('m--default') { margin: 0 0 round($inuit-base-line-height / 2); }
 
 /**
- * TODO : add documentation
+ * class('picture')
  */
 @include class('picture') { @extend %m--default; }
 
 /**
- * TODO : add documentation
+ * class('caption')
  */
 @include class('caption') {
   @extend %m--default;
@@ -44,25 +39,17 @@
 }
 
 /**
- * TODO : add documentation
+ * class('form')
  */
 @include class('form') { @extend %m--default; }
 
 /**
- * TODO : add documentation
+ * class('paragraph')
  */
 @include class('paragraph') { @extend %m--default; }
 
 /**
- * TODO : add documentation
- */
-@mixin pushOneQuarter() {
-  position: relative;
-  transform: translateX(25%);
-}
-
-/**
- * TODO : add documentation
+ * @mixin responsive-content-padding()
  */
 @mixin responsive-content-padding() {
   padding-left: $content-padding--phone;
@@ -86,12 +73,12 @@
 }
 
 /**
- * TODO : add documentation
+ * class('heading')
  */
 @include class('heading') { margin: 0; }
 
 /**
- * TODO : add documentation
+ * class('heading--alpha')
  */
 @include class('heading--alpha') {
   @extend %heading;
@@ -100,7 +87,7 @@
 }
 
 /**
- * TODO : add documentation
+ * class('heading--beta')
  */
 @include class('heading--beta') {
   @extend %heading;
@@ -109,7 +96,7 @@
 }
 
 /**
- * TODO : add documentation
+ * class('heading--gamma')
  */
 @include class('heading--gamma') {
   @extend %heading;
@@ -117,17 +104,21 @@
 }
 
 /**
- * TODO : add documentation
+ * .fa-twitter
  */
-.fa-twitter:before { color: $color-twitter; }
+.fa-twitter {
+  &:before { color: $color-twitter; }
+}
 
 /**
- * TODO : add documentation
+ * .fa-facebook
  */
-.fa-facebook:before { color: $color-facebook; }
+.fa-facebook {
+  &:before { color: $color-facebook; }
+}
 
 /**
- * TODO : add documentation
+ * %ul--reset
  */
 %ul--reset {
   margin: 0;
@@ -135,61 +126,69 @@
 }
 
 /**
- * TODO : add documentation
+ * %text--huge
  */
 %text--huge { font-size: ($inuit-base-font-size / 16px) * $factor-text--huge; }
 
 /**
- * TODO : add documentation
+ * %text--large
  */
 %text--large { font-size: ($inuit-base-font-size / 16px) * $factor-text--large; }
 
 /**
- * TODO : add documentation
+ * %text--small
  */
 %text--small { font-size: ($inuit-base-font-size / 16px) * $factor-text--small; }
 
 /**
- * TODO : add documentation
+ * %text--tiny
  */
 %text--tiny { font-size: ($inuit-base-font-size / 16px) * $factor-text--tiny; }
 
 /**
- * TODO : add documentation
+ * %text--bold
  */
 %text--bold { font-weight: bold; }
 
 /**
- * TODO : add documentation
+ * %text--very-bright
  */
 %text--very-bright { color: $color--brightest; }
 
 /**
- * TODO : add documentation
+ * %border--big
  */
 %border--big { border-width: $border-width--big; }
 
 /**
- * TODO : add documentation
+ * %link--default
  */
 %link--default {
   border-radius: $link-border-radius--default;
-  border: 1px solid transparent;
-  padding: $link-padding--default;
-  padding: 2px 3px 0px 3px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
   text-decoration: none;
-  color: $color--darkest;
   transition: all $transition-time--default ease;
+  padding: 2px 3px 0px 3px;
 }
 
-%link--underline-on-bright { border-bottom: 1px dotted $color-ipoa-green; }
+/**
+ * %link--underline
+ * defines the style that is used to display the border-bottom
+ */
+%link--underline { border-bottom-style: $link-border-bottom-style; }
 
 /**
- * TODO : add documentation
+ * %link--underline-on-bright
+ */
+%link--underline-on-bright { border-bottom-color: color-ipoa-green; }
+
+/**
+ * %link-in-linklist
  */
 %link-in-linklist {
   transition: all $transition-time--default ease;
-  // display: block;
   border-radius: $link-border-radius--default;
   text-decoration: none;
   padding: $link-padding--small;
@@ -206,35 +205,74 @@
   }
 }
 
-%link--block { display: block; }
+/**
+ * %link--in-linklist
+ */
+%link--in-linklist {
+  margin: 0 0 .3em .7em;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image:url('../img/angle-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+  }
+}
 
 /**
- * TODO : add documentation
+ * %link--block
  */
-%link-on-bright {
+%link--block {
+  display: block;
+  padding: $link-block-padding;
+}
+
+/**
+ * %link--block-on-bright
+ */
+%link--block-on-bright { background-color: $color-block-background--on-bright; }
+
+/**
+ * %link--on-bright
+ */
+%link--on-bright {
   color: $color--darkest;
-  // background-color: lighten($link-background-color--default, $link-lighten-color-factor);
+  border-bottom-color: $color-ipoa-green;
   &:hover,
   &:focus {
+    border-color: $color-ipoa-green;
     background-color: $color-ipoa-green;
     color: $color--brightest;
   }
   &:active {
+    border-color: $color-ipoa-yellow;
     background-color: $color-ipoa-yellow;
     color: $color--darkest;
   }
 }
 
 /**
- * TODO : add documentation
+ * .link__button-on-bright
  */
-%headlink-on-bright {
-  @extend %link-on-bright;
+%link__button-on-bright {
+  background-color: $color-block-background--on-bright;
+  padding: $link-block-padding;
+}
+
+/**
+ * %headlink-on-bright
+ */
+%head__link--on-bright {
+  @extend %link--on-bright;
+  border-color: #FFF;
   background-color: #FFF;
 }
 
 /**
- * TODO : add documentation
+ * %link-on-dark
  */
 %link-on-dark {
   color: $color--brightest;
@@ -251,7 +289,7 @@
 }
 
 /**
- * TODO : add documentation
+ * %link--with-icon-on-dark
  */
 %link--with-icon-on-dark {
   .fa-icon { @extend .fa-icon-on-dark; }
@@ -263,7 +301,7 @@
 }
 
 /**
- * TODO : add documentation
+ * %link--with-icon-on-bright
  */
 %link--with-icon-on-bright {
   .fa-icon { @extend .fa-icon-on-bright; }
@@ -274,4 +312,7 @@
   }
 }
 
+/**
+ * .no-js .on-demand__link
+ */
 .no-js .on-demand__link { display: none; }

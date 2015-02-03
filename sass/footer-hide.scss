@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .footer-hide
  */
 .footer-hide {
   position: relative;
@@ -7,7 +7,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .footer-hide__helper
  */
 .footer-hide__helper {
   position: relative;
@@ -15,6 +15,9 @@
   background-color: $color-text-background--default;
 }
 
+  /**
+   * .footer-hide__helper--shifted
+   */
   .footer-hide__helper--shifted {
     transform: translateX(30%);
     -webkit-transform: translateX(30%);
@@ -27,7 +30,7 @@
   }
 
 /**
- * TODO : add documentation
+ * .footer-hide__content
  */
 .footer-hide__content {
   @include media-query('notebook-and-up') {
@@ -38,8 +41,7 @@
 }
 
   /**
-   * TODO : add documentation
-   *
+   * .no-js .footer-hide__content
    * no-js fallback
    * don't hide the footer if there is no js available
    */

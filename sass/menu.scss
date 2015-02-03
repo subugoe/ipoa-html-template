@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .menu
  */
 .menu {
   @extend %ic-layout;
@@ -11,13 +11,14 @@
 }
 
   /**
+   * .no-js .menu
    * JS Fallback
    * always show the menu if user has no JS.
    */
   .no-js .menu { display: block; }
 
 /**
-  * TODO : add documentation
+ * .menu__button
  */
 .menu__button {
   padding: 5px;
@@ -38,6 +39,7 @@
 }
 
 /**
+ * .menu__column
  * formats every menu section to appear and behave like a column e. g. have many
  * menu sections side by side in various breakpoint viewports
  */
@@ -49,23 +51,27 @@
 }
 
 /**
+ * .menu__list
  * formats menu__list to be a list without list-style-type
  */
 .menu__list { @extend %ic-list-bare; }
 
+/**
+ * .menu__list--indented
+ */
 .menu__list--indented {
   @extend .menu__list;
   margin-left: $inuit-base-spacing-unit;
 }
 
 /**
+ * .menu__link
  * define how links in the menu appear
  */
 .menu__link {
   @extend %link-in-linklist;
   @extend %link-in-linklist--dense;
   @extend %link--block;
-  padding: 3px 5px;
   color: $color--darkest;
   &:before { margin-left: -17px; }
   &:hover,
@@ -80,6 +86,7 @@
 }
 
   /**
+   * .menu__link--active
    * modifier that defines how a menu link looks like if the page the link would
    * lead to is the current page
    */
@@ -88,12 +95,15 @@
     background: $color-ipoa-yellow;
   }
 
+  /**
+   * .menu__link--has-children
+   */
   .menu__link--has-children {
     &:before { background-image:url('../img/angle-double-right.svg'); }
   }
 
 /**
- *
+ * .alt-menu
  */
 .alt-menu {
   @extend .ic-layout__item;
@@ -104,6 +114,7 @@
 }
 
 /**
+ * .alt-menu--off-canvas
  * a modifier that moves the alt-menu off canvas
  */
 .alt-menu--off-canvas {

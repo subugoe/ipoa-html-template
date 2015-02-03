@@ -8,13 +8,16 @@ $border-radius--large:            5px;
 /**
  * Colors
  */
-$color-text-background--default:  #fff;
+
 $color--darkest:                  #262626;
 $color--brightest:                #fff;
 $color-ipoa-yellow:               #fc0;
 $color-ipoa-green:                #360;
 $color-twitter:                   #4BA3EB;
 $color-facebook:                  #334F8D;
+$color-text-background--default:  $color--brightest;
+$color-link-main--default:        $color--darkest;
+$color-block-background--on-bright:#EEE;
 
 /**
  * Transition
@@ -31,7 +34,8 @@ $link-padding--small:             1px;
 $link-lighten-color-factor:       50%;
 $link-color--default:             #333;
 $link-background-color--default:  #5c5c5c;
-
+$link-border-bottom-style:        dotted;
+$link-block-padding:              3px 5px;
 /**
  * Text Factor
  */
@@ -66,3 +70,8 @@ $content-padding--tablet:         25px;
 $content-padding--notebook:       75px;
 $content-padding--desk:           150px;
 $content-padding--huge:           200px;
+
+/**
+ *
+ */
+$shift-chevron-before-content:    -2px;

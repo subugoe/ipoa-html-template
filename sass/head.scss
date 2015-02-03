@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .head
  */
 .head {
   @extend %ic-layout;
@@ -13,7 +13,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .head__links
  */
 .head__links {
   @extend %ic-layout__item;
@@ -25,18 +25,27 @@
 }
 
 /**
- * TODO : add documentation
+ * .head__link
+ * 1. give the icon a little bit more space to top
+ * 2. these links are not allowed to break into a new line
  */
 .head__link {
   @extend %link--default;
-  @extend %headlink-on-bright;
-  @extend %nobr;
-  @extend %link--with-icon-on-bright;
-  padding: 5px;
+  @extend %head__link--on-bright;
+  @extend %nobr; // 2.
+  padding: 7px 5px 5px 5px; // 1.
+  &:hover, &:focus {
+    @extend %link--on-bright;
+    svg {
+      color: $color--brightest;
+      fill: currentColor;
+    }
+  }
+  &:active svg { color: $color--darkest; }
 }
 
   /**
-   * TODO : add documentation
+   * .head__link--active
    */
   .head__link--active {
     background-color: $color--darkest;
@@ -44,18 +53,19 @@
   }
 
 /**
- * TODO : add documentation
+ * .head__list
+ * 1. LIs are inline
+ * 2. UL is inline
  */
 .head__list {
   @extend %ic-list-bare;
-  @extend %ic-list-inline;
-  display: inline;
+  @extend %ic-list-inline; // 1.
+  display: inline; // 2.
 }
 
 /**
- * TODO : add documentation
- *
- * [1] simulating "@extend .ic-mt+"
+ * .head__menubutton
+ * 1. simulating "@extend .ic-mt+"
  */
 .head__menubutton {
   @extend %ic-layout__item;
@@ -65,27 +75,25 @@
   @extend .fa-icon-on-bright;
   @include media-query('tablet-and-up') {
     text-align: right;
-    padding-right: double($inuit-base-spacing-unit) !important; // [2]
+    padding-right: double($inuit-base-spacing-unit) !important;
   }
   a {
     svg { fill: $color--darkest; }
     &:hover {
       svg { fill: $color--brightest; }
     }
-  }
 
+  }
 }
 
 /**
- * TODO : add documentation
- *
+ * .head__language-links
  * the block that contains the various links to choose a different language
  * hidden by default
  * visible if ___ clicked
  */
 .head__language-links {
   @extend %ic-layout__item;
-  @extend %text--very-dark;
   @extend .ic-pt;
   padding-left: 0;
   text-align: right;
@@ -94,30 +102,31 @@
   g { fill: $color--brightest; }
 }
 
+.head-nav--narrow.head__language-links {
+  display: none;
+}
+
   /**
-   * TODO : add documentation
-   *
+   * .no-js .head__language-links
    * always show language selection links if user has no JS
    */
   .no-js .head__language-links { display: block; }
 
 /**
- * TODO : add documentation
- *
+ * .language-icon--push-right-in-header
  * align language icon with those above
  * FIXME : dirty numbers
  */
 .language-icon--push-right-in-header { padding-left: 8px; }
 
 /**
- * TODO : add documentation
+ * .no-js .head__language-indicator
  */
 .no-js .head__language-indicator { display: none; }
 
 /**
- * TODO : add documentation
- *
- * [1] simulating "@extend .ic-pr"
+ * .head__logo
+ * 1. simulating "@extend .ic-pr"
  */
 .head__logo {
   @extend %ic-layout__item;
@@ -130,19 +139,18 @@
       width: 100%;
       max-width: 250px;
     }
-    padding-right: double($inuit-base-spacing-unit) !important; // [1]
+    padding-right: double($inuit-base-spacing-unit) !important; // 1.
   }
 }
 
 /**
- * TODO : add documentation
- *
+ * .head__claim
  * only visible in tablet-and-up
- * [1,2] show claim only if enough screen estate is available
+ * 1.,2. show claim only if enough screen estate is available
  */
 .head__claim {
-  display: none; // [1]
-  @include media-query('tablet-and-up') { // [2]
+  display: none; // 1.
+  @include media-query('tablet-and-up') { // 2.
     display: inline-block;
     @extend %ic-layout__item;
     @extend .ic-tablet-and-up-three-quarters;
@@ -151,29 +159,29 @@
       margin-top: ($inuit-base-spacing-unit * 4) !important;
       transform: translateY(-10%);
     }
-    @extend %text--very-dark;
     @extend %text--huge;
     letter-spacing: $letter-spacing--large;
   }
 }
 
 /**
- * TODO : add documentation
- *
- * [1] align page title with content
+ * .head__pagetitle
+ * 1. align page title with content
  */
 .head__pagetitle {
   @extend %ic-layout__item;
   @extend %text--large;
-  @extend %text--very-dark;
   text-align: center;
   letter-spacing: $letter-spacing--larger;
   @include media-query('tablet-and-up') { text-align: left; }
-  @include media-query('desk-and-up') { @include pushOneQuarter(); } // [1]
+  @include media-query('desk-and-up') { // 1.
+    position: relative;
+    transform: translateX(25%);
+  }
 }
 
 /**
- * TODO : add documentation
+ * .head-nav
  */
 .head-nav {
   @extend %ic-layout;
@@ -193,8 +201,14 @@
   transition-property: transform;
 }
 
+  /**
+   * .no-js .head-nav
+   */
   .no-js .head-nav { position: relative; }
 
+  /**
+   * .head-nav--narrow
+   */
   .head-nav--narrow {
     background-color: white;
     border-bottom: 1px solid lighten(#333, 50%);

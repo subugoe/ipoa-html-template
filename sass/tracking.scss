@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .tracking
  */
 .tracking {
   @extend %ic-layout;
@@ -7,7 +7,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .tracking__content
  */
 .tracking__content {
   @extend %ic-layout__item;
@@ -16,17 +16,18 @@
 }
 
 /**
- * TODO : add documentation
+ * .tracking__link
  */
 .tracking__link {
   @extend %link--default;
-  @extend %link-on-bright;
+  @extend %link__button-on-bright;
   @extend %nobr;
-  // padding: 3px 5px;
-  &:hover {
+  &:hover, &:focus {
+    @extend %link--on-bright;
     svg {
-      color: $color--brightest;
+     color: $color--brightest;
       fill: currentColor;
     }
   }
+  &:active svg { color: $color--darkest; }
 }

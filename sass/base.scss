@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .body
  */
 .body {
   text-rendering: optimizeLegibility;
@@ -14,10 +14,13 @@
 }
 
 /**
- * TODO : add documentation
+ * .image
  */
 .image { width: 100%; }
 
+/**
+ * blockquote
+ */
 blockquote {
   // font-style: italic;
   margin-left: $content-padding--phone * 2;
@@ -47,6 +50,9 @@ blockquote {
   }
 }
 
+/**
+ * sub, sup
+ */
 sub,
 sup {
   &:before{
@@ -59,6 +65,7 @@ sup {
   }
 }
 
-a {
-  color: $link-color--default;
-}
+/**
+ * a
+ */
+a { color: $link-color--default; }

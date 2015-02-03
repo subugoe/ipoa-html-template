@@ -1,5 +1,5 @@
 /**
- * TODO : add documentation
+ * .main
  */
 .main {
   @extend %ic-layout;
@@ -8,7 +8,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .main__picture
  */
 .main__picture {
   @extend %ic-layout__item;
@@ -17,7 +17,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .main__caption
  */
 .main__caption {
   @extend %caption;
@@ -25,29 +25,32 @@
 }
 
 /**
- * TODO : add documentation
+ * .main__link
+ * A link in the main content column
  */
 .main__link {
   @extend %link--default;
+  @extend %link--on-bright;
+  @extend %link--underline;
   @extend %link--underline-on-bright;
-  @extend %link-on-bright;
 }
 
   /**
-   * TODO : add documentation
-  */
+   * .main__link--in-list
+   * A link in the main content column within a list than contains links only
+   * 1. move the chevron a tad lower
+   */
   .main__link--in-list {
-    @extend %link-in-linklist;
+    @extend %link--default;
+    @extend %link--on-bright;
+    @extend %link--underline;
     @extend %link--underline-on-bright;
-    &:before { margin-bottom: -2px; }
-    &:focus {
-      background-color: $color-ipoa-green;
-      color: $color--brightest;
-    }
+    @extend %link--in-linklist;
+    &:before { margin-bottom: $shift-chevron-before-content; } // 1.
   }
 
 /**
- * TODO : add documentation
+ * .main__heading
  */
 .main__heading {
   @extend %ic-layout__item;
@@ -59,22 +62,22 @@
 }
 
 /**
- * TODO : add documentation
+ * .main__linklist
  */
 .main__linklist {
   @extend %ic-list-bare;
   @extend %m--default;
-  &:hover {
-    a { @extend %link-on-bright; }
-  }
   padding-left: $inuit-base-line-height;
   @include media-query('phone') { padding-left: $inuit-base-line-height / 2; }
 }
 
+  /**
+   * .main__linklist--reset
+   */
   .main__linklist--reset { padding-left: 0; }
 
 /**
- * TODO : add documentation
+ * .main__textblock
  */
 .main__textblock {
   @extend %ic-layout__item;
@@ -85,7 +88,7 @@
 }
 
 /**
- * TODO : add documentation
+ * .main__table
  */
 .main__table {
   @extend %ic-layout__item;
@@ -102,6 +105,9 @@
   .uneven { background-color: $table-uneven-background-color }
 }
 
+/**
+ * .main__gallery
+ */
 .main__gallery {
   @extend %paragraph;
   @extend %m--default;
