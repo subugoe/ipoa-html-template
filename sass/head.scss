@@ -72,17 +72,22 @@
   @extend .ic-smaller-than-tablet-one-third;
   @extend .ic-tablet-and-up-one-quarter;
   @extend .ic-mt--;
-  @extend .fa-icon-on-bright;
   @include media-query('tablet-and-up') {
     text-align: right;
     padding-right: double($inuit-base-spacing-unit) !important;
   }
-  a {
-    svg { fill: $color--darkest; }
-    &:hover {
-      svg { fill: $color--brightest; }
+  &:hover,
+  &:active {
+    svg {
+      color: $color--brightest;
+      fill: currentColor;
     }
-
+  }
+  &:active {
+    svg {
+      color: $color--darkest;
+      fill: currentColor;
+    }
   }
 }
 
