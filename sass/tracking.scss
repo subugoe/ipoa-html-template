@@ -25,7 +25,7 @@
   &:hover, &:focus {
     @extend %link--on-bright;
     svg {
-     color: $color--brightest;
+      color: $color--brightest;
       fill: currentColor;
     }
   }
