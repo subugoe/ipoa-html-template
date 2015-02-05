@@ -8,7 +8,7 @@
     room: Raum 69
     time: 11.00-11.30
     video: Video
-    text: 'Begrüßung und Moderation: <a href="" class="main__link">Ursula Arning</a> (ZB MED), <a href="" class="main__link">Agathe Gebert</a> (GESIS) und Achim Oßwald (FH Köln) im Namen der Organisatoren und des Programmkomitees'
+    text: 'Begrüßung und Moderation: <a href="#">Ursula Arning</a> (ZB MED), <a href="#">Agathe Gebert</a> (GESIS) und Achim Oßwald (FH Köln) im Namen der Organisatoren und des Programmkomitees'
   - name: Keynote
     time: 11.30-12.10
     presentation:
@@ -130,7 +130,7 @@
   - name: Sessions I.1
     time: 15:30 - 17:30
     room: Raum 248
-    text: 'Open-Access-Modelle für Monographien und Sammelbände | Video Moderation: <a href="" class="main__link">Margo Bargheer</a> (SUB Göttingen) und <a href="" class="main__link">Isabella Meinecke</a> (SUB Hamburg)'
+    text: 'Open-Access-Modelle für Monographien und Sammelbände | Video Moderation: <a href="#">Margo Bargheer</a> (SUB Göttingen) und <a href="#">Isabella Meinecke</a> (SUB Hamburg)'
     textlong: 'Mit wenig medialem Aufhebens praktizieren Universitätsverlage und Forschungsreinrichtungen seit über zehn Jahren das, was erst seit etwa drei Jahren auch in weiteren Kreisen der Open-Access-Szene in der Diskussion angekommen ist: das Verlegen von Open-Access-Büchern. Denn offensichtlich lässt sich das Medium „Buch“ weniger leicht von der haptischen in die digitale Welt überführen als es die Zeitschriftentransformation nahelegt, sei es in der Akzeptanz, den Nutzungsgewohnheiten oder der Bedeutung in der Wissenschaftskommunikation.<br>Die Session beginnt mit einer Bilanz eines universitär getragenen Verlags, welche Herausforderungen das Verlegen von Open-Access-Büchern mit sich bringt, und ergänzt dies mit zwei praxisorientierten Ko-Referaten. Welche Potentiale die Zukunft bringen kann, zeigen zwei DFG-geförderte Projekte zu Open-Access-Büchern auf, die innovative Modelle der Inhaltsproduktion sowie der Medienproduktion umsetzen.'
     presentation:
     - name: '10 Jahre Open-Access-Verlagsdienste für die Wissenschaft oder: Was Autoren wirklich wollen!'

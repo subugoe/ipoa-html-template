@@ -15,6 +15,10 @@
   @extend .ic-notebook-and-up-one-quarter;
 }
 
+.footer h3 {
+  @extend %heading--gamma;
+}
+
 /**
  * .footer__tracking
  */
@@ -27,12 +31,14 @@
 /**
  * .footer__list
  */
-.footer__list { @extend %ic-list-bare; }
+// .footer__list { @extend %ic-list-bare; }
+.footer ul { @extend %ic-list-bare; }
 
 /**
  * .footer__link
  */
-.footer__link {
+// .footer__link {
+.footer a {
   @extend %link--default;
   @extend %link--on-bright;
   @extend %link--underline;
@@ -43,7 +49,8 @@
    * .footer__link--in-list
    * 1. move the chevron a tad lower
    */
-  .footer__link--in-list {
+  // .footer__link--in-list {
+  .footer ul a {
     @extend %link--default;
     @extend %link--in-linklist;
     @extend %link--block;

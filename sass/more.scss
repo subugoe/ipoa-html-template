@@ -17,15 +17,22 @@
   @extend .ic-pb+;
 }
 
+.more h3 { @extend %heading--gamma; }
+
 /**
  * .more__list
  */
-.more__list { @extend %ic-list-bare; }
+// .more__list { @extend %ic-list-bare; }
+.more ul {
+  @extend %ic-list-bare;
+  @extend %m--default;
+}
 
 /**
  * .more__link
  */
-.more__link {
+// .more__link {
+.more a {
   @extend %link--default;
   @extend %link--on-bright;
   @extend %link--underline;
@@ -36,7 +43,8 @@
    * .more__link--in-list
    * 1. move the chevron a tad lower
    */
-  .more__link--in-list {
+  // .more__link--in-list {
+  .more ul a {
     @extend %link--default;
     @extend %link--in-linklist;
     @extend %link--block;

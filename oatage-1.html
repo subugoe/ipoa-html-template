@@ -14,10 +14,10 @@ layout: default
 
       <!-- {{ site.data.oatage }} -->
       {% for day in site.data.oatage %}<!--
-        --><h2 class="main__heading">{{ day.name }}</h2><!--
+        --><h2>{{ day.name }}</h2><!--
         --><div class="main__textblock">
         {% if day.text %}<p>{{day.text}}</p>{% endif %}
-        <p>{% for sessiondetails in day.session %}<a href="" class="main__link">{{sessiondetails.name}}</a>{% endfor %}
+        <p>{% for sessiondetails in day.session %}<a href="#">{{sessiondetails.name}}</a>{% endfor %}
         </p>
 
         {% for session in day.session %}
@@ -35,14 +35,14 @@ layout: default
           {% if session.presentation %}
             {% for presentation in session.presentation %}
 
-              <h4 class="heading"><a href="" class="main__link">{{ presentation.name }}</a></h4>
+              <h4 class="heading"><a href="#">{{ presentation.name }}</a></h4>
 
               {% if presentation.text %}<p>{{ presentation.text }}</p>{% endif %}
 
               {% if presentation.presenter %}
                 <p>
                 {% for presenter in presentation.presenter %}
-                  <a href="" class="main__link">{{ presenter.name }}</a>
+                  <a href="#">{{ presenter.name }}</a>
                   {% if presenter.org %}({{ presenter.org }}){% endif %}
                 {% endfor %}
                 </p>
@@ -50,9 +50,9 @@ layout: default
 
               {% if presentation.slide or presentation.video or presentation.poster or presentation.abstract %}
                 <p>Materialien:
-                {% for poster in presentation.poster %}<a href="" class="main__link">{{ poster.name }}</a>{% endfor %}
-                {% for slide in presentation.slide %}<a href="" class="main__link">{{ slide.name }}</a>{% endfor %}
-                {% for video in presentation.video %}<a href="" class="main__link">{{ video.name }}</a>{% endfor %}
+                {% for poster in presentation.poster %}<a href="#">{{ poster.name }}</a>{% endfor %}
+                {% for slide in presentation.slide %}<a href="#">{{ slide.name }}</a>{% endfor %}
+                {% for video in presentation.video %}<a href="#">{{ video.name }}</a>{% endfor %}
                 {% if presentation.abstract %}<a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>{% endif %}
                 </p>
                 {% if presentation.abstract %}<blockquote class="on-demand__content">{{ presentation.abstract }}</blockquote>{% endif %}
@@ -65,7 +65,7 @@ layout: default
       -->{% endfor %}<!--
 
 
-      --><h2 class="main__heading">Teilnehmer/Innen</h2><!--
+      --><h2>Teilnehmer/Innen</h2><!--
       --><div class="main__table">
         <table>
           <caption>Folgende Personen sind Teilnehmer/innen der Open-Access-Tage 2015.</caption>
@@ -83,51 +83,51 @@ layout: default
               <td>John</td>
               <td>Doe</td>
               <td>2890</td>
-              <td><a href="#" title="" class="main__link">john@example.com</a></td>
+              <td><a href="#">john@example.com</a></td>
               <td>Niedersächsische Staats- und Universitätsbibliothek Göttingen</td>
             </tr>
             <tr class="uneven">
               <td>Jane</td>
               <td>Doe</td>
               <td>419033</td>
-              <td><a href="#"  class="main__link">jane@example.com</a></td>
+              <td><a href="#">jane@example.com</a></td>
               <td>SUB Hamburg</td>
             </tr>
             <tr>
               <td>Björn</td>
               <td>Fischer</td>
               <td>1103877</td>
-              <td><a href="#" class="main__link">fischer@example.com</a></td>
+              <td><a href="#">fischer@example.com</a></td>
               <td></td>
             </tr>
             <tr class="uneven">
               <td>Klara</td>
               <td>Bauer</td>
               <td>992648</td>
-              <td><a href="#" class="main__link">klara@example.com</a></td>
+              <td><a href="#">klara@example.com</a></td>
               <td></td>
             </tr>
             <tr>
               <td>Benjamin</td>
               <td>Baumer</td>
               <td>776293</td>
-              <td><a href="#" class="main__link">bauer@example.com</a></td>
+              <td><a href="#">bauer@example.com</a></td>
               <td></td>
             </tr>
             <tr class="uneven">
               <td>Klaus</td>
               <td>Fenturi</td>
               <td>23497</td>
-              <td><a href="#" class="main__link">fenturi@example.com</a></td>
+              <td><a href="#">fenturi@example.com</a></td>
               <td></td>
             </tr>
           </tbody>
         </table>
       </div><!--
 
-      --><h2 class="main__heading">Lots of Pictures</h2><!--
+      --><h2>Lots of Pictures</h2><!--
       --><div class="main__gallery"><!--
-        --><picture class="picture">
+        --><picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
           <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
@@ -136,11 +136,11 @@ layout: default
           <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
           <!--[if IE 9]></video><![endif]-->
           <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
-          <div class="caption">
+          <div>
             This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
           </div>
         </picture><!--
-        --><picture class="picture">
+        --><picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
           <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
@@ -149,11 +149,11 @@ layout: default
           <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
           <!--[if IE 9]></video><![endif]-->
           <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
-          <div class="caption">
+          <div>
             This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
           </div>
         </picture><!--
-        --><picture class="picture">
+        --><picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
           <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
@@ -162,11 +162,11 @@ layout: default
           <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
           <!--[if IE 9]></video><![endif]-->
           <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
-          <div class="caption">
+          <div>
             This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
           </div>
         </picture><!--
-        --><picture class="picture">
+        --><picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
           <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
@@ -175,11 +175,11 @@ layout: default
           <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
           <!--[if IE 9]></video><![endif]-->
           <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
-          <div class="caption">
+          <div>
             This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
           </div>
         </picture><!--
-        --><picture class="picture">
+        --><picture>
           <!--[if IE 9]><video style="display: none;"><![endif]-->
           <source srcset="img/image-2--480.jpg, img/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
           <source srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
@@ -188,13 +188,13 @@ layout: default
           <source srcset="img/image-2--1400.jpg, img/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
           <!--[if IE 9]></video><![endif]-->
           <img src="img/image-2--768.jpg" srcset="img/image-2--768.jpg, img/image-2--768-2x.jpg 2x" alt="" class="image">
-          <div class="caption">
+          <div>
             This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
           </div>
         </picture><!--
       --></div><!--
 
-      --><h2 class="main__heading">Vertragszusätze</h2><!--
+      --><h2>Vertragszusätze</h2><!--
       --><div class="main__textblock">
         <p>Alternativ zu Streichungen fügen Autorinnen und Autoren dem Verlagsvertrag einen Zusatz bei, um sich so das einfache Nutzungsrecht für die Onlinenutzung auf einem Non-Profit-Dokumentenserver vorzubehalten. Dieser Zusatz muss vom Verlag gegengezeichnet werden, um Rechtsgültigkeit zu erlangen.</p>
         <p>Der bekannteste und wohl auch anerkannteste Vertragszusatz ist das SPARC Author's Addendum. Es wurde durch die Scholarly Publishing and Academic Resources Coalition (SPARC) entwickelt, einem Zusammenschluss von Bibliotheken in den USA mit dem Ziel, die Entwicklung neuer Kommunikationsmodelle anzuregen, welche die Verbreitung von wissenschaftlicher Literatur steigern und den finanziellen Druck auf Bibliotheken reduzieren. Das Addendum besteht aus zwei Teilen: dem eigentlichen Vertragsanhang und einer Benutzungsanweisung. Mittels der Copyright Addendum Engine von Science Commons und SPARC können Autorinnen und Autoren je nach Wunsch ein Addendum in den Varianten Access-Reuse, Delayed Access und Immediate Access automatisch erstellen. Access-Reuse bedeutet, die Autorin/der Autor behält ausreichende Rechte</p>
@@ -204,7 +204,7 @@ layout: default
           <li>Sit dolor amut lorem.</li>
         </ul>
         <p>Um den Artikel neben der Veröffentlichung in einem Verlag unter eine nichtkommerzielle Creative-Commons- oder eine vergleichbare Lizenz zu stellen. Bei dem Delayed-Access-Modell kann die Autorin/der Autor die Autorenversion sofort online bereit stellen, die Verlagsversion jedoch erst nach Ablauf von sechs Monaten. Immediate Access erlaubt dagegen, sofort bei Erscheinen sowohl die Verlagsversion als auch die Autorenversion online bereit zu stellen.</p>
-        <ul class="main__linklist">
+        <ul>
           <li><a href="" title="" class="main__link--in-list">Lorem ipsum dolor sit amut.</a></li>
           <li><a href="" title="" class="main__link--in-list">Ipsum sit amut dolor.</a></li>
           <li><a href="" title="" class="main__link--in-list">Sit dolor amut lorem.</a></li>

@@ -10,7 +10,8 @@
 /**
  * .main__picture
  */
-.main__picture {
+// .main__picture
+.main picture {
   @extend %ic-layout__item;
   @extend .ic-mt;
   @extend %picture;
@@ -19,16 +20,19 @@
 /**
  * .main__caption
  */
-.main__caption {
+// .main__caption {
+.main picture > div {
   @extend %caption;
   @include media-query('desk-and-up') { text-align: right; }
 }
+// }
 
 /**
  * .main__link
  * A link in the main content column
  */
-.main__link {
+// .main__link {
+.main a {
   @extend %link--default;
   @extend %link--on-bright;
   @extend %link--underline;
@@ -40,19 +44,21 @@
    * A link in the main content column within a list than contains links only
    * 1. move the chevron a tad lower
    */
-  .main__link--in-list {
+  .main ul a {
+  // .main__link--in-list {
     @extend %link--default;
     @extend %link--on-bright;
     @extend %link--underline;
     @extend %link--underline-on-bright;
-    @extend %link--in-linklist;
-    &:before { margin-bottom: $shift-chevron-before-content; } // 1.
+    // @extend %link--in-linklist;
+    // &:before { margin-bottom: $shift-chevron-before-content; } // 1.
   }
 
 /**
  * .main__heading
  */
-.main__heading {
+// .main__heading {
+.main h2 {
   @extend %ic-layout__item;
   @extend .ic-desk-and-up-three-twelfths;
   @extend %heading;
@@ -64,46 +70,78 @@
 /**
  * .main__linklist
  */
-.main__linklist {
+// .main__linklist {
+
+.main > ul { @extend %m--default; }
+
+.main ul {
   @extend %ic-list-bare;
   @extend %m--default;
   padding-left: $inuit-base-line-height;
   @include media-query('phone') { padding-left: $inuit-base-line-height / 2; }
 }
 
+.main ul ul { margin-bottom: 0 !important; }
+
+.main ul li {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    width: 6px;
+    background-image:url('../img/angle-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px;
+    margin-right: 4px;
+    margin-bottom: $shift-chevron-before-content;
+  }
+}
+
   /**
    * .main__linklist--reset
    */
-  .main__linklist--reset { padding-left: 0; }
+  // .main__linklist--reset { padding-left: 0; }
+  .main h2 > div > ul { padding-left: 0; }
 
 /**
  * .main__textblock
  */
-.main__textblock {
+// .main__textblock {
+.main h2 + div {
   @extend %ic-layout__item;
   @extend .ic-desk-and-up-nine-twelfths;
   @extend %paragraph;
   p { @extend %m--default; }
-  ul { @extent %ul--reset; }
 }
 
 /**
  * .main__table
  */
-.main__table {
-  @extend %ic-layout__item;
-  @extend .ic-desk-and-up-nine-twelfths;
-  @extend %paragraph;
-  @extend %m--default;
-  table { width: 100%; }
-  caption {
-    text-align: left;
+// .main__table {
+
+// .main .table_wrap {
+//   @extend %ic-layout__item;
+//   @extend .ic-desk-and-up-nine-twelfths;
+//   @extend %paragraph;
+//   @extend %m--default;
+// }
+
+  .main table {
     @extend %m--default;
+    width: 100%;
+    caption {
+      text-align: left;
+      @extend %m--default;
+    }
+    thead { border-bottom: 1px solid $color--darkest; }
+    td { padding: $table-cell-padding; }
+    .uneven { background-color: $table-uneven-background-color }
   }
-  thead { border-bottom: 1px solid $color--darkest; }
-  td { padding: $table-cell-padding; }
-  .uneven { background-color: $table-uneven-background-color }
-}
+
+
+// }
 
 /**
  * .main__gallery
@@ -111,7 +149,8 @@
 .main__gallery {
   @extend %paragraph;
   @extend %m--default;
-  .picture {
+  // .picture {
+  picture {
     @extend %ic-layout__item;
     @extend .ic-tablet-one-half;
     @extend .ic-notebook-one-half;
@@ -120,3 +159,5 @@
     @extend %picture;
   }
 }
+
+.main img { width: 100%; }
