@@ -230,4 +230,22 @@ jQuery(document).ready(function () {
     });
   });
 
+
+  /**
+   * quick and dirty carousel for logos
+   */
+  var arr = jQuery('#logocarousel').find('li');
+  jQuery(arr).hide();
+  jQuery(arr[0]).show();
+  (function recurse(counter) {
+    var item = arr[counter];
+    delete arr[counter];
+    arr.push(item);
+    setTimeout(function() {
+        jQuery('#logocarousel').find('li').hide();
+        recurse(counter + 1);
+        jQuery(item).show();
+    }, 2500);
+  })(0);
+
 });
