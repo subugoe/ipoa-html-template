@@ -27,13 +27,19 @@
   border: 1px solid transparent;
   color: $color--darkest;
   text-decoration: none;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-ipoa-green;
     color: $color--brightest;
+    svg {
+      color: $color--brightest;
+      fill: currentColor;
+    }
   }
   &:active {
     background-color: $color-ipoa-yellow;
     color: $color--darkest;
+    svg { color: $color--darkest; }
   }
 }
 

@@ -34,7 +34,8 @@
   @extend %head__link--on-bright;
   @extend %nobr; // 2.
   padding: 7px 5px 5px 5px; // 1.
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     @extend %link--on-bright;
     svg {
       color: $color--brightest;
@@ -76,19 +77,20 @@
     text-align: right;
     padding-right: double($inuit-base-spacing-unit) !important;
   }
-  &:hover,
-  &:active {
-    svg {
-      color: $color--brightest;
-      fill: currentColor;
-    }
-  }
-  &:active {
-    svg {
-      color: $color--darkest;
-      fill: currentColor;
-    }
-  }
+  // &:hover,
+  // &:active {
+  //   svg {
+  //     color: $color--brightest;
+  //     fill: currentColor;
+  //   }
+  //   // background-color: red;
+  // }
+  // &:active {
+  //   svg {
+  //     color: $color--darkest;
+  //     fill: currentColor;
+  //   }
+  // }
 }
 
 /**
