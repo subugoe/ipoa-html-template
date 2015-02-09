@@ -35,7 +35,7 @@ layout: default
           {% if session.presentation %}
             {% for presentation in session.presentation %}
 
-              <h4 class="heading"><a href="#">{{ presentation.name }}</a></h4>
+              <h4 class="heading">{{ presentation.name }}</h4>
 
               {% if presentation.text %}<p>{{ presentation.text }}</p>{% endif %}
 
