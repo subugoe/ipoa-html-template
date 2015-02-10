@@ -1,6 +1,6 @@
 module.exports = {
   default: {
   	files: 'sass/**/*.scss',
-    tasks: ['sass', 'autoprefixer', 'copy:duplicateStyleCSStoStartCss'],
+    tasks: ['sass', 'scsslint', 'autoprefixer', 'copy:duplicateStyleCSStoStartCss'],
   },
 };
