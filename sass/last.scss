@@ -1,46 +1,51 @@
+// scss-lint:disable NameFormat
 /**
  * .last
  */
 .last {
-  @extend %ic-layout;
-  @extend .ic-pt;
-  @extend .ic-pb;
-  @extend %text--very-bright;
-  @extend %text--small;
-  @include responsive-content-padding();
-  border-bottom: 1px solid lighten($color--darkest, 50%);
+	@extend %ic-layout;
+	@extend .ic-pt;
+	@extend .ic-pb;
+	@extend %text--very-bright;
+	@extend %text--small;
+
+	@include responsive-content-padding();
+	border-bottom: 1px solid lighten($color--darkest, 50%);
 }
 
 /**
  * .last__block1
  */
 .last__block1 {
-  @extend %ic-layout__item;
-  @extend .ic-tablet-and-up-one-half;
+	@extend %ic-layout__item;
+	@extend .ic-tablet-and-up-one-half;
 }
 
 /**
  * .last__block2
  */
 .last__block2 {
-  @extend %ic-layout__item;
-  @extend .ic-tablet-and-up-one-half;
-  @include media-query('tablet-and-up') { text-align: right; }
+	@extend %ic-layout__item;
+	@extend .ic-tablet-and-up-one-half;
+
+	@include media-query('tablet-and-up') { text-align: right; }
 }
 
 /**
  * .last__list
  */
 .last__list {
-  @extend %ic-list-bare;
-  @extend %ic-list-inline;
+	@extend %ic-list-bare;
+	@extend %ic-list-inline;
 }
 
 /**
  * .last__link
  */
 .last__link {
-  @extend %link--default;
-  @extend %link__button-on-bright;
-  &:hover, &:focus { @extend %link--on-bright; }
+	@extend %link--default;
+	@extend %link__button-on-bright;
+
+	&:hover,
+	&:focus { @extend %link--on-bright; }
 }

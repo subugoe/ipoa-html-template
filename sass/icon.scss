@@ -2,174 +2,182 @@
  *
  */
 .fa-icon {
-  display: inline-block;
-  transform: scale(0.8);
+	display: inline-block;
+	transform: scale(.8);
 }
 
 /**
  *
  */
-.fa-icon--xs { transform: scale(.4) translateY(90%); }
+.fa-icon--xs {
+	transform: scale(.4) translateY(90%);
+}
 
 /**
  *
  */
-.fa-icon--s { transform: scale(.7) translateY(40%); }
+.fa-icon--s {
+	transform: scale(.7) translateY(40%);
+}
 
 /**
  *
  */
-.fa-icon--default { transform: scale(.9) translateY(10%); }
+.fa-icon--default {
+	transform: scale(.9) translateY(10%);
+}
 
 /**
  *
  */
-.fa-icon--l { transform: scale(1.1) translateY(10%); }
+.fa-icon--l {
+	transform: scale(1.1) translateY(10%);
+}
 
 /**
  *
  */
 .fa-icon-on-bright {
-  color: $color--darkest;
-  fill: currentColor;
+	color: $color--darkest;
+	fill: currentColor;
 }
 
 /**
  *
  */
 .fa-icon-on-dark {
-  color: $color--brightest;
-  fill: currentColor;
+	color: $color--brightest;
+	fill: currentColor;
 }
 
 /**
  *
  */
 .fa-icon-search {
-  width: 26px;
-  height: 26px;
+	width: 26px;
+	height: 26px;
 }
 
 /**
  *
  */
 .fa-icon-home {
-  width: 26px;
-  height: 26px;
+	width: 26px;
+	height: 26px;
 }
 
 /**
  *
  */
 .fa-icon-bars {
-  width: 28px;
-  height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-twitter {
-  width: 26px;
-  height: 28px;
-  color: $color-twitter;
-  fill: currentColor;
+	width: 26px;
+	height: 28px;
+	color: $color-twitter;
+	fill: currentColor;
 }
 
 /**
  *
  */
 .fa-icon-facebook {
-  width: 16px;
-  height: 28px;
-  color: $color-facebook;
-  fill: currentColor;
+	width: 16px;
+	height: 28px;
+	color: $color-facebook;
+	fill: currentColor;
 }
 
 /**
  *
  */
 .fa-icon-globe {
-  width: 26px;
-  height: 26px;
+	width: 26px;
+	height: 26px;
 }
 
 /**
  *
  */
 .fa-icon-gavel {
-  width: 28px;
-  height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-comments-o {
-  width: 28px;
-  height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-angle-right {
-  width: 10px;
-  height: 28px;
+	width: 10px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-smile-o {
-  width: 28px;
-  height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-rss-square {
-  width: 28px;
-  height: 28px;
+	width: 28px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-toggle-on {
-  width: 32px;
-  height: 28px;
+	width: 32px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-toggle-off {
-  width: 32px;
-  height: 28px;
+	width: 32px;
+	height: 28px;
 }
 
 /**
  *
  */
 .fa-icon-sitemap {
-  width: 26px;
-  height: 26px;
+	width: 26px;
+	height: 26px;
 }
 
 /**
  *
  */
 .fa-icon-info {
-  width: 20px;
-  height: 26px;
+	width: 20px;
+	height: 26px;
 }
 
 /**
  *
  */
 .fa-icon-bolt {
-  width: 14px;
-  height: 28px;
+	width: 14px;
+	height: 28px;
 }

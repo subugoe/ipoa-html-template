@@ -1,20 +1,22 @@
+// scss-lint:disable NameFormat
 /**
  * .more
  */
 .more {
-  @extend %ic-layout;
-  @include responsive-content-padding();
+	@extend %ic-layout;
+
+	@include responsive-content-padding();
 }
 
 /**
  * .more__column
  */
 .more__column {
-  @extend %ic-layout__item;
-  @extend .ic-tablet-one-half;
-  @extend .ic-notebook-and-up-one-quarter;
-  @extend .ic-pt+;
-  @extend .ic-pb+;
+	@extend %ic-layout__item;
+	@extend .ic-tablet-one-half;
+	@extend .ic-notebook-and-up-one-quarter;
+	@extend .ic-pt+;
+	@extend .ic-pb+;
 }
 
 .more h3 { @extend %heading--gamma; }
@@ -24,8 +26,8 @@
  */
 // .more__list { @extend %ic-list-bare; }
 .more ul {
-  @extend %ic-list-bare;
-  @extend %m--default;
+	@extend %ic-list-bare;
+	@extend %m--default;
 }
 
 /**
@@ -33,22 +35,25 @@
  */
 // .more__link {
 .more a {
-  @extend %link--default;
-  @extend %link--on-bright;
-  @extend %link--underline;
-  @extend %link--underline-on-bright;
+	@extend %link--default;
+	@extend %link--on-bright;
+	@extend %link--underline;
+	@extend %link--underline-on-bright;
 }
 
-  /**
-   * .more__link--in-list
-   * 1. move the chevron a tad lower
-   */
-  // .more__link--in-list {
-  .more ul a {
-    @extend %link--default;
-    @extend %link--in-linklist;
-    @extend %link--block;
-    @extend %link--block-on-bright;
-    &:hover, &:focus { @extend %link--on-bright; }
-    &:before { margin-bottom: $shift-chevron-before-content; } // 1.
-  }
+/**
+ * .more__link--in-list
+ * 1. move the chevron a tad lower
+ */
+// .more__link--in-list {
+.more ul a {
+	@extend %link--default;
+	@extend %link--in-linklist;
+	@extend %link--block;
+	@extend %link--block-on-bright;
+
+	&:hover,
+	&:focus { @extend %link--on-bright; }
+
+	&:before { margin-bottom: $shift-chevron-before-content; } // 1.
+}

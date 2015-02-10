@@ -1,46 +1,55 @@
+// scss-lint:disable NameFormat
 /**
  * .menu
  */
 .menu {
-  @extend %ic-layout;
-  @extend .ic-pt;
-  @extend .ic-pb;
-  display: none;
-  @include responsive-content-padding();
-  z-index: 99;
+	@extend %ic-layout;
+	@extend .ic-pt;
+	@extend .ic-pb;
+
+	@include responsive-content-padding();
+
+	display: none;
+	z-index: 99;
 }
 
-  /**
-   * .no-js .menu
-   * JS Fallback
-   * always show the menu if user has no JS.
-   */
-  .no-js .menu { display: block; }
+/**
+ * .no-js .menu
+ * JS Fallback
+ * always show the menu if user has no JS.
+ */
+.no-js .menu {
+	display: block;
+}
 
 /**
  * .menu__button
  */
 .menu__button {
-  padding: 5px;
-  border-radius: $border-radius--large;
-  background: transparent;
-  border: 1px solid transparent;
-  color: $color--darkest;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    background-color: $color-ipoa-green;
-    color: $color--brightest;
-    svg {
-      color: $color--brightest;
-      fill: currentColor;
-    }
-  }
-  &:active {
-    background-color: $color-ipoa-yellow;
-    color: $color--darkest;
-    svg { color: $color--darkest; }
-  }
+	padding: 5px;
+	border-radius: $border-radius--large;
+	background: transparent;
+	border: 1px solid transparent;
+	color: $color--darkest;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		background-color: $color-ipoa-green;
+		color: $color--brightest;
+
+		svg {
+			color: $color--brightest;
+			fill: currentColor;
+		}
+	}
+
+	&:active {
+		background-color: $color-ipoa-yellow;
+		color: $color--darkest;
+
+		svg { color: $color--darkest; }
+	}
 }
 
 /**
@@ -49,10 +58,11 @@
  * menu sections side by side in various breakpoint viewports
  */
 .menu__column {
-  @extend %ic-layout__item;
-  @extend .ic-pb-;
-  @include media-query('smaller-than-tablet') { padding-left: 5px; }
-  background-color: #FFF;
+	@extend %ic-layout__item;
+	@extend .ic-pb-;
+	background-color: #fff;
+
+	@include media-query('smaller-than-tablet') { padding-left: 5px; }
 }
 
 /**
@@ -65,8 +75,8 @@
  * .menu__list--indented
  */
 .menu__list--indented {
-  @extend .menu__list;
-  margin-left: $inuit-base-spacing-unit;
+	@extend .menu__list;
+	margin-left: $inuit-base-spacing-unit;
 }
 
 /**
@@ -74,48 +84,53 @@
  * define how links in the menu appear
  */
 .menu__link {
-  @extend %link-in-linklist;
-  @extend %link-in-linklist--dense;
-  @extend %link--block;
-  color: $color--darkest;
-  &:before { margin-left: -17px; }
-  &:hover,
-  &:focus {
-    color: $color--brightest;
-    background: $color-ipoa-green;
-  }
-  &:active {
-    color: $color--darkest;
-    background: $color-ipoa-yellow;
-  }
+	@extend %link-in-linklist;
+	@extend %link-in-linklist--dense;
+	@extend %link--block;
+	color: $color--darkest;
+
+	&:before { margin-left: -17px; }
+
+	&:hover,
+	&:focus {
+		color: $color--brightest;
+		background: $color-ipoa-green;
+	}
+
+	&:active {
+		color: $color--darkest;
+		background: $color-ipoa-yellow;
+	}
 }
 
-  /**
-   * .menu__link--active
-   * modifier that defines how a menu link looks like if the page the link would
-   * lead to is the current page
-   */
-  .menu__link--active {
-    color: $color--darkest;
-    background: $color-ipoa-yellow;
-  }
+/**
+ * .menu__link--active
+ * modifier that defines how a menu link looks like if the page the link would
+ * lead to is the current page
+ */
+.menu__link--active {
+	color: $color--darkest;
+	background: $color-ipoa-yellow;
+}
 
-  /**
-   * .menu__link--has-children
-   */
-  .menu__link--has-children {
-    &:before { background-image:url('../img/angle-double-right.svg'); }
-  }
+/**
+ * .menu__link--has-children
+ */
+.menu__link--has-children {
+	&:before { background-image: url('../img/angle-double-right.svg'); }
+}
 
 /**
  * .alt-menu
  */
 .alt-menu {
-  @extend .ic-layout__item;
-  z-index: 99;
-  @extend .ic-pt;
-  @extend .ic-pb;
-  @include responsive-content-padding();
+	@extend .ic-layout__item;
+	@extend .ic-pt;
+	@extend .ic-pb;
+
+	@include responsive-content-padding();
+
+	z-index: 99;
 }
 
 /**
@@ -123,10 +138,10 @@
  * a modifier that moves the alt-menu off canvas
  */
 .alt-menu--off-canvas {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 30%;
-  padding: 0;
-  transform: translateX(-100%);
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 30%;
+	padding: 0;
+	transform: translateX(-100%);
 }

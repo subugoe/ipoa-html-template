@@ -1,27 +1,30 @@
+// scss-lint:disable NameFormat
 /**
  * .head
  */
 .head {
-  @extend %ic-layout;
-  @extend .ic-layout--flush;
-  @include responsive-content-padding();
-  padding-top: 40px;
-  @include media-query('tablet-and-up') { // [2]
-    background: url('../img/bg-h-1.jpg') no-repeat center center fixed;
-    background-size: cover;
-  }
+	@extend %ic-layout;
+	@extend .ic-layout--flush;
+	@include responsive-content-padding();
+	padding-top: 40px;
+
+	@include media-query('tablet-and-up') { // [2]
+		background: url('../img/bg-h-1.jpg') no-repeat center center fixed;
+		background-size: cover;
+	}
 }
 
 /**
  * .head__links
  */
 .head__links {
-  @extend %ic-layout__item;
-  @extend .ic-smaller-than-tablet-two-thirds;
-  @extend .ic-tablet-and-up-three-quarters;
-  @extend .ic-mt--;
-  @extend .ic-layout--right;
-  @include media-query('tablet-and-up') { text-align: left; }
+	@extend %ic-layout__item;
+	@extend .ic-smaller-than-tablet-two-thirds;
+	@extend .ic-tablet-and-up-three-quarters;
+	@extend .ic-mt--;
+	@extend .ic-layout--right;
+
+	@include media-query('tablet-and-up') { text-align: left; }
 }
 
 /**
@@ -30,28 +33,31 @@
  * 2. these links are not allowed to break into a new line
  */
 .head__link {
-  @extend %link--default;
-  @extend %head__link--on-bright;
-  @extend %nobr; // 2.
-  padding: 7px 5px 5px 5px; // 1.
-  &:hover,
-  &:focus {
-    @extend %link--on-bright;
-    svg {
-      color: $color--brightest;
-      fill: currentColor;
-    }
-  }
-  &:active svg { color: $color--darkest; }
+	@extend %link--default;
+	@extend %head__link--on-bright;
+	@extend %nobr; // 2.
+	padding: 7px 5px 5px; // 1.
+	&:hover,
+	&:focus {
+		@extend %link--on-bright;
+
+		svg {
+			color: $color--brightest;
+			fill: currentColor;
+		}
+
+	}
+
+	&:active svg { color: $color--darkest; }
 }
 
-  /**
-   * .head__link--active
-   */
-  .head__link--active {
-    background-color: $color--darkest;
-    color: $color--brightest;
-  }
+/**
+ * .head__link--active
+ */
+.head__link--active {
+	background-color: $color--darkest;
+	color: $color--brightest;
+}
 
 /**
  * .head__list
@@ -59,9 +65,9 @@
  * 2. UL is inline
  */
 .head__list {
-  @extend %ic-list-bare;
-  @extend %ic-list-inline; // 1.
-  display: inline; // 2.
+	@extend %ic-list-bare;
+	@extend %ic-list-inline; // 1.
+	display: inline; // 2.
 }
 
 /**
@@ -69,28 +75,15 @@
  * 1. simulating "@extend .ic-mt+"
  */
 .head__menubutton {
-  @extend %ic-layout__item;
-  @extend .ic-smaller-than-tablet-one-third;
-  @extend .ic-tablet-and-up-one-quarter;
-  @extend .ic-mt--;
-  @include media-query('tablet-and-up') {
-    text-align: right;
-    padding-right: double($inuit-base-spacing-unit) !important;
-  }
-  // &:hover,
-  // &:active {
-  //   svg {
-  //     color: $color--brightest;
-  //     fill: currentColor;
-  //   }
-  //   // background-color: red;
-  // }
-  // &:active {
-  //   svg {
-  //     color: $color--darkest;
-  //     fill: currentColor;
-  //   }
-  // }
+	@extend %ic-layout__item;
+	@extend .ic-smaller-than-tablet-one-third;
+	@extend .ic-tablet-and-up-one-quarter;
+	@extend .ic-mt--;
+
+	@include media-query('tablet-and-up') {
+		text-align: right;
+		padding-right: double($inuit-base-spacing-unit) !important;
+	}
 }
 
 /**
@@ -100,50 +93,61 @@
  * visible if ___ clicked
  */
 .head__language-links {
-  @extend %ic-layout__item;
-  @extend .ic-pt;
-  padding-left: 0;
-  text-align: right;
-  display: none;
-  @include media-query('tablet-and-up') { text-align: left; }
-  g { fill: $color--brightest; }
+	@extend %ic-layout__item;
+	@extend .ic-pt;
+	padding-left: 0;
+	text-align: right;
+	display: none;
+
+	@include media-query('tablet-and-up') { text-align: left; }
+
+	g { fill: $color--brightest; }
 }
 
-  /**
-   * .no-js .head__language-links
-   * always show language selection links if user has no JS
-   */
-  .no-js .head__language-links { display: block; }
+/**
+ * .no-js .head__language-links
+ * always show language selection links if user has no JS
+ */
+.no-js .head__language-links {
+	display: block;
+}
 
 /**
  * .language-icon--push-right-in-header
  * align language icon with those above
  * FIXME : dirty numbers
  */
-.language-icon--push-right-in-header { padding-left: 8px; }
+.language-icon--push-right-in-header {
+	padding-left: 8px;
+}
 
 /**
  * .no-js .head__language-indicator
  */
-.no-js .head__language-indicator { display: none; }
+.no-js .head__language-indicator {
+	display: none;
+}
 
 /**
  * .head__logo
  * 1. simulating "@extend .ic-pr"
  */
 .head__logo {
-  @extend %ic-layout__item;
-  @extend .ic-tablet-and-up-one-quarter;
-  @extend .ic-mt;
-  text-align: center;
-  .image { width: 150px; }
-  @include media-query('tablet-and-up') {
-    .image {
-      width: 100%;
-      max-width: 250px;
-    }
-    padding-right: double($inuit-base-spacing-unit) !important; // 1.
-  }
+	@extend %ic-layout__item;
+	@extend .ic-tablet-and-up-one-quarter;
+	@extend .ic-mt;
+	text-align: center;
+
+	@include media-query('tablet-and-up') {
+		padding-right: double($inuit-base-spacing-unit) !important; // 1.
+
+		.image {
+			width: 100%;
+			max-width: 250px;
+		}
+	}
+
+	.image { width: 150px; }
 }
 
 /**
@@ -152,19 +156,21 @@
  * 1.,2. show claim only if enough screen estate is available
  */
 .head__claim {
-  display: none; // 1.
-  @include media-query('tablet-and-up') { // 2.
-    display: inline-block;
-    @extend %ic-layout__item;
-    @extend .ic-tablet-and-up-three-quarters;
-    @extend .ic-mt\+;
-    @include media-query('notebook') {
-      margin-top: ($inuit-base-spacing-unit * 4) !important;
-      transform: translateY(-10%);
-    }
-    @extend %text--huge;
-    letter-spacing: $letter-spacing--large;
-  }
+	display: none; // 1.
+
+	@include media-query('tablet-and-up') { // 2.
+		@extend %ic-layout__item;
+		@extend .ic-tablet-and-up-three-quarters;
+		@extend .ic-mt\+;
+		@extend %text--huge;
+		display: inline-block;
+		letter-spacing: $letter-spacing--large;
+
+		@include media-query('notebook') {
+			margin-top: ($inuit-base-spacing-unit * 4) !important;
+			transform: translateY(-10%);
+		}
+	}
 }
 
 /**
@@ -172,47 +178,48 @@
  * 1. align page title with content
  */
 .head__pagetitle {
-  @extend %ic-layout__item;
-  @extend %text--large;
-  text-align: center;
-  letter-spacing: $letter-spacing--larger;
-  @include media-query('tablet-and-up') { text-align: left; }
-  @include media-query('desk-and-up') { // 1.
-    position: relative;
-    transform: translateX(25%);
-  }
+	@extend %ic-layout__item;
+	@extend %text--large;
+	text-align: center;
+	letter-spacing: $letter-spacing--larger;
+
+	@include media-query('tablet-and-up') { text-align: left; }
+
+	@include media-query('desk-and-up') { // 1.
+		position: relative;
+		transform: translateX(25%);
+	}
 }
 
 /**
  * .head-nav
  */
 .head-nav {
-  @extend %ic-layout;
-  @extend .ic-layout--flush;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  height: 50px;
-  @include responsive-content-padding();
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-  -webkit-transition-timing-function: cubic-bezier( .215, .610, .355, 1 );
-  transition-timing-function: cubic-bezier( .215, .610, .355, 1 );
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
+	@extend %ic-layout;
+	@extend .ic-layout--flush;
+	@include responsive-content-padding();
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	height: 50px;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+	transition-property: transform;
 }
 
-  /**
-   * .no-js .head-nav
-   */
-  .no-js .head-nav { position: relative; }
+/**
+ * .no-js .head-nav
+ */
+.no-js .head-nav {
+	position: relative;
+}
 
-  /**
-   * .head-nav--narrow
-   */
-  .head-nav--narrow {
-    background-color: white;
-    border-bottom: 1px solid lighten(#333, 50%);
-  }
+/**
+ * .head-nav--narrow
+ */
+.head-nav--narrow {
+	background-color: #fff;
+	border-bottom: 1px solid lighten(#333, 50%);
+}

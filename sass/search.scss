@@ -1,3 +1,4 @@
+// scss-lint:disable NameFormat
 /**
  * .search
  * 1. pseudo space above the search box to avoid scrolling via anchor behind
@@ -5,12 +6,12 @@
  *    http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B
  */
 .search {
-  &:before { // 1.
-    display: block;
-    content: "";
-    height: 50px;
-    margin: -50px 0 0;
-  }
+	&:before { // 1.
+		display: block;
+		content: '';
+		height: 50px;
+		margin: -50px 0 0;
+	}
 }
 
 
@@ -18,68 +19,74 @@
  * .search__content
  */
 .search__content {
-  @extend %ic-layout;
-  @extend .ic-pt;
-  @include responsive-content-padding();
+	@extend %ic-layout;
+	@extend .ic-pt;
+	@include responsive-content-padding();
 }
 
 /**
  * .search__heading
  */
 .search__heading {
-  @extend %ic-layout__item;
-  @extend .ic-desk-and-up-one-quarter;
-  @extend %heading;
-  @include media-query('desk-and-up') { text-align: right; }
-  line-height: round($inuit-base-line-height / .65);
-  @if $search-theme-dark { color: $color--brightest; }
+	@extend %ic-layout__item;
+	@extend .ic-desk-and-up-one-quarter;
+	@extend %heading;
+
+	line-height: round($inuit-base-line-height / .65);
+
+	@include media-query('desk-and-up') { text-align: right; }
 }
 
 /**
  * .search__enter
  */
 .search__enter {
-  @extend %ic-layout__item;
-  @extend .ic-desk-and-up-three-quarters;
-  @if $search-theme-dark { color: $color--brightest; }
+	@extend %ic-layout__item;
+	@extend .ic-desk-and-up-three-quarters;
+	@if $search-theme-dark { color: $color--brightest; }
 }
 
 /**
  * .search__form
  */
 .search__form {
-  @extend %form;
-  display: inline;
-  width: 100%;
+	@extend %form;
+	display: inline;
+	width: 100%;
 }
 
 /**
  * .search__field
  */
 .search__field {
-  @extend %m--default;
-  display: inline-block;
-  width: 100%;
-  @include media-query('tablet') {            width: 48%; }
-  @include media-query('tablet-portrait') {   width: 73%; }
-  @include media-query('notebook') {          width: 50%; }
-  @include media-query('desk') {              width: 65.75%; }
+	@extend %m--default;
+
+	display: inline-block;
+	width: 100%;
+
+	@include media-query('tablet') {            width: 48%; }
+
+	@include media-query('tablet-portrait') {   width: 73%; }
+
+	@include media-query('notebook') {          width: 50%; }
+
+	@include media-query('desk') {              width: 65.75%; }
 }
 
 /**
  * .search__input
  */
 .search__input {
-  width: 100%;
-  padding: round($inuit-base-spacing-unit / 2);
-  border-radius: $link-border-radius--default;
-  background: none;
-  border: $border-width--default solid $color--darkest;
-  @if $search-theme-dark {
-    background-color: $color--brightest;
-    border-color: $color--brightest;
-    color: $color--darkest;
-  }
+	width: 100%;
+	padding: round($inuit-base-spacing-unit / 2);
+	border-radius: $link-border-radius--default;
+	background: none;
+	border: $border-width--default solid $color--darkest;
+	@if $search-theme-dark {
+		background-color: $color--brightest;
+		border-color: $color--brightest;
+		color: $color--darkest;
+	}
 }
 
 /**
@@ -88,40 +95,45 @@
  * 2.,4. FIXME : dirty number
  */
 .search__submit {
-  @extend %m--default;
-  display: inline-block;
-  width: 100%;
-  @include media-query('tablet') {
-    width: 50%;
-    padding-left: $inuit-base-spacing-unit !important; // 1.
-  }
-  @include media-query('tablet-portrait') { width: 27%; } // 2.
-  @include media-query('notebook') {
-    width: 50%;
-    padding-left: $inuit-base-spacing-unit !important; // 3.
-  }
-  @include media-query('desk') {
-    width: 34.25%; // 4.
-    padding-left: $inuit-base-spacing-unit !important; // 5.
-  }
+	@extend %m--default;
+	display: inline-block;
+	width: 100%;
+
+	@include media-query('tablet') {
+		width: 50%;
+		padding-left: $inuit-base-spacing-unit !important; // 1.
+	}
+
+	@include media-query('tablet-portrait') { width: 27%; } // 2.
+
+	@include media-query('notebook') {
+		width: 50%;
+		padding-left: $inuit-base-spacing-unit !important; // 3.
+	}
+
+	@include media-query('desk') {
+		width: 34.25%; // 4.
+		padding-left: $inuit-base-spacing-unit !important; // 5.
+	}
 }
 
 /**
  * .search__button
  */
 .search__button {
-  width: 100%;
-  padding: round($inuit-base-spacing-unit / 2);
-  border-radius: $link-border-radius--default;
-  background-color: $color-ipoa-green;
-  font-weight: bold;
-  color: $color--brightest;
-  letter-spacing: $letter-spacing--large;
-  border: $border-width--default solid $color-ipoa-green;
-  @if $search-theme-dark { border-color: $color--brightest; }
-  &:hover {
-    background-color: $color-ipoa-yellow;
-    color: $color--darkest;
-    border: $border-width--default solid $color-ipoa-yellow;
-  }
+	width: 100%;
+	padding: round($inuit-base-spacing-unit / 2);
+	border-radius: $link-border-radius--default;
+	background-color: $color-ipoa-green;
+	font-weight: bold;
+	color: $color--brightest;
+	letter-spacing: $letter-spacing--large;
+	border: $border-width--default solid $color-ipoa-green;
+	@if $search-theme-dark { border-color: $color--brightest; }
+
+	&:hover {
+		background-color: $color-ipoa-yellow;
+		color: $color--darkest;
+		border: $border-width--default solid $color-ipoa-yellow;
+	}
 }

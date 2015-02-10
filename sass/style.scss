@@ -10,19 +10,19 @@ $inuit-namespace: 'ic-';
 @import '../bower_components/inuit-responsive-settings/settings.responsive';
 
 $breakpoints: (
-  'phone'												'screen and (max-width: 480px)',
-  'tablet'                      'screen and (min-width: 481px) and (max-width: 1023px)',
-  'tablet-portrait'             'screen and (min-width: 768px) and (max-width: 1023px)',
-  'notebook'                    'screen and (min-width: 1024px) and (max-width: 1200px)',
-  'desk'                        'screen and (min-width: 1201px)',
-  'huge'                        'screen and (min-width: 1401px)',
-  'ridiculous'                  'screen and (min-width: 1601px)',
-  'smaller-than-tablet'         'screen and (max-width: 767px)',
-  'tablet-and-notebook'         'screen and (min-width: 481px) and (max-width: 1200px)',
-  'tablet-and-up'               'screen and (min-width: 768px)',
-  'notebook-and-up'             'screen and (min-width: 1024px)',
-  'desk-and-up'                 'screen and (min-width: 1201px)',
-  );
+	'phone'												'screen and (max-width: 480px)',
+	'tablet'                      'screen and (min-width: 481px) and (max-width: 1023px)',
+	'tablet-portrait'             'screen and (min-width: 768px) and (max-width: 1023px)',
+	'notebook'                    'screen and (min-width: 1024px) and (max-width: 1200px)',
+	'desk'                        'screen and (min-width: 1201px)',
+	'huge'                        'screen and (min-width: 1401px)',
+	'ridiculous'                  'screen and (min-width: 1601px)',
+	'smaller-than-tablet'         'screen and (max-width: 767px)',
+	'tablet-and-notebook'         'screen and (min-width: 481px) and (max-width: 1200px)',
+	'tablet-and-up'               'screen and (min-width: 768px)',
+	'notebook-and-up'             'screen and (min-width: 1024px)',
+	'desk-and-up'                 'screen and (min-width: 1201px)',
+	);
 
 // Tools
 @import '../bower_components/inuit-functions/tools.functions';
