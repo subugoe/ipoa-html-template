@@ -132,23 +132,27 @@
  * .head__logo
  * 1. simulating "@extend .ic-pr"
  */
+// scss-lint:disable DeclarationOrder
 .head__logo {
 	@extend %ic-layout__item;
 	@extend .ic-tablet-and-up-one-quarter;
 	@extend .ic-mt;
 	text-align: center;
 
+	img {
+		width: 150px;
+	}
+
 	@include media-query('tablet-and-up') {
 		padding-right: double($inuit-base-spacing-unit) !important; // 1.
 
-		.image {
+		img {
 			width: 100%;
 			max-width: 250px;
 		}
 	}
-
-	.image { width: 150px; }
 }
+// scss-lint:enable DeclarationOrder
 
 /**
  * .head__claim
