@@ -4,6 +4,7 @@
   - name: Registrierung
     room: Foyer
     time: ab 09.00
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.'
   - name: Eröffnung der Tagung
     room: Raum 69
     time: 11.00-11.30
@@ -19,6 +20,7 @@
       - name: Präsentation
       presenter:
       - name: Wolfgang zu Castell
+        picture: https://randomuser.me/api/portraits/thumb/men/82.jpg
         org: Helmholtz-Zentrum München
       abstract: 'Der Begriff Open Science klingt für die Wissenschaft zunächst nach einem altbewährtem Rezept – also nichts Neues. Wissenschaft lebt schon seit jeher von Offenheit und Austausch. Dahinter stehen die Grundprinzipien von Verifizierbarkeit und Reproduzierbarkeit als Garanten der wissenschaftlichen Methodik.<br>Open Science klingt gleichzeitig aber auch nach Neuem: Wissenschaft 2.0 – gefördert und getrieben durch die Möglichkeiten moderner Kommunikations- und Informationstechnologien. Der freie und offene Zugang zu Wissen und Information, gepaart mit den Möglichkeiten der informationstechnischen Verarbeitung weltweit gespeicherten Wissens. Dies wiederum klingt nach Zukunft, nach ungeahnten Möglichkeiten und unglaublichem Fortschritt.<br>Der Vortrag soll sich diesem Spannungsfeld zwischen dem Festhalten an Altbewährten und der Faszination der neuen Möglichkeiten widmen. Im Mittelpunkt steht die Frage, ob wir mit unseren technischen Möglichkeiten nur die Verarbeitung und Verbreitung unseres Wissens verändern, oder auch das Wissen selbst und damit das, was wir unter Wissenschaft verstehen.'
     room: Raum 69
@@ -34,6 +36,7 @@
       - name: Poster
       presenter:
       - name: Martin Roos
+        picture: https://randomuser.me/api/portraits/thumb/men/65.jpg
         org: UB Hagen
       abstract: 'Im Rahmen des Open-Access-Journals eleed (e-learning and education) wird ein neuer kollaborativer Ansatz zur Literaturrecherche erprobt. Ausgehend von den Artikeln, ihren Metadaten und ihren Literaturreferenzen sollen das semantische Verständnis während der Recherche visualisiert, Suchkontexte expliziert und Suchinformationen für Bibliotheken und Verlage nutzbar gemacht werden. Suchkontexte von Nutzenden können offengelegt und über Anbietergrenzen hinweg zur Verbesserung der Suche genutzt werden.<br>Das sich so ergebende semantische Suchnetz soll durch offene Dienste über ein freies Austauschformat abgelegt und genutzt werden. Durch Suchaktivitäten wächst der Suchkontext an. Anbieter können ihn nicht nur zur Verbesserung von Suchergebnissen nutzen, sondern auch ihre Literatur-Metadaten anreichern.<br>Der kooperative Ansatz wird von der UB Hagen und dem Open-Access-Journal eleed in einem Forschungsprojekt erprobt. Wir laden Wissenschaftler ein, den Dienst zum Aufbau von Recherchenetzen zu nutzen.'
     - name: Open Source for Open Access
@@ -42,6 +45,7 @@
       - name: video
       presenter:
       - name: Wiebke Oeltjen
+        picture: https://randomuser.me/api/portraits/thumb/women/64.jpg
         org: Universität Hamburg
     - name: "2014 Census of Open-Access-Repositorien in Germany, Austria and Switzerland"
       text:
@@ -62,6 +66,7 @@
       presenter:
       - name: Ursula Arning
         org: "ZB MED, Köln"
+        picture: https://randomuser.me/api/portraits/thumb/women/81.jpg
     - name: Open Access im Bundesinstitut für Berufsbildung (BIBB)
       text: Status quo und Perspektiven
       video:
@@ -71,6 +76,7 @@
       presenter:
       - name: Bodo Rödel
         org: BIBB Bonn
+        picture: https://randomuser.me/api/portraits/thumb/men/81.jpg
       - name: Christian Woll
         org: BIBB Bonn
       abstract: 'Seit 2010 gibt es zum Thema Open Access im Bundesinstitut für Berufsbildung (BIBB) umfangreiche Arbeiten. Diese mündeten in der Verabschiedung einer Open-Access-Policy des BIBB und der Umsetzung des sogenannten „goldenen Weges“ für unterschiedliche Veröffentlichungsreihen. Beiträge aus der Fachzeitschrift des BIBB „Berufsbildung in Wissenschaft und Praxis (BWP)“ werden im Rahmen des „grünen Weges“ nach einem Jahr Open Access zur Verfügung gestellt.<br>Als logische Fortführung der Open-Access-Strategie des BIBB wird aktuell der Aufbau eines Repositories vorangetrieben. Im Rahmen eines sechsmonatigen Projektes wurden mit Blick auf den Bedarf in der Berufsbildungsforschung verschiedene Varianten eines Repositories - von einem institutionellen BIBB-Repository bis hin zu einem fachlichen und international ausgerichteten Repository - geprüft. Das Poster berichtet über die Open-Access-Aktivitäten des BIBB und über die Projektergebnisse.'
@@ -86,10 +92,12 @@
       - name: Poster
       presenter:
       - name: Angelika Kutz
+        picture: https://randomuser.me/api/portraits/thumb/women/71.jpg
         org: 'TIB, Hannover'
   - name: Mittagspause
     time: 12.30-13.20
     room: Foyer
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.'
   - name: Plenumsvorträge zu Hot Topics
     time: '13.20-15.00'
     room: Raum 69
@@ -118,15 +126,18 @@
         presenter:
         - name: Petra Hätscher
           org: Universität Konstanz
+          picture: https://randomuser.me/api/portraits/thumb/women/77.jpg
       - name: Publikation und Zitierbarkeit wissenschaftlicher Software mit persistenten Identifikatoren
         video:
         - name: Video
         presenter:
         - name: Martin Fenner
           org: 'PLoS, Hannover'
+          picture: https://randomuser.me/api/portraits/thumb/men/87.jpg
   - name: Kaffeepause
     room: Foyer
     time: 15.00-15.30
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.'
   - name: Sessions I.1
     time: 15:30 - 17:30
     room: Raum 248
@@ -146,6 +157,7 @@
       presenter:
       - name: Thomas Jung
         org: 'DIE, Bonn'
+        picture: https://randomuser.me/api/portraits/thumb/men/91.jpg
       abstract: 'Seit drei Jahren werden vom Deutschen Institut für Erwachsenenbildung (DIE) Open-Access-Publikationen (Monographien unterschiedlichen Umfangs) angeboten, die in Kooperation mit privatwirtschaftlich agierenden Verlagen entstehen und veröffentlicht werden. Eine erste Evaluation dieser neuen Publikationsstrategie ist anhand von Verkaufszahlen, Downloadzahlen und Klickraten möglich. Auch sind mit Blick auf die zurückliegenden Jahren Justierungen in den Rahmenbedingungen (Geschäftsmodelle) zu beobachten und zu interpretieren.'
     - name: Living Books geht online
       video:
@@ -164,6 +176,7 @@
       presenter:
       - name: Sebastian Nordhoff
         org: 'Language Science Press, Berlin'
+        picture: https://randomuser.me/api/portraits/thumb/men/92.jpg
       - name: Debora Siller
         org: 'Language Science Press, Berlin'
     - name: Open Access in Serie
@@ -218,6 +231,7 @@
   - name: Pause
     room: Foyer
     time: '17:30'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.'
   - name: Konferenzdinner
     time: '19:00'
     room: 'Café Himmelsblick | UG'

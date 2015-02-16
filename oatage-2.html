@@ -1,0 +1,90 @@
+---
+title: Open Acces Tage 2014
+layout: default
+---
+
+<div class="footer-hide__helper" id="top">
+
+  {% include header.html %}
+
+  <div class="headroom__helper">
+
+    <main role="main" class="main oadays">
+
+
+      <!-- {{ site.data.oatage }} -->
+      {% for day in site.data.oatage %}<!--
+        --><h2>{{ day.name }}</h2><!--
+        --><div class="main__textblock">
+        {% if day.text %}<p>{{day.text}}</p>{% endif %}
+        <p>{% for sessiondetails in day.session %}<a href="#">{{sessiondetails.name}}</a>{% endfor %}</p>
+        </div><!--
+        -->{% for session in day.session %}
+        <h3>
+          <div>{{ session.time }}</div><div>{{ session.name }}</div>
+        </h3><!--
+
+        --><div class="main__textblock">
+          <p><!-- {{ session.time }} -->{% if session.room %}{{ session.room }}{% endif %}</p>
+          {% if session.text %}<p>{{ session.text }}</p>{% endif %}
+          {% if session.textlong %}
+            <p><a href="#on-demand__link" class="main__link on-demand__link">Weitere Informationen</a><div class="on-demand__content">{{ session.textlong }}</div></p>
+          {% endif %}
+
+          <!-- {{ session.video }} -->
+          <!-- {{session.presentation}} -->
+
+          {% if session.presentation %}
+            {% for presentation in session.presentation %}
+
+              <h4>{{ presentation.name }}</h4>
+
+              {% if presentation.text %}<p>{{ presentation.text }}</p>{% endif %}
+
+              {% if presentation.presenter %}
+                <p>
+                {% for presenter in presentation.presenter %}
+                  {% if presenter.picture %}
+                  <img src="{{ presenter.picture }}" alt="">
+                  {% else %}
+                  <img src="img/default_user.jpg" alt="">
+                  {% endif %}
+                  <a href="#">{{ presenter.name }}</a>
+                  {% if presenter.org %}({{ presenter.org }}){% endif %}
+                {% endfor %}
+                </p>
+              {% endif %}
+
+              {% if presentation.slide or presentation.video or presentation.poster or presentation.abstract %}
+                <p>Materialien:
+                {% for poster in presentation.poster %}<a href="#">{{ poster.name }}</a>{% endfor %}
+                {% for slide in presentation.slide %}<a href="#">{{ slide.name }}</a>{% endfor %}
+                {% for video in presentation.video %}<a href="#">{{ video.name }}</a>{% endfor %}
+                {% if presentation.abstract %}<a href="#on-demand__link" class="main__link on-demand__link">Abstract</a>{% endif %}
+                </p>
+                {% if presentation.abstract %}<blockquote class="on-demand__content">{{ presentation.abstract }}</blockquote>{% endif %}
+              {% endif %}
+
+            {% endfor %}
+          {% endif %}
+        </div>
+        {% endfor %}
+      {% endfor %}
+
+
+    </main>
+
+    {% include search.html %}
+
+    {% include more.html %}
+
+    {% include last.html%}
+
+
+  </div><!-- END: headroom__helper -->
+
+</div><!-- END: footer-hide__helper -->
+
+{% include footer-hide.html %}
+
+{% include nav.html %}

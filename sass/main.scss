@@ -1,4 +1,4 @@
-// scss-lint:disable NameFormat, SelectorDepth
+// scss-lint:disable NameFormat, SelectorDepth, VendorPrefixes
 /**
  * .main
  */
@@ -60,6 +60,16 @@
 	@include media-query('desk-and-up') { text-align: right; }
 }
 
+.oadays h3 {
+	@extend %ic-layout__item;
+	@extend .ic-desk-and-up-three-twelfths;
+	@extend %heading;
+	@extend %heading--beta;
+	line-height: round($inuit-base-line-height / .65);
+
+	@include media-query('desk-and-up') { text-align: right; }
+}
+
 /**
  *
  */
@@ -106,12 +116,24 @@
 /**
  * .main__textblock
  */
-.main h2 + div {
+.main h2 + div,
+.oadays h3 + div {
 	@extend %ic-layout__item;
 	@extend .ic-desk-and-up-nine-twelfths;
 	@extend %paragraph;
 
 	p { @extend %m--default; }
+
+	img {
+		-webkit-clip-path: circle(25px at center);
+		clip-path: circle(25px at center);
+		width: 50px;
+		margin-bottom: -10px;
+	}
+}
+
+.oadays h4 {
+	margin-bottom: 5px;
 }
 
 /**
