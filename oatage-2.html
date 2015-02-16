@@ -20,7 +20,13 @@ layout: default
         <p>{% for sessiondetails in day.session %}<a href="#">{{sessiondetails.name}}</a>{% endfor %}</p>
         </div><!--
         -->{% for session in day.session %}
-        <h3>{{ session.time }}<br>{{ session.name }}</h3><!--
+        <h3>
+        {% if session.name contains 'Sessions' %}
+          <a href="#">{{ session.time }}<br>{{ session.name }}</a>
+        {% else %}
+          {{ session.time }}<br>{{ session.name }}
+        {% endif %}
+        </h3><!--
         --><div class="main__textblock">
           <p><!-- {{ session.time }} -->{% if session.room %}{{ session.room }}{% endif %}</p>
           {% if session.text %}<p>{{ session.text }}</p>{% endif %}
@@ -30,6 +36,10 @@ layout: default
 
           <!-- {{ session.video }} -->
           <!-- {{session.presentation}} -->
+
+        {% if session.name contains 'Sessions' %}
+        {% else%}
+
 
           {% if session.presentation %}
             {% for presentation in session.presentation %}
@@ -64,6 +74,9 @@ layout: default
 
             {% endfor %}
           {% endif %}
+
+        {% endif %}
+
         </div>
         {% endfor %}
       {% endfor %}
