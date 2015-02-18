@@ -95,6 +95,7 @@
 .head__language-links {
 	@extend %ic-layout__item;
 	@extend .ic-pt;
+	line-height: 220%;
 	padding-left: 0;
 	text-align: right;
 	display: none;
