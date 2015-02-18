@@ -12,19 +12,12 @@ jQuery(document).ready(function () {
 
   /**
    * TODO : add documentation
-   *
-   * footerHide
-   */
-  footerHideHeight = jQuery('.footer-hide__content').height();
-  jQuery('.footer-hide').css({ 'height': footerHideHeight + 'px' });
-
-  /**
-   * TODO : add documentation
    */
   jsHeadLanguageIndicator = jQuery('.js-head-language-indicator');
   jsHeadLanguageIndicator.click(function() {
-    jQuery('.head').css({'padding-top': '94px'});
     jQuery('.js-head-language-links').show();
+    var headHeight = jQuery('.head__links').height();
+    jQuery('.head').css({'padding-top': headHeight});
     jsHeadLanguageIndicator.hide();
   });
 
@@ -247,5 +240,13 @@ jQuery(document).ready(function () {
         jQuery(item).show();
     }, 2500);
   })(0);
+
+  /**
+   * TODO : add documentation
+   *
+   * footerHide
+   */
+  footerHideHeight = jQuery('.footer-hide__content').height();
+  jQuery('.footer-hide').css({ 'height': footerHideHeight + 'px' });
 
 });
