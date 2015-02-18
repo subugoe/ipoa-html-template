@@ -27,6 +27,10 @@
 	@include media-query('tablet-and-up') { text-align: left; }
 }
 
+.head-nav .head__links {
+	@include media-query('phone') { display: none; }
+}
+
 /**
  * .head__link
  * 1. give the icon a little bit more space to top

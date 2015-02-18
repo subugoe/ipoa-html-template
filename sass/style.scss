@@ -11,6 +11,7 @@ $inuit-namespace: 'ic-';
 
 $breakpoints: (
 	'phone'												'screen and (max-width: 480px)',
+	'phone-and-up'								'screen and (min-width: 481px)',
 	'tablet'                      'screen and (min-width: 481px) and (max-width: 1023px)',
 	'tablet-portrait'             'screen and (min-width: 768px) and (max-width: 1023px)',
 	'notebook'                    'screen and (min-width: 1024px) and (max-width: 1200px)',
