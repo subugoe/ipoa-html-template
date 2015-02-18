@@ -149,16 +149,18 @@
 /**
  * %text--small
  */
-%text--small {
-	font-size: ($inuit-base-font-size / 16px) * $factor-text--small;
-}
+@include class('text--small') { font-size: ($inuit-base-font-size / 16px) * $factor-text--small; }
+// %text--small {
+// 	font-size: ($inuit-base-font-size / 16px) * $factor-text--small;
+// }
 
 /**
  * %text--tiny
  */
-%text--tiny {
-	font-size: ($inuit-base-font-size / 16px) * $factor-text--tiny;
-}
+@include class('text--tiny') { font-size: ($inuit-base-font-size / 16px) * $factor-text--tiny; }
+// %text--tiny {
+// 	font-size: ($inuit-base-font-size / 16px) * $factor-text--tiny;
+// }
 
 /**
  * %text--bold

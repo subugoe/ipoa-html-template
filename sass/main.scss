@@ -123,6 +123,9 @@
 	@extend %paragraph;
 
 	p { @extend %m--default; }
+}
+
+.oadays h3 + div {
 
 	img {
 		-webkit-clip-path: circle(25px at center);
@@ -130,6 +133,17 @@
 		border-radius: 50%;
 		width: 50px;
 		margin-bottom: -10px;
+	}
+}
+
+.twitter {
+
+	img {
+		-webkit-clip-path: circle(25px at center);
+		clip-path: circle(25px at center);
+		border-radius: 50%;
+		width: 20px !important;
+		margin-bottom: -5px;
 	}
 }
 
