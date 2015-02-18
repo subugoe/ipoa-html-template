@@ -14,6 +14,10 @@
 	@include media-query('smaller-than-tablet') { display: none !important; }
 }
 
+@include class('hidden-sub-notebook') {
+	@include media-query('smaller-than-notebook') { display: none !important; }
+}
+
 /**
  * class('nobr')
  * what it does: prevents the browser to add a break / new line if there is not

@@ -18,6 +18,7 @@ $breakpoints: (
 	'huge'                        'screen and (min-width: 1401px)',
 	'ridiculous'                  'screen and (min-width: 1601px)',
 	'smaller-than-tablet'         'screen and (max-width: 767px)',
+	'smaller-than-notebook'       'screen and (max-width: 1023px)',
 	'tablet-and-notebook'         'screen and (min-width: 481px) and (max-width: 1200px)',
 	'tablet-and-up'               'screen and (min-width: 768px)',
 	'notebook-and-up'             'screen and (min-width: 1024px)',
