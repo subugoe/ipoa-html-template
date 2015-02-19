@@ -26,8 +26,6 @@
 
 	@include media-query('tablet-and-up') { text-align: right; }
 
-
-
 	.image {
 		max-width: 250px;
 	}
@@ -84,6 +82,13 @@
 	}
 }
 
+.start a {
+	border: 0;
+
+	&:hover {
+		background-color: transparent;
+	}
+}
 /**
  * .start__footer
  */
