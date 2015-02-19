@@ -22,7 +22,7 @@
 	@extend .ic-smaller-than-tablet-two-thirds;
 	@extend .ic-tablet-and-up-three-quarters;
 	@extend .ic-mt--;
-	@extend .ic-layout--right;
+	text-align: right;
 
 	@include media-query('tablet-and-up') { text-align: left; }
 }
