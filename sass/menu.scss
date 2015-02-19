@@ -145,3 +145,17 @@
 	padding: 0;
 	transform: translateX(-100%);
 }
+
+.alt-menu .head__list {
+	@extend .ic-mb;
+	text-align: center;
+	display: block;
+
+	@include media-query('phone-and-up') {
+		display: none;
+	}
+}
+
+.alt-menu .head__language-links .head__list {
+	text-align: left;
+}
