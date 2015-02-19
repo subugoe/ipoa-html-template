@@ -82,7 +82,7 @@
 	}
 }
 
-.start a {
+.start nav a {
 	border: 0;
 
 	&:hover {
@@ -117,4 +117,10 @@
 /**
  * .start__link
  */
-.start__link { @extend %link--default; }
+.start__link {
+	@extend %link--default;
+	@extend %link--with-icon-on-bright;
+	@extend %link--on-bright;
+	padding: 7px;
+	border: 0;
+}
