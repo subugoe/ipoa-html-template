@@ -125,6 +125,26 @@
 	p { @extend %m--default; }
 }
 
+@include media-query('desk-and-up') {
+
+	main h2 + div p:first-child {
+		margin-top: 9px;
+	}
+
+	main h2 + div ul:first-child {
+		margin-top: 9px;
+	}
+
+	.oadays h2 + div p:first-child {
+		margin-top: 10px;
+	}
+
+	.main h3 + div p:first-child {
+		margin-top: 7px;
+	}
+}
+
+
 .oadays h3 + div {
 
 	img {
