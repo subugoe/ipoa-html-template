@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
 
-  windowWidth = $(window).width();
+  windowWidth = jQuery(window).width();
 
   /**
    * TODO : add documentation
@@ -195,10 +195,10 @@ jQuery(document).ready(function () {
     });
   };
 
-  $(function(){
+  jQuery(function(){
     var lastScrollTop = 0, delta = 5;
-    $(window).scroll(function(event){
-      var st = $(this).scrollTop();
+    jQuery(window).scroll(function(event){
+      var st = jQuery(this).scrollTop();
       if(Math.abs(lastScrollTop - st) <= delta) {
         return;
       }
@@ -213,10 +213,10 @@ jQuery(document).ready(function () {
       // upscroll code
       // else {
       //   console.log('scroll up');
-      //   console.log($('.head')[0].scrollHeight);
-      //   console.log($(this).scrollTop());
+      //   console.log(jQuery('.head')[0].scrollHeight);
+      //   console.log(jQuery(this).scrollTop());
       // }
-      if ($(this).scrollTop() < 10) {
+      if (jQuery(this).scrollTop() < 10) {
         jQuery('.head-nav').removeClass('head-nav--narrow');
       }
       lastScrollTop = st;
