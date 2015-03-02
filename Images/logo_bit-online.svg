@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="541px" height="187px" viewBox="0 0 541 187" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_bit-online</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.72" width="841.89" height="595.28"></rect>
+        <rect id="path-3" x="0" y="0.72" width="841.89" height="595.28"></rect>
+        <rect id="path-5" x="0" y="0.72" width="841.89" height="595.28"></rect>
+        <rect id="path-7" x="0" y="0.72" width="841.89" height="595.28"></rect>
+        <rect id="path-9" x="0" y="0.72" width="841.89" height="595.28"></rect>
+        <rect id="path-11" x="0" y="0.72" width="841.89" height="595.28"></rect>
+        <rect id="path-13" x="0" y="0.72" width="841.89" height="595.28"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo_bit-online" sketch:type="MSLayerGroup" transform="translate(-94.000000, -154.000000)">
+            <g id="Group">
+                <g id="Clipped">
+                    <mask id="mask-2" sketch:name="SVGID_1_" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <path d="M96.512,154.394 L120.579,154.394 L120.579,198.171 C127.783,194.778 135.201,193.081 142.829,193.081 C172.375,193.081 187.148,210.184 187.148,244.392 C187.148,281.45 171.013,299.979 138.743,299.979 C125.664,299.979 111.588,298.52 96.512,295.601 L96.512,154.394 L96.512,154.394 Z M120.579,275.239 C126.087,277.208 132.476,278.191 139.742,278.191 C155.483,278.191 163.354,266.687 163.354,243.678 C163.354,224.879 156.482,215.478 142.739,215.478 C134.624,215.478 127.238,217.31 120.579,220.975 L120.579,275.239 L120.579,275.239 Z" id="Shape" fill="#326698" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-4" sketch:name="SVGID_1_" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <rect id="Rectangle-path" fill="#2F2D30" sketch:type="MSShapeGroup" mask="url(#mask-4)" x="187.148" y="281.965" width="17.381" height="18.014"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-6" sketch:name="SVGID_1_" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <path d="M244.515,175.773 L220.449,175.773 L220.449,154.393 L244.515,154.393 L244.515,175.773 L244.515,175.773 Z M244.515,299.978 L220.449,299.978 L220.449,193.08 L244.515,193.08 L244.515,299.978 L244.515,299.978 Z" id="Shape" fill="#326698" sketch:type="MSShapeGroup" mask="url(#mask-6)"></path>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-8" sketch:name="SVGID_1_" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <rect id="Rectangle-path" fill="#2F2D30" sketch:type="MSShapeGroup" mask="url(#mask-8)" x="256.428" y="281.965" width="17.381" height="18.014"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-10" sketch:name="SVGID_1_" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <path d="M285.053,175.773 L302.853,175.773 L306.486,193.08 L328.646,193.08 L328.646,214.46 L309.12,214.46 L309.12,263.633 C309.12,273.61 312.964,278.599 320.654,278.599 L328.646,278.599 L328.646,299.977 L309.029,299.977 C293.045,299.977 285.053,290.374 285.053,271.166 L285.053,175.773 L285.053,175.773 Z" id="Shape" fill="#326698" sketch:type="MSShapeGroup" mask="url(#mask-10)"></path>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-12" sketch:name="SVGID_1_" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <rect id="Rectangle-path" fill="#2F2D30" sketch:type="MSShapeGroup" mask="url(#mask-12)" x="340.618" y="281.965" width="17.381" height="18.014"></rect>
+                </g>
+            </g>
+            <text id="nline" fill="#828084" sketch:type="MSTextLayer" font-family="Helvetica" font-size="80" font-weight="normal">
+                <tspan x="456.5459" y="299.2354" fill="#000000">nline</tspan>
+            </text>
+            <g id="Clipped">
+                <mask id="mask-14" sketch:name="SVGID_3_" fill="white">
+                    <use xlink:href="#path-13"></use>
+                </mask>
+                <g id="SVGID_3_"></g>
+                <path d="M443.621,221.185 L383.601,221.185 C378.67,221.185 374.672,225.626 374.672,231.103 L374.672,290.06 C374.672,295.538 378.67,299.979 383.601,299.979 L434.25,299.979 C434.832,298.178 436.352,296.72 438.813,296.72 C438.952,296.72 439.084,296.731 439.217,296.74 C439.305,296.736 439.387,296.72 439.479,296.72 C440.094,296.72 440.649,296.812 441.147,296.977 C443.02,295.631 444.241,294.894 445.672,292.878 C446.26,292.053 447.119,291.63 448.033,291.524 C449.447,289.994 451.138,289.924 452.523,290.66 C452.533,290.461 452.55,290.263 452.55,290.06 L452.55,231.103 C452.551,225.625 448.551,221.185 443.621,221.185" id="Shape" fill="#2F2D30" sketch:type="MSShapeGroup" mask="url(#mask-14)"></path>
+            </g>
+            <text id="o" fill="#FFFFFF" sketch:type="MSTextLayer" font-family="Helvetica" font-size="90" font-weight="normal">
+                <tspan x="409.4922" y="299.7451" fill="#000000">o</tspan>
+            </text>
+            <g id="Group" transform="translate(92.630900, 298.618200)" font-size="34.4926" font-family="Helvetica" fill="#2F2D30" sketch:type="MSTextLayer" font-weight="normal">
+                <text id="Bibliothek.-Information.">
+                    <tspan x="0" y="34" fill="#000000">Bibliothek. Information.</tspan>
+                </text>
+                <text id="T">
+                    <tspan x="353.914037" y="34" fill="#000000">T</tspan>
+                </text>
+                <text id="echnologie.">
+                    <tspan x="369.290209" y="34" fill="#000000">echnologie.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

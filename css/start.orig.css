@@ -1,0 +1,3673 @@
+/*
+ * inuit CSS - https://github.com/inuitcss/
+ */
+
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+/* line 9, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+/* line 43, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+footer,
+header,
+main,
+nav {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+/* line 55, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+/* line 65, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+/* line 76, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+/* line 96, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+/* line 107, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+/* line 116, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+/* line 133, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+/* line 142, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+/* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+/* line 160, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+/* line 182, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+/* line 190, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+/* line 201, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+/* line 209, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+/* line 219, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+/* line 230, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+/* line 254, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+button {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+/* line 264, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+/* line 276, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+button {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+/* line 291, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+button {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+/* line 301, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+/* line 310, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+/* line 320, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+/* line 333, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+/* line 345, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+/* line 355, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+/* line 369, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+/* line 377, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+/* line 388, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+/* line 397, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+/* line 406, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+/* line 417, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/* line 423, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+
+/*------------------------------------*\
+    #BOX-SIZING
+\*------------------------------------*/
+
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+
+/* line 11, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-box-sizing/generic.box-sizing */
+
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-box-sizing/generic.box-sizing */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-page/base.page */
+
+html {
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.5;
+  /* [1] */
+  background-color: #fff;
+  color: #333;
+  overflow-y: scroll;
+  /* [2] */
+  min-height: 100%;
+  /* [3] */
+  -webkit-text-size-adjust: 100%;
+  /* [4] */
+  -ms-text-size-adjust: 100%;
+  /* [4] */
+  -moz-osx-font-smoothing: grayscale;
+  /* [5] */
+  -webkit-font-smoothing: antialiased;
+  /* [5] */
+}
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
+
+/* line 18, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* line 22, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+
+/* line 26, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+
+/* line 30, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+
+/* line 34, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+
+/* line 38, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+
+/**
+ * Begin a layout group.
+ */
+
+/* line 49, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+.start__header,
+.start__footer,
+.main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+}
+
+/**
+     * 1. Cause columns to stack side-by-side.
+     * 2. Space columns apart.
+     * 3. Align columns to the tops of each other.
+     * 4. Full-width unless told to behave otherwise.
+     * 5. Required to combine fluid widths and fixed gutters.
+     */
+
+/* line 63, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+.start__logo,
+.start__title {
+  display: inline-block;
+  /* [1] */
+  padding-left: 20px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */
+}
+
+/**
+     * Layouts with no gutters.
+     */
+
+/* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+.start__footer {
+  margin-left: 0;
+}
+
+/* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+/**
+     * Align layout items to the vertical centers of each other.
+     */
+
+/* line 206, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+/**
+     * Make the layout items fill up from the right hand side.
+     */
+
+/* line 240, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+/* line 243, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+/**
+     * Make the layout items fill up from the center outward.
+     */
+
+/* line 257, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+.start__logo,
+.start__title,
+.start__navigation,
+.start__list {
+  text-align: center;
+}
+
+/* line 260, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+
+/*------------------------------------*\
+    #TABS
+\*------------------------------------*/
+
+/**
+ * A simple abstraction for making equal-width navigation tabs.
+ */
+
+/**
+ * 1. Reset any residual styles (most likely from lists).
+ * 2. Tables for layout!
+ * 3. Force all `table-cell` children to have equal widths.
+ * 4. Force the object to be the full width of its parent. Combined with [2],
+ *    this makes the object behave in a quasi-`display: block;` manner.
+ */
+
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-tabs/objects.tabs */
+
+/* line 29, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-tabs/objects.tabs */
+
+/* line 33, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-tabs/objects.tabs */
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/**
+ * A simple button object.
+ */
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+
+/* line 51, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+
+.start__button {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  border: none;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  overflow: visible;
+  /* [6] */
+  padding: 9px 19px;
+  /* [7] */
+  background-color: none;
+  border: 1px solid #fff;
+  border-radius: 7px;
+}
+
+/* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+
+.start__button,
+.start__button:hover,
+.start__button:active,
+.start__button:focus {
+  text-decoration: none;
+  /* [4] */
+  color: #fff;
+}
+
+/**
+ * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+
+/* line 84, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+
+.ic-btn::-moz-focus-inner,
+.start__button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+     * Small buttons.
+     */
+
+/* line 99, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+
+/**
+     * Round-ended buttons.
+     *
+     * 1. Overly-large value to ensure the radius rounds the whole end of the
+     *    button.
+     */
+
+/* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+
+/*------------------------------------*\
+    #LIST-BARE
+\*------------------------------------*/
+
+/**
+ * The list-bare object simply removes any indents and bullet points from lists.
+ */
+
+/* line 12, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-list-bare/objects.list-bare */
+
+.start__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+
+/* line 15, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-list-inline/objects.list-inline */
+
+.start__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-list-inline/objects.list-inline */
+
+.start__list > li {
+  display: inline-block;
+}
+
+/*------------------------------------*\
+    #WIDTHS
+\*------------------------------------*/
+
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`). Toggle formats by overriding the
+ * `$inuit-use-fractions` variable defined below.
+ */
+
+/**
+     * Whole.
+     */
+
+/* line 119, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Halves.
+     */
+
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Thirds.
+     */
+
+/* line 129, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 130, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Quarters.
+     */
+
+/* line 135, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 136, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Fifths.
+     */
+
+/* line 141, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 142, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 143, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 144, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Sixths.
+     */
+
+/* line 149, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Eighths.
+     */
+
+/* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 158, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Ninths.
+     */
+
+/* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 166, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 168, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Tenths.
+     */
+
+/* line 173, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 174, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 175, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/**
+     * Twelfths.
+     */
+
+/* line 181, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 182, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 183, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+
+/*------------------------------------*\
+    #WIDTHS-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Responsive width classes based on your responsive settings.
+ */
+
+@media screen and (max-width: 480px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 481px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 1201px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 1401px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 1601px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (max-width: 767px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (max-width: 1023px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 768px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  .start__logo,
+  .start__title {
+    width: 50% !important;
+  }
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 1024px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+@media screen and (min-width: 1201px) {
+  /**
+                 * Whole.
+                 */
+
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Halves.
+                 */
+
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Thirds.
+                 */
+
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Quarters.
+                 */
+
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Fifths.
+                 */
+
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Sixths.
+                 */
+
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Eighths.
+                 */
+
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Ninths.
+                 */
+
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Tenths.
+                 */
+
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /**
+                 * Twelfths.
+                 */
+
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+}
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+/**
+     * Margin helper classes.
+     *
+     * Add margins.
+     */
+
+/* line 52, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 53, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 54, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 55, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 56, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 57, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 58, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add tiny margins.
+     */
+
+/* line 69, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 70, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 71, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 72, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 73, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 75, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add small margins.
+     */
+
+/* line 86, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 88, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 89, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 90, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 91, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 92, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add large margins.
+     */
+
+/* line 103, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 104, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 105, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 106, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 107, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 108, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 109, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add huge margins.
+     */
+
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 121, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 122, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 123, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 125, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 126, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Remove margins.
+     */
+
+/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 138, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 139, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 141, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 142, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 143, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Padding helper classes.
+     *
+     * Add paddings.
+     */
+
+/* line 244, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 245, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+.main {
+  padding-top: 20px !important;
+}
+
+/* line 246, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 247, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 248, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 249, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 250, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add tiny paddings.
+     */
+
+/* line 261, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 262, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 263, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 264, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 265, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 266, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 267, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add small paddings.
+     */
+
+/* line 278, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 279, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 280, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 281, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 282, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 283, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 284, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add large paddings.
+     */
+
+/* line 295, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 296, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 297, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 298, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 299, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 300, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 301, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+     * Add huge paddings.
+     */
+
+/* line 312, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 313, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 314, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 315, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 316, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 317, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/* line 318, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+
+/**
+ *
+ */
+
+/**
+ * Colors
+ */
+
+/**
+ * Transition
+ */
+
+/**
+ * Link
+ */
+
+/**
+ * Text Factor
+ */
+
+/**
+ * Letter Spacing
+ */
+
+/**
+ * Border
+ */
+
+/**
+ *
+ */
+
+/**
+ * Content Padding
+ */
+
+/**
+ *
+ */
+
+/**
+ * .body
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+.body {
+  text-rendering: optimizeLegibility;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-synthesis: none;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/**
+ * .image
+ */
+
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+.image {
+  width: 100%;
+}
+
+/**
+ * blockquote
+ */
+
+/* line 27, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+/* line 39, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+/* line 46, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+/**
+ * sub, sup
+ */
+
+/* line 59, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+/* line 64, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+/**
+ * a
+ */
+
+/* line 73, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+a {
+  color: #333;
+}
+
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+
+a {
+  outline: none;
+}
+
+/**
+ * class($name)
+ */
+
+/**
+ * class('hidden-on-phone')
+ */
+
+/**
+ * class('nobr')
+ * what it does: prevents the browser to add a break / new line if there is not
+ * enough space to dislay things like long words
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * class('m--default')
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * class('picture')
+ */
+
+/**
+ * class('caption')
+ */
+
+/**
+ * class('form')
+ */
+
+/**
+ * class('paragraph')
+ */
+
+/**
+ * @mixin responsive-content-padding()
+ */
+
+/**
+ * class('heading')
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * class('heading--alpha')
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * class('heading--beta')
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * class('heading--gamma')
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * .fa-twitter
+ */
+
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * .fa-facebook
+ */
+
+/* line 127, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %ul--reset
+ */
+
+/**
+ * %text--huge
+ */
+
+/* line 141, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %text--large
+ */
+
+/* line 148, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__title,
+.start__button {
+  font-size: 1.2em;
+}
+
+/**
+ * %text--small
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %text--tiny
+ */
+
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %text--bold
+ */
+
+/* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__button {
+  font-weight: bold;
+}
+
+/**
+ * %text--very-bright
+ */
+
+/* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %border--big
+ */
+
+/* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__button {
+  border-width: 2px;
+}
+
+/**
+ * %link--default
+ */
+
+/* line 192, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__link,
+.main a {
+  border-radius: 3px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  padding: 2px 3px 0;
+}
+
+/**
+ * %link--underline
+ * defines the style that is used to display the border-bottom
+ */
+
+/* line 206, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.main a {
+  border-bottom-style: dotted;
+}
+
+/**
+ * %link--underline-on-bright
+ */
+
+/* line 213, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.main a {
+  border-bottom-color: color-ipoa-green;
+}
+
+/**
+ * %link-in-linklist
+ */
+
+/* line 220, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/* line 227, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %link--in-linklist
+ */
+
+/* line 242, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/* line 245, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %link--block
+ */
+
+/* line 260, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %link--block-on-bright
+ */
+
+/* line 268, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %link--on-bright
+ */
+
+/* line 275, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__link,
+.main a {
+  color: #262626;
+  border-bottom-color: #360;
+}
+
+/* line 280, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__link:hover,
+.main a:hover,
+.start__link:focus,
+.main a:focus {
+  border-color: #360;
+  background-color: #360;
+  color: #fff;
+}
+
+/* line 286, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+.start__link:active,
+.main a:active {
+  border-color: #fc0;
+  background-color: #fc0;
+  color: #262626;
+}
+
+/**
+ * .link__button-on-bright
+ */
+
+/* line 296, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %headlink-on-bright
+ */
+
+/* line 304, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * %link-on-dark
+ */
+
+/**
+ * %link--with-icon-on-dark
+ */
+
+/**
+ * %link--with-icon-on-bright
+ */
+
+/**
+ * .no-js .on-demand__link
+ */
+
+/* line 358, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+
+/**
+ * .start
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start {
+  background: url('../Images/bg-1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100%;
+}
+
+/**
+ * .start__header
+ */
+
+/**
+ * .start__logo
+ */
+
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__logo {
+  margin: 10vh 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  .start__logo {
+    text-align: right;
+  }
+}
+
+/* line 29, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__logo .image {
+  max-width: 250px;
+}
+
+/**
+ * .start__title
+ */
+
+/* line 37, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__title {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .start__title {
+    display: inline-block;
+    text-align: left;
+    padding: 10vh 0 0 3vh;
+  }
+}
+
+/**
+ * .start__main
+ */
+
+/* line 54, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+/**
+ * .start__navigation
+ */
+
+/**
+ * .start__button
+ */
+
+/* line 68, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__button {
+  background-color: #fff;
+  color: #262626;
+  margin: 5px;
+}
+
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__button:hover,
+.start__button:active,
+.start__button:focus {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+
+/* line 85, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start nav a {
+  border: 0;
+}
+
+/* line 88, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start nav a:hover {
+  background-color: transparent;
+}
+
+/**
+ * .start__footer
+ */
+
+/**
+ * .start__footer-content
+ */
+
+/* line 103, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__footer-content {
+  width: 100vw;
+  padding: 5vh 0 0;
+}
+
+/**
+ * .start__list
+ */
+
+/**
+ * .start__link
+ */
+
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+
+.start__link {
+  padding: 7px;
+  border: 0;
+}
+
+/**
+ * .head
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__links
+ */
+
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__link
+ * 1. give the icon a little bit more space to top
+ * 2. these links are not allowed to break into a new line
+ */
+
+/* line 39, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/* line 48, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/* line 55, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__link--active
+ */
+
+/* line 61, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__list
+ * 1. LIs are inline
+ * 2. UL is inline
+ */
+
+/* line 71, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__menubutton
+ * 1. simulating "@extend .ic-mt+"
+ */
+
+/**
+ * .head__language-links
+ * the block that contains the various links to choose a different language
+ * hidden by default
+ * visible if ___ clicked
+ */
+
+/* line 99, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/* line 114, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .no-js .head__language-links
+ * always show language selection links if user has no JS
+ */
+
+/* line 121, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .language-icon--push-right-in-header
+ * align language icon with those above
+ * FIXME : dirty numbers
+ */
+
+/* line 130, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .no-js .head__language-indicator
+ */
+
+/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__logo
+ * 1. simulating "@extend .ic-pr"
+ */
+
+/* line 146, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/* line 152, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+@media screen and (min-width: 768px) {
+  /* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+}
+
+/**
+ * .head__claim
+ * only visible in tablet-and-up
+ * 1.,2. show claim only if enough screen estate is available
+ */
+
+/* line 172, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head__pagetitle
+ * 1. align page title with content
+ */
+
+/* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head-nav
+ */
+
+/* line 211, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .no-js .head-nav
+ */
+
+/* line 229, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .head-nav--narrow
+ */
+
+/* line 236, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+
+/**
+ * .menu
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .no-js .menu
+ * JS Fallback
+ * always show the menu if user has no JS.
+ */
+
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .menu__button
+ */
+
+/* line 28, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 37, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 41, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 47, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 51, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .menu__column
+ * formats every menu section to appear and behave like a column e. g. have many
+ * menu sections side by side in various breakpoint viewports
+ */
+
+/* line 60, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .menu__list
+ * formats menu__list to be a list without list-style-type
+ */
+
+/**
+ * .menu__list--indented
+ */
+
+/* line 77, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .menu__link
+ * define how links in the menu appear
+ */
+
+/* line 86, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 92, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 95, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 100, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .menu__link--active
+ * modifier that defines how a menu link looks like if the page the link would
+ * lead to is the current page
+ */
+
+/* line 111, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .menu__link--has-children
+ */
+
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .alt-menu
+ */
+
+/* line 126, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .alt-menu--off-canvas
+ * a modifier that moves the alt-menu off canvas
+ */
+
+/* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 149, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+
+/**
+ * .main
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+.main {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .main {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .main {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .main {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .main {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/**
+ * A link in the main content column
+ */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/* line 53, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 63, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 91, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/**
+ *
+ */
+
+/**
+ *
+ */
+
+/* line 106, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 114, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 119, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/**
+ * .main__linklist--reset
+ */
+
+/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/**
+ * .main__textblock
+ */
+
+@media screen and (min-width: 1201px) {
+  /* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+  /* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+  /* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+}
+
+/* line 175, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/**
+ * .main__table
+ */
+
+/* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 207, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 212, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 214, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/* line 216, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/**
+ * .main__gallery
+ */
+
+/* line 236, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+
+/**
+ * .more
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/more */
+
+/**
+ * .more__column
+ */
+
+/**
+ * .more__list
+ */
+
+/**
+ * .more__link
+ */
+
+/**
+ * .more__link--in-list
+ * 1. move the chevron a tad lower
+ */
+
+/* line 58, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/more */
+
+/**
+ * .search
+ * 1. pseudo space above the search box to avoid scrolling via anchor behind
+ *    the fixed head menu bar
+ *    http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B
+ */
+
+/* line 9, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__content
+ */
+
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__heading
+ */
+
+/* line 30, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__enter
+ */
+
+/**
+ * .search__form
+ */
+
+/* line 52, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__field
+ */
+
+/* line 61, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__input
+ */
+
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__submit
+ * 1.,3.,5. simulating "@extend .ic-pl"
+ * 2.,4. FIXME : dirty number
+ */
+
+/* line 97, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .search__button
+ */
+
+/* line 123, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/* line 134, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+
+/**
+ * .tracking
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+
+/**
+ * .tracking__content
+ */
+
+/**
+ * .tracking__link
+ */
+
+/* line 23, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+
+/* line 33, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+
+/* line 39, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+
+/**
+ * .footer__content
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer */
+
+/**
+ * .footer__column
+ */
+
+/**
+ * .footer__tracking
+ */
+
+/**
+ * .footer__list
+ */
+
+/**
+ * .footer__link
+ */
+
+/**
+ * .footer__link--in-list
+ * 1. move the chevron a tad lower
+ */
+
+/* line 61, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer */
+
+/**
+ * .last
+ */
+
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/last */
+
+/**
+ * .last__block1
+ */
+
+/**
+ * .last__block2
+ */
+
+/**
+ * .last__list
+ */
+
+/**
+ * .last__link
+ */
+
+/**
+ * .footer-hide
+ */
+
+/* line 4, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer-hide */
+
+/**
+ * .footer-hide__helper
+ */
+
+/* line 12, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer-hide */
+
+/**
+ * .footer-hide__helper--shifted
+ */
+
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer-hide */
+
+/**
+ * .footer-hide__content
+ */
+
+/**
+ * .no-js .footer-hide__content
+ * no-js fallback
+ * don't hide the footer if there is no js available
+ */
+
+/**
+ *
+ */
+
+/* line 4, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.fa-icon {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/**
+ *
+ */
+
+/* line 12, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.fa-icon--s {
+  -webkit-transform: scale(0.7) translateY(40%);
+  -ms-transform: scale(0.7) translateY(40%);
+  transform: scale(0.7) translateY(40%);
+}
+
+/**
+ *
+ */
+
+/* line 26, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 33, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 40, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.fa-icon-on-bright,
+.start__link .fa-icon {
+  color: #262626;
+  fill: currentColor;
+}
+
+/**
+ *
+ */
+
+/* line 48, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.start__link:hover .fa-icon,
+.start__link:active .fa-icon,
+.start__link:focus .fa-icon {
+  color: #fff;
+  fill: currentColor;
+}
+
+/**
+ *
+ */
+
+/* line 56, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 64, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 72, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 80, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 90, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 100, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 108, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.fa-icon-gavel {
+  width: 28px;
+  height: 28px;
+}
+
+/**
+ *
+ */
+
+/* line 116, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 132, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.fa-icon-smile-o {
+  width: 28px;
+  height: 28px;
+}
+
+/**
+ *
+ */
+
+/* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 148, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/**
+ *
+ */
+
+/* line 172, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+.fa-icon-info {
+  width: 20px;
+  height: 26px;
+}
+
+/**
+ *
+ */
+
+/* line 180, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+
+/* line 1, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/shame */
+
+/*# sourceMappingURL=style.css.map */

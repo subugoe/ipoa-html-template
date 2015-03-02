@@ -1,0 +1,4970 @@
+/*
+ * inuit CSS - https://github.com/inuitcss/
+ */
+/*!
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 43, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 76, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 116, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+sup {
+  top: -0.5em; }
+
+/* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 254, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+input[type="checkbox"], input[type="radio"] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 423, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-normalize/generic.normalize */
+td, th {
+  padding: 0; }
+
+/*------------------------------------*\
+    #BOX-SIZING
+\*------------------------------------*/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+/* line 11, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-box-sizing/generic.box-sizing */
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-box-sizing/generic.box-sizing */
+*, *:before, *:after {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-page/base.page */
+html {
+  font-size: 1em;
+  /* [1] */
+  line-height: 1.5;
+  /* [1] */
+  background-color: #fff;
+  color: #333;
+  overflow-y: scroll;
+  /* [2] */
+  min-height: 100%;
+  /* [3] */
+  -webkit-text-size-adjust: 100%;
+  /* [4] */
+  -ms-text-size-adjust: 100%;
+  /* [4] */
+  -moz-osx-font-smoothing: grayscale;
+  /* [5] */
+  -webkit-font-smoothing: antialiased;
+  /* [5] */ }
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+/**
+ * Headings 1–6, with corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
+/* line 18, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+h1, .ic-alpha {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5; }
+
+/* line 22, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+h2, .ic-beta {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 1.92; }
+
+/* line 26, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+h3, .ic-gamma {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+/* line 30, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+h4, .ic-delta {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+/* line 34, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+h5, .ic-epsilon {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+/* line 38, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-headings/base.headings */
+h6, .ic-zeta {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857; }
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * The inuitcss layout system uses `box-sizing: border-box;` and
+ * `display: inline-block;` to create an extremely powerful, flexible
+ * alternative to the traditional grid system. Combine the layout items with
+ * the widths found in `trumps.widths`.
+ */
+/**
+ * Begin a layout group.
+ */
+/* line 49, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+.ic-layout, .start__header, .start__footer, .head, .head-nav, .menu, .main, .more, .search__content, .tracking, .footer__content, .last {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px; }
+
+/**
+     * 1. Cause columns to stack side-by-side.
+     * 2. Space columns apart.
+     * 3. Align columns to the tops of each other.
+     * 4. Full-width unless told to behave otherwise.
+     * 5. Required to combine fluid widths and fixed gutters.
+     */
+/* line 63, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+.ic-layout__item, .alt-menu, .start__logo, .start__title, .start__main, .head__links, .head__menubutton, .head__language-links, .head__logo, .head__claim, .head__pagetitle, .menu__column, .main picture, .main h2, .oadays h3, .main h2 + div, .oadays h3 + div, .main__gallery picture, .more__column, .search__heading, .search__enter, .tracking__content, .footer__column, .footer__tracking, .last__block1, .last__block2 {
+  display: inline-block;
+  /* [1] */
+  padding-left: 20px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */ }
+
+/**
+     * Layouts with no gutters.
+     */
+/* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+.ic-layout--flush, .head, .head-nav, .start__footer {
+  margin-left: 0; }
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+  .ic-layout--flush > .ic-layout__item, .head > .ic-layout__item, .head-nav > .ic-layout__item, .ic-layout--flush > .alt-menu, .head > .alt-menu, .head-nav > .alt-menu, .ic-layout--flush > .start__logo, .head > .start__logo, .head-nav > .start__logo, .ic-layout--flush > .start__title, .head > .start__title, .head-nav > .start__title, .ic-layout--flush > .start__main, .head > .start__main, .head-nav > .start__main, .ic-layout--flush > .head__links, .head > .head__links, .head-nav > .head__links, .ic-layout--flush > .head__menubutton, .head > .head__menubutton, .head-nav > .head__menubutton, .ic-layout--flush > .head__language-links, .head > .head__language-links, .head-nav > .head__language-links, .ic-layout--flush > .head__logo, .head > .head__logo, .head-nav > .head__logo, .ic-layout--flush > .head__claim, .head > .head__claim, .head-nav > .head__claim, .ic-layout--flush > .head__pagetitle, .head > .head__pagetitle, .head-nav > .head__pagetitle, .ic-layout--flush > .menu__column, .head > .menu__column, .head-nav > .menu__column, .main .ic-layout--flush > picture, .main .head > picture, .main .head-nav > picture, .main .ic-layout--flush > h2, .main .head > h2, .main .head-nav > h2, .oadays .ic-layout--flush > h3, .oadays .head > h3, .oadays .head-nav > h3, .main .ic-layout--flush > h2 + div, .main .head > h2 + div, .main .head-nav > h2 + div, .oadays .ic-layout--flush > h3 + div, .oadays .head > h3 + div, .oadays .head-nav > h3 + div, .main__gallery .ic-layout--flush > picture, .main__gallery .head > picture, .main__gallery .head-nav > picture, .ic-layout--flush > .more__column, .head > .more__column, .head-nav > .more__column, .ic-layout--flush > .search__heading, .head > .search__heading, .head-nav > .search__heading, .ic-layout--flush > .search__enter, .head > .search__enter, .head-nav > .search__enter, .ic-layout--flush > .tracking__content, .head > .tracking__content, .head-nav > .tracking__content, .ic-layout--flush > .footer__column, .head > .footer__column, .head-nav > .footer__column, .ic-layout--flush > .footer__tracking, .head > .footer__tracking, .head-nav > .footer__tracking, .ic-layout--flush > .last__block1, .head > .last__block1, .head-nav > .last__block1, .ic-layout--flush > .last__block2, .head > .last__block2, .head-nav > .last__block2, .start__footer > .ic-layout__item, .start__footer > .alt-menu, .start__footer > .start__logo, .start__footer > .start__title, .start__footer > .start__main, .start__footer > .head__links, .start__footer > .head__menubutton, .start__footer > .head__language-links, .start__footer > .head__logo, .start__footer > .head__claim, .start__footer > .head__pagetitle, .start__footer > .menu__column, .main .start__footer > picture, .main .start__footer > h2, .oadays .start__footer > h3, .main .start__footer > h2 + div, .oadays .start__footer > h3 + div, .main__gallery .start__footer > picture, .start__footer > .more__column, .start__footer > .search__heading, .start__footer > .search__enter, .start__footer > .tracking__content, .start__footer > .footer__column, .start__footer > .footer__tracking, .start__footer > .last__block1, .start__footer > .last__block2 {
+    padding-left: 0; }
+
+/**
+     * Align layout items to the vertical centers of each other.
+     */
+/* line 206, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+.ic-layout--middle > .ic-layout__item, .ic-layout--middle > .alt-menu, .ic-layout--middle > .start__logo, .ic-layout--middle > .start__title, .ic-layout--middle > .start__main, .ic-layout--middle > .head__links, .ic-layout--middle > .head__menubutton, .ic-layout--middle > .head__language-links, .ic-layout--middle > .head__logo, .ic-layout--middle > .head__claim, .ic-layout--middle > .head__pagetitle, .ic-layout--middle > .menu__column, .main .ic-layout--middle > picture, .main .ic-layout--middle > h2, .oadays .ic-layout--middle > h3, .main .ic-layout--middle > h2 + div, .oadays .ic-layout--middle > h3 + div, .main__gallery .ic-layout--middle > picture, .ic-layout--middle > .more__column, .ic-layout--middle > .search__heading, .ic-layout--middle > .search__enter, .ic-layout--middle > .tracking__content, .ic-layout--middle > .footer__column, .ic-layout--middle > .footer__tracking, .ic-layout--middle > .last__block1, .ic-layout--middle > .last__block2 {
+  vertical-align: middle; }
+
+/**
+     * Make the layout items fill up from the right hand side.
+     */
+/* line 240, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+.ic-layout--right {
+  text-align: right; }
+  /* line 243, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+  .ic-layout--right > .ic-layout__item, .ic-layout--right > .alt-menu, .ic-layout--right > .start__logo, .ic-layout--right > .start__title, .ic-layout--right > .start__main, .ic-layout--right > .head__links, .ic-layout--right > .head__menubutton, .ic-layout--right > .head__language-links, .ic-layout--right > .head__logo, .ic-layout--right > .head__claim, .ic-layout--right > .head__pagetitle, .ic-layout--right > .menu__column, .main .ic-layout--right > picture, .main .ic-layout--right > h2, .oadays .ic-layout--right > h3, .main .ic-layout--right > h2 + div, .oadays .ic-layout--right > h3 + div, .main__gallery .ic-layout--right > picture, .ic-layout--right > .more__column, .ic-layout--right > .search__heading, .ic-layout--right > .search__enter, .ic-layout--right > .tracking__content, .ic-layout--right > .footer__column, .ic-layout--right > .footer__tracking, .ic-layout--right > .last__block1, .ic-layout--right > .last__block2 {
+    text-align: left; }
+
+/**
+     * Make the layout items fill up from the center outward.
+     */
+/* line 257, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+.ic-layout--center, .start__logo, .start__title, .start__main, .start__navigation, .start__list {
+  text-align: center; }
+  /* line 260, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-layout/objects.layout */
+  .ic-layout--center > .ic-layout__item, .start__logo > .ic-layout__item, .start__title > .ic-layout__item, .ic-layout--center > .alt-menu, .start__logo > .alt-menu, .start__title > .alt-menu, .ic-layout--center > .start__logo, .start__logo > .start__logo, .start__title > .start__logo, .ic-layout--center > .start__title, .start__logo > .start__title, .start__title > .start__title, .ic-layout--center > .start__main, .start__logo > .start__main, .start__title > .start__main, .ic-layout--center > .head__links, .start__logo > .head__links, .start__title > .head__links, .ic-layout--center > .head__menubutton, .start__logo > .head__menubutton, .start__title > .head__menubutton, .ic-layout--center > .head__language-links, .start__logo > .head__language-links, .start__title > .head__language-links, .ic-layout--center > .head__logo, .start__logo > .head__logo, .start__title > .head__logo, .ic-layout--center > .head__claim, .start__logo > .head__claim, .start__title > .head__claim, .ic-layout--center > .head__pagetitle, .start__logo > .head__pagetitle, .start__title > .head__pagetitle, .ic-layout--center > .menu__column, .start__logo > .menu__column, .start__title > .menu__column, .main .ic-layout--center > picture, .main .start__logo > picture, .main .start__title > picture, .main .ic-layout--center > h2, .main .start__logo > h2, .main .start__title > h2, .oadays .ic-layout--center > h3, .oadays .start__logo > h3, .oadays .start__title > h3, .main .ic-layout--center > h2 + div, .main .start__logo > h2 + div, .main .start__title > h2 + div, .oadays .ic-layout--center > h3 + div, .oadays .start__logo > h3 + div, .oadays .start__title > h3 + div, .main__gallery .ic-layout--center > picture, .main__gallery .start__logo > picture, .main__gallery .start__title > picture, .ic-layout--center > .more__column, .start__logo > .more__column, .start__title > .more__column, .ic-layout--center > .search__heading, .start__logo > .search__heading, .start__title > .search__heading, .ic-layout--center > .search__enter, .start__logo > .search__enter, .start__title > .search__enter, .ic-layout--center > .tracking__content, .start__logo > .tracking__content, .start__title > .tracking__content, .ic-layout--center > .footer__column, .start__logo > .footer__column, .start__title > .footer__column, .ic-layout--center > .footer__tracking, .start__logo > .footer__tracking, .start__title > .footer__tracking, .ic-layout--center > .last__block1, .start__logo > .last__block1, .start__title > .last__block1, .ic-layout--center > .last__block2, .start__logo > .last__block2, .start__title > .last__block2, .start__main > .ic-layout__item, .start__navigation > .ic-layout__item, .start__list > .ic-layout__item, .start__main > .alt-menu, .start__navigation > .alt-menu, .start__list > .alt-menu, .start__main > .start__logo, .start__navigation > .start__logo, .start__list > .start__logo, .start__main > .start__title, .start__navigation > .start__title, .start__list > .start__title, .start__main > .start__main, .start__navigation > .start__main, .start__list > .start__main, .start__main > .head__links, .start__navigation > .head__links, .start__list > .head__links, .start__main > .head__menubutton, .start__navigation > .head__menubutton, .start__list > .head__menubutton, .start__main > .head__language-links, .start__navigation > .head__language-links, .start__list > .head__language-links, .start__main > .head__logo, .start__navigation > .head__logo, .start__list > .head__logo, .start__main > .head__claim, .start__navigation > .head__claim, .start__list > .head__claim, .start__main > .head__pagetitle, .start__navigation > .head__pagetitle, .start__list > .head__pagetitle, .start__main > .menu__column, .start__navigation > .menu__column, .start__list > .menu__column, .main .start__main > picture, .main .start__navigation > picture, .main .start__list > picture, .main .start__main > h2, .main .start__navigation > h2, .main .start__list > h2, .oadays .start__main > h3, .oadays .start__navigation > h3, .oadays .start__list > h3, .main .start__main > h2 + div, .main .start__navigation > h2 + div, .main .start__list > h2 + div, .oadays .start__main > h3 + div, .oadays .start__navigation > h3 + div, .oadays .start__list > h3 + div, .main__gallery .start__main > picture, .main__gallery .start__navigation > picture, .main__gallery .start__list > picture, .start__main > .more__column, .start__navigation > .more__column, .start__list > .more__column, .start__main > .search__heading, .start__navigation > .search__heading, .start__list > .search__heading, .start__main > .search__enter, .start__navigation > .search__enter, .start__list > .search__enter, .start__main > .tracking__content, .start__navigation > .tracking__content, .start__list > .tracking__content, .start__main > .footer__column, .start__navigation > .footer__column, .start__list > .footer__column, .start__main > .footer__tracking, .start__navigation > .footer__tracking, .start__list > .footer__tracking, .start__main > .last__block1, .start__navigation > .last__block1, .start__list > .last__block1, .start__main > .last__block2, .start__navigation > .last__block2, .start__list > .last__block2 {
+    text-align: left; }
+
+/*------------------------------------*\
+    #TABS
+\*------------------------------------*/
+/**
+ * A simple abstraction for making equal-width navigation tabs.
+ */
+/**
+ * 1. Reset any residual styles (most likely from lists).
+ * 2. Tables for layout!
+ * 3. Force all `table-cell` children to have equal widths.
+ * 4. Force the object to be the full width of its parent. Combined with [2],
+ *    this makes the object behave in a quasi-`display: block;` manner.
+ */
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-tabs/objects.tabs */
+.ic-tabs {
+  margin: 0;
+  /* [1] */
+  padding: 0;
+  /* [1] */
+  list-style: none;
+  /* [1] */
+  display: table;
+  /* [2] */
+  table-layout: fixed;
+  /* [3] */
+  width: 100%;
+  /* [4] */
+  text-align: center; }
+
+/* line 29, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-tabs/objects.tabs */
+.ic-tabs__item {
+  display: table-cell;
+  /* [2] */ }
+
+/* line 33, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-tabs/objects.tabs */
+.ic-tabs__link {
+  display: block; }
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+/**
+ * A simple button object.
+ */
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+/* line 51, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+.ic-btn, .start__button {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  border: none;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  overflow: visible;
+  /* [6] */
+  padding: 9px 19px;
+  /* [7] */
+  background-color: none;
+  border: 1px solid #fff;
+  border-radius: 7px; }
+  /* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+  .ic-btn, .ic-btn:hover, .ic-btn:active, .ic-btn:focus, .start__button, .start__button:hover, .start__button:active, .start__button:focus {
+    text-decoration: none;
+    /* [4] */
+    color: #fff; }
+
+/**
+ * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+/* line 84, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+.ic-btn::-moz-focus-inner, .start__button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+     * Small buttons.
+     */
+/* line 99, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+.ic-btn--small {
+  padding: 4px 9px;
+  /* [7] */ }
+
+/**
+     * Round-ended buttons.
+     *
+     * 1. Overly-large value to ensure the radius rounds the whole end of the
+     *    button.
+     */
+/* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-buttons/objects.buttons */
+.ic-btn--pill {
+  border-radius: 100px;
+  /* [1] */ }
+
+/*------------------------------------*\
+    #LIST-BARE
+\*------------------------------------*/
+/**
+ * The list-bare object simply removes any indents and bullet points from lists.
+ */
+/* line 12, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-list-bare/objects.list-bare */
+.ic-list-bare, .start__list, .head__list, .menu__list, .menu__list--indented, .main ul, .more ul, .footer ul, .last__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+/* line 15, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-list-inline/objects.list-inline */
+.ic-list-inline, .start__list, .head__list, .last__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-list-inline/objects.list-inline */
+  .ic-list-inline > li, .start__list > li, .head__list > li, .last__list > li {
+    display: inline-block; }
+
+/*------------------------------------*\
+    #WIDTHS
+\*------------------------------------*/
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.2/3`) or a spoken-
+ * word format (e.g. `two-thirds`). Toggle formats by overriding the
+ * `$inuit-use-fractions` variable defined below.
+ */
+/**
+     * Whole.
+     */
+/* line 119, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-whole {
+  width: 100% !important; }
+
+/**
+     * Halves.
+     */
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-half, .ic-two-quarters, .ic-three-sixths, .ic-four-eighths, .ic-five-tenths, .ic-six-twelfths {
+  width: 50% !important; }
+
+/**
+     * Thirds.
+     */
+/* line 129, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-third, .ic-two-sixths, .ic-three-ninths, .ic-four-twelfths {
+  width: 33.3333333% !important; }
+
+/* line 130, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-two-thirds, .ic-four-sixths, .ic-six-ninths, .ic-eight-twelfths {
+  width: 66.6666666% !important; }
+
+/**
+     * Quarters.
+     */
+/* line 135, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-quarter, .ic-two-eighths, .ic-three-twelfths {
+  width: 25% !important; }
+
+/* line 136, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-three-quarters, .ic-six-eighths, .ic-nine-twelfths {
+  width: 75% !important; }
+
+/**
+     * Fifths.
+     */
+/* line 141, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-fifth, .ic-two-tenths {
+  width: 20% !important; }
+
+/* line 142, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-two-fifths, .ic-four-tenths {
+  width: 40% !important; }
+
+/* line 143, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-three-fifths, .ic-six-tenths {
+  width: 60% !important; }
+
+/* line 144, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-four-fifths, .ic-eight-tenths {
+  width: 80% !important; }
+
+/**
+     * Sixths.
+     */
+/* line 149, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-sixth, .ic-two-twelfths {
+  width: 16.6666666% !important; }
+
+/* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-five-sixths, .ic-ten-twelfths {
+  width: 83.3333333% !important; }
+
+/**
+     * Eighths.
+     */
+/* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-eighth {
+  width: 12.5% !important; }
+
+/* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-three-eighths {
+  width: 37.5% !important; }
+
+/* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-five-eighths {
+  width: 62.5% !important; }
+
+/* line 158, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-seven-eighths {
+  width: 87.5% !important; }
+
+/**
+     * Ninths.
+     */
+/* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-ninth {
+  width: 11.1111111% !important; }
+
+/* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-two-ninths {
+  width: 22.2222222% !important; }
+
+/* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-four-ninths {
+  width: 44.4444444% !important; }
+
+/* line 166, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-five-ninths {
+  width: 55.5555555% !important; }
+
+/* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-seven-ninths {
+  width: 77.7777777% !important; }
+
+/* line 168, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-eight-ninths {
+  width: 88.8888888% !important; }
+
+/**
+     * Tenths.
+     */
+/* line 173, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-tenth {
+  width: 10% !important; }
+
+/* line 174, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-three-tenths {
+  width: 30% !important; }
+
+/* line 175, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-seven-tenths {
+  width: 70% !important; }
+
+/* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-nine-tenths {
+  width: 90% !important; }
+
+/**
+     * Twelfths.
+     */
+/* line 181, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-one-twelfth {
+  width: 8.3333333% !important; }
+
+/* line 182, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-five-twelfths {
+  width: 41.6666666% !important; }
+
+/* line 183, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-seven-twelfths {
+  width: 58.3333333% !important; }
+
+/* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths/trumps.widths */
+.ic-eleven-twelfths {
+  width: 91.6666666% !important; }
+
+/*------------------------------------*\
+    #WIDTHS-RESPONSIVE
+\*------------------------------------*/
+/**
+ * Responsive width classes based on your responsive settings.
+ */
+@media screen and (max-width: 480px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-half, .ic-phone-two-quarters, .ic-phone-three-sixths, .ic-phone-four-eighths, .ic-phone-five-tenths, .ic-phone-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-third, .ic-phone-two-sixths, .ic-phone-three-ninths, .ic-phone-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-two-thirds, .ic-phone-four-sixths, .ic-phone-six-ninths, .ic-phone-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-quarter, .ic-phone-two-eighths, .ic-phone-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-three-quarters, .ic-phone-six-eighths, .ic-phone-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-fifth, .ic-phone-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-two-fifths, .ic-phone-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-three-fifths, .ic-phone-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-four-fifths, .ic-phone-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-sixth, .ic-phone-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-five-sixths, .ic-phone-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 481px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-half, .ic-phone-and-up-two-quarters, .ic-phone-and-up-three-sixths, .ic-phone-and-up-four-eighths, .ic-phone-and-up-five-tenths, .ic-phone-and-up-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-third, .ic-phone-and-up-two-sixths, .ic-phone-and-up-three-ninths, .ic-phone-and-up-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-two-thirds, .ic-phone-and-up-four-sixths, .ic-phone-and-up-six-ninths, .ic-phone-and-up-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-quarter, .ic-phone-and-up-two-eighths, .ic-phone-and-up-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-three-quarters, .ic-phone-and-up-six-eighths, .ic-phone-and-up-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-fifth, .ic-phone-and-up-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-two-fifths, .ic-phone-and-up-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-three-fifths, .ic-phone-and-up-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-four-fifths, .ic-phone-and-up-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-sixth, .ic-phone-and-up-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-five-sixths, .ic-phone-and-up-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-phone-and-up-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-half, .main__gallery picture, .more__column, .footer__column, .ic-tablet-two-quarters, .ic-tablet-three-sixths, .ic-tablet-four-eighths, .ic-tablet-five-tenths, .ic-tablet-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-third, .ic-tablet-two-sixths, .ic-tablet-three-ninths, .ic-tablet-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-two-thirds, .ic-tablet-four-sixths, .ic-tablet-six-ninths, .ic-tablet-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-quarter, .ic-tablet-two-eighths, .ic-tablet-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-three-quarters, .ic-tablet-six-eighths, .ic-tablet-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-fifth, .ic-tablet-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-two-fifths, .ic-tablet-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-three-fifths, .ic-tablet-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-four-fifths, .ic-tablet-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-sixth, .ic-tablet-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-five-sixths, .ic-tablet-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-half, .ic-tablet-portrait-two-quarters, .ic-tablet-portrait-three-sixths, .ic-tablet-portrait-four-eighths, .ic-tablet-portrait-five-tenths, .ic-tablet-portrait-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-third, .ic-tablet-portrait-two-sixths, .ic-tablet-portrait-three-ninths, .ic-tablet-portrait-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-two-thirds, .ic-tablet-portrait-four-sixths, .ic-tablet-portrait-six-ninths, .ic-tablet-portrait-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-quarter, .ic-tablet-portrait-two-eighths, .ic-tablet-portrait-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-three-quarters, .ic-tablet-portrait-six-eighths, .ic-tablet-portrait-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-fifth, .ic-tablet-portrait-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-two-fifths, .ic-tablet-portrait-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-three-fifths, .ic-tablet-portrait-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-four-fifths, .ic-tablet-portrait-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-sixth, .ic-tablet-portrait-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-five-sixths, .ic-tablet-portrait-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-portrait-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-half, .main__gallery picture, .ic-notebook-two-quarters, .ic-notebook-three-sixths, .ic-notebook-four-eighths, .ic-notebook-five-tenths, .ic-notebook-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-third, .ic-notebook-two-sixths, .ic-notebook-three-ninths, .ic-notebook-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-two-thirds, .ic-notebook-four-sixths, .ic-notebook-six-ninths, .ic-notebook-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-quarter, .ic-notebook-two-eighths, .ic-notebook-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-three-quarters, .ic-notebook-six-eighths, .ic-notebook-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-fifth, .ic-notebook-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-two-fifths, .ic-notebook-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-three-fifths, .ic-notebook-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-four-fifths, .ic-notebook-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-sixth, .ic-notebook-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-five-sixths, .ic-notebook-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 1201px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-half, .main__gallery picture, .ic-desk-two-quarters, .ic-desk-three-sixths, .ic-desk-four-eighths, .ic-desk-five-tenths, .ic-desk-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-third, .ic-desk-two-sixths, .ic-desk-three-ninths, .ic-desk-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-two-thirds, .ic-desk-four-sixths, .ic-desk-six-ninths, .ic-desk-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-quarter, .ic-desk-two-eighths, .ic-desk-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-three-quarters, .ic-desk-six-eighths, .ic-desk-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-fifth, .ic-desk-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-two-fifths, .ic-desk-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-three-fifths, .ic-desk-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-four-fifths, .ic-desk-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-sixth, .ic-desk-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-five-sixths, .ic-desk-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 1401px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-half, .ic-huge-two-quarters, .ic-huge-three-sixths, .ic-huge-four-eighths, .ic-huge-five-tenths, .ic-huge-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-third, .main__gallery picture, .ic-huge-two-sixths, .ic-huge-three-ninths, .ic-huge-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-two-thirds, .ic-huge-four-sixths, .ic-huge-six-ninths, .ic-huge-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-quarter, .ic-huge-two-eighths, .ic-huge-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-three-quarters, .ic-huge-six-eighths, .ic-huge-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-fifth, .ic-huge-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-two-fifths, .ic-huge-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-three-fifths, .ic-huge-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-four-fifths, .ic-huge-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-sixth, .ic-huge-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-five-sixths, .ic-huge-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-huge-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 1601px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-half, .ic-ridiculous-two-quarters, .ic-ridiculous-three-sixths, .ic-ridiculous-four-eighths, .ic-ridiculous-five-tenths, .ic-ridiculous-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-third, .ic-ridiculous-two-sixths, .ic-ridiculous-three-ninths, .ic-ridiculous-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-two-thirds, .ic-ridiculous-four-sixths, .ic-ridiculous-six-ninths, .ic-ridiculous-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-quarter, .ic-ridiculous-two-eighths, .ic-ridiculous-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-three-quarters, .ic-ridiculous-six-eighths, .ic-ridiculous-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-fifth, .ic-ridiculous-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-two-fifths, .ic-ridiculous-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-three-fifths, .ic-ridiculous-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-four-fifths, .ic-ridiculous-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-sixth, .ic-ridiculous-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-five-sixths, .ic-ridiculous-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-ridiculous-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (max-width: 767px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-half, .ic-smaller-than-tablet-two-quarters, .ic-smaller-than-tablet-three-sixths, .ic-smaller-than-tablet-four-eighths, .ic-smaller-than-tablet-five-tenths, .ic-smaller-than-tablet-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-third, .head__menubutton, .ic-smaller-than-tablet-two-sixths, .ic-smaller-than-tablet-three-ninths, .ic-smaller-than-tablet-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-two-thirds, .head__links, .ic-smaller-than-tablet-four-sixths, .ic-smaller-than-tablet-six-ninths, .ic-smaller-than-tablet-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-quarter, .ic-smaller-than-tablet-two-eighths, .ic-smaller-than-tablet-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-three-quarters, .ic-smaller-than-tablet-six-eighths, .ic-smaller-than-tablet-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-fifth, .ic-smaller-than-tablet-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-two-fifths, .ic-smaller-than-tablet-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-three-fifths, .ic-smaller-than-tablet-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-four-fifths, .ic-smaller-than-tablet-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-sixth, .ic-smaller-than-tablet-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-five-sixths, .ic-smaller-than-tablet-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-tablet-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (max-width: 1023px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-half, .ic-smaller-than-notebook-two-quarters, .ic-smaller-than-notebook-three-sixths, .ic-smaller-than-notebook-four-eighths, .ic-smaller-than-notebook-five-tenths, .ic-smaller-than-notebook-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-third, .ic-smaller-than-notebook-two-sixths, .ic-smaller-than-notebook-three-ninths, .ic-smaller-than-notebook-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-two-thirds, .ic-smaller-than-notebook-four-sixths, .ic-smaller-than-notebook-six-ninths, .ic-smaller-than-notebook-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-quarter, .ic-smaller-than-notebook-two-eighths, .ic-smaller-than-notebook-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-three-quarters, .ic-smaller-than-notebook-six-eighths, .ic-smaller-than-notebook-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-fifth, .ic-smaller-than-notebook-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-two-fifths, .ic-smaller-than-notebook-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-three-fifths, .ic-smaller-than-notebook-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-four-fifths, .ic-smaller-than-notebook-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-sixth, .ic-smaller-than-notebook-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-five-sixths, .ic-smaller-than-notebook-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-smaller-than-notebook-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-half, .ic-tablet-and-notebook-two-quarters, .ic-tablet-and-notebook-three-sixths, .ic-tablet-and-notebook-four-eighths, .ic-tablet-and-notebook-five-tenths, .ic-tablet-and-notebook-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-third, .ic-tablet-and-notebook-two-sixths, .ic-tablet-and-notebook-three-ninths, .ic-tablet-and-notebook-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-two-thirds, .ic-tablet-and-notebook-four-sixths, .ic-tablet-and-notebook-six-ninths, .ic-tablet-and-notebook-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-quarter, .ic-tablet-and-notebook-two-eighths, .ic-tablet-and-notebook-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-three-quarters, .ic-tablet-and-notebook-six-eighths, .ic-tablet-and-notebook-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-fifth, .ic-tablet-and-notebook-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-two-fifths, .ic-tablet-and-notebook-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-three-fifths, .ic-tablet-and-notebook-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-four-fifths, .ic-tablet-and-notebook-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-sixth, .ic-tablet-and-notebook-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-five-sixths, .ic-tablet-and-notebook-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-notebook-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 768px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-half, .start__logo, .start__title, .last__block1, .last__block2, .ic-tablet-and-up-two-quarters, .ic-tablet-and-up-three-sixths, .ic-tablet-and-up-four-eighths, .ic-tablet-and-up-five-tenths, .ic-tablet-and-up-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-third, .ic-tablet-and-up-two-sixths, .ic-tablet-and-up-three-ninths, .ic-tablet-and-up-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-two-thirds, .ic-tablet-and-up-four-sixths, .ic-tablet-and-up-six-ninths, .ic-tablet-and-up-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-quarter, .head__menubutton, .head__logo, .ic-tablet-and-up-two-eighths, .ic-tablet-and-up-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-three-quarters, .head__links, .head__claim, .ic-tablet-and-up-six-eighths, .ic-tablet-and-up-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-fifth, .ic-tablet-and-up-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-two-fifths, .ic-tablet-and-up-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-three-fifths, .ic-tablet-and-up-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-four-fifths, .ic-tablet-and-up-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-sixth, .ic-tablet-and-up-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-five-sixths, .ic-tablet-and-up-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-tablet-and-up-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 1024px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-half, .ic-notebook-and-up-two-quarters, .ic-notebook-and-up-three-sixths, .ic-notebook-and-up-four-eighths, .ic-notebook-and-up-five-tenths, .ic-notebook-and-up-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-third, .ic-notebook-and-up-two-sixths, .ic-notebook-and-up-three-ninths, .ic-notebook-and-up-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-two-thirds, .ic-notebook-and-up-four-sixths, .ic-notebook-and-up-six-ninths, .ic-notebook-and-up-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-quarter, .more__column, .footer__column, .ic-notebook-and-up-two-eighths, .ic-notebook-and-up-three-twelfths {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-three-quarters, .ic-notebook-and-up-six-eighths, .ic-notebook-and-up-nine-twelfths {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-fifth, .ic-notebook-and-up-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-two-fifths, .ic-notebook-and-up-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-three-fifths, .ic-notebook-and-up-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-four-fifths, .ic-notebook-and-up-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-sixth, .ic-notebook-and-up-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-five-sixths, .ic-notebook-and-up-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-notebook-and-up-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+@media screen and (min-width: 1201px) {
+  /**
+                 * Whole.
+                 */
+  /* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-whole {
+    width: 100% !important; }
+
+  /**
+                 * Halves.
+                 */
+  /* line 145, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-half, .ic-desk-and-up-two-quarters, .ic-desk-and-up-three-sixths, .ic-desk-and-up-four-eighths, .ic-desk-and-up-five-tenths, .ic-desk-and-up-six-twelfths {
+    width: 50% !important; }
+
+  /**
+                 * Thirds.
+                 */
+  /* line 150, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-third, .ic-desk-and-up-two-sixths, .ic-desk-and-up-three-ninths, .ic-desk-and-up-four-twelfths {
+    width: 33.3333333% !important; }
+
+  /* line 151, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-two-thirds, .ic-desk-and-up-four-sixths, .ic-desk-and-up-six-ninths, .ic-desk-and-up-eight-twelfths {
+    width: 66.6666666% !important; }
+
+  /**
+                 * Quarters.
+                 */
+  /* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-quarter, .search__heading, .ic-desk-and-up-two-eighths, .ic-desk-and-up-three-twelfths, .main h2, .oadays h3 {
+    width: 25% !important; }
+
+  /* line 157, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-three-quarters, .search__enter, .ic-desk-and-up-six-eighths, .ic-desk-and-up-nine-twelfths, .main h2 + div, .oadays h3 + div {
+    width: 75% !important; }
+
+  /**
+                 * Fifths.
+                 */
+  /* line 162, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-fifth, .ic-desk-and-up-two-tenths {
+    width: 20% !important; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-two-fifths, .ic-desk-and-up-four-tenths {
+    width: 40% !important; }
+
+  /* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-three-fifths, .ic-desk-and-up-six-tenths {
+    width: 60% !important; }
+
+  /* line 165, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-four-fifths, .ic-desk-and-up-eight-tenths {
+    width: 80% !important; }
+
+  /**
+                 * Sixths.
+                 */
+  /* line 170, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-sixth, .ic-desk-and-up-two-twelfths {
+    width: 16.6666666% !important; }
+
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-five-sixths, .ic-desk-and-up-ten-twelfths {
+    width: 83.3333333% !important; }
+
+  /**
+                 * Eighths.
+                 */
+  /* line 176, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-eighth {
+    width: 12.5% !important; }
+
+  /* line 177, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-three-eighths {
+    width: 37.5% !important; }
+
+  /* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-five-eighths {
+    width: 62.5% !important; }
+
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-seven-eighths {
+    width: 87.5% !important; }
+
+  /**
+                 * Ninths.
+                 */
+  /* line 184, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-ninth {
+    width: 11.1111111% !important; }
+
+  /* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-two-ninths {
+    width: 22.2222222% !important; }
+
+  /* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-four-ninths {
+    width: 44.4444444% !important; }
+
+  /* line 187, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-five-ninths {
+    width: 55.5555555% !important; }
+
+  /* line 188, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-seven-ninths {
+    width: 77.7777777% !important; }
+
+  /* line 189, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-eight-ninths {
+    width: 88.8888888% !important; }
+
+  /**
+                 * Tenths.
+                 */
+  /* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-tenth {
+    width: 10% !important; }
+
+  /* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-three-tenths {
+    width: 30% !important; }
+
+  /* line 196, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-seven-tenths {
+    width: 70% !important; }
+
+  /* line 197, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-nine-tenths {
+    width: 90% !important; }
+
+  /**
+                 * Twelfths.
+                 */
+  /* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-one-twelfth {
+    width: 8.3333333% !important; }
+
+  /* line 203, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-five-twelfths {
+    width: 41.6666666% !important; }
+
+  /* line 204, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-seven-twelfths {
+    width: 58.3333333% !important; }
+
+  /* line 205, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-widths-responsive/trumps.widths-responsive */
+  .ic-desk-and-up-eleven-twelfths {
+    width: 91.6666666% !important; }
+ }
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+/**
+     * Margin helper classes.
+     *
+     * Add margins.
+     */
+/* line 52, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-m {
+  margin: 20px !important; }
+
+/* line 53, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mt, .head__logo, .main picture {
+  margin-top: 20px !important; }
+
+/* line 54, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mr {
+  margin-right: 20px !important; }
+
+/* line 55, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mb, .alt-menu .head__list {
+  margin-bottom: 20px !important; }
+
+/* line 56, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ml {
+  margin-left: 20px !important; }
+
+/* line 57, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mh {
+  margin-right: 20px !important;
+  margin-left: 20px !important; }
+
+/* line 58, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mv {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important; }
+
+/**
+     * Add tiny margins.
+     */
+/* line 69, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-m-- {
+  margin: 5px !important; }
+
+/* line 70, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mt--, .head__links, .head__menubutton {
+  margin-top: 5px !important; }
+
+/* line 71, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mr-- {
+  margin-right: 5px !important; }
+
+/* line 72, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mb-- {
+  margin-bottom: 5px !important; }
+
+/* line 73, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ml-- {
+  margin-left: 5px !important; }
+
+/* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mh-- {
+  margin-right: 5px !important;
+  margin-left: 5px !important; }
+
+/* line 75, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mv-- {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important; }
+
+/**
+     * Add small margins.
+     */
+/* line 86, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-m- {
+  margin: 10px !important; }
+
+/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mt- {
+  margin-top: 10px !important; }
+
+/* line 88, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mr- {
+  margin-right: 10px !important; }
+
+/* line 89, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mb- {
+  margin-bottom: 10px !important; }
+
+/* line 90, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ml- {
+  margin-left: 10px !important; }
+
+/* line 91, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mh- {
+  margin-right: 10px !important;
+  margin-left: 10px !important; }
+
+/* line 92, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mv- {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
+
+/**
+     * Add large margins.
+     */
+/* line 103, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-m\+ {
+  margin: 40px !important; }
+
+/* line 104, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mt\+, .head__claim {
+  margin-top: 40px !important; }
+
+/* line 105, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mr\+ {
+  margin-right: 40px !important; }
+
+/* line 106, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mb\+ {
+  margin-bottom: 40px !important; }
+
+/* line 107, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ml\+ {
+  margin-left: 40px !important; }
+
+/* line 108, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mh\+ {
+  margin-right: 40px !important;
+  margin-left: 40px !important; }
+
+/* line 109, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mv\+ {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important; }
+
+/**
+     * Add huge margins.
+     */
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-m\+\+ {
+  margin: 80px !important; }
+
+/* line 121, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mt\+\+ {
+  margin-top: 80px !important; }
+
+/* line 122, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mr\+\+ {
+  margin-right: 80px !important; }
+
+/* line 123, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mb\+\+ {
+  margin-bottom: 80px !important; }
+
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ml\+\+ {
+  margin-left: 80px !important; }
+
+/* line 125, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mh\+\+ {
+  margin-right: 80px !important;
+  margin-left: 80px !important; }
+
+/* line 126, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mv\+\+ {
+  margin-top: 80px !important;
+  margin-bottom: 80px !important; }
+
+/**
+     * Remove margins.
+     */
+/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-m0 {
+  margin: 0 !important; }
+
+/* line 138, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mt0 {
+  margin-top: 0 !important; }
+
+/* line 139, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mr0 {
+  margin-right: 0 !important; }
+
+/* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mb0 {
+  margin-bottom: 0 !important; }
+
+/* line 141, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ml0 {
+  margin-left: 0 !important; }
+
+/* line 142, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mh0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
+
+/* line 143, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-mv0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+/**
+     * Padding helper classes.
+     *
+     * Add paddings.
+     */
+/* line 244, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-p {
+  padding: 20px !important; }
+
+/* line 245, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pt, .head__language-links, .menu, .alt-menu, .main, .more__column, .search__content, .last {
+  padding-top: 20px !important; }
+
+/* line 246, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pr {
+  padding-right: 20px !important; }
+
+/* line 247, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pb, .menu, .alt-menu, .more__column, .last {
+  padding-bottom: 20px !important; }
+
+/* line 248, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pl {
+  padding-left: 20px !important; }
+
+/* line 249, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ph {
+  padding-right: 20px !important;
+  padding-left: 20px !important; }
+
+/* line 250, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pv {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important; }
+
+/**
+     * Add tiny paddings.
+     */
+/* line 261, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-p-- {
+  padding: 5px !important; }
+
+/* line 262, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pt-- {
+  padding-top: 5px !important; }
+
+/* line 263, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pr-- {
+  padding-right: 5px !important; }
+
+/* line 264, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pb-- {
+  padding-bottom: 5px !important; }
+
+/* line 265, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pl-- {
+  padding-left: 5px !important; }
+
+/* line 266, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ph-- {
+  padding-right: 5px !important;
+  padding-left: 5px !important; }
+
+/* line 267, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pv-- {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important; }
+
+/**
+     * Add small paddings.
+     */
+/* line 278, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-p- {
+  padding: 10px !important; }
+
+/* line 279, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pt- {
+  padding-top: 10px !important; }
+
+/* line 280, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pr- {
+  padding-right: 10px !important; }
+
+/* line 281, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pb-, .menu__column {
+  padding-bottom: 10px !important; }
+
+/* line 282, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pl- {
+  padding-left: 10px !important; }
+
+/* line 283, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ph- {
+  padding-right: 10px !important;
+  padding-left: 10px !important; }
+
+/* line 284, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pv- {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important; }
+
+/**
+     * Add large paddings.
+     */
+/* line 295, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-p\+ {
+  padding: 40px !important; }
+
+/* line 296, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pt\+ {
+  padding-top: 40px !important; }
+
+/* line 297, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pr\+ {
+  padding-right: 40px !important; }
+
+/* line 298, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pb\+ {
+  padding-bottom: 40px !important; }
+
+/* line 299, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pl\+ {
+  padding-left: 40px !important; }
+
+/* line 300, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ph\+ {
+  padding-right: 40px !important;
+  padding-left: 40px !important; }
+
+/* line 301, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pv\+ {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important; }
+
+/**
+     * Add huge paddings.
+     */
+/* line 312, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-p\+\+ {
+  padding: 80px !important; }
+
+/* line 313, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pt\+\+ {
+  padding-top: 80px !important; }
+
+/* line 314, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pr\+\+ {
+  padding-right: 80px !important; }
+
+/* line 315, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pb\+\+ {
+  padding-bottom: 80px !important; }
+
+/* line 316, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pl\+\+ {
+  padding-left: 80px !important; }
+
+/* line 317, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-ph\+\+ {
+  padding-right: 80px !important;
+  padding-left: 80px !important; }
+
+/* line 318, /Users/nw/dev/sub/ipoa/ipoa-html-template/bower_components/inuit-spacing/trumps.spacing */
+.ic-pv\+\+ {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important; }
+
+/**
+ *
+ */
+/**
+ * Colors
+ */
+/**
+ * Transition
+ */
+/**
+ * Link
+ */
+/**
+ * Text Factor
+ */
+/**
+ * Letter Spacing
+ */
+/**
+ * Border
+ */
+/**
+ *
+ */
+/**
+ * Content Padding
+ */
+/**
+ *
+ */
+/**
+ * .body
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+.body {
+  text-rendering: optimizeLegibility;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-synthesis: none;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; }
+
+/**
+ * .image
+ */
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+.image {
+  width: 100%; }
+
+/**
+ * blockquote
+ */
+/* line 27, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+blockquote {
+  margin-left: 10px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    blockquote {
+      margin-left: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    blockquote {
+      margin-left: 37.5px; } }
+  @media screen and (min-width: 1201px) {
+    blockquote {
+      margin-left: 37.5px; } }
+  @media screen and (min-width: 1401px) {
+    blockquote {
+      margin-left: 37.5px; } }
+  /* line 39, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+  blockquote:before {
+    content: '„';
+    font-weight: bold;
+    margin-left: -10px;
+    margin-right: 2px; }
+  /* line 46, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+  blockquote:after {
+    content: '“';
+    font-weight: bold;
+    margin-left: 2px;
+    margin-right: -8px; }
+
+/**
+ * sub, sup
+ */
+/* line 59, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+sub:before, sup:before {
+  content: '';
+  margin-left: 2px; }
+/* line 64, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+sub:after, sup:after {
+  content: '';
+  margin-right: 2px; }
+
+/**
+ * a
+ */
+/* line 73, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+a {
+  color: #333; }
+
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/base */
+a, textarea, input {
+  outline: none; }
+
+/**
+ * class($name)
+ */
+/**
+ * class('hidden-on-phone')
+ */
+@media screen and (max-width: 767px) {
+  .hidden-on-phone {
+    display: none !important; } }
+
+@media screen and (max-width: 1023px) {
+  .hidden-sub-notebook {
+    display: none !important; } }
+
+/**
+ * class('nobr')
+ * what it does: prevents the browser to add a break / new line if there is not
+ * enough space to dislay things like long words
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.nobr, .head__link, .tracking__link {
+  white-space: nowrap; }
+
+/**
+ * class('m--default')
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.m--default, .picture, .main picture, .main__gallery picture, .caption, .main picture > div, .form, .search__form, .paragraph, .main h2 + div, .oadays h3 + div, .main__gallery, .main ul, .main h2 + div p, .oadays h3 + div p, .main table, .main table caption, .more ul, .search__field, .search__submit {
+  margin: 0 0 12px; }
+
+/**
+ * class('picture')
+ */
+/**
+ * class('caption')
+ */
+/**
+ * class('form')
+ */
+/**
+ * class('paragraph')
+ */
+/**
+ * @mixin responsive-content-padding()
+ */
+/**
+ * class('heading')
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.heading, .heading--alpha, .heading--beta, .main h2, .oadays h3, .heading--gamma, .more h3, .footer h3, .search__heading {
+  margin: 0; }
+
+/**
+ * class('heading--alpha')
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.heading--alpha {
+  margin: 12px 0; }
+  @media screen and (min-width: 768px) {
+    .heading--alpha {
+      margin: 24px 0; } }
+
+/**
+ * class('heading--beta')
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.heading--beta, .main h2, .oadays h3 {
+  margin: 24px 0 12px; }
+  @media screen and (min-width: 1201px) {
+    .heading--beta, .main h2, .oadays h3 {
+      margin: 0; } }
+
+/**
+ * class('heading--gamma')
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.heading--gamma, .more h3, .footer h3 {
+  margin: 12px 0; }
+
+/**
+ * .fa-twitter
+ */
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.fa-twitter:before {
+  color: #4ba3eb; }
+
+/**
+ * .fa-facebook
+ */
+/* line 127, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.fa-facebook:before {
+  color: #334f8d; }
+
+/**
+ * %ul--reset
+ */
+/**
+ * %text--huge
+ */
+/* line 141, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.head__claim {
+  font-size: 2em; }
+
+/**
+ * %text--large
+ */
+/* line 148, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.start__title, .start__button, .head__pagetitle {
+  font-size: 1.2em; }
+
+/**
+ * %text--small
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.text--small, .caption, .main picture > div, .last {
+  font-size: 0.8em; }
+
+/**
+ * %text--tiny
+ */
+/* line 6, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.text--tiny, .tracking__content, .footer__tracking {
+  font-size: 0.65em; }
+
+/**
+ * %text--bold
+ */
+/* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.start__button {
+  font-weight: bold; }
+
+/**
+ * %text--very-bright
+ */
+/* line 178, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.last {
+  color: #fff; }
+
+/**
+ * %border--big
+ */
+/* line 185, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.start__button {
+  border-width: 2px; }
+
+/**
+ * %link--default
+ */
+/* line 192, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.start__link, .head__link, .main a, .main ul a, .more a, .more ul a, .tracking__link, .footer a, .footer ul a, .last__link {
+  border-radius: 3px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  padding: 2px 3px 0; }
+
+/**
+ * %link--underline
+ * defines the style that is used to display the border-bottom
+ */
+/* line 206, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.main a, .main ul a, .more a, .footer a {
+  border-bottom-style: dotted; }
+
+/**
+ * %link--underline-on-bright
+ */
+/* line 213, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.main a, .main ul a, .more a, .footer a {
+  border-bottom-color: color-ipoa-green; }
+
+/**
+ * %link-in-linklist
+ */
+/* line 220, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.menu__link {
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  border-radius: 3px;
+  text-decoration: none;
+  padding: 1px;
+  margin: 0 0 0.3em 0.7em; }
+  /* line 227, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+  .menu__link:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url('../Images/angle-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px; }
+
+/**
+ * %link--in-linklist
+ */
+/* line 242, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.more ul a, .footer ul a {
+  margin: 0 0 0.3em 0.7em; }
+  /* line 245, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+  .more ul a:before, .footer ul a:before {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url('../Images/angle-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -15px; }
+
+/**
+ * %link--block
+ */
+/* line 260, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.menu__link, .more ul a, .footer ul a {
+  display: block;
+  padding: 3px 5px; }
+
+/**
+ * %link--block-on-bright
+ */
+/* line 268, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.more ul a, .footer ul a {
+  background-color: #eee; }
+
+/**
+ * %link--on-bright
+ */
+/* line 275, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.head__link, .start__link, .head__link:hover, .head__link:focus, .main a, .main ul a, .more a, .more ul a:hover, .more ul a:focus, .tracking__link:hover, .tracking__link:focus, .footer a, .footer ul a:hover, .footer ul a:focus, .last__link:hover, .last__link:focus {
+  color: #262626;
+  border-bottom-color: #360; }
+  /* line 280, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+  .head__link:hover, .start__link:hover, .main a:hover, .more a:hover, .more ul a:hover, .tracking__link:hover, .footer a:hover, .footer ul a:hover, .last__link:hover, .head__link:focus, .start__link:focus, .main a:focus, .more a:focus, .more ul a:focus, .tracking__link:focus, .footer a:focus, .footer ul a:focus, .last__link:focus {
+    border-color: #360;
+    background-color: #360;
+    color: #fff; }
+  /* line 286, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+  .head__link:active, .start__link:active, .main a:active, .more a:active, .more ul a:active:hover, .more ul a:active:focus, .tracking__link:active:hover, .tracking__link:active:focus, .footer a:active, .footer ul a:active:hover, .footer ul a:active:focus, .last__link:active:hover, .last__link:active:focus {
+    border-color: #fc0;
+    background-color: #fc0;
+    color: #262626; }
+
+/**
+ * .link__button-on-bright
+ */
+/* line 296, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.tracking__link, .last__link {
+  background-color: #eee;
+  padding: 3px 5px; }
+
+/**
+ * %headlink-on-bright
+ */
+/* line 304, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.head__link {
+  border-color: #fff;
+  background-color: #fff; }
+
+/**
+ * %link-on-dark
+ */
+/**
+ * %link--with-icon-on-dark
+ */
+/**
+ * %link--with-icon-on-bright
+ */
+/**
+ * .no-js .on-demand__link
+ */
+/* line 358, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/extend */
+.no-js .on-demand__link {
+  display: none; }
+
+/**
+ * .start
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start {
+  background: url('../Images/bg-1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100%; }
+
+/**
+ * .start__header
+ */
+/**
+ * .start__logo
+ */
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start__logo {
+  margin: 10vh 0 0; }
+  @media screen and (min-width: 768px) {
+    .start__logo {
+      text-align: right; } }
+  /* line 29, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+  .start__logo .image {
+    max-width: 250px; }
+
+/**
+ * .start__title
+ */
+/* line 37, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start__title {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .start__title {
+      display: inline-block;
+      text-align: left;
+      padding: 10vh 0 0 3vh; } }
+
+/**
+ * .start__main
+ */
+/* line 54, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start__main {
+  padding: 2vh 0 0; }
+
+/**
+ * .start__navigation
+ */
+/**
+ * .start__button
+ */
+/* line 68, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start__button {
+  background-color: #fff;
+  color: #262626;
+  margin: 5px; }
+  /* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+  .start__button:hover, .start__button:active, .start__button:focus {
+    background-color: #d9d9d9;
+    color: #262626; }
+
+/* line 85, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start nav a {
+  border: 0; }
+  /* line 88, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+  .start nav a:hover {
+    background-color: transparent; }
+
+/**
+ * .start__footer
+ */
+/**
+ * .start__footer-content
+ */
+/* line 103, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start__footer-content {
+  width: 100vw;
+  padding: 5vh 0 0; }
+
+/**
+ * .start__list
+ */
+/**
+ * .start__link
+ */
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/start */
+.start__link {
+  padding: 7px;
+  border: 0; }
+
+/**
+ * .head
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 40px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .head {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .head {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .head {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .head {
+      padding-left: 200px;
+      padding-right: 200px; } }
+  @media screen and (min-width: 768px) {
+    .head {
+      background: url('../Images/bg-h-1.jpg') no-repeat center center fixed;
+      background-size: cover; } }
+
+/**
+ * .head__links
+ */
+/* line 20, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__links {
+  text-align: right; }
+  @media screen and (min-width: 768px) {
+    .head__links {
+      text-align: left; } }
+
+@media screen and (max-width: 480px) {
+  .head-nav .head__links {
+    display: none; } }
+
+/**
+ * .head__link
+ * 1. give the icon a little bit more space to top
+ * 2. these links are not allowed to break into a new line
+ */
+/* line 39, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__link {
+  padding: 7px 5px 5px; }
+  /* line 48, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+  .head__link:hover svg, .head__link:focus svg {
+    color: #fff;
+    fill: currentColor; }
+  /* line 55, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+  .head__link:active svg {
+    color: #262626; }
+
+/**
+ * .head__link--active
+ */
+/* line 61, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__link--active {
+  background-color: #262626;
+  color: #fff; }
+
+/**
+ * .head__list
+ * 1. LIs are inline
+ * 2. UL is inline
+ */
+/* line 71, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__list {
+  display: inline; }
+
+/**
+ * .head__menubutton
+ * 1. simulating "@extend .ic-mt+"
+ */
+@media screen and (min-width: 768px) {
+  .head__menubutton {
+    text-align: right;
+    padding-right: 40px !important; } }
+
+/**
+ * .head__language-links
+ * the block that contains the various links to choose a different language
+ * hidden by default
+ * visible if ___ clicked
+ */
+/* line 99, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__language-links {
+  line-height: 220%;
+  padding-left: 0;
+  text-align: right;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .head__language-links {
+      text-align: left; } }
+  @media screen and (max-width: 480px) {
+    .head__language-links {
+      display: block;
+      text-align: left; } }
+  /* line 114, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+  .head__language-links g {
+    fill: #fff; }
+
+/**
+ * .no-js .head__language-links
+ * always show language selection links if user has no JS
+ */
+/* line 121, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.no-js .head__language-links {
+  display: block; }
+
+/**
+ * .language-icon--push-right-in-header
+ * align language icon with those above
+ * FIXME : dirty numbers
+ */
+/* line 130, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.language-icon--push-right-in-header {
+  padding-left: 8px; }
+
+/**
+ * .no-js .head__language-indicator
+ */
+/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.no-js .head__language-indicator {
+  display: none; }
+
+/**
+ * .head__logo
+ * 1. simulating "@extend .ic-pr"
+ */
+/* line 146, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__logo {
+  text-align: center; }
+  /* line 152, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+  .head__logo img {
+    width: 150px; }
+  @media screen and (min-width: 768px) {
+    .head__logo {
+      padding-right: 40px !important; }
+      /* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+      .head__logo img {
+        width: 100%;
+        max-width: 250px; } }
+
+/**
+ * .head__claim
+ * only visible in tablet-and-up
+ * 1.,2. show claim only if enough screen estate is available
+ */
+/* line 172, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__claim {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .head__claim {
+      display: inline-block;
+      letter-spacing: 0.05em; }
+      @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        .head__claim {
+          margin-top: 80px !important;
+          -webkit-transform: translateY(-10%);
+          -ms-transform: translateY(-10%);
+          transform: translateY(-10%); } } }
+
+/**
+ * .head__pagetitle
+ * 1. align page title with content
+ */
+/* line 194, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head__pagetitle {
+  text-align: center;
+  letter-spacing: 0.1em; }
+  @media screen and (min-width: 768px) {
+    .head__pagetitle {
+      text-align: left; } }
+  @media screen and (min-width: 1201px) {
+    .head__pagetitle {
+      position: relative;
+      -webkit-transform: translateX(25%);
+      -ms-transform: translateX(25%);
+      transform: translateX(25%); } }
+
+/**
+ * .head-nav
+ */
+/* line 211, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head-nav {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 50px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .head-nav {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .head-nav {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .head-nav {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .head-nav {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .no-js .head-nav
+ */
+/* line 229, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.no-js .head-nav {
+  position: relative; }
+
+/**
+ * .head-nav--narrow
+ */
+/* line 236, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+.head-nav--narrow {
+  background-color: #fff;
+  border-bottom: 1px solid #b3b3b3; }
+
+/**
+ * .menu
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+  z-index: 99; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .menu {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .menu {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .menu {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .menu {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .no-js .menu
+ * JS Fallback
+ * always show the menu if user has no JS.
+ */
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.no-js .menu {
+  display: block; }
+
+/**
+ * .menu__button
+ */
+/* line 28, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu__button {
+  padding: 5px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #262626;
+  text-decoration: none; }
+  /* line 37, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+  .menu__button:hover, .menu__button:focus {
+    background-color: #360;
+    color: #fff; }
+    /* line 41, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+    .menu__button:hover svg, .menu__button:focus svg {
+      color: #fff;
+      fill: currentColor; }
+  /* line 47, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+  .menu__button:active {
+    background-color: #fc0;
+    color: #262626; }
+    /* line 51, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+    .menu__button:active svg {
+      color: #262626; }
+
+/**
+ * .menu__column
+ * formats every menu section to appear and behave like a column e. g. have many
+ * menu sections side by side in various breakpoint viewports
+ */
+/* line 60, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu__column {
+  background-color: #fff; }
+  @media screen and (max-width: 767px) {
+    .menu__column {
+      padding-left: 5px; } }
+
+/**
+ * .menu__list
+ * formats menu__list to be a list without list-style-type
+ */
+/**
+ * .menu__list--indented
+ */
+/* line 77, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu__list--indented {
+  margin-left: 20px; }
+
+/**
+ * .menu__link
+ * define how links in the menu appear
+ */
+/* line 86, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu__link {
+  color: #262626; }
+  /* line 92, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+  .menu__link:before {
+    margin-left: -17px; }
+  /* line 95, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+  .menu__link:hover, .menu__link:focus {
+    color: #fff;
+    background: #360; }
+  /* line 100, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+  .menu__link:active {
+    color: #262626;
+    background: #fc0; }
+
+/**
+ * .menu__link--active
+ * modifier that defines how a menu link looks like if the page the link would
+ * lead to is the current page
+ */
+/* line 111, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu__link--active {
+  color: #262626;
+  background: #fc0; }
+
+/**
+ * .menu__link--has-children
+ */
+/* line 120, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.menu__link--has-children:before {
+  background-image: url('../Images/angle-double-right.svg'); }
+
+/**
+ * .alt-menu
+ */
+/* line 126, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.alt-menu {
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: 99; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .alt-menu {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .alt-menu {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .alt-menu {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .alt-menu {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .alt-menu--off-canvas
+ * a modifier that moves the alt-menu off canvas
+ */
+/* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.alt-menu--off-canvas {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  padding: 0;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%); }
+
+/* line 149, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.alt-menu .head__list {
+  text-align: center;
+  display: block; }
+  @media screen and (min-width: 481px) {
+    .alt-menu .head__list {
+      display: none; } }
+
+/* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/menu */
+.alt-menu .head__language-links .head__list {
+  text-align: left; }
+
+/**
+ * .main
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main {
+  padding-left: 5px;
+  padding-right: 5px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .main {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .main {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .main {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .main {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ *
+ */
+/**
+ *
+ */
+@media screen and (min-width: 1201px) {
+  .main picture > div {
+    text-align: right; } }
+
+/**
+ * A link in the main content column
+ */
+/**
+ *
+ */
+/**
+ *
+ */
+/* line 53, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main h2 {
+  line-height: 37px; }
+  @media screen and (min-width: 1201px) {
+    .main h2 {
+      text-align: right; } }
+
+/* line 63, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.oadays h3 {
+  line-height: 37px; }
+  @media screen and (min-width: 1201px) {
+    .oadays h3 {
+      text-align: right; } }
+
+/* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.search .sort--active {
+  background-color: #eee;
+  font-weight: 400; }
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.search .highlight {
+  font-weight: 400; }
+/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.search ul li > a {
+  font-weight: 400; }
+/* line 91, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.search li {
+  margin-bottom: 10px; }
+
+/**
+ *
+ */
+/**
+ *
+ */
+/* line 106, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main ul {
+  padding-left: 24px; }
+  @media screen and (max-width: 480px) {
+    .main ul {
+      padding-left: 12px; } }
+
+/* line 114, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main ul ul {
+  margin-bottom: 0 !important; }
+
+/* line 119, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main ul li:before {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  width: 6px;
+  background-image: url('../Images/angle-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -15px;
+  margin-right: 4px;
+  margin-bottom: -2px; }
+
+/**
+ * .main__linklist--reset
+ */
+/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main h2 > div > ul {
+  padding-left: 0; }
+
+/**
+ * .main__textblock
+ */
+@media screen and (min-width: 1201px) {
+  /* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  main h2 + div p:first-child {
+    margin-top: 9px; }
+
+  /* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  main h2 + div ul:first-child {
+    margin-top: 9px; }
+
+  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .oadays h2 + div p:first-child {
+    margin-top: 10px; }
+
+  /* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main h3 + div p:first-child {
+    margin-top: 7px; }
+ }
+
+/* line 175, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.oadays h3 + div img {
+  -webkit-clip-path: circle(25px at center);
+  clip-path: circle(25px at center);
+  border-radius: 50%;
+  width: 50px;
+  margin-bottom: -10px; }
+
+/* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.twitter img {
+  -webkit-clip-path: circle(25px at center);
+  clip-path: circle(25px at center);
+  border-radius: 50%;
+  width: 20px !important;
+  margin-bottom: -5px; }
+
+/* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.oadays h4 {
+  margin-bottom: 5px; }
+
+/**
+ * .main__table
+ */
+/* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main table {
+  width: 100%; }
+  /* line 207, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main table caption {
+    text-align: left; }
+  /* line 212, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main table thead {
+    border-bottom: 1px solid #262626; }
+  /* line 214, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main table td {
+    padding: 5px; }
+  /* line 216, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main table .uneven {
+    background-color: #f2f2f2; }
+
+/**
+ * .main__gallery
+ */
+/* line 236, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main img {
+  width: 100%; }
+
+/**
+ * .more
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/more */
+.more {
+  padding-left: 5px;
+  padding-right: 5px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .more {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .more {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .more {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .more {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .more__column
+ */
+/**
+ * .more__list
+ */
+/**
+ * .more__link
+ */
+/**
+ * .more__link--in-list
+ * 1. move the chevron a tad lower
+ */
+/* line 58, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/more */
+.more ul a:before {
+  margin-bottom: -2px; }
+
+/**
+ * .search
+ * 1. pseudo space above the search box to avoid scrolling via anchor behind
+ *    the fixed head menu bar
+ *    http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-B
+ */
+/* line 9, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search:before {
+  display: block;
+  content: '';
+  height: 50px;
+  margin: -50px 0 0; }
+
+/**
+ * .search__content
+ */
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__content {
+  padding-left: 5px;
+  padding-right: 5px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .search__content {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .search__content {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .search__content {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .search__content {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .search__heading
+ */
+/* line 30, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__heading {
+  line-height: 37px; }
+  @media screen and (min-width: 1201px) {
+    .search__heading {
+      text-align: right; } }
+
+/**
+ * .search__enter
+ */
+/**
+ * .search__form
+ */
+/* line 52, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__form {
+  display: inline;
+  width: 100%; }
+
+/**
+ * .search__field
+ */
+/* line 61, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__field {
+  display: inline-block;
+  width: 100%; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .search__field {
+      width: 48%; } }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .search__field {
+      width: 73%; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .search__field {
+      width: 50%; } }
+  @media screen and (min-width: 1201px) {
+    .search__field {
+      width: 65.75%; } }
+
+/**
+ * .search__input
+ */
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  background: none;
+  border: 1px solid #262626; }
+
+/**
+ * .search__submit
+ * 1.,3.,5. simulating "@extend .ic-pl"
+ * 2.,4. FIXME : dirty number
+ */
+/* line 97, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__submit {
+  display: inline-block;
+  width: 100%; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .search__submit {
+      width: 50%;
+      padding-left: 20px !important; } }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .search__submit {
+      width: 27%; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .search__submit {
+      width: 50%;
+      padding-left: 20px !important; } }
+  @media screen and (min-width: 1201px) {
+    .search__submit {
+      width: 34.25%;
+      padding-left: 20px !important; } }
+
+/**
+ * .search__button
+ */
+/* line 123, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+.search__button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #360;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.05em;
+  border: 1px solid #360; }
+  /* line 134, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
+  .search__button:hover {
+    background-color: #fc0;
+    color: #262626;
+    border: 1px solid #fc0; }
+
+/**
+ * .tracking
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+.tracking {
+  padding-left: 5px;
+  padding-right: 5px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .tracking {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .tracking {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .tracking {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .tracking {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .tracking__content
+ */
+@media screen and (min-width: 1024px) {
+  .tracking__content {
+    text-align: right; } }
+
+/**
+ * .tracking__link
+ */
+/* line 23, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+.tracking__link {
+  padding: 3px 3px 3px 0; }
+  /* line 33, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+  .tracking__link:hover svg, .tracking__link:focus svg {
+    color: #fff;
+    fill: currentColor; }
+  /* line 39, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/tracking */
+  .tracking__link:active svg {
+    color: #262626; }
+
+/**
+ * .footer__content
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer */
+.footer__content {
+  padding-left: 5px;
+  padding-right: 5px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .footer__content {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .footer__content {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .footer__content {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .footer__content {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .footer__column
+ */
+/**
+ * .footer__tracking
+ */
+@media screen and (min-width: 1024px) {
+  .footer__tracking {
+    text-align: right; } }
+
+/**
+ * .footer__list
+ */
+/**
+ * .footer__link
+ */
+/**
+ * .footer__link--in-list
+ * 1. move the chevron a tad lower
+ */
+/* line 61, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer */
+.footer ul a:before {
+  margin-bottom: -2px; }
+
+/**
+ * .last
+ */
+/* line 5, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/last */
+.last {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 1px solid #a6a6a6; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .last {
+      padding-left: 25px;
+      padding-right: 25px; } }
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .last {
+      padding-left: 75px;
+      padding-right: 75px; } }
+  @media screen and (min-width: 1201px) {
+    .last {
+      padding-left: 150px;
+      padding-right: 150px; } }
+  @media screen and (min-width: 1401px) {
+    .last {
+      padding-left: 200px;
+      padding-right: 200px; } }
+
+/**
+ * .last__block1
+ */
+/**
+ * .last__block2
+ */
+@media screen and (min-width: 768px) {
+  .last__block2 {
+    text-align: right; } }
+
+/**
+ * .last__list
+ */
+/**
+ * .last__link
+ */
+/**
+ * .footer-hide
+ */
+/* line 4, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer-hide */
+.footer-hide {
+  position: relative;
+  z-index: 0; }
+
+/**
+ * .footer-hide__helper
+ */
+/* line 12, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer-hide */
+.footer-hide__helper {
+  position: relative;
+  z-index: 1;
+  background-color: #fff; }
+
+/**
+ * .footer-hide__helper--shifted
+ */
+/* line 21, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/footer-hide */
+.footer-hide__helper--shifted {
+  -webkit-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  transform: translateX(30%);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  position: fixed; }
+  @media screen and (max-width: 480px) {
+    .footer-hide__helper--shifted {
+      display: none; } }
+
+/**
+ * .footer-hide__content
+ */
+@media screen and (min-width: 1024px) {
+  .footer-hide__content {
+    position: fixed;
+    z-index: -1;
+    bottom: 0; } }
+
+/**
+ * .no-js .footer-hide__content
+ * no-js fallback
+ * don't hide the footer if there is no js available
+ */
+@media screen and (min-width: 1024px) {
+  .no-js .footer-hide__content {
+    position: relative;
+    z-index: 0; } }
+
+/**
+ *
+ */
+/* line 4, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8); }
+
+/**
+ *
+ */
+/* line 12, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon--xs {
+  -webkit-transform: scale(0.4) translateY(90%);
+  -ms-transform: scale(0.4) translateY(90%);
+  transform: scale(0.4) translateY(90%); }
+
+/**
+ *
+ */
+/* line 19, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon--s {
+  -webkit-transform: scale(0.7) translateY(40%);
+  -ms-transform: scale(0.7) translateY(40%);
+  transform: scale(0.7) translateY(40%); }
+
+/**
+ *
+ */
+/* line 26, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon--default {
+  -webkit-transform: scale(0.9) translateY(10%);
+  -ms-transform: scale(0.9) translateY(10%);
+  transform: scale(0.9) translateY(10%); }
+
+/**
+ *
+ */
+/* line 33, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon--l {
+  -webkit-transform: scale(1.1) translateY(10%);
+  -ms-transform: scale(1.1) translateY(10%);
+  transform: scale(1.1) translateY(10%); }
+
+/**
+ *
+ */
+/* line 40, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-on-bright, .start__link .fa-icon {
+  color: #262626;
+  fill: currentColor; }
+
+/**
+ *
+ */
+/* line 48, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-on-dark, .start__link:hover .fa-icon, .start__link:active .fa-icon, .start__link:focus .fa-icon {
+  color: #fff;
+  fill: currentColor; }
+
+/**
+ *
+ */
+/* line 56, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-search {
+  width: 26px;
+  height: 26px; }
+
+/**
+ *
+ */
+/* line 64, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-home {
+  width: 26px;
+  height: 26px; }
+
+/**
+ *
+ */
+/* line 72, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-bars {
+  width: 28px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 80, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-twitter {
+  width: 26px;
+  height: 28px;
+  color: #4ba3eb;
+  fill: currentColor; }
+
+/**
+ *
+ */
+/* line 90, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-facebook {
+  width: 16px;
+  height: 28px;
+  color: #334f8d;
+  fill: currentColor; }
+
+/**
+ *
+ */
+/* line 100, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-globe {
+  width: 26px;
+  height: 26px; }
+
+/**
+ *
+ */
+/* line 108, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-gavel {
+  width: 28px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 116, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-comments-o {
+  width: 28px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 124, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-angle-right {
+  width: 10px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 132, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-smile-o {
+  width: 28px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 140, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-rss-square {
+  width: 28px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 148, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-toggle-on {
+  width: 32px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 156, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-toggle-off {
+  width: 32px;
+  height: 28px; }
+
+/**
+ *
+ */
+/* line 164, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-sitemap {
+  width: 26px;
+  height: 26px; }
+
+/**
+ *
+ */
+/* line 172, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-info {
+  width: 20px;
+  height: 26px; }
+
+/**
+ *
+ */
+/* line 180, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/icon */
+.fa-icon-bolt {
+  width: 14px;
+  height: 28px; }
+
+/* line 1, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/shame */
+.footer__column img {
+  width: 100%;
+  max-width: 100%;
+  height: 75px; }
+/*# sourceMappingURL=style.css.map */
