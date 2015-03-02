@@ -26,5 +26,7 @@
 'deploy':
   - 'copy:ghpages'
   - 'uncss:start'
+  - 'copy:duplicateStartCSStoOrig'
+  - 'copy:duplicateStyleCSStoOrig'
   - 'cssmin:start'
   - 'cssmin:style'

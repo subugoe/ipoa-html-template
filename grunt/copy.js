@@ -39,6 +39,16 @@ module.exports = {
       src: ['**'],
       dest: '../ipoa-html-template-gh-pages/'
     }],
+  },
+
+  duplicateStyleCSStoOrig: {
+    src: '../ipoa-html-template-gh-pages/css/style.css',
+    dest: '../ipoa-html-template-gh-pages/css/style.orig.css'
+  },
+
+  duplicateStartCSStoOrig: {
+    src: '../ipoa-html-template-gh-pages/css/start.css',
+    dest: '../ipoa-html-template-gh-pages/css/start.orig.css'
   }
 
 };
