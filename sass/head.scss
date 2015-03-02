@@ -9,7 +9,7 @@
 	padding-top: 40px;
 
 	@include media-query('tablet-and-up') { // [2]
-		background: url('../img/bg-h-1.jpg') no-repeat center center fixed;
+		background: url('../Images/bg-h-1.jpg') no-repeat center center fixed;
 		background-size: cover;
 	}
 }
