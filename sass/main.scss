@@ -70,6 +70,31 @@
 	@include media-query('desk-and-up') { text-align: right; }
 }
 
+.search {
+	.sort--active {
+		background-color: #eee;
+		font-weight: 400;
+	}
+
+	.highlight {
+		// background-color: #eee;
+		// color: #000;
+		// border-radius: 3px;
+		// padding: 3px;
+		font-weight: 400;
+	}
+
+	ul li > a {
+		font-weight: 400;
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+
+
 /**
  *
  */
