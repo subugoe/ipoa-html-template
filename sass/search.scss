@@ -124,16 +124,16 @@
 	width: 100%;
 	padding: round($inuit-base-spacing-unit / 2);
 	border-radius: $link-border-radius--default;
-	background-color: $color-ipoa-green;
+	background-color: $color-ipoa-yellow;
 	font-weight: bold;
-	color: $color--brightest;
+	color: $color--darkest;
 	letter-spacing: $letter-spacing--large;
 	border: $border-width--default solid $color-ipoa-green;
 	@if $search-theme-dark { border-color: $color--brightest; }
 
 	&:hover {
-		background-color: $color-ipoa-yellow;
-		color: $color--darkest;
-		border: $border-width--default solid $color-ipoa-yellow;
+		background-color: $color-ipoa-green;
+		color: $color--brightest;
+		border: $border-width--default solid $color-ipoa-green;
 	}
 }
