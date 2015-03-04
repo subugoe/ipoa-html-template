@@ -37,6 +37,22 @@
 	@extend %link--underline-on-bright;
 }
 
+.main picture a {
+	border-bottom-color: transparent;
+	padding: 0;
+	border-width: 0;
+
+	&:hover {
+		background-color: transparent;
+		border: transparent;
+	}
+
+	img {
+		border: 2px solid green;
+		border-radius: 2px;
+	}
+}
+
 /**
  *
  */
