@@ -57,3 +57,11 @@
 
 	&:before { margin-bottom: $shift-chevron-before-content; } // 1.
 }
+
+.more picture {
+
+	img {
+		max-width: 100%;
+	}
+	// @extend %picture;
+}
