@@ -4270,37 +4270,51 @@ a, textarea, input {
 /**
  * A link in the main content column
  */
+/* line 40, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+.main picture a {
+  border-bottom-color: transparent;
+  padding: 0;
+  border-width: 0; }
+  /* line 45, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main picture a:hover {
+    background-color: transparent;
+    border: transparent; }
+  /* line 50, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  .main picture a img {
+    border: 2px solid green;
+    border-radius: 2px; }
+
 /**
  *
  */
 /**
  *
  */
-/* line 53, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 69, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main h2 {
   line-height: 37px; }
   @media screen and (min-width: 1201px) {
     .main h2 {
       text-align: right; } }
 
-/* line 63, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .oadays h3 {
   line-height: 37px; }
   @media screen and (min-width: 1201px) {
     .oadays h3 {
       text-align: right; } }
 
-/* line 74, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 90, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .search .sort--active {
   background-color: #eee;
   font-weight: 400; }
-/* line 79, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 95, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .search .highlight {
   font-weight: 400; }
-/* line 87, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 103, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .search ul li > a {
   font-weight: 400; }
-/* line 91, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 107, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .search li {
   margin-bottom: 10px; }
 
@@ -4310,18 +4324,18 @@ a, textarea, input {
 /**
  *
  */
-/* line 106, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 122, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main ul {
   padding-left: 24px; }
   @media screen and (max-width: 480px) {
     .main ul {
       padding-left: 12px; } }
 
-/* line 114, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 130, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main ul ul {
   margin-bottom: 0 !important; }
 
-/* line 119, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 135, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main ul li:before {
   content: '';
   display: inline-block;
@@ -4338,7 +4352,7 @@ a, textarea, input {
 /**
  * .main__linklist--reset
  */
-/* line 137, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 153, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main h2 > div > ul {
   padding-left: 0; }
 
@@ -4346,24 +4360,24 @@ a, textarea, input {
  * .main__textblock
  */
 @media screen and (min-width: 1201px) {
-  /* line 155, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 171, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   main h2 + div p:first-child {
     margin-top: 9px; }
 
-  /* line 159, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 175, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   main h2 + div ul:first-child {
     margin-top: 9px; }
 
-  /* line 163, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 179, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   .oadays h2 + div p:first-child {
     margin-top: 10px; }
 
-  /* line 167, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 183, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   .main h3 + div p:first-child {
     margin-top: 7px; }
  }
 
-/* line 175, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 191, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .oadays h3 + div img {
   -webkit-clip-path: circle(25px at center);
   clip-path: circle(25px at center);
@@ -4371,7 +4385,7 @@ a, textarea, input {
   width: 50px;
   margin-bottom: -10px; }
 
-/* line 186, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .twitter img {
   -webkit-clip-path: circle(25px at center);
   clip-path: circle(25px at center);
@@ -4379,33 +4393,33 @@ a, textarea, input {
   width: 20px !important;
   margin-bottom: -5px; }
 
-/* line 195, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 211, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .oadays h4 {
   margin-bottom: 5px; }
 
 /**
  * .main__table
  */
-/* line 202, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 218, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main table {
   width: 100%; }
-  /* line 207, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 223, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   .main table caption {
     text-align: left; }
-  /* line 212, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 228, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   .main table thead {
     border-bottom: 1px solid #262626; }
-  /* line 214, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 230, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   .main table td {
     padding: 5px; }
-  /* line 216, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+  /* line 232, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
   .main table .uneven {
     background-color: #f2f2f2; }
 
 /**
  * .main__gallery
  */
-/* line 236, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
+/* line 252, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/main */
 .main img {
   width: 100%; }
 
@@ -4449,6 +4463,10 @@ a, textarea, input {
 /* line 58, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/more */
 .more ul a:before {
   margin-bottom: -2px; }
+
+/* line 63, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/more */
+.more picture img {
+  max-width: 100%; }
 
 /**
  * .search
@@ -4572,16 +4590,16 @@ a, textarea, input {
   width: 100%;
   padding: 10px;
   border-radius: 3px;
-  background-color: #360;
+  background-color: #fc0;
   font-weight: bold;
-  color: #fff;
+  color: #262626;
   letter-spacing: 0.05em;
   border: 1px solid #360; }
   /* line 134, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/search */
   .search__button:hover {
-    background-color: #fc0;
-    color: #262626;
-    border: 1px solid #fc0; }
+    background-color: #360;
+    color: #fff;
+    border: 1px solid #360; }
 
 /**
  * .tracking

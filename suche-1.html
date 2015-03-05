@@ -129,7 +129,7 @@ NOTE : set lang via CMS related to the actual page language
 
       <h2>Suchtreffer "Verlage"</h2><!--
       --><div>
-        <p>Sie können die Treffer nach <a href="" class="sort--active">Relevanz</a>, <a href="">Titel</a> bzw. <a href="">Datum</a> sortieren und die Reihenfolge <a href="" class="sort--active">absteigend</a> / <a href="#">aufsteigend</a> beeinflussen.</p>
+        <p>Sie können die Treffer nach <a href="" class="sort--active">Relevanz</a>, <a href="">Titel</a> bzw. <a href="">Datum</a> sortieren.</p>
         <ul>
           <li><a href="#">Was kann Open Access alles bedeuten?</a><br>Eingeschränkte Rechte für den <span class="highlight">Testredakteur</span>? Paragraph Eigentlich sollte hier ein langer Text stehen. Bullet list test test Nummerierte Liste test test Heading 3 Heading 4 Was soll „Quotation“? Die Anführungszeichen mittels Insert special character Quotation With images Die Rückseite eines Bibliotheksausweises der SUB Göttingen Hier muss Table Caption hinein Essen Trinken Huhn Weisswein Blumenkohl</li>
           <li><a href="#">Tagungsort als Testseite für den Testredakteur Advanced Editing</a><br>Tagungsort und der Text dazu Diese Gruppe hat Bearbeitungsrechte für alle Funktionen und Typen, im <span class="highlight">Seitenbaum</span> aber nur für zentrale Systemordner (Meldungen).</li>
@@ -151,15 +151,20 @@ NOTE : set lang via CMS related to the actual page language
     <p>Lorem ipsum, <a href="#">consectetur adipiscing</a> elit. Aliquam luctus magna tellus. Pellentesque augue nisi, porttitor nec commodo vitae, pharetra vitae mi. Phasellus faucibus molestie dapibus. In consectetur quam nec mauris lacinia vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mi ligula, faucibus a ultrices vitae, pellentesque id nulla.</p>
   </div><!--
   --><div class="more__column">
-    <h3>Allgemeines</h3>
-    <p>Lorem ipsum dolor sit amut.</p>
-    <ul>
-      <li><a href="#">Gründe und Vorbehalten</a></li>
-      <li><a href="#">Geschäftsmodelle</a></li>
-      <li><a href="#">Rechtsfragen</a></li>
-      <li><a href="#">FAQ</a></li>
-    </ul>
-    <p class="paragraph">Lorem ipsum dolor sit amut.</p>
+    <h3>Ein Bild</h3>
+    <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+      <source srcset="Images/image-2--480.jpg, Images/image-2--480-2x.jpg 2x" media="(max-width: 480px)">
+      <source srcset="Images/image-2--768.jpg, Images/image-2--768-2x.jpg 2x" media="(max-width: 768px)">
+      <source srcset="Images/image-2--1024.jpg, Images/image-2--1024-2x.jpg 2x" media="(max-width: 1024px)">
+      <source srcset="Images/image-2--1200.jpg, Images/image-2--1200-2x.jpg 2x" media="(max-width: 1200px)">
+      <source srcset="Images/image-2--1400.jpg, Images/image-2--1400-2x.jpg 2x" media="(min-width: 1201px)">
+      <!--[if IE 9]></video><![endif]-->
+      <img src="Images/image-2--768.jpg" srcset="Images/image-2--768.jpg, Images/image-2--768-2x.jpg 2x">
+      <div>
+        This is a image caption.<br>Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut. Lorem ipsum dolor sit amut.
+      </div>
+    </picture>
   </div><!--
   --><div class="more__column">
     <h3>News</h3>
