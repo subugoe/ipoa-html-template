@@ -210,12 +210,6 @@ jQuery(document).ready(function () {
         jQuery('.head-nav').addClass('head-nav--narrow');
         jQuery('.head').removeAttr('style');
       }
-      // upscroll code
-      // else {
-      //   console.log('scroll up');
-      //   console.log(jQuery('.head')[0].scrollHeight);
-      //   console.log(jQuery(this).scrollTop());
-      // }
       if (jQuery(this).scrollTop() < 10) {
         jQuery('.head-nav').removeClass('head-nav--narrow');
       }
