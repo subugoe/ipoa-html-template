@@ -4021,13 +4021,7 @@ a, textarea, input {
   top: 0;
   left: 0;
   z-index: 9999;
-  height: 50px;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform; }
+  height: 50px; }
   @media screen and (min-width: 481px) and (max-width: 1023px) {
     .head-nav {
       padding-left: 25px;
@@ -4048,14 +4042,14 @@ a, textarea, input {
 /**
  * .no-js .head-nav
  */
-/* line 229, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+/* line 230, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
 .no-js .head-nav {
   position: relative; }
 
 /**
  * .head-nav--narrow
  */
-/* line 236, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+/* line 237, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
 .head-nav--narrow {
   background-color: #fff;
   border-bottom: 1px solid #b3b3b3; }
