@@ -151,7 +151,6 @@ jQuery(document).ready(function () {
           'transform': 'translateX(-100%)',
           '-webkit-transform': 'translateX(-100%)',
           '-ms-transform': 'translateX(-100%)',
-          'transition': '0.25s ease-in-out',
         });
 
         // restablish content stuff to be used as normal again
@@ -173,7 +172,6 @@ jQuery(document).ready(function () {
           'transform': 'translateX(0%)',
           '-webkit-transform': 'translateX(0%)',
           '-ms-transform': 'translateX(0%)',
-          'transition': '0.25s ease-in-out',
         });
 
         // make the menu content fill the whole left side (top to bottom) and
@@ -210,12 +208,6 @@ jQuery(document).ready(function () {
         jQuery('.head-nav').addClass('head-nav--narrow');
         jQuery('.head').removeAttr('style');
       }
-      // upscroll code
-      // else {
-      //   console.log('scroll up');
-      //   console.log(jQuery('.head')[0].scrollHeight);
-      //   console.log(jQuery(this).scrollTop());
-      // }
       if (jQuery(this).scrollTop() < 10) {
         jQuery('.head-nav').removeClass('head-nav--narrow');
       }

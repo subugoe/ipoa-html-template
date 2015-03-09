@@ -4042,14 +4042,14 @@ a, textarea, input {
 /**
  * .no-js .head-nav
  */
-/* line 230, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+/* line 227, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
 .no-js .head-nav {
   position: relative; }
 
 /**
  * .head-nav--narrow
  */
-/* line 237, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
+/* line 234, /Users/nw/dev/sub/ipoa/ipoa-html-template/sass/head */
 .head-nav--narrow {
   background-color: #fff;
   border-bottom: 1px solid #b3b3b3; }
