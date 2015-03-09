@@ -4754,8 +4754,6 @@ a, textarea, input {
   -webkit-transform: translateX(30%);
   -ms-transform: translateX(30%);
   transform: translateX(30%);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
   position: fixed; }
   @media screen and (max-width: 480px) {
     .footer-hide__helper--shifted {
