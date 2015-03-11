@@ -20,7 +20,6 @@
  */
 .footer-hide__helper--shifted {
 	transform: translateX(30%);
-	transition: .25s ease-in-out;
 	position: fixed;
 
 	@include media-query('phone') {

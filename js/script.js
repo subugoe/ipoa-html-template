@@ -151,7 +151,6 @@ jQuery(document).ready(function () {
           'transform': 'translateX(-100%)',
           '-webkit-transform': 'translateX(-100%)',
           '-ms-transform': 'translateX(-100%)',
-          'transition': '0.25s ease-in-out',
         });
 
         // restablish content stuff to be used as normal again
@@ -173,7 +172,6 @@ jQuery(document).ready(function () {
           'transform': 'translateX(0%)',
           '-webkit-transform': 'translateX(0%)',
           '-ms-transform': 'translateX(0%)',
-          'transition': '0.25s ease-in-out',
         });
 
         // make the menu content fill the whole left side (top to bottom) and
@@ -217,23 +215,27 @@ jQuery(document).ready(function () {
     });
   });
 
-
   /**
-   * quick and dirty carousel for logos
+   *
    */
-  var arr = jQuery('#logocarousel').find('li');
-  jQuery(arr).hide();
-  jQuery(arr[0]).show();
-  (function recurse(counter) {
-    var item = arr[counter];
-    delete arr[counter];
-    arr.push(item);
-    setTimeout(function() {
-        jQuery('#logocarousel').find('li').hide();
+  function carousel(id) {
+    var arr = jQuery('#' + id).find('li');
+    jQuery(arr).hide();
+    jQuery(arr[0]).show();
+    (function recurse(counter) {
+      var item = arr[counter];
+      delete arr[counter];
+      arr.push(item);
+      setTimeout(function() {
+        jQuery('#'+ id).find('li').hide();
         recurse(counter + 1);
         jQuery(item).show();
-    }, 2500);
-  })(0);
+      }, 2500);
+    })(0);
+  }
+
+  carousel('c1');
+  carousel('c2');
 
   /**
    * TODO : add documentation
