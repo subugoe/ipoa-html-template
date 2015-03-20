@@ -245,6 +245,17 @@ jQuery(document).ready(function () {
   footerHideHeight = jQuery('.footer-hide__content').height();
   jQuery('.footer-hide').css({ 'height': footerHideHeight + 'px' });
 
+  // recalculate (and set the new) footer height with every window resize
+  jQuery(window).resize(function() {
+    footerHideHeight = jQuery('.footer-hide__content').height();
+    console.log(footerHideHeight);
+    jQuery('.footer-hide').css({ 'height': footerHideHeight + 'px' });
+  });
+
+
+  /**
+   *
+   */
   jQuery('.main div a').click(function(event) {
     event.preventDefault();
     var scrollToId = this.hash;
